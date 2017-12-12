@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="roomInfoSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image id="imgBgd" width="350" height="450" source="bg_mask_pc_png" right="0" top="110" alpha="0.5"/>
+	<e:Group width="350" right="0" top="110" height="450">
+
+
+		<e:Group left="0" right="0" height="241" y="0">
+			<eui:ALabel text="game_lbl_already_open_statistic" horizontalCenter="0" width="350" verticalAlign="middle" size="16" textColor="0xe9b76f" fontFamily="SimHei" y="12" textAlign="center"/>
+			<e:Image right="18" source="desk_pic_frequency1_pc_png" width="42" height="15" y="153"/>
+            <e:Image right="18" width="42" height="15" source="desk_pic_frequency2_pc_png" y="174"/>
+            <e:Image right="18" width="42" height="15" source="desk_pic_frequency3_pc_png" y="192"/>
+			<eui:ALabel id="numPlayer" text="7" textAlign="center" width="25" size="12" verticalAlign="middle" isFixed="true" y="155" x="308"/>
+            <eui:ALabel id="numBanker" text="30" textAlign="center" width="25" size="12" verticalAlign="middle" isFixed="true" y="175" x="308"/>
+            <eui:ALabel id="numTie" text="21" textAlign="center" width="25" size="12" verticalAlign="middle" isFixed="true" y="194" x="308"/>
+			<e:Image source="baccarat_pic_tie_png" width="34" height="34" y="152" x="24"/>
+			<eui:ALabel text="0%" width="50" size="18" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0x02aa30" y="190" x="17" visible="false"/>
+			<e:BitmapLabel id="rateTie" text="0%" left="17" width="140" font="game_share_green_50_fnt" top="190" scaleX="0.4" scaleY="0.4" height="40" textAlign="center" verticalAlign="middle"/>
+            <e:Image source="baccarat_pic_bk1_png" width="34" height="34" y="59" x="296"/>
+			<eui:ALabel text="0%" width="50" size="18" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xff1310" y="97" x="289" visible="false"/>
+			<e:BitmapLabel id="rateBanker" text="0%" left="289" width="140" top="97" scaleX="0.4" scaleY="0.4" height="40" textAlign="center" verticalAlign="middle" font="game_share_red_50_fnt"/>
+            <e:Image source="baccarat_pic_pl1_png" width="34" height="34" y="59" x="24"/>
+			<eui:ALabel text="0%" width="50" size="18" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0x0085ff" x="17" y="97" visible="false"/>
+			<e:BitmapLabel id="ratePlayer" text="0%" left="17" width="140" top="97" scaleX="0.4" scaleY="0.4" height="40" textAlign="center" verticalAlign="middle" font="game_share_blue_50_fnt"/>
+			<e:Group id="groupCircle" width="186" anchorOffsetY="0" height="186" horizontalCenter="0" y="40">
+				<e:Image source="desk_pic_percentagebg_pc_png" horizontalCenter="0" verticalCenter="0"/>
+                <e:Image id="circleBanker" horizontalCenter="0" source="desk_pic_percentage3_pc_png" verticalCenter="0" width="149" height="149"/>
+                <e:Image id="circlePlayer" horizontalCenter="0" source="desk_pic_percentage2_pc_png" verticalCenter="0" width="125" height="125"/>
+				<e:Image id="circleTie" horizontalCenter="0" source="desk_pic_percentage1_pc_png" verticalCenter="0" width="101" height="101"/>
+				<eui:ALabel text="global_lbl_round" horizontalCenter="0" width="100" size="15" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" isFixed="true" y="74"/>
+                <eui:ALabel text="68" horizontalCenter="0" width="160" size="25" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" isFixed="true" verticalCenter="11.5" visible="false"/>
+				<e:BitmapLabel id="numRound" width="160" height="56" verticalCenter="11.5" horizontalCenter="0" text="68" font="game_share_golden_56_fnt" scaleX="0.45" scaleY="0.45" textAlign="center" verticalAlign="middle"/>
+			</e:Group>
+		</e:Group>
+		<e:Group width="350" x="0" height="209" bottom="0">
+
+            <eui:ALabel text="已开局走势" horizontalCenter="0" width="350" verticalAlign="middle" textAlign="center" size="16" textColor="0xe9b76f" y="14" fontFamily="SimHei"/>
+			<e:Image y="42" source="desk_pic_scale_pc_png" x="52"/>
+            <e:Image source="desk_pic_scale_pc_png" y="100" x="52"/>
+            <e:Image source="desk_pic_scale_pc_png" y="155" x="52"/>
+			<e:Image source="baccarat_pic_bk1_png" height="21" width="21" y="39" x="20"/>
+			<e:Image source="baccarat_pic_tie_png" height="21" width="21" x="20" y="95"/>
+            <e:Image source="baccarat_pic_pl1_png" height="21" width="21" x="20" y="151"/>
+			<eui:ALabel text="global_lbl_round" width="32" size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" y="183" x="14" visible="false"/>
+            <eui:ALabel text="1" size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" x="45" y="183" width="20" visible="false"/>
+            <eui:ALabel text="2"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" x="69" width="20" y="183" visible="false"/>
+            <eui:ALabel text="3"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="20" y="183" x="96" visible="false"/>
+            <eui:ALabel text="4"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="20" y="183" x="120" visible="false"/>
+            <eui:ALabel text="5"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="20" y="183" x="145" visible="false"/>
+            <eui:ALabel text="6"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="20" y="183" x="172" visible="false"/>
+            <eui:ALabel text="7"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="20" y="183" x="198" visible="false"/>
+            <eui:ALabel text="8"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="20" y="183" x="222" visible="false"/>
+            <eui:ALabel text="9"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="20" y="183" x="248" visible="false"/>
+            <eui:ALabel text="10"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="32" y="183" x="266" visible="false"/>
+            <eui:ALabel text="11"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="32" y="183" x="292" visible="false"/>
+            <eui:ALabel text="12"  size="16" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" width="32" y="183" x="317" visible="false"/>
+
+
+
+			<e:Group id="groupLine" width="350" x="0" y="0" height="209"/>
+            <e:Group id="groupDots" width="350" x="0" height="209" y="0">
+                <e:Image id="dotB1" source="desk_pic_dot1_pc_png" x="47" y="39"/>
+                <e:Image id="dotT1" source="desk_pic_dot2_pc_png" x="47" y="98"/>
+                <e:Image id="dotP1" source="desk_pic_dot3_pc_png" x="47" y="153"/>
+                <e:Image id="dotB2" source="desk_pic_dot1_pc_png" x="72" y="39"/>
+                <e:Image id="dotT2" source="desk_pic_dot2_pc_png" x="72" y="98"/>
+                <e:Image id="dotP2" source="desk_pic_dot3_pc_png" x="72" y="153"/>
+                <e:Image id="dotB3" source="desk_pic_dot1_pc_png" x="97" y="39"/>
+                <e:Image id="dotT3" source="desk_pic_dot2_pc_png" x="97" y="98"/>
+                <e:Image id="dotP3" source="desk_pic_dot3_pc_png" x="97" y="153"/>
+                <e:Image id="dotB4" source="desk_pic_dot1_pc_png" x="122" y="39"/>
+                <e:Image id="dotT4" source="desk_pic_dot2_pc_png" x="122" y="98"/>
+                <e:Image id="dotP4" source="desk_pic_dot3_pc_png" x="122" y="153"/>
+                <e:Image id="dotB5" source="desk_pic_dot1_pc_png" x="147" y="39"/>
+                <e:Image id="dotT5" source="desk_pic_dot2_pc_png" x="147" y="98"/>
+                <e:Image id="dotP5" source="desk_pic_dot3_pc_png" x="147" y="153"/>
+                <e:Image id="dotB6" source="desk_pic_dot1_pc_png" x="173" y="39"/>
+                <e:Image id="dotT6" source="desk_pic_dot2_pc_png" x="173" y="98"/>
+                <e:Image id="dotP6" source="desk_pic_dot3_pc_png" x="173" y="153"/>
+                <e:Image id="dotB7" source="desk_pic_dot1_pc_png" x="197" y="39"/>
+                <e:Image id="dotT7" source="desk_pic_dot2_pc_png" x="197" y="98"/>
+                <e:Image id="dotP7" source="desk_pic_dot3_pc_png" x="197" y="153"/>
+                <e:Image id="dotB8" source="desk_pic_dot1_pc_png" x="223" y="39"/>
+                <e:Image id="dotT8" source="desk_pic_dot2_pc_png" x="223" y="98"/>
+                <e:Image id="dotP8" source="desk_pic_dot3_pc_png" x="223" y="153"/>
+                <e:Image id="dotB9" source="desk_pic_dot1_pc_png" x="249" y="39"/>
+                <e:Image id="dotT9" source="desk_pic_dot2_pc_png" x="249" y="98"/>
+                <e:Image id="dotP9" source="desk_pic_dot3_pc_png" x="249" y="153"/>
+                <e:Image id="dotB10" source="desk_pic_dot1_pc_png" x="274" y="39"/>
+                <e:Image id="dotT10" source="desk_pic_dot2_pc_png" x="274" y="98"/>
+                <e:Image id="dotP10" source="desk_pic_dot3_pc_png" x="274" y="153"/>
+                <e:Image id="dotB11" source="desk_pic_dot1_pc_png" x="299" y="39"/>
+                <e:Image id="dotT11" source="desk_pic_dot2_pc_png" x="299" y="98"/>
+                <e:Image id="dotP11" source="desk_pic_dot3_pc_png" x="299" y="153"/>
+                <e:Image id="dotB12" source="desk_pic_dot1_pc_png" x="325" y="39"/>
+                <e:Image id="dotT12" source="desk_pic_dot2_pc_png" x="325" y="98"/>
+                <e:Image id="dotP12" source="desk_pic_dot3_pc_png" x="325" y="153"/>
+            </e:Group>
+		</e:Group>
+
+	</e:Group>
+
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="exitClubSkin" width="510" height="751" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<eui:ALabel text="已加入的俱乐部" size="21" width="160" left="29" top="24" textColor="0xe7b56f"/>
+	<e:Group width="490" height="671" horizontalCenter="0" top="67">
+		<e:Scroller id="joinedClubScroll" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1">
+			<e:List id="joinedClubList"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

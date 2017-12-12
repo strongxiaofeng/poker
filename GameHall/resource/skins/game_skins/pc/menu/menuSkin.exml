@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="menuSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="bg_mask_pc_png" alpha="0.6" height="1080" width="1920" y="0" x="0"/>
+	<e:Image source="bg_mask_pc_png" id="mask2" width="1920" height="1080" verticalCenter="0" left="218"/>
+	<e:Image source="bg_mask_pc_png" id="mask3" width="1920" height="1080" verticalCenter="0" left="218"/>
+	<e:Group id="groupLevel3" width="524" left="1265" height="775" verticalCenter="0">
+		<e:Image source="window_pic_bg_pc_png" right="0" left="-10" top="0" bottom="0"/>
+		<e:Image right="0" left="0" top="11" height="64" source="window_pic_titlebg_pc_png"/>
+		<e:Group id="container3" width="100%" height="100%" x="0" y="0"/>
+		<e:Image scale9Grid="85,30,277,38" y="-4" scaleX="1" scaleY="1" source="window_pic_frame3_pc_png" touchEnabled="false" height="793" left="-10" right="-4"/>
+		<eui:AButton id="closeBtn3" label="" top="26" right="18" x="488" y="29" scaleX="1" scaleY="1">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="window_btn_close_pc_png" source.down="window_btn_close_p_pc_png" source.disabled="window_btn_close_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group id="groupLevel2" height="775" left="814" verticalCenter="0" width="437">
+		<e:Image right="0" left="-10" top="0" bottom="0" source="window_pic_bg_pc_png"/>
+		<e:Image right="0" left="0" top="11" height="64" source="window_pic_titlebg_pc_png"/>
+		<e:Group id="container2" width="100%" height="100%" x="0" y="0"/>
+		<e:Image source="window_pic_frame2_pc_png" scale9Grid="85,30,277,38" touchEnabled="false" height="793" y="-4" left="-10" right="-4"/>
+		<eui:AButton id="closeBtn2" label="" top="26" right="18" mouseTexture="window_btn_close2_h_pc_png">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="window_btn_close2_pc_png" source.down="window_btn_close2_p_pc_png" source.disabled="window_btn_close2_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+
+		</eui:AButton>
+	</e:Group>
+	<e:Group id="groupLevel1" scaleX="1" scaleY="1" width="573" height="775" verticalCenter="0" left="218">
+		<e:Image source="window_pic_bg_pc_png" right="0" left="0" top="0" bottom="0"/>
+		<e:Image right="6" left="6" top="11" height="64" source="window_pic_titlebg_pc_png"/>
+		<e:Image source="window_pic_decoration_pc_png" top="69" left="8" right="8"/>
+		<e:Group id="container1" width="100%" height="100%" x="0" y="0"/>
+		<e:Image alpha="0.6" scaleX="1" scaleY="1" scale9Grid="85,30,277,38" source="window_pic_frame1_pc_png" touchEnabled="false" height="793" y="-4" left="-4" right="-4"/>
+		<eui:AButton id="closeBtn1" label="" width="59" top="13" right="9" height="59" mouseTexture="btn_close_h_pc_png">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_close_pc_png" source.down="btn_close_p_pc_png" source.disabled="btn_close_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

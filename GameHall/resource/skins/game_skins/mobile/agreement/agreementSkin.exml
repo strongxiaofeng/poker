@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="agreementSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image id="bg" source="login_pic_bg_png" width="1440" height="1920" verticalCenter="0" horizontalCenter="0"/>
+    
+	<e:Image width="100%" height="100%" source="bg_mask2_png" alpha="0.7"/>
+	<e:Group id="agreementGroup" width="1080" height="100%" verticalCenter="0" horizontalCenter="0">
+		<eui:ALabel text="login_lbl_agreement_title" y="140" size="48" width="300" textAlign="center" horizontalCenter="0" isFixed="true"/>
+		<e:Scroller width="960" horizontalCenter="0" bottom="230" top="258">
+			<eui:ALabel id="agreementLabel" text="" y="140" size="30" width="960" textAlign="left" horizontalCenter="0" textColor="0xa8a8a8"/>
+		</e:Scroller>
+		<eui:AButton id="refuseBtn" label="login_btn_user_refuse" width="482" height="97" horizontalCenter="-243" bottom="62">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+				<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000"  textColor.down="0xE9B76F" size="50"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="agreeBtn" label="login_btn_user_agree" width="482" height="97" horizontalCenter="243" bottom="62">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+				<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000"  textColor.down="0xE9B76F" size="50"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

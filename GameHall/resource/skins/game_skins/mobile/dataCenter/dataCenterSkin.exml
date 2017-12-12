@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="dataCenterSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="menu_btn_all_bg2_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+
+	<e:Group id="groupTop" top="0" height="165" width="100%" x="0" visible="false">
+		<eui:AButton id="btnClose" label="" scaleX="1" scaleY="1" verticalCenter="0" left="40">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_return_png" source.down="main_btn_return_p_png" source.disabled="main_btn_return_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+        <e:ALabel text="founder_btn_data_center" size="50" horizontalCenter="0" verticalCenter="0" textColor="0xe7b570" width="600" verticalAlign="middle" textAlign="center" isFixed="true"/>
+	</e:Group>
+	<e:Group id="groupTotal" height="760" top="165" width="100%" x="0">
+		<e:Image top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0" locked="true"/>
+		<e:Group width="100%" height="350" x="0" y="0">
+			<e:Image source="main_pic_decoration4_png" left="20" top="12"/>
+			<e:Image source="main_pic_decoration4_png" left="20" bottom="10" height="97" scaleY="-1"/>
+			<e:Image source="main_pic_decoration4_png" top="12" right="20" scaleX="-1"/>
+			<e:Image source="main_pic_decoration4_png" bottom="10" height="97" scaleY="-1" y="10" right="20" scaleX="-1"/>
+			<e:Image bottom="0" source="data_pic_decoration_png" horizontalCenter="0" width="812" height="30"/>
+			<e:Image id="maskClubIcon" source="main_pic_defaultclub_png" width="180" height="180" verticalCenter="-5" left="170"/>
+			<e:Image id="imgClubIcon" source="main_pic_defaultclub_png" width="180" height="180" verticalCenter="-5" left="170"/>
+			<e:Image source="home_pic_clubbg_png" width="255" height="200" verticalCenter="15" left="133"/>
+			<e:BitmapLabel id="labelProfit" width="500" height="100" verticalCenter="-5" right="70" textAlign="right" font="game_share_golden_163_fnt" text="0" verticalAlign="middle"/>
+			<eui:ALabel text="founder_lbl_today_profit" width="260" size="30" textAlign="right" verticalAlign="middle" height="30" verticalCenter="70" right="115" textColor="0xc8c8c8" isFixed="true"/>
+			<e:Image source="data_pic_surplus_png" verticalCenter="70" right="75"/>
+		</e:Group>
+		<e:Group width="100%" x="0" bottom="0" top="350">
+			<e:ALabel text="founder_lbl_today_statistics" size="40" horizontalCenter="0" textColor="0xE7B570" width="300" verticalAlign="middle" textAlign="center" isFixed="true" x="240" scaleX="1" scaleY="1" height="40" top="30"/>
+
+			<e:BitmapLabel id="labelBet" width="600" height="100" left="70" top="75" verticalAlign="middle" textAlign="left" text="0" scaleX="0.7" scaleY="0.7" font="game_share_golden_163_fnt"/>
+
+
+			<eui:BitmapLabel id="labelTime" text="0" scaleX="0.7" scaleY="0.7" width="600" height="100" top="75" verticalAlign="middle" textAlign="right" right="70" font="game_share_golden_163_fnt"/>
+			<eui:BitmapLabel id="labelChip" text="0" scaleX="0.7" scaleY="0.7" width="600" height="100" left="70" verticalAlign="middle" textAlign="left" bottom="80" font="game_share_golden_163_fnt"/>
+			<eui:BitmapLabel id="labelCard" text="0" scaleX="0.7" scaleY="0.7" width="600" height="100" verticalAlign="middle" textAlign="right" right="70" x="10" bottom="80" font="game_share_golden_163_fnt"/>
+
+			<eui:ALabel text="founder_lbl_bet_times" width="260" size="30" textAlign="right" verticalAlign="middle" height="30" right="128" isFixed="true" top="170" textColor="0xb5b1ac"/>
+			<e:Image right="70" top="172" source="data_pic_times_png"/>
+			<eui:ALabel text="founder_lbl_roomcard_cost" width="260" size="30" textAlign="right" verticalAlign="middle" height="30" right="128" isFixed="true" textColor="0xB5B1AC" bottom="30"/>
+			<e:Image right="70" bottom="30" source="data_pic_card_png"/>
+			<eui:ALabel text="founder_lbl_bet_amount" width="260" size="30" textAlign="left" verticalAlign="middle" height="30" isFixed="true" top="170" textColor="0xB5B1AC" left="120"/>
+			<e:Image top="170" left="70" source="data_pic_bet_png"/>
+			<eui:ALabel text="founder_lbl_chips_balance" width="260" size="30" textAlign="left" verticalAlign="middle" height="30" isFixed="true" textColor="0xB5B1AC" left="120" bottom="30"/>
+			<e:Image left="70" bottom="28" source="data_pic_chips_png"/>
+		</e:Group>
+		<e:Image source="main_pic_decoration_png" left="35" right="35" bottom="-8" locked="true"/>
+	</e:Group>
+	<e:Group height="620" top="925" left="0" right="0">
+		<e:Image height="2" x="0" y="154" source="btn_login_d_png" width="100%" locked="true"/>
+		<e:Image height="2" x="0" source="btn_login_d_png" width="100%" y="309" locked="true"/>
+		<e:Image height="2" x="0" source="btn_login_d_png" width="100%" y="464" locked="true"/>
+		<e:Image height="2" x="0" source="btn_login_d_png" width="100%" y="619" locked="true"/>
+		<eui:AButton id="btnRealTime" label="founder_btn_realtime" top="0" height="155" width="100%" x="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source.down="window_btn_all_h_pc_png" left="0" top="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="data_pic_realtime_png" verticalCenter="0" left="60"/>
+				<e:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" isFixed="true" width="300" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+        <eui:AButton id="btnBetRecord" label="joined_btn_history_bet_record" top="155" height="155" width="100%" x="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source.down="window_btn_all_h_pc_png" left="0" top="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="data_pic_betrecord_png" verticalCenter="0" left="60"/>
+				<e:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" isFixed="true" width="300" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+        <eui:AButton id="btnQuotaRecord" label="founder_btn_quota_record" top="310" height="155" width="100%" x="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source.down="window_btn_all_h_pc_png" left="0" top="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="data_pic_quotarecord_png" verticalCenter="0" left="60"/>
+				<e:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" isFixed="true" width="300" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+        <eui:AButton id="btnCardRecord" label="founder_btn_roomcard_record" width="100%" x="0" top="465" height="155">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source.down="window_btn_all_h_pc_png" left="0" top="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="data_pic_cardrecord_png" verticalCenter="0" left="60"/>
+				<e:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" isFixed="true" width="300" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

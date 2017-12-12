@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="clubListItem" width="1000" height="350" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<w:Config id="15e32a61e05"/>
+	<e:Group id="myClubGroup" touchChildren="false" top="0" bottom="0" left="0" right="0">
+		<e:Image id="ItemBg" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" right="40" top="8" bottom="8" source="main_pic_club_bg2_png"/>
+		<e:Image id="ItemBg1" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" left="40" top="8" bottom="8" source="main_pic_club_bg2_png"/>
+		<e:Image id="ItemBg2" anchorOffsetX="0" scaleX="1" scaleY="1" left="60" right="60" top="8" bottom="8" source="main_pic_club_bg2_2_png"/>
+		<e:Group id="ItemTopGroup" anchorOffsetY="0" anchorOffsetX="0" top="8" bottom="267" left="40" right="41">
+			<eui:ALabel id="clubItemName" text="" size="40" width="300" textColor="0x1b190d" bold="true" verticalAlign="middle" isFixed="true" x="40" y="18"/>
+			<e:Group y="10" right="200">
+				<eui:ALabel id="clubInvitation" text="" height="40" size="40" textAlign="left" anchorOffsetX="0" width="181" verticalAlign="middle" textColor="0x000000" y="8" isFixed="true" x="160"/>
+				<eui:ALabel id="clubInvition" text="login_btn_invitecode" size="30" width="140" verticalAlign="middle" anchorOffsetX="0" textColor="0x000000" y="13" isFixed="true" height="30" x="0"/>
+				<e:Image width="40" height="40" source="mine_btn_copy_png" verticalCenter="0" x="350"/>
+
+			</e:Group>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" left="40" right="40" top="84" bottom="5">
+
+			<e:Image source="home_btn_bg_png" height="200" verticalCenter="0" left="260" width="4"/>
+			<e:Image id="createClubFaceImg" width="145" height="145" y="41" x="67.5" source="home_pic_defaultclub_pc_png"/>
+			<e:Image id="createClubFaceMask" width="145" height="145" y="41" x="67.5" source="home_pic_defaultclub_pc_png"/>
+			<e:Image id="clubFace" height="180" left="40" verticalCenter="0" y="32" scaleX="1" scaleY="1" width="200" source="home_pic_clubbg_png"/>
+			<e:Group id="clubInfo" height="200" verticalCenter="0" left="300" right="80">
+				<eui:ALabel text="global_lbl_room_nums" height="40" size="30" verticalAlign="middle" verticalCenter="-75" anchorOffsetX="0" textColor="0xe9b76f" width="142" isFixed="true" x="0"/>
+				<eui:ALabel text="global_lbl_main_my_online_players" height="40" size="30" verticalCenter="-25" verticalAlign="middle" textColor="0xe9b76f" width="144.67" anchorOffsetX="0" isFixed="true" x="0"/>
+				<eui:ALabel text="global_lbl_main_my_today_profit" height="40" size="30" verticalCenter="25" verticalAlign="middle" textColor="0xe9b76f" width="140.67" anchorOffsetX="0" isFixed="true" x="0"/>
+				<eui:ALabel text="global_lbl_game_type" height="40" size="30" verticalCenter="75" verticalAlign="middle" textColor="0xe9b76f" width="136.67" anchorOffsetX="0" isFixed="true" x="0"/>
+				<eui:ALabel text="global_lbl_main_my_total_player" height="40" size="30" verticalAlign="middle" verticalCenter="-75" textColor="0xe9b76f" width="136.67" isFixed="true" anchorOffsetX="0" x="310"/>
+				<eui:ALabel text="global_lbl_online_anchor" height="40" size="30" verticalAlign="middle" verticalCenter="-25" textColor="0xe9b76f" width="136.67" isFixed="true" anchorOffsetX="0" x="310"/>
+				<eui:ALabel text="global_lbl_main_card_expend" height="40" size="30" verticalAlign="middle" verticalCenter="25" textColor="0xe9b76f" width="139.33" isFixed="true" anchorOffsetX="0" x="310"/>
+				<eui:ALabel id="rooms" text="0" verticalCenter="-75" size="30" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true" x="160"/>
+				<eui:ALabel id="players" text="0" verticalCenter="-25" size="30" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true" x="160"/>
+				<eui:ALabel id="profits" text="0" verticalCenter="25" size="30" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true" x="160"/>
+				<eui:ALabel id="games" text="global_lbl_baccarat" verticalCenter="75" size="30" height="40" verticalAlign="middle" textAlign="left" width="400" isFixed="true" x="160"/>
+				<eui:ALabel id="allPlayer" text="0" verticalCenter="-75" size="24" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true" x="465"/>
+				<eui:ALabel id="anchor" text="0" verticalCenter="-25" size="24" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true" x="465"/>
+				<eui:ALabel id="roomCard" text="0" verticalCenter="25" size="24" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true" x="465"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="joinClubGroup" touchChildren="false" top="0" bottom="0" left="0" right="0" visible="false">
+		<e:Image scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" top="8" bottom="8" left="40" source="main_pic_club_bg_png"/>
+		<e:Image scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" top="8" bottom="8" right="40" source="main_pic_club_bg_png"/>
+		<e:Image anchorOffsetX="0" scaleX="1" scaleY="1" top="8" bottom="8" left="60" right="60" source="main_pic_club_bg_2_png"/>
+		<e:Group anchorOffsetY="0" anchorOffsetX="0" left="40" right="41" top="8" bottom="267">
+		<eui:ALabel id="joinedClubItemName" text="" size="40" width="300" bold="true" verticalAlign="middle" textColor="0xffffff" isFixed="true" y="18" x="40"/>
+		<eui:ALabel id="clubCreate" text="" size="30" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xb5b1ad" width="236.06" isFixed="true" verticalCenter="0.5" right="14"/>
+		<eui:ALabel id="clubCreateMan" text="global_lbl_creator" size="30" width="120" verticalAlign="middle" textColor="0xb5b1ad" height="40" textAlign="right" isFixed="true" right="250" verticalCenter="0.5"/>
+		</e:Group>
+		<e:Group id="clubFaceGroup" anchorOffsetX="0" anchorOffsetY="0" left="40" right="40" top="84" bottom="5">
+
+		<e:Image source="home_btn_bg_png" height="200" width="3" y="31" x="260"/>
+			<e:Image id="joinedClubFaceImg" width="145" height="145" x="68" y="36" source="home_pic_defaultclub_pc_png"/>
+			<e:Image id="joinedClubFaceMask" width="145" height="145" x="68" y="36" source="home_pic_defaultclub_pc_png"/>
+			<e:Image id="joinedClubFaceBox" source="home_pic_clubbg_png" height="180" left="40" verticalCenter="0" y="32.33000000000001" scaleX="1" scaleY="1" width="200"/>
+		<e:Group id="joinedClubInfo" height="200" verticalCenter="0" right="80" left="300">
+			<eui:ALabel text="global_lbl_chip_balance" height="40" left="0" size="30" verticalAlign="middle" verticalCenter="-50" anchorOffsetX="0" textColor="0xe9b76f" width="150" isFixed="true"/>
+			<eui:ALabel text="global_lbl_room_nums" height="40" size="30" verticalAlign="middle" textColor="0xe9b76f" width="150" isFixed="true" verticalCenter="0" left="0"/>
+			<eui:ALabel text="global_lbl_game_type" height="40" left="0" size="30" verticalCenter="50" verticalAlign="middle" textColor="0xe9b76f" width="150" isFixed="true"/>
+			<eui:ALabel text="global_lbl_online_anchor" height="40" size="30" verticalAlign="middle" verticalCenter="-50" textColor="0xe9b76f" left="310" width="150" isFixed="true"/>
+			<eui:ALabel id="chips" text="0" size="30" verticalAlign="middle" textAlign="left" width="152" isFixed="true" anchorOffsetX="0" verticalCenter="-50" x="160"/>
+			<eui:ALabel id="joinedRooms" text="0" size="30" verticalAlign="middle" textAlign="left" width="180" isFixed="true" verticalCenter="0" x="160"/>
+			<eui:ALabel id="joinedGameType" text="global_lbl_baccarat" size="30" verticalAlign="middle" textAlign="left" width="400" isFixed="true" verticalCenter="50" x="160"/>
+			<eui:ALabel id="joinedAnchor" text="0" size="30" verticalAlign="middle" textAlign="left" width="145" isFixed="true" anchorOffsetX="0" verticalCenter="-50" x="465"/>
+		</e:Group>
+		</e:Group>
+
+	</e:Group>
+
+	<e:Group id="clubLabelGroup" touchChildren="false" height="125" y="0" left="0" right="0" visible="false">
+		<eui:ALabel id="clubLabel" text="俱乐部列表" textAlign="center" verticalAlign="middle" size="40" height="50" top="0" horizontalCenter="0" width="1000"/>
+		<e:Group id="staticGroup" top="75" width="100%" x="0">
+			<eui:ALabel id="clubNum" text="club_lbl_club_total" textAlign="left" verticalAlign="middle" size="40" width="263" height="50" isFixed="true" y="0" anchorOffsetX="0" left="40"/>
+			<eui:ALabel id="roomNum" text="club_lbl_rooms_total:0" textAlign="center" verticalAlign="middle" size="40" width="233" height="50" isFixed="true" anchorOffsetX="0" y="0" horizontalCenter="0"/>
+			<eui:ALabel id="playerOnline" text="club_lbl_online_players_ount" textAlign="right" verticalAlign="middle" size="40" width="262" height="50" isFixed="true" y="0" right="40" anchorOffsetX="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="maskGroup" left="0" right="0" top="0" bottom="0" touchChildren="false" touchEnabled="true" visible="false">
+		<eui:Image left="0" top="0" right="0" bottom="0" source="main_pic_room_locked_png" scale9Grid="27,23,11,7"/>
+		<eui:Image id="locked" right="50" bottom="15" width="100" height="100" source="club_pic_lock_png"/>
+	</e:Group>
+	<e:Group id="sharGroup" width="180" height="55" top="14" right="48" touchChildren="true" touchThrough="false" visible="false">
+		<eui:AButton id="sharBtn" label="" width="180" x="0" y="0" scaleX="1" scaleY="1">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="share" width="180" height="55" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="12,11,67,54" x="0" y="0" source="mine_btn_share_png" source.down="mine_btn_share_p_png"/>
+				<eui:ALabel text="global_btn_share" width="100" height="40" size="35" verticalAlign="middle" textColor="0xe9b76f" isFixed="true" anchorOffsetX="0" textAlign="center" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

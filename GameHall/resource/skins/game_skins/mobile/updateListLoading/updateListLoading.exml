@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="updateListLoading" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="updateTipGroup" height="150" bottom="165" left="0" right="0">
+		<eui:ALabel id="updateTipLabel" text="上拉加载更多" width="1080" height="40" verticalAlign="middle" textAlign="center" size="40" horizontalCenter="0" bottom="20"/>
+		<e:Image id="updateTipIocn" width="50" height="50" horizontalCenter="0" source="club_btn_refresh_png" anchorOffsetX="25" anchorOffsetY="25" bottom="70"/>
+	</e:Group>
+	<e:Group id="updateTipLoadingGroup" height="150" bottom="165" left="0" right="0">
+
+
+	</e:Group>
+	<e:Group id="endLoadingGroup" height="150" bottom="165" left="0" right="0">
+		<eui:ALabel id="endLoading" text="没有更多内容" horizontalCenter="0" verticalCenter="0" width="1080" height="150" size="40" verticalAlign="middle" textAlign="center" textColor="0xd32626"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VideoTestSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="1200" height="56" y="548" fillColor="0xffffff" horizontalCenter="0"/>
+	<e:Button id="btn" label="确认" y="525" anchorOffsetX="0" width="183" right="100" anchorOffsetY="0" height="84">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png"/>
+			<e:Label id="labelDisplay" textColor="0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:TextInput id="url" width="1200" height="37" y="558" anchorOffsetX="0" anchorOffsetY="0" enabled="true" prompt="输入视频地址" horizontalCenter="0"/>
+	<e:Button id="enter" label="进入游戏" y="879" anchorOffsetX="0" width="291" horizontalCenter="47.5" anchorOffsetY="0" height="90">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png"/>
+			<e:Label id="labelDisplay" textColor="0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

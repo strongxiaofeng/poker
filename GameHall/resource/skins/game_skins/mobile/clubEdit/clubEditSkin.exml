@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="clubEditSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+
+	<e:Image source="main_pic_decoration_png" height="16" top="840" left="20" right="20"/>
+	<e:Group id="groupIcon" height="675" top="165" right="0" left="0">
+        <e:Image id="imgIcon" horizontalCenter="0" source="main_pic_defaultclub_png" width="388" height="388" verticalCenter="-50"/>
+		<e:Image source="home_pic_clubbg_png" horizontalCenter="0" width="540" height="415" verticalCenter="0"/>
+		<eui:ALabel text="更换徽标" horizontalCenter="0" height="60" bottom="50" textColor="0xe9b76f" size="50" verticalAlign="middle" textAlign="center" isFixed="true" visible="false"/>
+		<eui:AButton id="labelIcon" label="更换徽标" horizontalCenter="0" bottom="50" height="60" width="200">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xe9b76f" textColor.down="0x654D29" size="50"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group top="860" left="0" right="0" bottom="0">
+		<e:Image id="clubNameBg" height="144.24" left="0" right="0" source="mine_btn_enter_mask_png" anchorOffsetY="0" visible="false"/>
+		<eui:ALabel id="clubName" text="俱乐部名称" textColor="0xc8c8c8" right="130" width="600" height="50" top="50" size="45" verticalAlign="middle" textAlign="right" isFixed="true"/>
+		<eui:AButton id="btnEditName" label="名称" left="40" right="40" top="0" height="150">
+            <eui:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image verticalCenter="0" right="0" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+                    <e:Image source="icon_pic_nickname_png" verticalCenter="0" left="30"/>
+                    <e:Label id="labelDisplay" size="45" verticalCenter="0" left="120" width="300" textColor="0xe9b76f"/>
+                    <e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+                </e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Image source="mine_pic_separateline_png" top="148" left="40" right="40" height="2"/>
+        <eui:AButton id="btnEditCode" label="邀请码 / 链接" left="40" right="40" top="150" height="150">
+            <eui:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image verticalCenter="0" right="0" height="70" width="290"  scale9Grid="20,20,18,18" source="main_btn_room_p_png" source.down="main_btn_room_png" source.disabled="main_btn_room_png"/>
+                    <e:Image source="icon_pic_id_png" verticalCenter="0" left="30"/>
+                    <e:Label id="labelDisplay" size="45" verticalCenter="0" left="120" width="300" textColor="0xe9b76f"/>
+                    <e:Label text="编辑" size="40" verticalCenter="0" right="0" width="290" textAlign="center" textColor="0x000000" textColor.down="0xc8c8c8"/>
+                    <e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+                </e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+        <e:Image right="40" height="200"  scale9Grid="20,20,18,18" source="main_btn_room_png" top="300" left="40" visible="false"/>
+		<e:Image source="mine_pic_codebg1_png" top="300" height="200" left="40" width="320" scale9Grid="24,46,11,84"/>
+		<e:Image source="mine_pic_codebg2_png" right="40" top="300" height="200" left="360" scale9Grid="26,75,9,28"/>
+		<e:Image width="5" height="200" top="300" source="club_pic_namebg_png" left="360"/>
+        <e:Image height="4" top="400" source="club_pic_namebg_png" left="365" right="40" visible="false"/>
+		<eui:ALabel id="clubCode" text="123456789" height="60" top="370" size="55" verticalAlign="middle" textAlign="center" left="40" width="320" textColor="0xc8c8c8" isFixed="true"/>
+		<eui:ALabel text="有效时间" left="380" height="40" top="330" width="250" size="35" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xc8c8c8"/>
+        <eui:ALabel text="有效人数" left="380" height="40" top="430" width="250" textColor="0xc8c8c8" size="35" verticalAlign="middle" textAlign="left" isFixed="true"/>
+        <eui:ALabel id="validDate" text="无限制" height="40" top="330" width="250" textColor="0xc8c8c8" size="35" verticalAlign="middle" textAlign="right" isFixed="true" right="60"/>
+        <eui:ALabel id="validTimes" text="无限制" height="40" top="430" width="250" textColor="0xc8c8c8" size="35" verticalAlign="middle" textAlign="right" isFixed="true" right="60"/>
+		<eui:ALabel id="labelCreateTime" text="创建于：2017/10/01" width="600" textColor="0xc8c8c8" size="30" verticalAlign="middle" textAlign="center" isFixed="true" bottom="45" height="30" horizontalCenter="0"/>
+	</e:Group>
+    <e:Group id="groupPopUp" top="0" bottom="0" left="0" right="0">
+		<e:Image width="100%" height="100%" x="0" y="0" source="bg_mask_png" touchEnabled="true"/>
+		<e:Group id="groopTxt" height="920" verticalCenter="-100" horizontalCenter="0" width="1080">
+			<e:Group id="msgGroup" width="100%" height="81" horizontalCenter="0" verticalCenter="500" visible="false">
+				<e:Image source="pic_popup1_png" width="544" height="81" scaleX="-1" scaleY="1" horizontalCenter="-272" verticalCenter="0"/>
+				<e:Image source="pic_popup1_png" width="544" height="81" scaleX="1" scaleY="1" horizontalCenter="272" verticalCenter="0"/>
+				<eui:ALabel id="labelMsg" text="编辑邀请码失败" verticalCenter="0" horizontalCenter="0" width="600" height="60" verticalAlign="middle" textAlign="center" textColor="0xff0000" size="35" isFixed="true"/>
+			</e:Group>
+			<e:Image horizontalCenter="0" top="0" scale9Grid="34,31,41,600" x="25" y="545" scaleX="1" scaleY="1" source="mine_pic_cardbg_png" width="1050" height="920"/>
+			<e:Image horizontalCenter="0" top="20" source="mine_pic_card_png" width="1006" height="755"/>
+			<e:Image source="mine_pic_decoration_png" top="50" left="80"/>
+			<e:Image source="mine_pic_decoration_png" left="80" bottom="200" scaleY="-1"/>
+			<e:Image source="mine_pic_decoration_png" right="80" bottom="200" scaleY="-1" scaleX="-1"/>
+			<e:Image horizontalCenter="0" top="160" source="mine_pic_decoration2_png" width="810" height="30"/>
+			<e:Group id="groupGuide" left="0" right="0" top="0" bottom="0">
+				<e:Image source="mine_pic_decoration_png" top="50" right="80" scaleX="-1" x="896" y="-470" scaleY="1"/>
+                <eui:ALabel text="编辑说明" horizontalCenter="0" width="600" height="50" size="45" verticalAlign="middle" textAlign="center" textColor="0x000000" top="80"/>
+				<eui:ALabel text="修改有效时间与人数，将使之前的邀请码和链接失效。系统自动生成新的邀请码和链接。如果有效时间与人数都有设置，当其中一个达到设定值后，现有邀请码和链接均失效。系统将自动按现有设置再次生成邀请码和链接。有效时间与人数没有输入任何数字时，默认为无限制。" horizontalCenter="0" verticalCenter="-39" width="800" height="400" textColor="0x000000" newlineAble="true" size="33" lineSpacing="15"/>
+				<eui:AButton id="btnNext" label="我知道了" bottom="50" left="55" right="55" height="96">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" textAlign="center" size="50" verticalCenter="0" textColor="0x000000"/>
+						</e:Skin>
+					</eui:skinName>
+
+				</eui:AButton>
+
+			</e:Group>
+			<e:Group id="groupEdit" right="0" left="0" top="0" bottom="0" visible="false">
+				<eui:ALabel text="编辑邀请码和链接" horizontalCenter="0" width="600" height="50" size="45" verticalAlign="middle" textAlign="center" textColor="0x000000" top="80"/>
+				<eui:AButton id="btnRule" label="" top="40" right="70" width="120" height="120">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="mine_btn_info_png" source.down="mine_btn_info_p_png" source.disabled="mine_btn_info_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<eui:AButton id="btnCancel" label="取消" horizontalCenter="-243" width="482" height="96" bottom="50" x="-42" y="664" scaleX="1" scaleY="1">
+					<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000"/>
+					</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<eui:AButton id="btnConfirm" label="确认" horizontalCenter="243" width="482" bottom="50" height="96" x="444" y="664" scaleX="1" scaleY="1">
+					<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000"/>
+					</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<eui:ALabel text="有效时间（天）" textColor="0x000000" width="400" height="50" size="45" horizontalCenter="0" verticalAlign="middle" textAlign="center" isFixed="true" top="240"/>
+                <eui:ALabel text="有效人数（个）" textColor="0x000000" width="400" height="50" size="45" horizontalCenter="0" verticalAlign="middle" textAlign="center" isFixed="true" top="450"/>
+				<e:Image top="240" source="mine_pic_timelimit_png" horizontalCenter="-200"/>
+				<e:Image source="mine_pic_membernum_png" horizontalCenter="-200" top="450"/>
+				<e:Image id="imgDate" width="800" height="80" horizontalCenter="0" top="320" alpha="0.8" source="mine_pic_add_input1_png"/>
+				<e:EditableText id="inputDate" width="780" height="80" text="无限制" horizontalCenter="0" verticalAlign="middle" textAlign="center" backgroundColor="0xc0c0c0" size="45" top="320" textColor="0xffffff"/>
+                <e:Image id="imgTimes" width="800" height="80" horizontalCenter="0" top="540" alpha="0.8" source="mine_pic_add_input1_png"/>
+				<e:EditableText id="inputTimes" width="780" height="80" text="无限制" horizontalCenter="0" verticalAlign="middle" textAlign="center" backgroundColor="0xc0c0c0" size="45" top="540" textColor="0xffffff"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

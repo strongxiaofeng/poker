@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="my" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+
+	<e:Group left="0" right="0" top="165" bottom="165">
+		<e:Group width="100%" height="425" horizontalCenter="0" top="0">
+			<e:Image source="mine_pic_mainbg_png" top="0" bottom="0" left="0" right="0"/>
+			<e:Image left="10" top="10" source="mine_pic_decoration_png"/>
+			<e:Image scaleY="-1" bottom="10" left="10" source="mine_pic_decoration_png"/>
+			<e:Image scaleX="-1" right="10" top="10" source="mine_pic_decoration_png"/>
+			<e:Image scaleX="-1" scaleY="-1" right="10" bottom="10" source="mine_pic_decoration_png"/>
+			<e:Group id="group_Picture" width="600" height="200" verticalCenter="0" horizontalCenter="0">
+				<e:Image source="mine_pic_photobg_png" verticalCenter="0" left="0"/>
+				<e:Image id="img_HeadPicture" source="mine_pic_default_png" width="180" height="180" verticalCenter="0" left="12"/>
+				<eui:ALabel text="mine_lbl_user_name" size="40" left="235" top="13" width="160" textColor="0x000000" verticalAlign="middle" textAlign="left" isFixed="true"/>
+				<eui:ALabel text="mine_lbl_ccount_number" size="40" top="85" left="235" width="160" textColor="0x000000" textAlign="left" verticalAlign="middle" isFixed="true"/>
+				<eui:ALabel text="ID :" size="40" left="235" bottom="13" width="160" textColor="0x000000" textAlign="left" verticalAlign="middle" isFixed="true"/>
+				<eui:ALabel text="：" size="40" left="330" top="10" width="10" textColor="0x000000" visible="false"/>
+				<eui:ALabel text="：" size="40" left="330" top="82" width="10" textColor="0x000000" visible="false"/>
+				<eui:ALabel text="：" size="40" bottom="17" left="330" width="10" textColor="0x000000" visible="false"/>
+				<eui:ALabel id="label_NickName" text="Label" size="40" left="400" top="13" textColor="0x000000" textAlign="left" width="300"/>
+				<eui:ALabel id="label_Accountnum" text="Label" size="40" left="400" top="85" textColor="0x000000" textAlign="left" width="300"/>
+				<eui:ALabel id="label_ID" text="Label" size="40" bottom="13" left="400" textColor="0x000000" textAlign="left" width="300"/>
+			</e:Group>
+
+		</e:Group>
+		<e:Image source="main_pic_decoration_png" left="20" right="20" top="450"/>
+
+		<e:Image source="main_btn_all_separateline_png" left="40" right="40" top="621"/>
+
+		<e:Image source="main_btn_all_separateline_png" left="40" right="40" top="778"/>
+
+		<e:Image source="main_btn_all_separateline_png" left="40" right="40" top="935"/>
+
+		<e:Image id="img_last" source="main_btn_all_separateline_png" left="40" right="40" top="1092"/>
+		<eui:ALabel id="label_version" text="mine_lbl_version_info" size="30" horizontalCenter="0" bottom="20" width="300" textColor="0xc8c8c8" verticalAlign="middle" textAlign="center"/>
+
+		<eui:AButton id="btn_PersonalCenter" label="mine_lbl_user_info" top="466" height="155" left="0" right="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_userinfo_png" verticalCenter="0" left="67"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_RoomMaster" label="mine_lbl_I_am_anchor" top="623" height="155" left="0" right="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_host_png" verticalCenter="0" left="60"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_InfoNotice" label="mine_btn_msg_announce" top="780" height="155" left="0" right="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_news_png" verticalCenter="0" left="66"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_Setting" label="mine_btn_system_set" top="937" height="155" left="0" right="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_setting_png" verticalCenter="0" left="65"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Image id="img_Info" source="main_pic_dot_png" left="105" top="820"/>
+		<eui:ALabel id="label_InfoNum" text="5" size="25" top="825" left="115" width="15"/>
+		<eui:AButton id="btn_InfoNotice2" label="mine_btn_msg_announce" top="623" height="155" left="0" right="0" x="40" y="458" scaleX="1" scaleY="1" visible="false">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_news_png" verticalCenter="0" left="66"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_Setting2" label="mine_btn_system_set" top="780" height="155" left="0" right="0" x="40" y="615.0000000000001" scaleX="1" scaleY="1" visible="false">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_setting_png" verticalCenter="0" left="65"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Image id="img_Info2" source="main_pic_dot_png" left="105" top="663" visible="false"/>
+		<eui:ALabel id="label_InfoNum2" text="5" size="25" top="669" left="115" width="15" visible="false"/>
+	</e:Group>
+</e:Skin>

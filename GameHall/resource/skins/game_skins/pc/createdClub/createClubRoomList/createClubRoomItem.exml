@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="createClubRoomItem" width="835" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group y="0" anchorOffsetX="0" width="835" x="0">
+		<eui:AButton id="bgBtn" label="" touchEnabled="false" x="0" y="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_roombg_pc_png" source.down="main_btn_roombg_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group right="0" left="0" anchorOffsetX="0" anchorOffsetY="0" top="5" height="50">
+			<eui:ALabel id="roomName" text="" width="142" size="24" textColor="0xe5b564" x="16" y="9" isFixed="true" height="24"/>
+			<eui:ALabel id="anchor" text="主播：" size="18" textColor="0xf9fcfb" width="170" x="176" y="12" height="18"/>
+			<eui:ALabel id="dealer" text="荷官：" size="18" width="170" x="290" y="12" height="18"/>
+
+			<eui:ALabel id="players" text="人数：0" size="15" width="120" textAlign="left" isFixed="true" y="27" x="625" height="15"/>
+			<eui:ALabel id="limit" text="限额：300-1,000" size="15" width="120" textAlign="left" isFixed="true" y="7" x="625" height="15"/>
+			<eui:AButton id="commissionIcon" label="" width="27" height="27" touchEnabled="false" y="12" x="588">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_pic_nocommission_pc_png" source.disabled="main_pic_nocommission2_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:Group id="timeGroup" width="40" height="30" scaleX="1" scaleY="1" y="5" x="780"/>
+		</e:Group>
+		<eui:AImage id="face" width="141" height="206" source="main_pic_dealer_pc_png" x="8" y="55"/>
+		<eui:ALabel id="boardNum" text="局数：" size="16" width="125" textColor="0xaeaeab" x="15" y="274" height="16"/>
+		<e:Group height="206" y="55" width="132" x="699">
+			<e:Image source="created_btn_deleteroom_bg_pc_png" height="206" y="0" width="132" x="0"/>
+			<e:Group id="isShowDeletGroup" height="206" y="0" width="132" x="0">
+			<eui:AButton id="enterRoom" label="" width="39" height="39" mouseTexture="created_btn_into_h_pc_png" x="49" y="19">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="created_btn_into_pc_png" source.down="created_btn_into_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:ALabel text="进入房间" size="15" width="120" textAlign="center" isFixed="true" textColor="0xdfb56f" x="8" y="74" height="15"/>
+			<eui:ALabel id="closeTip" text="关闭房间" size="15" width="120" textColor="0xdfb56f" x="8" height="30" top="172" textAlign="center" wordWrap="true" newlineAble="true" isFixed="true"/>
+			<e:Image source="sidebar_pic_separateline_pc_png" verticalCenter="0" width="132" x="0"/>
+			<e:ToggleButton id="isCloseRoom" label="" width="63" height="42" x="37" y="124">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_control_pc_png" source.down="main_btn_control_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+			</e:Group>
+			<eui:AButton id="deleteRoom" label="" top="56"  mouseTexture="created_btn_deleteroom_h_pc_png"  horizontalCenter="0" visible="false">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="created_btn_deleteroom_pc_png" source.down="created_btn_deleteroom_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:ALabel id="deleteRoomLabel" text="删除房间" horizontalCenter="0" top="116" size="18" width="120" textAlign="center" textColor="0xdfb56f" height="40" verticalAlign="top" visible="false"/>
+		</e:Group>
+		<e:Group id="roadGroup" width="546" height="206" x="154" y="55">
+			<e:Image id="roadMapImg" x="0" y="0" scaleX="1" scaleY="1" source="created_btn_deleteroom_bg_pc_png" width="546" height="206"/>
+			<e:Group id="bead_road" height="206" scaleX="1" scaleY="1" width="204" x="0" y="0"/>
+			<e:Group id="big_road" scaleX="1" scaleY="1" height="102" y="0" width="342" x="204">
+			</e:Group>
+			<e:Group id="big_eye_road" height="51" y="102" scaleX="1" scaleY="1" width="342" x="204"/>
+			<e:Group id="small_road" height="51" y="153" scaleX="1" scaleY="1" width="171" x="204">
+			</e:Group>
+			<e:Group id="cockroach_road" height="51" y="153" scaleX="1" scaleY="1" width="171" x="375"/>
+		</e:Group>
+		<e:Group id="statisticsGroup" height="40" y="260" left="154" right="4">
+			<eui:ALabel id="playerNum" text="闲：0" size="16" width="150" x="4" height="16" textColor="0x51a4ff" y="8"/>
+			<eui:ALabel id="tieNum" text="和：0" width="150" size="16" textAlign="center" x="266" y="8" scaleX="1" scaleY="1" height="16" textColor="0x3cc800"/>
+			<eui:ALabel id="bankerNum" text="庄：0" width="150" size="16" textAlign="right" y="8" scaleX="1" scaleY="1" height="16" textColor="0xff0000" x="521"/>
+			<e:Image id="playerLine" source="main_pic_p_pc_png" width="225" x="0" y="26" height="6"/>
+			<e:Image id="tieLine" width="225" source="main_pic_t_pc_png" x="228" y="26" height="6"/>
+			<e:Image id="bankerLine" width="225" source="main_pic_b_pc_png" y="26" height="6" x="452"/>
+		</e:Group>
+		<eui:ALabel id="shuffleLabel" text="洗牌中" size="37" width="180" textAlign="left" isFixed="true" textColor="0xc8c8c8" x="440" y="140" height="37" visible="false"/>
+		<e:Group id="passwordGroup" width="137" height="30" y="230" x="561">
+			<e:Image scaleX="1" scaleY="1" width="135" height="29" y="0" source="created_pic_password_pc_png" scale9Grid="25,3,10,22" x="2"/>
+			<eui:ALabel id="passWord" text="" size="21" width="88" textAlign="right" isFixed="true" textColor="0x000000" x="34" verticalCenter="0" height="21"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="cardRecordBetItemSkin" width="1080" height="405" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+<e:Group id="groupUp" x="0" y="0" width="100%" height="165">
+	<e:Image source="menu_btn_all_bg2_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Image id="imgBgd" width="100%" height="100%" x="0" y="0" source="menu_btn_all_bg1_png" visible="false"/>
+
+
+
+	<eui:ALabel id="labelCard" text="0" right="100" width="240" size="35" height="35" textAlign="right" verticalAlign="middle" isFixed="true" y="65" textColor="0xe7b570"/>
+
+	<e:Image id="imgShowMore" width="60" height="60" source="record_btn_more_png" verticalCenter="0" right="20"/>
+	<e:Group width="225" height="165" x="0" y="0">
+		<e:Image width="160" height="45" y="93" source="record_pic_timebg_png" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<eui:ALabel id="labelYear" text="2017/10/13" size="30" height="30" verticalAlign="middle" textAlign="center" width="160" y="50" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<eui:ALabel id="labelHour" text="16:08:37" y="100" size="30" height="30" verticalAlign="middle" textAlign="center" width="160" textColor="0xb5b1ac" scaleX="1" scaleY="1" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group height="165" y="0" left="225" right="365">
+		<eui:ALabel id="labelRoomName" text="room_name" y="50" size="30" height="30" verticalAlign="middle" textAlign="left" width="460" isFixed="true" scaleX="1" scaleY="1" horizontalCenter="0" x="234"/>
+		<eui:ALabel id="labelRoundId" text="round_id" y="100" size="25" height="30" verticalAlign="middle" textAlign="left" width="460" isFixed="true" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x969696" x="234"/>
+
+
+	</e:Group>
+</e:Group>
+<e:Group id="groupDown" x="0" y="0" width="100%" height="165">
+	<e:Image source="record_pic_morebg1_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<eui:ALabel id="labelCardDown" text="0" right="100" width="240" size="35" height="35" textAlign="right" verticalAlign="middle" isFixed="true" y="65" x="740" scaleX="1" scaleY="1" textColor="0x000000"/>
+	<e:Image id="imgShowLess" width="60" height="60" verticalCenter="0" right="20" x="1000" y="173" scaleX="1" scaleY="1" source="record_btn_more_p_png"/>
+	<e:Group width="225" height="165" x="0" y="0" scaleX="1" scaleY="1">
+		<e:Image width="160" height="45" y="93" scaleX="1" scaleY="1" horizontalCenter="0" source="record_pic_timebg2_png"/>
+		<eui:ALabel id="labelYearDown" text="2017/10/13" size="30" height="30" verticalAlign="middle" textAlign="center" width="160" y="50" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+		<eui:ALabel id="labelHourDown" text="16:08:37" y="100" size="30" height="30" verticalAlign="middle" textAlign="center" width="160" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+	</e:Group>
+	<e:Group height="165" y="0" left="225" right="365" x="225" scaleX="1" scaleY="1">
+		<eui:ALabel id="labelRoomNameDown" text="room_name" y="50" size="30" height="30" verticalAlign="middle" textAlign="left" width="460" isFixed="true" scaleX="1" scaleY="1" horizontalCenter="0" x="234" textColor="0x000000"/>
+		<eui:ALabel id="labelRoundIdDown" text="round_id" y="100" size="25" height="30" verticalAlign="middle" textAlign="left" width="460" isFixed="true" scaleX="1" scaleY="1" horizontalCenter="0" x="234" textColor="0x000000"/>
+	</e:Group>
+
+
+
+
+
+
+
+</e:Group>
+	<e:Group id="groupDetail" width="100%" x="0" top="165" bottom="0">
+		<e:Image width="100%" height="100%" x="0" y="0" source="record_pic_morebg2_png" locked="true"/>
+		<e:Image width="100%" height="3" x="0" source="record_pic_separateline2_png" scaleX="1" scaleY="1" bottom="0" locked="true"/>
+		<e:Image width="100%" height="3" x="0" source="record_pic_separateline2_png" scaleX="1" scaleY="1" top="0" locked="true"/>
+		<e:Image width="3" source="record_pic_separateline2_png" scaleX="1" scaleY="1" top="3" bottom="3" left="300" locked="true"/>
+		<eui:ALabel text="账号" x="10" verticalCenter="0" width="280" size="35" height="35" textAlign="center" isFixed="true" verticalAlign="middle" textColor="0xe7b570" locked="true"/>
+		<e:Group height="100%" y="0" left="300" right="0">
+			<eui:ALabel text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xE7B570" textAlign="center" verticalAlign="middle" isFixed="true" id="labelAccount7" y="15"/>
+			<e:Group width="50%" height="100%" x="0" y="0">
+				<eui:ALabel id="labelAccount0" text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xe7b570" textAlign="left" verticalAlign="middle" isFixed="true" y="15"/>
+				<eui:ALabel id="labelAccount2" text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xE7B570" textAlign="left" verticalAlign="middle" isFixed="true" y="75"/>
+				<eui:ALabel id="labelAccount4" text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xE7B570" textAlign="left" verticalAlign="middle" isFixed="true" y="135"/>
+				<eui:ALabel id="labelAccount6" text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xE7B570" textAlign="left" verticalAlign="middle" isFixed="true" y="195"/>
+			</e:Group>
+			<e:Group height="100%" y="0" width="50%" right="0">
+				<eui:ALabel text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xE7B570" textAlign="left" verticalAlign="middle" isFixed="true" id="labelAccount1" x="-125" y="15" scaleX="1" scaleY="1"/>
+				<eui:ALabel text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xE7B570" textAlign="left" verticalAlign="middle" isFixed="true" id="labelAccount3" x="-125" y="75" scaleX="1" scaleY="1"/>
+				<eui:ALabel text="" horizontalCenter="0" size="30" height="30" width="250" textColor="0xE7B570" textAlign="left" verticalAlign="middle" isFixed="true" id="labelAccount5" x="-125" y="135" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+
+
+
+	</e:Group>
+</e:Skin>

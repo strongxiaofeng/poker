@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="quotaRecordItemSkin" width="950" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="window_pic_titlebg_pc_png" height="100%" width="100%" x="0" y="0" locked="true"/>
+	<e:Image id="imgBgd" width="100%" height="100%" x="0" y="0" source="window_pic_bg_pc_png" visible="false"/>
+	<e:Image width="110" height="20" x="20" source="record_pic_timebg_pc_png" verticalCenter="11"/>
+	<eui:ALabel id="labelYear" text="2017/10/13" x="20" size="15" height="15" verticalAlign="middle" textAlign="center" width="110" verticalCenter="-17"/>
+	<eui:ALabel id="labelHour" text="16:08:37" x="20" size="15" height="15" verticalAlign="middle" textAlign="center" width="110" textColor="0xb5b1ac" verticalCenter="11"/>
+	<eui:ALabel id="labelAccount" text="account" size="15" height="15" verticalAlign="middle" textAlign="left" width="160" isFixed="true" left="220" verticalCenter="-17"/>
+	<eui:ALabel id="labelRoundId" text="serial_number" size="15" height="15" verticalAlign="middle" textAlign="left" width="160" textColor="0xB5B1AC" isFixed="true" left="220" verticalCenter="11"/>
+	<eui:ALabel id="labelMoney" textAlign="right" width="160" height="15" right="340" text="0" textColor="0xff0000" size="15" isFixed="true" verticalCenter="-17"/>
+	<eui:ALabel id="labelType" text="派彩" size="15" height="15" verticalAlign="middle" textAlign="right" width="190" isFixed="true" right="340" textColor="0xb5b1ac" verticalCenter="11"/>
+	<eui:ALabel id="labelBalance" text="0" right="85" width="150" size="20" height="20" verticalCenter="0" textAlign="right" verticalAlign="middle" isFixed="true" textColor="0xe7b570"/>
+</e:Skin>

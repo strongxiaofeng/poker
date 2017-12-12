@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyPopSkin" width="1080" height="250" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group" height="250" y="0" width="100%" x="0">
+		<e:Image id="bg" source="news_pic_notice_png" y="10" scale9Grid="40,49,55,100" anchorOffsetX="0" scaleX="1" scaleY="1" left="18" right="18"/>
+		<e:Label id="typeTxt" text="系统消息" x="62" y="41" anchorOffsetX="0" width="950" anchorOffsetY="0" height="54" size="50" textColor="0xf0b87b" scaleX="1" scaleY="1"/>
+		<e:Label id="titleTxt" text="系统消息标题" x="62" y="131" anchorOffsetX="0" width="950" anchorOffsetY="0" height="54" size="50" textColor="0xF0B87B" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

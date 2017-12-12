@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="navbarSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group id="topGroup" height="165" left="0" right="0" top="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="main_pic_topbg_png"/>
+		<eui:ALabel id="pageTitle" text="home_btn_home" horizontalCenter="0" x="392" scaleX="1" scaleY="1" verticalCenter="0" height="50" verticalAlign="middle" textAlign="center" width="400" size="45" isFixed="true" textColor="0xe9b76f"/>
+
+		<eui:AButton id="chatBtn" label="" verticalCenter="0" right="40">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_chat_png" source.down="main_btn_chat_p_png" source.disabled="main_btn_chat_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Image id="chatDot" source="main_pic_news_png" width="35" height="35" right="35" verticalCenter="-25"/>
+	</e:Group>
+	<e:Group id="bottomGroup" height="165" left="0" right="0" bottom="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="main_pic_topbg_png" touchEnabled="false"/>
+		<e:Group width="34%" left="0" top="0" bottom="0">
+			<eui:AButton id="clubBtn" width="94" height="140" label="global_lbl_title_club" horizontalCenter="0" verticalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="94" height="100" horizontalCenter="0" top="0" source="main_btn_club_png" source.down="main_btn_club_p_png" source.disabled="main_btn_club_png"/>
+					<e:ALabel id="labelDisplay" size="30" horizontalCenter="0" bottom="0" height="30" textColor.up="0xc8c8c8" textColor.down="0xE9B76F" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+        <e:Group width="32%" top="0" bottom="0" horizontalCenter="0">
+			<eui:AButton id="homeBtn" width="94" height="140" label="home_btn_home" horizontalCenter="0" verticalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="94" height="100" horizontalCenter="0" top="0" source="main_btn_home_png" source.down="main_btn_home_p_png" source.disabled="main_btn_home_png"/>
+					<e:ALabel id="labelDisplay" size="30" horizontalCenter="0" bottom="0" height="30" textColor.up="0xc8c8c8" textColor.down="0xE9B76F" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+        <e:Group top="0" bottom="0" width="34%" right="0">
+			<eui:AButton id="mineBtn" width="94" height="140" label="mine_btn_mine" horizontalCenter="0" verticalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="94" height="100" horizontalCenter="0" top="0" source="main_btn_mine_png" source.down="main_btn_mine_p_png" source.disabled="main_btn_mine_png"/>
+					<e:ALabel id="labelDisplay" size="30" horizontalCenter="0" bottom="0" height="30" textColor.up="0xc8c8c8" textColor.down="0xE9B76F" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+	</e:Group>
+	<e:Group id="assistiveTouch" left="0" right="0" top="0" bottom="0" touchEnabled="false" touchThrough="true">
+		<e:Rect id="touchBgd" left="0" top="0" right="0" bottom="0" fillAlpha="0.01" touchEnabled="true"/>
+		<e:Group id="moreBtnGroup" width="500" height="500" y="1200" anchorOffsetX="250" anchorOffsetY="250" right="-170" touchThrough="true" touchEnabled="false" touchChildren="true">
+			<e:Image id="moreBgd" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="main_pic_more_png" width="194" height="194"/>
+			<eui:AButton id="moreBtn" label="" width="150" height="150" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_more_png" source.down="main_btn_more_p_png" source.disabled="main_btn_more_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="userBtn" label="" width="118" height="118" horizontalCenter="0" verticalCenter="-162">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_user_png" source.down="main_btn_user_p_png" source.disabled="main_btn_user_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="lobbyBtn" label="" verticalCenter="-80" horizontalCenter="-140" width="118" height="118">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_lobby_png" source.down="main_btn_lobby_p_png" source.disabled="main_btn_lobby_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="myclubBtn" label="" horizontalCenter="-140" verticalCenter="80" width="118" height="118">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_myclub_png" source.down="main_btn_myclub_p_png" source.disabled="main_btn_myclub_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="newsBtn" label="" horizontalCenter="0" verticalCenter="162" width="118" height="118">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_news_png" source.down="main_btn_news_p_png" source.disabled="main_btn_news_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:Image id="newsDot" source="main_pic_news_png" width="35" height="35" verticalCenter="-50" horizontalCenter="37"/>
+
+		</e:Group>
+	</e:Group>
+</e:Skin>

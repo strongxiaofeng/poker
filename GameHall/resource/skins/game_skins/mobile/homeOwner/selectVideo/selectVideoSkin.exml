@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="slectVideoSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="main_pic_bg_png" left="-180" right="-180" top="0"/>
+	<e:Group id="VideoList" top="165" left="20" right="20" bottom="0">
+		<e:Scroller id="videoSourceScroller" right="0" left="0" top="0" bottom="0">
+			<e:List id="videoSourceList"/>
+		</e:Scroller>
+	</e:Group>
+
+</e:Skin>

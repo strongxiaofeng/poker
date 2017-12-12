@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VideoItem" width="1040" height="440" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="mainGroup" width="100%" horizontalCenter="0" height="100%" verticalCenter="0">
+		<e:Group scaleX="1" scaleY="1" top="20" anchorOffsetX="0" bottom="0" width="100%" horizontalCenter="0">
+		<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" scale9Grid="15,15,30,27" height="100%" left="0" width="50" source="main_btn_room_png"/>
+		<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" scale9Grid="15,15,30,27" height="100%" right="0" source="main_btn_room_png"/>
+		<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" height="100%" left="20" right="20" alpha="1" source="main_btn_room2_png"/>
+		<e:Group left="0" right="0" top="0">
+			<eui:ALabel id="videoNum" text="编号 : ABCD0123456789" fontFamily="Arial" textColor="0xE9B76F" size="35" textAlign="left" verticalAlign="middle" anchorOffsetX="0" width="475" verticalCenter="0.5" isFixed="true" left="23"/>
+			<eui:ALabel id="anchorName" text="荷官 ：小雪" size="35" textAlign="left" verticalAlign="middle" textColor="0xE9B76F" anchorOffsetX="0" anchorOffsetY="0" width="240" height="37" isFixed="true" verticalCenter="0" left="500"/>
+			<eui:ALabel id="time" text="23" size="45" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="100" height="75" verticalCenter="0" right="0" textColor="0xe9b76f" visible="false"/>
+			<eui:AImage id="shuffleIcon" width="100" height="75" top="0" right="0" source="desk_pic_shuffle_png" visible="false"/>
+			<e:Group id="stageGroup" width="80" right="27" bottom="10" height="57"/>
+		</e:Group>
+		<e:Image id="touxiangImg" left="10" top="75" width="230" height="335" source="main_pic_dealer_png"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" height="335" y="75" left="250" right="10">
+			<e:Image source="pic_popup2_bg_png" right="0" left="0" top="0" bottom="0"/>
+			<e:Group id="roadMap" anchorOffsetX="0" height="335" y="0" width="527" right="253"/>
+			<e:Group id="preViewGroup" height="50%" top="0" right="0" width="252">
+			<eui:AButton id="preViewBtn" label="" width="62" horizontalCenter="0" height="62" verticalCenter="-30" enabled="true">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image source.up="mine_btn_preview_png" source.down="mine_btn_preview_p_png" source.disabled="mine_btn_preview_png" horizontalCenter="0" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel text="预览" horizontalCenter="0" width="120" height="40" verticalCenter="62" verticalAlign="middle" textAlign="center" size="35" textColor.down="0x654D29" textColor="0xE9B76F"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			</e:Group>
+			<e:Group id="sureGroup" height="50%" bottom="0" right="0" width="252">
+			<eui:AButton id="sureBtn" label="" horizontalCenter="0" verticalCenter="-30" x="-293.5" y="-121" scaleX="1" scaleY="1" enabled="true" width="62" height="62">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image source.up="mine_btn_confirm_png" source.down="mine_btn_confirm_p_png" horizontalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel text="确定" horizontalCenter="0" verticalCenter="62" width="120" height="40" size="35" verticalAlign="middle" textAlign="center" textColor.down="0x654D29" textColor="0xe9b76f"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+				<e:Image source="mine_pic_separateline2_png" left="0" right="0" top="0"/>
+			</e:Group>
+			<e:Image id="imgV" source="mine_pic_separateline2_png" right="0" width="252" y="166"/>
+		</e:Group>
+		</e:Group>
+		<eui:ALabel id="shuffleLabel" text="洗牌中" size="59" width="200" isFixed="true" textColor="0xadadad" alpha="0.8" textAlign="right" verticalCenter="27.5" right="453"/>
+	</e:Group>
+
+</e:Skin>

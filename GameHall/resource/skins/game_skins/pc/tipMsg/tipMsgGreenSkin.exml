@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="tipMsgGreenSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="pic_popup2_pc_png" horizontalCenter="0" verticalCenter="0"/>
+	<eui:ALabel id="txt" text="复制成功" width="1080" size="25" horizontalCenter="0" textAlign="center" verticalCenter="0" textColor="0x00ce38"/>
+</e:Skin>

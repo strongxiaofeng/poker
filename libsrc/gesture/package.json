@@ -1,0 +1,15 @@
+{
+	"name": "egret",
+	"version": "5.0.5",
+	"modules": [
+		{
+			"name": "gesture",
+			"description": "gesture",
+			"files": [
+				"gesture.ts",
+				"gesture.min.ts"
+			],
+			"root": "src"
+		}
+	]
+}

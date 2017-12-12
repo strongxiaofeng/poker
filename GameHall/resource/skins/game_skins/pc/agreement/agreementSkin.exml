@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="agreementSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image left="0" right="0" top="0" bottom="0" source="bg_mask_pc_png" alpha="0.6"/>
+	<e:Group id="agreementGroup" left="0" bottom="0" right="0" top="0">
+		<e:Group width="970" height="743" verticalCenter="0" horizontalCenter="0">
+			<e:Image source="login_pic_protocolbg_pc_png" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel text="login_lbl_agreement_title" size="25" horizontalCenter="0" top="33" textColor="0xffffff" width="900" verticalAlign="middle" textAlign="center"/>
+			<e:Image source="login_pic_decoration_pc_png" horizontalCenter="0" top="72"/>
+			<e:Scroller width="900" horizontalCenter="0" bottom="75" top="105" x="5" y="89" scaleX="1" scaleY="1">
+				<eui:ALabel id="agreementLabel" text="" size="18" textColor="0xffffff"/>
+			</e:Scroller>
+            <eui:AButton id="refuseBtn" label="login_btn_user_refuse" width="475" bottom="15" horizontalCenter="-239.5" left="8" mouseTexture="btn_confirm_h_pc_png">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image name="imgMouse" width="100%" height="100%" source="btn_confirm_pc_png" source.down="btn_confirm_p_pc_png" source.disabled="btn_confirm_pc_png" scale9Grid="3,2,6,46"/>
+						<eui:ALabel name="labelDisplay" textAlign="center" width="400" isFixed="true" id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xCA1113" textColor.down="0xe9b76f" size="25"/>
+					</e:Skin>
+				</eui:skinName>
+            </eui:AButton>
+            <eui:AButton id="agreeBtn" label="login_btn_user_agree" width="475" bottom="15" horizontalCenter="239.5" right="8" enabled="true" mouseTexture="btn_confirm_h_pc_png">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image name="imgMouse" width="100%" height="100%" source="btn_confirm_pc_png" source.down="btn_confirm_p_pc_png" source.disabled="btn_confirm_pc_png" scale9Grid="3,2,6,46" scaleX="-1" left="0"/>
+						<eui:ALabel name="labelDisplay" textAlign="center" width="400" isFixed="true" id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x25BF4E" textColor.down="0xe9b76f" size="25"/>
+					</e:Skin>
+				</eui:skinName>
+            </eui:AButton>
+		</e:Group>
+
+	</e:Group>
+</e:Skin>

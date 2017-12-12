@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyList" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect height="1920" y="0" left="0" right="0" fillColor="0x302f2f"/>
+	<e:Group height="165" y="-3" left="0" right="0">
+		<e:Image left="0" right="0" bottom="0" top="0" source="main_pic_topbg_png"/>
+		<e:Image id="goBackBtn" source="main_btn_return_png" verticalCenter="0" left="35"/>
+		<e:Label id="clubName" text="俱乐部名称" size="50" horizontalCenter="0" verticalCenter="0" textColor="0xE7B570"/>
+	</e:Group>
+	<e:Scroller width="100%" height="1724" x="0" y="172" anchorOffsetY="0">
+		<e:List id="itemList"/>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameRuleSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="menu_btn_all_bg2_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+
+	<e:Group id="groupTop" top="0" right="0" left="0" height="165">
+		<eui:AButton id="btnClose" label="" scaleX="1" scaleY="1" verticalCenter="0" left="40">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_return_png" source.down="main_btn_return_p_png" source.disabled="main_btn_return_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+        <e:ALabel text="游戏规则" size="50" horizontalCenter="0" verticalCenter="0" textColor="0xe7b570" width="600" verticalAlign="middle" textAlign="center" isFixed="true"/>
+	</e:Group>
+	<e:Group id="groupTitle" height="100" top="165" left="0" right="0">
+		<e:Image top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0"/>
+		<e:Image source="main_pic_decoration3_png" horizontalCenter="280" verticalCenter="0"/>
+        <e:Image source="main_pic_decoration3_png" horizontalCenter="-280" verticalCenter="0" scaleX="-1"/>
+		<eui:ALabel id="labelTitle" text="百家乐" verticalCenter="0" horizontalCenter="0" width="400" height="50" size="50" verticalAlign="middle" textAlign="center"/>
+	</e:Group>
+	<e:Group id="groupRule" right="0" top="265" bottom="0" left="0">
+		<e:Scroller id="scrollerRule" top="0" left="0" bottom="0" right="0">
+			<e:Group>
+				<e:Group id="groupBasic" left="0" right="0" height="300" x="0" scaleX="1" scaleY="1" top="0">
+					<e:Image top="100" source="main_pic_decoration_png" left="19" right="19" locked="true"/>
+					<e:ALabel text="game_btn_rule" size="40" textColor="0xe7b570" width="600" verticalAlign="middle" textAlign="left" top="25" height="40" isFixed="true" left="415"/>
+					<e:Image horizontalCenter="-150" top="20" source="info_pic_decoration_png"/>
+					<e:Image source="info_pic_dot_png" width="20" height="20" top="150" horizontalCenter="-510"/>
+					<e:ALabel id="longLabel0" text="game_lbl_base_rule_descrp" size="35" verticalAlign="top" textAlign="left" height="132" isFixed="false" textColor="0xc8c8c8" newlineAble="true" width="960" wordWrap="true" top="140" left="60"/>
+				</e:Group>
+				<e:Group id="groupCard" top="300" left="0" right="0" height="800">
+					<e:Image id="bgImg1" top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0"/>
+					<e:Image top="100" source="main_pic_decoration_png" left="19" right="19" locked="true"/>
+					<e:ALabel text="game_lbl_card_point" size="40" textColor="0xe7b570" width="600" verticalAlign="middle" textAlign="left" top="25" height="40" wordWrap="true" left="415"/>
+					<e:Image horizontalCenter="-150" top="20" source="info_pic_decoration_png" locked="true"/>
+					<e:Image id="longLabelIcon1" source="info_pic_dot_png" width="20" height="20" horizontalCenter="-510" top="650"/>
+					<e:ALabel id="longLabel1" text="game_lbl_card_point_descrp1" size="35" verticalAlign="top" textAlign="left" textColor="0xc8c8c8" height="40" width="960" wordWrap="true" horizontalCenter="0" top="640"/>
+					<e:Image id="longLabelIcon2" source="info_pic_dot_png" width="20" height="20" top="720" horizontalCenter="-510"/>
+					<e:ALabel id="longLabel2" text="game_lbl_card_point_descrp2" size="35" verticalAlign="middle" textAlign="left" textColor="0xc8c8c8" height="40" width="960" wordWrap="true" horizontalCenter="0" top="710"/>
+					<e:Image source="info_pic_lattice_png" top="160" width="1056" horizontalCenter="0"/>
+					<e:Image source="info_pic_lattice_png" top="320" width="1056" horizontalCenter="0"/>
+					<e:Image top="480" source="info_pic_lattice2_png" horizontalCenter="-176"/>
+					<e:ALabel text="A" size="24" textAlign="center" verticalAlign="middle" textColor="0xe7b570" width="70" height="35" y="177" horizontalCenter="-261"/>
+					<e:ALabel text="game_lbl_card_point_table_head3" y="177" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-85" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head4" y="177" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="88" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head5" y="177" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="265" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head6" y="177" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="438" isFixed="true"/>
+					<e:ALabel text="1" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" y="241" horizontalCenter="-261"/>
+					<e:ALabel text="2" y="241" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-85"/>
+					<e:ALabel text="3" y="241" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="88"/>
+					<e:ALabel text="4" y="241" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="265"/>
+					<e:ALabel text="5" y="241" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="438"/>
+					<e:ALabel text="game_lbl_card_point_table_head8" y="335" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-85"/>
+					<e:ALabel text="game_lbl_card_point_table_head9" y="335" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="88"/>
+					<e:ALabel text="game_lbl_card_point_table_head10" y="335" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="265"/>
+					<e:ALabel text="game_lbl_card_point_table_head11" y="335" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="438"/>
+					<e:ALabel text="game_lbl_card_point_table_head7" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" y="335" horizontalCenter="-261"/>
+					<e:ALabel text="7" y="397" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-85"/>
+					<e:ALabel text="8" y="397" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="88"/>
+					<e:ALabel text="9" y="397" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="265"/>
+					<e:ALabel text="10" y="397" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="438"/>
+					<e:ALabel text="6" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" y="397" horizontalCenter="-261"/>
+					<e:ALabel text="Q" y="495" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-85"/>
+					<e:ALabel text="K" y="495" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="88"/>
+					<e:ALabel text="J" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" y="495" horizontalCenter="-261"/>
+					<e:ALabel text="0" y="557" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-85"/>
+					<e:ALabel text="0" y="557" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="88"/>
+					<e:ALabel text="0" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" y="557" horizontalCenter="-261"/>
+					<e:ALabel text="game_lbl_card_point_table_head1" y="495" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-441" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head2" y="559" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-441" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head1" y="335" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-441" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head2" y="396" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-441" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head1" y="175" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-441" isFixed="true"/>
+					<e:ALabel text="game_lbl_card_point_table_head2" y="237" size="24" textAlign="center" verticalAlign="middle" textColor="0xE7B570" width="70" height="35" horizontalCenter="-441" isFixed="true"/>
+				</e:Group>
+				<e:Group id="groupCount" top="1100" left="0" right="0" height="2300">
+					<e:Image top="100" source="main_pic_decoration_png" left="19" right="19"/>
+					<e:ALabel text="game_lbl_settle_rule" size="40" textColor="0xE7B570" width="600" verticalAlign="middle" textAlign="left" top="25" height="40" isFixed="true" left="415"/>
+					<e:Image horizontalCenter="-150" top="20" source="info_pic_decoration_png"/>
+					<e:Image id="longLabelIcon3" source="info_pic_dot_png" width="20" top="157" height="20" horizontalCenter="-510"/>
+					<e:ALabel id="longLabel3" text="game_lbl_settle_rule_descrp1" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="960" top="150" height="40" horizontalCenter="0" wordWrap="true"/>
+					<e:Image id="longLabelIcon4" source="info_pic_dot_png" width="20" top="216" height="20" horizontalCenter="-510"/>
+					<e:ALabel id="longLabel4" text="game_lbl_settle_rule_descrp2" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="960" top="210" height="100" newlineAble="true" horizontalCenter="0"/>
+					<e:Image id="longLabelIcon5" source="info_pic_dot_png" width="20" top="427" height="20" horizontalCenter="-510"/>
+					<e:ALabel id="longLabel5" text="game_lbl_card_point" size="35" verticalAlign="top" textAlign="left" width="900" top="420" height="40" textColor="0xe7b570" left="60"/>
+					<e:ALabel id="longLabel6" text="game_lbl_cardpoint_rule" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="960" top="480" height="510" newlineAble="true" horizontalCenter="0" wordWrap="true"/>
+					<e:ALabel id="longLabel7" text="牌面从2到9的扑克牌点数不变，均依照其显示的点数计算；" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="960" top="450" height="40" newlineAble="true" horizontalCenter="0" visible="false"/>
+					<e:ALabel id="longLabel8" text="牌面为10、J、Q及K的扑克牌则被算作零点。" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="960" top="520" height="40" newlineAble="true" horizontalCenter="0" visible="false"/>
+					<e:ALabel id="longLabel9" text="当所有牌的点数总和超过9时，则只算点数总和中的个位。因此一个8和一个9的牌点大小为：7点(8+9=17)。因百家乐中只计算扑克牌的个位数值，因此可能的最大点数为9点（如一个4和一个5：4+5=9），最少则为0点（如一个10和一个Q：10+10=20，只算个位是0）。" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="960" top="590" height="400" newlineAble="true" horizontalCenter="0" lineSpacing="40" visible="false"/>
+					<e:ALabel id="longLabel10" text="game_lbl_for_example" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="960" top="1010" height="40" isFixed="true" horizontalCenter="0"/>
+					<e:Group id="imgGroup1" horizontalCenter="0.5" top="1080">
+						<e:Image source="mpoker_pic_41_png" width="120" height="170" x="0" y="0"/>
+						<e:Image width="120" height="170" source="mpoker_pic_20_png" x="140" y="0"/>
+						<e:Image width="120" height="170" rotation="90" source="mpoker_pic_36_png" x="447" y="50"/>
+						<e:Image height="170" width="120" source="mpoker_pic_1_png" x="543" y="0"/>
+						<e:Image width="120" height="170" y="0" source="mpoker_pic_16_png" x="677"/>
+						<e:Image height="170" rotation="90" y="50" width="120" source="mpoker_pic_0_png" x="980"/>
+						<e:ALabel text="game_lbl_cardpoint_explain1" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" width="485" isFixed="true" height="40" x="-10" y="200"/>
+						<e:ALabel text="game_lbl_cardpoint_explain2" size="35" verticalAlign="top" textAlign="right" textColor="0xC8C8C8" width="485" isFixed="true" height="40" x="495" y="200"/>
+						<e:Image width="2" height="270" source="btn_login_d_png" x="488" y="0"/>
+						<e:Image width="120" height="170" source="mpoker_pic_12_png" x="360" y="310"/>
+						<e:Image width="120" height="170" source="mpoker_pic_19_png" x="500" y="310"/>
+						<e:ALabel text="game_lbl_talanted_winner" size="35" verticalAlign="top" textAlign="center" width="200" isFixed="true" height="40" textColor="0xe7b570" y="500" x="430"/>
+						<e:Image source="info_pic_dot_png" width="20" height="20" x="380" y="506"/>
+					</e:Group>
+					<e:ALabel id="longLabel11" wordWrap="true" text="game_lbl_talanted_winner_descrp" size="35" verticalAlign="top" textColor="0xC8C8C8" height="134" newlineAble="true" width="960" horizontalCenter="0" top="1634"/>
+					<e:Group id="imgGroup2" horizontalCenter="23.5" top="1810">
+						<e:Image width="120" height="170" source="mpoker_pic_0_png" x="140" y="0"/>
+						<e:Image width="120" height="170" source="mpoker_pic_0_png" x="0" y="0"/>
+						<e:Image width="120" height="170" rotation="90" source="mpoker_pic_19_png" x="447" y="50"/>
+						<e:ALabel text="game_lbl_pair" size="35" verticalAlign="top" textAlign="center" width="200" isFixed="true" height="40" textColor="0xE7B570" x="100" y="200"/>
+						<e:Image source="info_pic_dot_png" width="20" height="20" x="90" y="207"/>
+					</e:Group>
+					<e:ALabel id="longLabel12" wordWrap="true" text="game_lbl_pair_card_descrp" size="35" verticalAlign="top" textColor="0xC8C8C8" height="200" newlineAble="true" width="960" horizontalCenter="0" top="2060"/>
+				</e:Group>
+				<e:Group id="groupResult" top="3400" left="0" right="0" height="1150">
+					<e:Image id="bgImg2" top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0"/>
+					<e:Image top="100" source="main_pic_decoration_png" left="19" right="19"/>
+					<e:ALabel text="game_lbl_card_point" size="40" left="415" textColor="0xE7B570" width="600" verticalAlign="middle" textAlign="left" top="25" height="40" isFixed="true"/>
+					<e:Image horizontalCenter="-150" top="20" source="info_pic_decoration_png"/>
+					<e:Image id="longLabelIcon13" source="info_pic_dot_png" width="20" height="20" top="135" horizontalCenter="-510"/>
+					<e:ALabel id="longLabel13" text="game_lbl_card_point_descrp2" size="35" verticalAlign="middle" isFixed="true" wordWrap="true" textAlign="left" newlineAble="true" textColor="0xC8C8C8" height="40" width="960" top="125" horizontalCenter="0"/>
+					<e:ALabel text="房间类型" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="259" horizontalCenter="-391" visible="false"/>
+					<e:ALabel text="闲家投注" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="347" horizontalCenter="-391" visible="false"/>
+					<e:ALabel text="庄家投注" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="477" horizontalCenter="-391" visible="false"/>
+					<e:ALabel text="和局投注" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="570" horizontalCenter="-391" visible="false"/>
+					<e:Group left="0" top="0" bottom="0" right="0">
+						<e:Group id="imgGroup3" top="240" horizontalCenter="0">
+							<e:Image source="info_pic_lattice3_png" y="0" scaleX="1" scaleY="1" width="1056" x="0"/>
+							<e:ALabel text="game_lbl_result_table_head1" size="30" verticalAlign="middle" textAlign="center" isFixed="true" height="30" width="170" y="19" textColor="0xe7b570" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_content1" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="19" scaleX="1" scaleY="1" x="553"/>
+							<e:ALabel text="game_lbl_result_table_head2" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="107" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_head3" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="237" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_head4" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="330" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_content3" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="81" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content4" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="143" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content3" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="207" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content4" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="266" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content4" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="331" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="1:1" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="81" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="game_lbl_result_table_content5" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="143" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="1:0.95" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="207" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="game_lbl_result_table_content5" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="266" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="1:8" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="331" scaleX="1" scaleY="1" x="863"/>
+						</e:Group>
+					</e:Group>
+					<e:Group left="0" top="0" bottom="0" right="0">
+						<e:Group id="imgGroup4" top="650" horizontalCenter="0">
+							<e:Image y="0" scaleX="1" scaleY="1" source="info_pic_lattice4_png" width="1056" x="0"/>
+							<e:ALabel text="game_lbl_result_table_head1" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="21" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_head2" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="113" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_head3" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="270" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_head4" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="397" scaleX="1" scaleY="1" x="52"/>
+							<e:ALabel text="game_lbl_result_table_content2" size="30" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xE7B570" height="30" width="170" y="16" scaleX="1" scaleY="1" x="553"/>
+							<e:ALabel text="game_lbl_result_table_content3" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="81" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content4" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="143" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content6" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="366" y="207" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content7" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="405" y="269" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content4" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="333" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="game_lbl_result_table_content4" size="30" verticalAlign="middle" textAlign="left" isFixed="true" textColor="0xE7B570" height="30" width="170" y="397" scaleX="1" scaleY="1" x="285"/>
+							<e:ALabel text="1:1" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="81" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="game_lbl_result_table_content5" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="143" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="1:1" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="207" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="1:0.5" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="271" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="game_lbl_result_table_content5" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="333" scaleX="1" scaleY="1" x="863"/>
+							<e:ALabel text="1:8" size="30" verticalAlign="middle" textAlign="right" isFixed="true" textColor="0xE7B570" height="30" width="170" y="397" scaleX="1" scaleY="1" x="863"/>
+						</e:Group>
+					</e:Group>
+				</e:Group>
+				<e:Group id="groupDouble" top="4550" height="540" left="0" right="0">
+					<e:Image top="100" source="main_pic_decoration_png" left="19" right="19"/>
+					<e:ALabel text="game_lbl_pair" size="40" left="500" textColor="0xE7B570" width="250" verticalAlign="middle" textAlign="left" top="25" height="40" isFixed="true"/>
+					<e:Image horizontalCenter="-80" top="20" source="info_pic_decoration_png"/>
+					<e:Image id="longLabelIcon14" source="info_pic_dot_png" width="20" height="20" top="170" horizontalCenter="-510"/>
+					<e:ALabel id="longLabel14" text="game_lbl_pair_decrp" size="35" verticalAlign="top" textAlign="left" textColor="0xC8C8C8" height="110" width="960" top="160" newlineAble="true" horizontalCenter="0"/>
+					<e:Group id="imgGroup5" horizontalCenter="0" top="300">
+						<e:Image source="info_pic_lattice5_png" x="0" y="0"/>
+						<e:ALabel text="game_lbl_result_table_content1" size="35" textColor="0xE7B570" width="317" verticalAlign="middle" textAlign="center" height="35" isFixed="true" y="13" x="369.9999999999999"/>
+						<e:ALabel text="game_lbl_pair_table_head1" size="35" textColor="0xE7B570" width="317" verticalAlign="middle" textAlign="center" height="35" isFixed="true" y="77" x="105"/>
+						<e:ALabel text="game_lbl_pair_table_head2" size="35" textColor="0xE7B570" width="317" verticalAlign="middle" textAlign="center" height="35" isFixed="true" y="141" x="105"/>
+						<e:ALabel text="1:11" size="35" textColor="0xE7B570" width="317" verticalAlign="middle" textAlign="center" height="35" isFixed="true" y="77" x="631"/>
+						<e:ALabel text="1:11" size="35" textColor="0xE7B570" width="317" verticalAlign="middle" textAlign="center" height="35" isFixed="true" y="141" x="631"/>
+					</e:Group>
+				</e:Group>
+				<e:Group id="groupThird" top="5090" left="0" right="0" height="1600">
+					<e:Image top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0"/>
+					<e:Image top="100" source="main_pic_decoration_png" left="19" right="19"/>
+					<e:ALabel text="game_lbl_third_card_title" size="40" left="415" textColor="0xE7B570" width="600" verticalAlign="middle" textAlign="left" top="25" height="40" isFixed="true"/>
+					<e:Image horizontalCenter="-150" top="20" source="info_pic_decoration_png"/>
+					<e:Image horizontalCenter="0" top="160" source="info_pic_lattice6_png"/>
+					<e:ALabel text="game_lbl_third_card_table_head1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="180" newlineAble="true" horizontalCenter="-425"/>
+					<e:ALabel text="game_lbl_third_card_table_title1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="186" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_title2" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="180" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="0" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="303" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="303" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="303" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="431" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="431" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="431" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="556" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="2" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="556" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="556" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content4" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="679" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="3" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="679" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="679" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content5" wordWrap="true" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="809" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="4" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="809" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="809" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content6" wordWrap="true" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="934" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="5" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="934" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="934" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content7" wordWrap="true" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="1058" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="6" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1058" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1058" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content3" wordWrap="true" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="1183" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="7" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1183" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content1" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1183" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content2" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="1310" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="8" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1310" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content2" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1310" newlineAble="true" horizontalCenter="-200"/>
+					<e:ALabel text="game_lbl_third_card_table_content2" size="30" textColor="0xE7B570" width="529" verticalAlign="middle" textAlign="center" height="90" y="1437" newlineAble="true" horizontalCenter="226.5"/>
+					<e:ALabel text="9" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1437" newlineAble="true" horizontalCenter="-424"/>
+					<e:ALabel text="game_lbl_third_card_table_content2" size="30" textColor="0xE7B570" width="180" verticalAlign="middle" textAlign="center" height="90" y="1437" newlineAble="true" horizontalCenter="-200"/>
+				</e:Group>
+				<e:Group id="groupThird0" top="6690" left="0" right="0" height="2430">
+					<e:Image top="100" source="main_pic_decoration_png" left="19" right="19" locked="true"/>
+					<e:ALabel text="game_lbl_road_map_rule_title" size="40" left="415" textColor="0xE7B570" width="600" verticalAlign="middle" textAlign="left" top="25" height="40" isFixed="true"/>
+					<e:Image horizontalCenter="-160" top="20" source="info_pic_decoration_png" locked="true"/>
+					<e:Image source="info_pic_dot_png" width="20" height="20" top="160" horizontalCenter="-510"/>
+					<e:ALabel text="game_lbl_road_map_rule1" size="40" verticalAlign="top" textAlign="left" isFixed="true" width="960" top="150" height="40" textColor="0xe7b570" horizontalCenter="0"/>
+					<e:ALabel id="longLabel15" text="game_lbl_road_map_rule1_descrp" size="35" verticalAlign="top" textAlign="left" height="110" newlineAble="true" textColor="0xc8c8c8" top="220" width="980" horizontalCenter="0"/>
+					<e:Group id="imgGroup6" horizontalCenter="-14" top="360">
+						<e:Image source="info_pic_roadmap_png" x="144" y="0"/>
+						<e:Image source="info_pic_roadmap2_png" x="28" y="400"/>
+						<e:ALabel text="game_lbl_maproad_result_player" size="35" verticalAlign="top" textAlign="left" height="40" newlineAble="true" textColor="0xC8C8C8" width="220" y="463" isFixed="true" x="114"/>
+						<e:ALabel text="game_lbl_maproad_result_player_pair" size="35" verticalAlign="top" textAlign="left" height="40" newlineAble="true" textColor="0xC8C8C8" width="220" isFixed="true" y="620" x="114" />
+						<e:ALabel text="game_lbl_maproad_result_banker_pair" size="35" verticalAlign="top" textAlign="left" height="40" newlineAble="true" textColor="0xC8C8C8" width="220" isFixed="true" y="620" x="442" />
+						<e:ALabel text="game_lbl_maproad_result_banker" size="35" verticalAlign="top" textAlign="left" height="40" newlineAble="true" textColor="0xC8C8C8" width="220" isFixed="true" y="460" x="442" />
+						<e:ALabel text="game_lbl_maproad_result_tie" size="35" verticalAlign="top" textAlign="left" height="40" newlineAble="true" textColor="0xC8C8C8" width="220" isFixed="true" y="460" x="792" />
+						<e:Image source="info_pic_dot_png" width="20" height="20" x="0" y="770"/>
+						<e:ALabel text="game_lbl_road_map_rule2" size="40" verticalAlign="top" textAlign="left" isFixed="true" width="960" height="40" textColor="0xE7B570" x="40" y="760"/>
+					</e:Group>
+					<e:ALabel id="longLabel16" text="game_lbl_road_map_rule2_descrp"  wordWrap="true" size="35" verticalAlign="top" textAlign="left" height="110" newlineAble="true" textColor="0xC8C8C8" top="1190" width="980" horizontalCenter="0"/>
+					<e:Group id="imgGroup7" horizontalCenter="0.5" top="1340">
+						<e:Image source="info_pic_roadmap3_png" x="0" y="0"/>
+						<e:Image source="info_pic_roadmap4_png" height="233" x="1" y="330"/>
+						<e:ALabel text="game_lbl_road_map_result_descrp" size="35" wordWrap="true" isFixed="true" verticalAlign="top" textAlign="left" height="40" newlineAble="true" textColor="0xC8C8C8" width="600" y="372" x="369"/>
+						<eui:AButton label="game_lbl_probe_player" width="180" height="75" enabled="false" x="142" y="610">
+							<eui:skinName>
+							<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="desk_btn_blue_png"/>
+								<e:ALabel id="labelDisplay" width="100" height="30" isFixed="true" horizontalCenter="0" verticalCenter="0" alpha="1" size="30" textColor="0xFFFFFF"/>
+							</e:Skin>
+							</eui:skinName>
+						</eui:AButton>
+						<eui:AButton label="game_lbl_probe_banker" width="180" height="75" enabled="false" x="662" y="610">
+							<eui:skinName>
+							<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="desk_btn_red_png"/>
+								<e:ALabel id="labelDisplay" width="100" height="30" isFixed="true" horizontalCenter="0" verticalCenter="0" alpha="1" size="30" textColor="0xFFFFFF"/>
+							</e:Skin>
+							</eui:skinName>
+						</eui:AButton>
+						<e:Image width="2" source="btn_login_d_png" height="420" x="491" y="610"/>
+						<e:ALabel text="game_lbl_probe_player_descrp" wordWrap="true" size="35" verticalAlign="top" textAlign="left" newlineAble="true" textColor="0xC8C8C8" width="376" height="320" x="44" y="729.9999999999997"/>
+						<e:ALabel text="game_lbl_probe_banker_descrp" wordWrap="true" size="35" verticalAlign="top" textAlign="left" newlineAble="true" textColor="0xC8C8C8" width="376" height="320" x="564" y="729.9999999999997"/>
+					</e:Group>
+				</e:Group>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

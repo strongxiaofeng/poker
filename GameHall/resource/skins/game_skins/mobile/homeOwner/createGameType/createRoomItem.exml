@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="createRoomItem" width="1040" height="155" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group y="0" left="0" right="0">
+		<e:Image source="mine_pic_separateline_png" y="153" left="40" right="40"/>
+		<e:Image id="gameTypeIcon" source="icon_pic_baccarat_png" verticalCenter="0" left="58"/>
+		<eui:AButton id="gameTypeBtn" label="百家乐" left="0" right="0" top="0" bottom="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image id="rightImg" right="53" verticalCenter="0" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png"/>
+				<e:Label id="labelDisplay" text="" textColor.up="0xE9B76F" textColor.down="0xCBCBCB"  x="229" y="45" size="48"/>
+				<e:Image source.down="mine_btn_enter_mask_png" source.up="" right="0" left="0" top="0" bottom="0"/>
+				<e:Rect width="100%" height="100%" alpha="0.01"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

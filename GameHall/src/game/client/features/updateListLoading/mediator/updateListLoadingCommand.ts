@@ -1,0 +1,4 @@
+enum UpdateList {
+    initListener,
+    showUI
+}

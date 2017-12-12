@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="watchBacItem" width="470" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="looker_pic_table_pc_png" scaleX="-1" scaleY="1" horizontalCenter="53" top="0"/>
+		<e:Image source="looker_pic_table_pc_png" scaleX="1" scaleY="1" horizontalCenter="-53" top="0"/>
+		<eui:ALabel id="seatLabel1" text="玩家自己昵称" textColor="0xbcbcbc" size="18" width="120" verticalAlign="middle" textAlign="right" left="0" top="2"/>
+		<e:Image id="seatImg1" source="desk_pic_empty_pc_png" width="25" height="24" top="0" left="90" visible="false"/>
+		<e:Group width="20" height="20" top="1" left="122">
+			<e:Image id="seatNImg1" source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel id="seatNLabel1" text="1" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xf9f5e5"/>
+		</e:Group>
+		<eui:ALabel id="seatLabel2" text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="right" left="5" top="47"/>
+		<e:Image id="seatImg2" source="desk_pic_empty_pc_png" width="25" height="24" top="45" left="94" visible="false"/>
+		<e:Group width="20" height="20" top="46" left="124">
+			<e:Image id="seatNImg2" source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel id="seatNLabel2" text="2" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xF9F5E5"/>
+		</e:Group>
+		<eui:ALabel id="seatLabel3" text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="right" left="55" top="71"/>
+		<e:Image id="seatImg3" source="desk_pic_empty_pc_png" width="25" height="24" top="69" left="144" visible="false"/>
+		<e:Group width="20" height="20" top="70" left="175">
+			<e:Image id="seatNImg3" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" source="looker_pic_seat2_pc_png"/>
+			<eui:ALabel id="seatNLabel3" text="3" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0x686868"/>
+		</e:Group>
+		<eui:ALabel id="seatLabel5" text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="right" top="103" horizontalCenter="0"/>
+		<e:Image id="seatImg5" source="desk_pic_empty_pc_png" width="25" height="24" top="101" horizontalCenter="0" visible="false"/>
+		<e:Group width="20" height="20" top="78" horizontalCenter="0">
+			<e:Image id="seatNImg5" source="looker_pic_seat2_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel id="seatNLabel5" text="5" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0x686868"/>
+		</e:Group>
+		<eui:ALabel id="seatLabel6" text="玩家自己昵称" textColor="0xBCBCBC" size="18" verticalAlign="middle" textAlign="left" top="71" right="55" width="120"/>
+		<e:Image id="seatImg6" source="desk_pic_empty_pc_png" width="25" height="24" top="69" right="145" visible="false"/>
+		<e:Group height="20" top="70" right="175" width="20">
+			<e:Image id="seatNImg6" source="looker_pic_seat2_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel id="seatNLabel6" text="6" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0x686868"/>
+		</e:Group>
+		<eui:ALabel id="seatLabel7" text="玩家自己昵称" textColor="0xBCBCBC" size="18" verticalAlign="middle" textAlign="left" top="47" right="2" width="120"/>
+		<e:Image id="seatImg7" source="desk_pic_empty_pc_png" width="25" height="24" top="45" right="94" visible="false"/>
+		<e:Group height="20" top="46" right="124" width="20">
+			<e:Image id="seatNImg7" source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel id="seatNLabel7" text="7" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xF9F5E5"/>
+		</e:Group>
+		<eui:ALabel id="seatLabel8" text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="left" top="2" right="0"/>
+		<e:Image id="seatImg8" source="desk_pic_empty_pc_png" width="25" height="24" top="0" right="92" visible="false"/>
+		<e:Group width="20" height="20" top="1" right="122">
+			<e:Image id="seatNImg8" source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel id="seatNLabel8" text="8" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xF9F5E5"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

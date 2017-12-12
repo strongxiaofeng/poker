@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="chatItemSkin" width="409" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="seatImg" source="chat_pic_seatnum_bg_png" x="5" y="5" width="19" height="19"/>
+	<e:Image id="hostIcon" x="5" y="5" width="19" height="19" source="chat_pic_roomhost_pc_png"/>
+	<e:BitmapLabel id="leftSeatNum" height="20" x="11" y="7" text="2" font="game_share_gray_18_pc_fnt"/>
+	<e:Label id="leftNameTxt" text="哪个发的" x="28" y="6" size="16" textColor="0xacaba2" fontFamily="SimHei"/>
+	<e:Label id="leftContent" text="内容内容内容内容" x="28" y="27" width="368" size="16" lineSpacing="10" visible="false"/>
+	<e:Image id="leftEmoji" source="chant_pic_emoji19_pc_png" x="27" y="26" width="20" height="20" visible="false"/>
+	<e:Group id="voiceGroup" width="52" height="19" x="29" y="25">
+		<e:Image y="0" width="50" height="20" source="chat_pic_voicebg_pc_png" scale9Grid="21,16,27,3"/>
+		<e:Image source="chat_pic_icon1_png" x="14" y="1" width="14" height="16"/>
+	</e:Group>
+</e:Skin>

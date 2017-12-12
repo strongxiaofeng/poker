@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="homeOwnerClubSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+
+
+	<e:Group id="HomeOwnerTop" height="110" top="165" left="0" right="0">
+		<e:Group id="RoomCardGroup0" right="0" verticalCenter="0">
+		<e:Image id="roomCardImg" width="54" height="38" source="main_pic_card_png" right="255" verticalCenter="0"/>
+
+		<eui:ALabel id="homeCard" xmlns:eui="eui.*" text="房卡 : 0" isFixed="true" width="320" size="35" verticalAlign="middle" textAlign="right" textColor="0xC8C8C8" right="100" verticalCenter="0"/>
+			<eui:AButton id="add" label="" width="50" height="50" scaleX="1" scaleY="1" right="30" verticalCenter="0">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="home_btn_join_p_png" source.down="home_btn_join_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Image horizontalCenter="0" left="19" right="19" bottom="0" source="main_pic_decoration_png"/>
+		<e:Group width="500" height="70" left="30" verticalCenter="0">
+		<eui:ALabel id="gameType" xmlns:eui="eui.*" text="global_lbl_game_type" isFixed="true" left="0" verticalCenter="0" width="400" height="70" size="35" verticalAlign="middle" textAlign="left" textColor="0xC8C8C8"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="MenuGroup" height="400" top="300" left="30" right="30">
+
+		<e:Group x="0" y="0" width="50%">
+			<e:Group width="50%" y="0" left="0" height="190">
+				<eui:AButton id="createBtn" label="" width="146" height="146" horizontalCenter="0" top="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_creatroom_png" source.down="mine_btn_creatroom_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel text="founder_btn_create_room" width="146" height="40" isFixed="true" size="35" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+			<e:Group width="50%" y="0" right="0" height="190">
+				<eui:AButton id="menberBtn" label="" width="146" height="146" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_member_png" source.down="mine_btn_member_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel text="founder_btn_member_management" width="146" height="40" isFixed="true" size="35" verticalAlign="middle" textAlign="center" textColor="0xE9B76F" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+		</e:Group>
+
+		<e:Group y="0" width="50%" right="0">
+			<e:Group x="0" y="0" width="50%" height="190">
+				<eui:AButton id="anchorBtn" label="" width="146" height="146" horizontalCenter="0" top="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_anchor_png" source.down="mine_btn_anchor_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel text="founder_btn_anchor" width="146" height="40" isFixed="true" size="35" verticalAlign="middle" textAlign="center" textColor="0xE9B76F" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+			<e:Group width="50%" y="0" right="0" height="190">
+				<eui:AButton id="shareBtn" label="" width="146" height="146" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_share2_png" source.down="mine_btn_share2_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel text="global_btn_share" width="146" height="40" isFixed="true" size="35" verticalAlign="middle" textAlign="center" textColor="0xE9B76F" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+		</e:Group>
+
+		<e:Group y="210" width="50%" left="0">
+			<e:Group y="0" x="0" width="50%">
+				<eui:AButton id="editBtn" label="" width="146" height="146" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_edit_png" source.down="mine_btn_edit_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel isFixed="true" text="global_btn_edit" width="146" height="40" size="35" verticalAlign="middle" textAlign="center" textColor="0xE9B76F" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+			<e:Group y="0" width="50%" right="0">
+				<eui:AButton id="notifyBtn" label="" width="146" height="146" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_announcement_png" source.down="mine_btn_announcement_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel isFixed="true" text="founder_btn_notice" width="146" height="40" size="35" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+		</e:Group>
+
+		<e:Group y="210" width="50%" right="0">
+			<e:Group y="0" width="50%" left="0">
+				<eui:AButton id="activityBtn" label="" width="146" height="146" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_activity_png" source.down="mine_btn_activity_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel isFixed="true" text="founder_btn_activity" width="146" height="40" size="35" verticalAlign="middle" textAlign="center" textColor="0xE9B76F" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+			<e:Group y="0" width="50%" right="0">
+				<eui:AButton id="dataBtn" label="" width="146" height="146" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mine_btn_datacenter_png" source.down="mine_btn_datacenter_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel isFixed="true" text="founder_btn_data_center" width="146" height="40" size="35" verticalAlign="middle" textAlign="center" textColor="0xE9B76F" y="150" horizontalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+
+	<e:Group left="30" right="30" anchorOffsetY="0" top="710" height="120">
+		<e:Image source="main_btn_all_separateline_png" scaleY="-1" left="30" right="30" x="0" scaleX="1" top="10"/>
+		<e:Image source="main_pic_decoration3_png" right="50" verticalCenter="3.5"/>
+		<e:Image source="main_pic_decoration3_png" scaleX="-1" left="50" verticalCenter="3.5"/>
+		<eui:ALabel isFixed="true" text="founder_lbl_game_type" horizontalCenter="0" width="400" height="70" verticalAlign="middle" textAlign="center" size="45" verticalCenter="10" alpha="0.5"/>
+	</e:Group>
+
+	<e:Group top="830" left="0" right="0" bottom="60">
+		<e:Group id="Baccarat" left="40" top="0" bottom="520" right="40">
+			<e:Image source="club_btn_baccarat_bg_png" left="0" top="0" right="0" bottom="80"/>
+
+			<e:Image source="club_pic_namebg2_png" bottom="0" left="0" right="0"/>
+			<e:Group width="210" height="53" bottom="15" horizontalCenter="0">
+				<eui:ALabel isFixed="true" text="百家乐" anchorOffsetX="0" textAlign="right" verticalAlign="middle" size="45" scaleX="1" scaleY="1" verticalCenter="0" left="0" width="150" height="45"/>
+				<e:Image source="club_btn_baccarat_icon_png" right="0" x="515" scaleX="1" scaleY="1" verticalCenter="0"/>
+			</e:Group>
+
+			<e:Image id="MaskBaccrat" left="0" right="0" top="0" bottom="80" alpha="1" source="club_btn_all_p_png"/>
+		</e:Group>
+		<e:Group id="Multi" anchorOffsetY="0" left="550" right="0" top="0" bottom="513" visible="false">
+			<e:Image source="club_btn_multipledesk_bg_png" left="0" right="0" top="0" bottom="80"/>
+			<e:Image source="club_btn_multipledesk_icon_png" bottom="15" right="26"/>
+			<e:Image source="club_pic_namebg2_png" bottom="0" left="0" right="0"/>
+			<eui:ALabel isFixed="true" text="game_lbl_multipledesk" height="70" anchorOffsetX="0" width="300" textAlign="right" verticalAlign="middle" size="45" bottom="5" right="100"/>
+		</e:Group>
+		<e:Group id="Dragontiger" top="513" right="0" left="550" bottom="0" visible="false">
+			<e:Image source="club_btn_dragontiger_bg_png" left="0" right="0" top="0" bottom="80"/>
+			<e:Image bottom="15" source="club_btn_dragontiger_icon_png" right="26"/>
+			<e:Image source="club_pic_namebg2_png" bottom="0" right="0" left="0"/>
+			<eui:ALabel isFixed="true" text="founder_btn_search_type_dt" height="70" anchorOffsetX="0" width="300" textAlign="right" verticalAlign="middle" size="45" bottom="0" right="100"/>
+		</e:Group>
+		<e:Group id="Roulette" left="0" right="550" top="513" bottom="0" visible="false">
+			<e:Image source="club_btn_roulette_bg_png" left="0" right="0" top="0" bottom="80"/>
+			<e:Image bottom="15" source="club_btn_roulette_icon_png" right="26"/>
+			<e:Image source="club_pic_namebg2_png" bottom="0" right="0" left="0"/>
+			<eui:ALabel isFixed="true" text="founder_btn_search_type_rt" height="70" anchorOffsetX="0" width="300" textAlign="right" verticalAlign="middle" size="45" bottom="0" right="100"/>
+		</e:Group>
+		<e:Group id="GameTipGroup" scaleX="1" scaleY="1" left="0" right="0" height="220" verticalCenter="-45" visible="false">
+			<eui:ALabel isFixed="true" id="clubLabel" text="global_lbl_list_empty_tips" width="200" height="80" size="45" textAlign="center" verticalAlign="middle" scaleX="1" scaleY="1" horizontalCenter="0" top="0"/>
+
+			<e:Image horizontalCenter="203.5" verticalCenter="5.5" source="main_pic_decoration2_png"/>
+			<e:Image scaleX="-1" horizontalCenter="-202.5" verticalCenter="5.5" source="main_pic_decoration2_png"/>
+
+			<eui:AButton id="reateRoomBtn" label="founder_btn_right_away_to_create_room" width="320" height="55" horizontalCenter="0" verticalCenter="65">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image right="0" verticalCenter="0" source="mine_btn_creatnow_png" source.down="mine_btn_creatnow_p_png"/>
+					<eui:ALabel id="labelDisplay" size="45" left="0" textAlign="right" width="270" isFixed="true" verticalCenter="0" textColor="0xE9B76F" textColor.down="0x654d29"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+	</e:Group>
+</e:Skin>

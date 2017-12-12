@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="loadGamePC" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="bg_mask_pc_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="loadGroup" top="0" bottom="0" left="0" right="0">
+		<e:Image id="bg" source="loading_pic_bg_pc_png" y="0" horizontalCenter="0"/>
+		<e:Image id="circle" source="loading_pic_circle_pc_png" anchorOffsetX="62" anchorOffsetY="62.5" y="366" x="959" width="124" height="125" scaleX="1" scaleY="1"/>
+		<e:Image id="light" source="loading_pic_light_pc_png" anchorOffsetX="20" anchorOffsetY="20.5" y="364" x="960" width="40" height="41" scaleX="1" scaleY="1"/>
+		<eui:ALabel text="H5_login_lbl_load_resources" width="600" size="25" textAlign="center" textColor="0xe9b76f" y="702" height="25" horizontalCenter="0"/>
+		<eui:ALabel text="推荐使用Chrome浏览器" size="17" textColor="0xe9b76f" width="200" textAlign="center" y="1029" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

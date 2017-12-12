@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mineSkin" width="580" height="775" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group id="mineGroup" width="580" height="775" horizontalCenter="0" verticalCenter="0">
+		<eui:ALabel id="labelTop" text="mine_lbl_user_info" textColor="0xfbc278" size="26" width="240" left="25" top="32" verticalAlign="middle" textAlign="left"/>
+
+
+
+
+		<eui:ALabel id="label_Accountnum" text="mine_lbl_ccount_number" size="20" verticalAlign="middle" textAlign="left" width="260" left="25" top="100" textColor="0xfcfcfc"/>
+
+		<eui:ALabel id="label_ID" text="ID:123456" right="25" top="100" size="20" textColor="0xfcfcfc" verticalAlign="middle" textAlign="right" width="260"/>
+		<e:Group id="headPicGroup" width="525" height="215" scaleX="1" scaleY="1" horizontalCenter="0" top="200">
+			<e:Image source="mine_pic_memberbg_pc_png" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image id="UserHeadPic" horizontalCenter="0" verticalCenter="0" source="mine_pic_defaultmember_pc_png" width="209" height="209"/>
+			<e:Image source="mine_pic_decoration_pc_png" right="-8" bottom="-8"/>
+			<e:Image source="mine_pic_decoration_pc_png" scaleX="-1" left="-8" bottom="-8"/>
+		</e:Group>
+		<e:Group id="headPicGroupC" width="525" height="240" scaleX="1" scaleY="1" horizontalCenter="0" top="126" visible="false">
+			<e:Image source="mine_pic_memberbg_pc_png" width="215" height="215" top="0" horizontalCenter="0"/>
+			<e:Image id="ClubHeadPic" horizontalCenter="0" source="mine_pic_defaultclub_pc_png" width="215" height="215" top="0"/>
+			<e:Image source="mine_pic_defaultclubbg_pc_png" bottom="-15" horizontalCenter="0" scaleX="0.8" scaleY="0.8"/>
+		</e:Group>
+		<eui:AButton id="btn_Choose" label="global_btn_change_head" width="210" height="36" top="430" horizontalCenter="0" mouseTexture="mine_btn_choosevideo_h_pc_png">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" scale9Grid="34,8,49,16" source="mine_btn_editcode_pc_png" source.down="mine_btn_choosevideo_p_pc_png"/>
+				<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xe5b776" textColor.down="0x000000" size="20"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_ChooseC" label="founder_btn_change_club_icon" width="210" height="36" top="378" horizontalCenter="0" mouseTexture="mine_btn_choosevideo_h_pc_png" visible="false">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" scale9Grid="34,8,49,16" source="mine_btn_editcode_pc_png" source.down="mine_btn_choosevideo_p_pc_png"/>
+				<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xe5b776" textColor.down="0x000000"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group id="nickGroup" width="310" height="36" y="493" left="162">
+			<e:Image id="imgBG" height="36" width="256" source="window_pic_inputbg_pc_png" scale9Grid="4,4,24,28" alpha="0.3" scaleX="1" scaleY="1" verticalCenter="0" left="0"/>
+			<eui:AButton id="editBtn" label="" mouseTexture="window_btn_edit_h_pc_png" verticalCenter="0" right="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="window_btn_edit_pc_png" source.down="window_btn_edit_p_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="editSureBtn" label="" mouseTexture="window_btn_confirm_h_pc_png" right="0" verticalCenter="0" visible="false">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="window_btn_confirm_pc_png" source.down="window_btn_confirm_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:TextInput id="label_NickName" width="256" height="36" left="0" verticalCenter="0" maxChars="12"/>
+			<e:Group id="nickNameGroup" width="256" height="36" touchThrough="false" scaleX="1" scaleY="1" left="0" verticalCenter="0">
+			<e:Image height="36" width="256" source="window_pic_inputbg_pc_png" scale9Grid="4,4,24,28" alpha="0.3" scaleX="1" scaleY="1" top="0" left="0"/>
+			<eui:ALabel id="label_NickName2" text="用户昵称名字" width="256" height="36" scaleX="1" scaleY="1" left="0" top="0" textColor="0xfcfcfc" size="20" verticalAlign="middle" textAlign="center"/>
+			</e:Group>
+		</e:Group>
+		<eui:AButton id="btn_BackUser" label="personal_btn_exit_account" height="36" width="140" horizontalCenter="0" top="556">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image verticalCenter="0" left="0" name="imgBackU" source="mine_btn_quitaccount_pc_png" source.down="mine_btn_quitaccount_p_pc_png"/>
+				<eui:ALabel id="labelDisplay" name="labelDisplay" size="18" verticalCenter="0" left="35" width="300" textColor="0xFF0000" textColor.down="0x654D29"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group id="uesrBackGroup" height="52" bottom="0" left="0" right="0" visible="false">
+			<eui:AButton id="backClubBtn" label="personal_btn_exit_club" height="52" mouseTexture="window_btn_choosepic_h_pc_png" scaleX="1" scaleY="1" bottom="0" width="580" x="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="window_btn_choosepic_pc_png" source.down="window_btn_choosepic_p_pc_png"/>
+				<eui:ALabel id="labelDisplay" left="18" size="25" verticalCenter="0" textColor="0xe5b776" textColor.down="0x000000"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<e:Image id="backImg1" source="window_btn_into_pc_png" right="25" touchEnabled="false" verticalCenter="0"/>
+			<e:Image id="backImg2" source="window_btn_into_pc_png" right="35" touchEnabled="false" verticalCenter="0"/>
+			<eui:ALabel id="label_Back" text="global_lbl_have_joined" size="20" textColor="0xacacac" verticalAlign="middle" textAlign="right" width="260" right="70" touchEnabled="false" verticalCenter="0"/>
+			<eui:ALabel id="label_Back2" text="global_lbl_have_joined" size="20" verticalAlign="middle" textAlign="right" width="260" right="70" touchEnabled="false" textColor="0x000000" verticalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Group id="tipGroup" height="36" left="0" right="0" y="554" visible="false">
+			<e:Image source="pic_popup1_pc_png" verticalCenter="0" horizontalCenter="120"/>
+			<e:Image source="pic_popup1_pc_png" scaleX="-1" verticalCenter="0" horizontalCenter="-120"/>
+			<eui:ALabel id="errorLabel" text="personal_lbl_wrong_nick_length" textColor="0xff0300" size="18" width="500" verticalCenter="0" horizontalCenter="0" verticalAlign="middle" textAlign="center"/>
+			<eui:ALabel id="greenLabell" text="编辑成功" size="18" width="500" verticalCenter="0" horizontalCenter="0" verticalAlign="middle" textAlign="center" textColor="0x00ff00" visible="false"/>
+		</e:Group>
+		<e:Group id="clubInvitGroup" left="0" right="0" bottom="0" height="205">
+			<eui:AButton id="btnEditCode" label="global_btn_edit" right="26" height="38" top="0" width="156" mouseTexture="mine_btn_editcode_h_pc_png">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image verticalCenter="0" right="0" width="156" height="38" scale9Grid="34,8,49,16" source="mine_btn_choosevideo_pc_png" source.down="mine_btn_choosevideo_p_pc_png"/>
+				<eui:ALabel  id="labelDisplay" size="20" verticalCenter="0" right="60" textAlign="center" textColor="0xe5b776" textColor.down="0x000000"/>
+			</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<eui:ALabel id="inviteTxt" text="founder_lbl_invcode_or_link" x="27" y="9" height="30" width="300" size="20" anchorOffsetX="0" verticalAlign="middle" textAlign="left"/>
+			<e:Image right="422" height="90" top="55" left="27" source="mine_pic_codebg1_pc_png" scale9Grid="11,23,12,36" anchorOffsetX="0" alpha="0.3"/>
+			<e:Image right="30" height="90" top="55" left="159" anchorOffsetX="0" source="mine_pic_codebg2_pc_png" scale9Grid="9,23,9,36" alpha="0.3"/>
+			<e:Image width="2" top="55" source="club_pic_namebg_png" left="158" height="90"/>
+			<e:Image height="2" top="100" source="club_pic_namebg_png" left="158" right="26"/>
+			<eui:ALabel id="clubCode" text="123456789" height="30" size="25" verticalAlign="middle" textAlign="center" left="32" width="120" textColor="0xC8C8C8" isFixed="true" top="90"/>
+			<eui:ALabel text="founder_lbl_valid_time" left="175" width="100" textColor="0xC8C8C8" size="20" verticalAlign="middle" textAlign="left" isFixed="true" top="68"/>
+			<eui:ALabel text="founder_lbl_valid_player_amount" left="175" width="100" textColor="0xC8C8C8" size="20" verticalAlign="middle" textAlign="left" isFixed="true" top="112"/>
+			<eui:ALabel id="validDate" text="founder_lbl_none_limit" top="68" width="250" textColor="0xC8C8C8" size="20" verticalAlign="middle" textAlign="right" isFixed="true" right="60"/>
+			<eui:ALabel id="validTimes" text="founder_lbl_none_limit" top="112" width="250" textColor="0xC8C8C8" size="20" verticalAlign="middle" textAlign="right" isFixed="true" right="60"/>
+			<eui:ALabel id="foundClubDay" text="club_lbl_create_time" textColor="0xc8c8c8" size="15" width="240" textAlign="center" verticalAlign="middle" bottom="12" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

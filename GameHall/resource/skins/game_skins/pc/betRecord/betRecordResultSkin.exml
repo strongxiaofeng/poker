@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="betRecordResultSkin" width="310" height="65" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group id="groupBaccarat" height="65" y="0" scaleX="1" scaleY="1" width="310" x="0" visible="false">
+		<e:Group width="50%" height="100%" y="0" left="0">
+			<e:Image id="imgPlayerBgd" width="110" height="50" scaleX="1" scaleY="1" right="20" scale9Grid="8,20,4,9" verticalCenter="2" source="record_pic_blueframe_pc_png"/>
+			<e:Image id="imgCard2" right="26" source="record_pic_pokerback_pc_png" width="27" height="40" bottom="10"/>
+			<e:Image id="imgCard0" right="56" source="record_pic_pokerback_pc_png" width="27" height="40" bottom="10"/>
+			<e:Image id="imgCard4" right="86" source="record_pic_pokerback_pc_png" width="27" height="40" rotation="-90" bottom="10"/>
+			<e:Image id="imgPlayerPoint" top="0" right="120" width="20" height="20" source="recordpoints_pic_blue0_pc_png"/>
+		</e:Group>
+		<e:Group width="50%" height="100%" y="0" right="0">
+			<e:Image id="imgBankerBgd" width="110" height="50" scaleX="1" scaleY="1" verticalCenter="2" y="18" left="20" scale9Grid="8,20,4,9" source="record_pic_redframe_pc_png"/>
+			<e:Image id="imgCard3" source="record_pic_pokerback_pc_png" width="27" height="40" bottom="10" y="33" scaleX="1" scaleY="1" left="26"/>
+			<e:Image id="imgCard1" source="record_pic_pokerback_pc_png" width="27" height="40" bottom="10" y="33" scaleX="1" scaleY="1" left="56"/>
+			<e:Image id="imgCard5" source="record_pic_pokerback_pc_png" width="27" height="40" rotation="90" bottom="10" y="110" scaleX="1" scaleY="1" left="86"/>
+			<e:Image id="imgBankerPoint" top="0" y="5" scaleX="1" scaleY="1" left="120" width="20" height="20" source="recordpoints_pic_red0_pc_png"/>
+		</e:Group>
+		<e:Image id="imgResult" horizontalCenter="0" verticalCenter="0" width="25" height="25" source="baccarat_pic_bead.B--_pc_png" x="143" y="20" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="groupRoulette" height="65" y="0" scaleX="1" scaleY="1" width="310" x="0" visible="false">
+		<e:Group id="groupRouletteWait" width="100%" height="100%" x="0" y="0">
+			<e:Image width="60" height="60" verticalCenter="0" horizontalCenter="0" source="roulette_play_pic_openbg_png" x="295" y="8" scaleX="1" scaleY="1"/>
+			<e:Image verticalCenter="0" horizontalCenter="1" source="roulette_play_pic_openque_png" height="35" width="23" x="335" y="33" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="groupRouletteNum" width="100%" height="100%" x="0" y="0" visible="false">
+			<e:Image id="imgRoulette" width="60" height="60" verticalCenter="0" horizontalCenter="0" source="roulette_play_pic_openblack_png" x="295" y="8" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel id="labelRoulette" width="140" height="90" verticalCenter="0" horizontalCenter="0" text="23" textAlign="center" font="roulette_yellow_103_fnt" scaleX="0.25" scaleY="0.25"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupSicbo" height="65" y="0" scaleX="1" scaleY="1" width="310" x="0" visible="false"/>
+	<e:Group id="groupDT" height="65" y="0" scaleX="1" scaleY="1" width="310" x="0" visible="false"/>
+</e:Skin>

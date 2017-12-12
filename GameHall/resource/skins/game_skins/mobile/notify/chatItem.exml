@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="chatItem" width="1080" height="160" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="timeTxt" text="10:20" y="11" horizontalCenter="0"/>
+	<e:Group id="otherGroup" width="100%" height="130" x="0" y="0">
+		<e:Image id="headImg_l" source="mine_pic_default_mini_png" x="16" y="4" width="122" height="122" scaleX="1" scaleY="1"/>
+		<e:Image id="headImg_l0" source="mine_pic_default_mini_png" x="16" y="4" width="122" height="122" scaleX="1" scaleY="1"/>
+		<e:Image id="lableBgImg_l" source="chat_pic_wordsbg1_png" x="152" y="22" scale9Grid="26,24,32,37" anchorOffsetX="0" width="246" scaleX="1" scaleY="1" anchorOffsetY="0" height="112"/>
+		<e:Label id="lable_l" text="Label" y="44" size="38" height="40" anchorOffsetX="0" width="635" textAlign="left" multiline="true" x="176" scaleX="1" scaleY="1"/>
+		<e:Image id="emoji_l" x="218" y="22" source="chant_pic_emoji1_png" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="voiceImg_l" x="242" y="32" source="chat_pic_icon2_png"/>
+	</e:Group>
+	<e:Group id="myGroup" width="100%" height="130" x="0" y="0">
+		<e:Image id="headImg_r" width="122" height="122" y="4" source="mine_pic_default_mini_png" right="16"/>
+		<e:Image id="headImg_r0" width="122" height="122" y="4" source="mine_pic_default_mini_png" right="16"/>
+		<e:Image id="lableBgImg_r" y="22" anchorOffsetX="0" width="490" scaleX="1" scaleY="1" right="152" scale9Grid="30,30,24,24" source="chat_pic_wordsbg2_png" anchorOffsetY="0" height="100"/>
+		<e:Label id="lable_r" text="Label灌灌灌灌灌灌灌灌灌灌灌灌灌灌" y="44" right="176" size="38" height="52" width="629" textAlign="left" multiline="true" anchorOffsetY="0"/>
+		<e:Image id="emoji_r" y="22" source="chant_pic_emoji1_png" scaleX="1" scaleY="1" right="218" visible="false"/>
+		<e:Image id="voiceImg_r" y="32" source="chat_pic_icon2_png" right="233" scaleX="-1" visible="false"/>
+	</e:Group>
+</e:Skin>

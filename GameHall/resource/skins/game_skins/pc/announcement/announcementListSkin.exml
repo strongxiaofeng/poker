@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="announcementSkin" width="567" height="749" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<eui:ALabel id="title" text="founder_btn_notice" x="23" y="30" size="28" width="200" textColor="0xeeb85f" isFixed="true"/>
+	<eui:ALabel id="announceCountTxt" text="公告数量：0" x="34" y="195" width="300" size="35" textColor="0xc5c5c5" fontFamily="SimHei" visible="false"/>
+	<eui:ALabel id="roomCardCountTxt" text="房卡：0" y="187" width="210" size="37" textColor="0xC5C5C5" fontFamily="SimHei" isFixed="true" right="86" visible="false"/>
+	<eui:AButton id="btn_addRoomCard" label="" y="177" width="57" height="57" mouseTexture="topbar_btn_morecard_h_pc_png" right="29" visible="false">
+		<eui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="topbar_btn_morecard_pc_png" source.down="topbar_btn_morecard_p_pc_png" source.disabled="topbar_btn_morecard_pc_png"/>
+			<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</eui:skinName>
+	</eui:AButton>
+	<e:Image source="web_pic_decoration_pc_png" y="80" width="548" horizontalCenter="0" height="205" scale9Grid="133,66,160,78"/>
+
+	<e:Image y="106" width="115" height="115" horizontalCenter="0" source="mine_pic_announcement_pc_png"/>
+	<e:AButton id="btn_addAnnounce" label="founder_btn_add_notice" y="228" width="211" height="35" mouseTexture="window_btn_change_h_pc_png" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="window_btn_change_pc_png" source.down="window_btn_change_p_pc_png" source.disabled="window_btn_change_pc_png"/>
+			<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xc9a45d" textColor.down="0x000000"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:AButton>
+	<e:Scroller height="390" y="301" left="15" right="15">
+		<e:List id="announceList"/>
+	</e:Scroller>
+
+
+</e:Skin>

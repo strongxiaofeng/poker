@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="assetDetailSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="bg_mask_pc_png" alpha="0.6" height="100%" width="100%" y="0" x="0"/>
+	<e:Group scaleX="1" scaleY="1" width="1315" height="775" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="window_pic_bg_pc_png" right="0" left="0" top="0" bottom="0"/>
+		<e:Image right="6" left="6" top="11" height="65" source="window_pic_titlebg_pc_png"/>
+		<e:Group id="groupTop" width="100%" height="65" x="0" y="11">
+			<eui:AButton id="btnPeriod" label="founder_btn_date_type_today" verticalCenter="0" height="50" width="360" left="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" x="0" y="0" alpha="0.01" source="window_btn_find_pc_png"/>
+				<e:Image verticalCenter="0" left="20" source="web_btn_more_pc_png" source.down="web_btn_more_p_pc_png" source.disabled="web_btn_more_pc_png"/>
+				<e:Label id="labelDisplay" textColor="0xe7b570" size="18" left="60" width="300" textAlign="left" verticalAlign="middle" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="btnBetRecord" width="210" label="joined_btn_history_bet_record" horizontalCenter="-105" height="65" y="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled,hover">
+				<e:Image source.down="" source="" scale9Grid="10,0,2,0" scaleX="1" scaleY="1" left="0" right="0" bottom="0"/>
+				<e:Image source.down="topbar_btn_all_p_pc_png" source="" left="0" right="0" bottom="0"/>
+				<e:ALabel width="180" isFixed="true" textColor.up="0xC8C8C8" textColor.hover="0xE9B76F" textColor.down="0xE9B76F" size="22" id="labelDisplay" bold="true" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="btnQuotaRecord" width="210" label="founder_btn_quota_record" horizontalCenter="105" height="65" y="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled,hover">
+				<e:Image source.down="" source="" scale9Grid="10,0,2,0" scaleX="1" scaleY="1" left="0" right="0" bottom="0"/>
+				<e:Image source.down="topbar_btn_all_p_pc_png" source="" left="0" right="0" bottom="0"/>
+				<e:ALabel width="180" isFixed="true" textColor.up="0xC8C8C8" textColor.hover="0xE9B76F" textColor.down="0xE9B76F" size="22" id="labelDisplay" bold="true" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<e:Image source="topbar_btn_all_pc_png" width="420" scaleX="1" scaleY="1" bottom="0" scale9Grid="9,0,2,0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="groupTitleBet" height="43" y="76" left="4" right="4">
+			<e:Image top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0" x="0" y="-100" scaleX="1" scaleY="1"/>
+			<e:Image width="100%" height="1" x="0" source="data_pic_inputbg1_png" bottom="0"/>
+			<e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="35" left="148"/>
+			<e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="35" left="350"/>
+			<e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="35" left="670"/>
+			<e:Image source="data_pic_inputbg1_png" verticalCenter="0" height="35" right="312" width="1"/>
+			<eui:ALabel text="founder_lbl_date_type_date" verticalCenter="0" size="18" height="18" width="147" verticalAlign="middle" textAlign="center" x="0" textColor="0xc8c8c8" isFixed="true"/>
+			<eui:ALabel text="game_lbl_asset_detail_game" verticalCenter="0" size="18" height="18" width="200" verticalAlign="middle" textAlign="center" x="147" textColor="0xc8c8c8" isFixed="true"/>
+			<eui:ALabel text="founder_lbl_data_center_betting" verticalCenter="0" size="18" height="18" width="325" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" x="350"/>
+			<eui:ALabel text="开彩" verticalCenter="0" size="18" height="18" width="325" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" right="312"/>
+			<eui:ALabel text="派彩" verticalCenter="0" size="18" height="18" width="312" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" right="0"/>
+		</e:Group>
+		<e:Group id="groupTitleTransfer" height="43" y="76" left="4" right="4">
+			<e:Image top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0" x="0" y="-100" scaleX="1" scaleY="1"/>
+			<e:Image width="100%" height="1" x="0" source="data_pic_inputbg1_png" bottom="0"/>
+			<e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="35" left="143"/>
+			<e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="35" left="440"/>
+			<e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="35" left="730"/>
+			<e:Image source="data_pic_inputbg1_png" verticalCenter="0" height="35" right="290" width="1"/>
+			<eui:ALabel text="founder_lbl_date_type_date" verticalCenter="0" size="18" height="18" width="147" verticalAlign="middle" textAlign="center" x="0" textColor="0xc8c8c8" isFixed="true"/>
+			<eui:ALabel text="game_lbl_assent_detail_type" verticalCenter="0" size="18" height="18" width="290" verticalAlign="middle" textAlign="center" x="147" textColor="0xc8c8c8" isFixed="true"/>
+			<eui:ALabel text="game_lbl_history_round_no" verticalCenter="0" size="18" height="18" width="287" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" x="440"/>
+			<eui:ALabel text="founder_lbl_data_center_quota" verticalCenter="0" size="18" height="18" width="287" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" right="290"/>
+			<eui:ALabel text="founder_lbl_data_center_balance_title" verticalCenter="0" size="18" height="18" width="290" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" right="0"/>
+		</e:Group>
+		<e:Group id="groupList" left="4" right="4" top="120" bottom="5">
+			<e:Scroller id="scrollerRecord" width="100%" height="100%" x="0" y="0">
+			<e:List id="listRecord"/>
+			</e:Scroller>
+		</e:Group>
+		<eui:AButton id="btnClose" label="" top="12" right="4" mouseTexture="btn_close_h_pc_png" width="60" height="60">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_close_pc_png" source.down="btn_close_p_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group id="groupTotal" height="60" bottom="0" left="4" right="4">
+			<e:Image width="100%" height="100%" x="0" y="0" source="mine_btn_add_p_png"/>
+			<e:Image y="0" source="main_pic_decoration_png" height="13" left="19" right="19"/>
+			<e:Image source="record_pic_effectivebet_png" verticalCenter="0" height="38" width="25" x="20"/>
+			<eui:ALabel text="game_lbl_assent_detail_bet_total" width="470" height="20" size="20" verticalAlign="middle" textAlign="left" textColor="0xe7b570" verticalCenter="0" isFixed="true" x="60"/>
+			<e:ABitmapLabel id="labelTotalBetPC" font="game_share_yellow_46_fnt" text="0" verticalCenter="0" scaleX="0.5" scaleY="0.5" right="20" textAlign="right" fixedWidth="940"/>
+		</e:Group>
+		<e:Image alpha="0.6" scaleX="1" scaleY="1" scale9Grid="85,30,277,38" touchEnabled="false" height="793" y="-4" left="-4" right="-4" source="record_pic_frame_pc_png"/>
+		<e:Group id="groupPickPeriod" width="195" height="185" y="65" left="0" visible="false">
+			<e:Image source="record_pic_play_timebg_pc_png" left="5" right="5" top="10" bottom="10"/>
+			<e:Image scaleX="1" scaleY="1" height="185" y="0" width="195" x="0" source="window_pic_frame1_pc_png" scale9Grid="72,25,435,46"/>
+			<e:Image height="1" y="68" source="data_pic_separateline2_pc_png" left="5" right="5"/>
+			<e:Image height="1" y="118" source="data_pic_separateline2_pc_png" left="5" right="5"/>
+			<eui:ALabel id="labelToday" text="founder_btn_date_type_today" height="30" width="180" size="20" textAlign="center" verticalAlign="middle" textColor="0xe7b570" isFixed="true" touchEnabled="true" color_press="0x654D29" color_default="0xE7B570" horizontalCenter="0" verticalCenter="-50"/>
+			<eui:ALabel id="labelWeek" text="game_btn_date_type_seven_day" height="30" width="180" size="20" textAlign="center" verticalAlign="middle" textColor="0xe7b570" isFixed="true" touchEnabled="true" color_press="0x654D29" color_default="0xE7B570" horizontalCenter="0" verticalCenter="0"/>
+			<eui:ALabel id="labelTwoWeek" text="game_btn_date_type_two_week" height="30" width="180" size="20" textAlign="center" verticalAlign="middle" textColor="0xe7b570" isFixed="true" touchEnabled="true" color_press="0x654D29" color_default="0xE7B570" horizontalCenter="0" verticalCenter="50"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

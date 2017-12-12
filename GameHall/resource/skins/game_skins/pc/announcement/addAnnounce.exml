@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="addAnnounce" width="447" height="775" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<eui:ALabel text="founder_btn_add_notice" x="28" size="22" width="200" textColor="0xd6bb81" top="32" isFixed="true"/>
+	<e:Image source="web_pic_decoration_pc_png" width="416" height="620" horizontalCenter="0" scale9Grid="102,81,245,57" y="82"/>
+	<e:Image source="window_pic_decoration3_pc_png" horizontalCenter="0" y="79"/>
+	<e:Image source="window_pic_decoration3_pc_png" horizontalCenter="0" y="691"/>
+	<e:Image source="mine_pic_separateline_png" y="153" left="27" right="27"/>
+	<e:Image source="mine_pic_noticebg1_png" scale9Grid="34,35,92,97" height="876" y="163" width="790" x="25" scaleX="0.5" scaleY="0.5"/>
+	<e:EditableText id="titleInput" width="420" height="22" text="" y="124" size="22" fontFamily="SimHei" prompt="请输入公告标题" textAlign="center" horizontalCenter="0" maxChars="20" textColor="0xffffff"/>
+	<e:EditableText id="contentInput" text="" size="18" fontFamily="SimHei" prompt="请输入正文内容" textAlign="left" maxChars="500" multiline="true" textColor="0xbdbdbd" lineSpacing="10" width="360" horizontalCenter="0" height="394" y="174"/>
+	<eui:ALabel id="contentCount" text="0/500" y="580" textColor="0x6c6c6c" size="16" right="34"/>
+	<eui:ALabel text="founder_lbl_is_window_tips" y="631" width="160" height="20" size="20" textAlign="right" horizontalCenter="-58" isFixed="true"/>
+	<e:Image id="isAlertIcon" source="btn_control_png" y="627" horizontalCenter="60.5" width="55" height="32"/>
+	<eui:ALabel id="isAlertTxt" text="global_btn_no" y="631" width="100" height="20" size="20" textAlign="left" horizontalCenter="141" textColor="0xeeb271" isFixed="true"/>
+	<eui:AButton id="btn_cancel" label="global_btn_cancel_text" width="214" height="50" bottom="0" horizontalCenter="-108" mouseTexture="window_btn_choosepic_h_pc_png">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="window_btn_choosepic_pc_png" source.down="window_btn_choosepic_p_pc_png" source.disabled="window_btn_choosepic_pc_png"/>
+			<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="22" textColor="0xFF0000"/>
+			</e:Skin>
+		</eui:skinName>
+
+	</eui:AButton>
+	<eui:AButton id="btn_sure" label="login_btn_confirm" width="214" height="50" bottom="0" horizontalCenter="108" mouseTexture="window_btn_choosepic_h_pc_png">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="window_btn_choosepic_pc_png" source.down="window_btn_choosepic_p_pc_png" source.disabled="window_btn_choosepic_pc_png"/>
+			<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="22" textColor.disabled="0x828282" textColor.up="0x00c845" textColor.down="0x00c845"/>
+			</e:Skin>
+		</eui:skinName>
+
+	</eui:AButton>
+	<e:Group id="tipGroup" width="427" height="749" x="0" y="0" scaleX="1" scaleY="1" touchThrough="true" touchChildren="false" touchEnabled="false" visible="false">
+		<e:Image source="pic_popup1_png" scaleX="-1" scaleY="1" width="200" height="40" anchorOffsetX="272" horizontalCenter="-100" verticalCenter="0"/>
+		<e:Image source="pic_popup1_png" scaleX="1" scaleY="1" width="200" height="40" horizontalCenter="100" verticalCenter="0"/>
+		<eui:ALabel id="tipLabel" text="账号或密码错误，您还可以尝试2次" width="400" size="20" textColor="0xff0000" horizontalCenter="0" textAlign="center" verticalCenter="0"/>
+
+	</e:Group>
+</e:Skin>

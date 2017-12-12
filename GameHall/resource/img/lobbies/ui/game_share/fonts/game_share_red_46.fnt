@@ -1,0 +1,22 @@
+info face=font size=46 bold=0 italic=0 charset= unicode= stretchH=100 smooth=1 aa=1 padding=1,1,1,1 spacing=0,0 outline=0
+common lineHeight=54 base=44 scaleW=68 scaleH=215 pages=1 packed=0
+page id=0 file="game_share_red_46.png"
+chars count=14
+char id=48 x=1 y=1 width=22 height=33 xoffset=2 yoffset=0 xadvance=25 page=0 chnl=15
+char id=49 x=1 y=35 width=13 height=32 xoffset=7 yoffset=1 xadvance=25 page=0 chnl=15
+char id=50 x=1 y=68 width=21 height=32 xoffset=2 yoffset=0 xadvance=25 page=0 chnl=15
+char id=51 x=1 y=101 width=22 height=33 xoffset=2 yoffset=0 xadvance=25 page=0 chnl=15
+char id=52 x=15 y=35 width=22 height=32 xoffset=1 yoffset=0 xadvance=25 page=0 chnl=15
+char id=53 x=23 y=68 width=22 height=32 xoffset=2 yoffset=1 xadvance=25 page=0 chnl=15
+char id=54 x=24 y=1 width=20 height=33 xoffset=2 yoffset=0 xadvance=25 page=0 chnl=15
+char id=55 x=38 y=35 width=20 height=32 xoffset=3 yoffset=1 xadvance=25 page=0 chnl=15
+char id=56 x=45 y=1 width=22 height=33 xoffset=2 yoffset=0 xadvance=25 page=0 chnl=15
+char id=57 x=1 y=135 width=20 height=33 xoffset=2 yoffset=0 xadvance=25 page=0 chnl=15
+char id=46 x=1 y=169 width=6 height=6 xoffset=4 yoffset=26 xadvance=13 page=0 chnl=15
+char id=44 x=1 y=176 width=6 height=12 xoffset=4 yoffset=26 xadvance=13 page=0 chnl=15
+char id=43 x=1 y=189 width=25 height=25 xoffset=3 yoffset=4 xadvance=31 page=0 chnl=15
+char id=45 x=8 y=169 width=14 height=5 xoffset=1 yoffset=19 xadvance=16 page=0 chnl=15
+char id=32 x=0 y=0 width=0 height=0 xoffset=1 yoffset=19 xadvance=12 page=0 chnl=15
+kernings count=2
+kerning first=44 second=32 amount=-4
+kerning first=46 second=32 amount=-4

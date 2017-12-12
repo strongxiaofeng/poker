@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="videoSourceItem" width="1000" height="350" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="MyClubGroup" touchChildren="false" top="0" bottom="0" left="0" right="0">
+		<e:Image id="ItemBg1" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" left="40" top="8" bottom="8" source="main_pic_club_bg2_png"/>
+		<e:Image id="ItemBg2" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" right="40" top="8" bottom="8" source="main_pic_club_bg2_png"/>
+		<e:Image id="ItemBg0" anchorOffsetX="0" scaleX="1" scaleY="1" left="60" right="60" top="8" bottom="8" source="main_pic_club_bg2_2_png"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" left="40" right="40" top="84" bottom="5">
+		<e:Image id="ClubFace1" height="170" left="40" verticalCenter="0" y="32.33000000000001" scaleX="1" scaleY="1" width="200" source="home_pic_clubbg_png" visible="false"/>
+		<e:Image source="home_btn_bg_png" height="200" verticalCenter="0" left="260" width="4"/>
+		<e:Image id="ClubFaceImg1" width="145" height="145" verticalCenter="-20" left="67.5" source="home_btn_creat_png"/>
+		<e:Group id="ClubInfo1" height="200" verticalCenter="0" left="300" right="80">
+			<eui:ALabel xmlns:eui="eui.*" text="桌台数量 : " height="40" left="0" size="30" verticalAlign="middle" verticalCenter="-50" anchorOffsetX="0" textColor="0xE9B76F" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="视频来源 : " height="40" left="0" size="30" verticalCenter="0" verticalAlign="middle" textColor="0xE9B76F" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="游戏类型 : " height="40" left="0" size="30" verticalCenter="50" verticalAlign="middle" textColor="0xE9B76F" width="150"/>
+			<eui:ALabel id="Rooms1" xmlns:eui="eui.*" text="" left="150" verticalCenter="-50" size="30" height="40" verticalAlign="middle" textAlign="left" width="180"/>
+			<eui:ALabel xmlns:eui="eui.*" id="Profits1" text="" left="150" verticalCenter="0" size="30" height="40" verticalAlign="middle" textAlign="left" width="180"/>
+			<eui:ALabel xmlns:eui="eui.*" id="Games1" text="" left="150" verticalCenter="50" size="30" height="40" verticalAlign="middle" textAlign="left" width="400"/>
+		</e:Group>
+		</e:Group>
+		<e:Group id="ItemTopGroup1" anchorOffsetY="0" anchorOffsetX="0" top="8" bottom="267" left="40" right="40">
+		<eui:ALabel xmlns:eui="eui.*" id="ClubItemName1" text="" size="40" width="300" textColor="0x1B190D" bold="true" verticalCenter="0" verticalAlign="middle" left="40"/>
+		<e:Group right="10" verticalCenter="0" anchorOffsetX="0" width="300">
+			<e:Image height="55" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" source="mine_btn_detail_png" scale9Grid="56,11,23,54" left="0" right="0"/>
+			<eui:ALabel xmlns:eui="eui.*" text="详情" width="100" height="40" size="35" verticalAlign="middle" textColor="0xE9B76F" anchorOffsetX="0" textAlign="center" verticalCenter="0" horizontalCenter="20"/>
+		</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

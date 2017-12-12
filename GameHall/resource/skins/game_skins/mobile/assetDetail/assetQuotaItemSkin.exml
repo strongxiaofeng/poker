@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="assetQuotaItemSkin" width="1080" height="165" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="menu_btn_all_bg2_png" height="100%" width="100%" x="0" y="0" locked="true"/>
+	<e:Image id="imgBgd" width="100%" height="100%" x="0" y="0" source="menu_btn_all_bg1_png" visible="false"/>
+	<e:Image width="155" height="45" x="15" source="record_pic_timebg_png" verticalCenter="33"/>
+	<eui:ALabel id="labelYear" text="2017/10/13" x="15" size="30" height="30" verticalAlign="middle" textAlign="center" width="155" verticalCenter="-17"/>
+	<eui:ALabel id="labelHour" text="16:08:37" x="15" size="30" height="30" verticalAlign="middle" textAlign="center" width="155" textColor="0xb5b1ac" verticalCenter="32"/>
+
+
+
+
+	<eui:ALabel id="labelBalance" text="0" right="25" width="280" size="35" height="35" verticalCenter="0" textAlign="right" verticalAlign="middle" isFixed="true" textColor="0xe7b570"/>
+	<e:Group height="165" y="0" left="225" right="340">
+		<e:Group width="45%" height="165" x="0" y="0">
+			<eui:ALabel id="labelAccount" text="account" size="30" height="30" verticalAlign="middle" textAlign="left" width="190" isFixed="true" verticalCenter="-17" y="51" scaleX="1" scaleY="1" horizontalCenter="14" visible="false"/>
+			<eui:ALabel id="labelType" text="派彩" size="30" height="30" verticalAlign="middle" textAlign="left" width="190" isFixed="true" verticalCenter="-17" y="100" scaleX="1" scaleY="1" horizontalCenter="14" textColor="0xffffff"/>
+			<eui:ALabel id="labelRoundId" text="serial_number" size="25" height="30" verticalAlign="middle" textAlign="left" width="190" textColor="0xB5B1AC" isFixed="true" verticalCenter="32" y="100" scaleX="1" scaleY="1" horizontalCenter="14"/>
+		</e:Group>
+		<e:Group width="55%" height="165" y="0" right="0">
+			<eui:ALabel id="labelMoney" textAlign="right" width="270" height="35" text="0" textColor="0xff0000" size="35" isFixed="true" verticalCenter="0" y="51" scaleX="1" scaleY="1" horizontalCenter="-3"/>
+
+		</e:Group>
+	</e:Group>
+</e:Skin>

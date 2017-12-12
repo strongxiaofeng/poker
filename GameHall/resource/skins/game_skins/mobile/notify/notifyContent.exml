@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyContent" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect height="1920" y="0" left="0" right="0" fillColor="0x302f2f"/>
+	<e:Group height="165" y="-3" left="0" right="0">
+		<e:Image left="0" right="0" bottom="0" top="0" source="main_pic_topbg_png"/>
+		<e:Image id="goBackBtn" source="main_btn_return_png" verticalCenter="0" left="35"/>
+		<e:Label id="clubName" text="俱乐部名称" size="50" horizontalCenter="0" verticalCenter="0" textColor="0xE7B570"/>
+	</e:Group>
+	<eui:Label id="titleTxt" text="title" y="180" height="50" size="45" anchorOffsetX="0" textAlign="center" left="80" right="80"/>
+	<e:Image source="main_pic_decoration_png" y="262" height="16" left="20" right="20"/>
+	<eui:Label id="contentTxt" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" y="320" left="80" right="80" size="40" anchorOffsetY="0" height="1473.33" multiline="true"/>
+	<e:Label id="timeTxt" text="2017/09/01  20:53" y="1867" anchorOffsetX="0" left="200" right="200" textAlign="center"/>
+</e:Skin>

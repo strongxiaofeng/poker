@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="baccMinChip" width="156" height="105" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="desk_pic_pay_chips_png" horizontalCenter="0" y="51"/>
+	<e:Group y="0" width="156" x="0" height="51">
+		<e:Image source="desk_pic_pay_bg1_png" y="0" width="156" x="0"/>
+		<e:BitmapLabel text="655.5K" scaleX="0.4" scaleY="0.4" verticalAlign="middle" textAlign="center" font="game_share_golden_105_fnt" alpha="1" height="127.5" y="0" width="390" x="0" visible="false"/>
+		<eui:ALabel id="chipNum" text="650" width="156" height="51" horizontalCenter="0" top="0" size="35" textAlign="center" verticalAlign="middle" textColor="0xe9b76f"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="baccMinChip" width="73" height="44" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bettingarea_pic_pay_pc_png" verticalCenter="0" horizontalCenter="0"/>
+	<eui:ALabel id="chipNum" text="965.3" width="50" size="15" textColor="0xE8C992" textAlign="center" horizontalCenter="0" verticalCenter="-9.5"/>
+</e:Skin>

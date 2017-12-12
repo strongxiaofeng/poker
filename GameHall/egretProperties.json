@@ -1,0 +1,49 @@
+{
+  "native": {
+    "path_ignore": [
+    ]
+  },
+  "publish": {
+    "web": 0,
+    "native": 1,
+    "path": "bin-release"
+  },
+  "egret_version": "5.0.5",
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "game"
+    },
+		{
+			"name": "socket"
+		},
+    {
+      "name": "jszip",
+      "path": "../libsrc/jszip"
+    },
+    {
+      "name": "eui"
+    },
+		{
+			"name": "mouse",
+			"path": "../libsrc/mouse/bin/mouse"
+		},
+		{
+			"name": "livestream",
+			"path": "../libsrc/livestream"
+		},
+		{
+			"name": "uaparser",
+			"path": "../libsrc/uaparser"
+		},
+		{
+			"name": "gesture",
+			"path": "../libsrc/gesture"
+		}
+  ]
+}

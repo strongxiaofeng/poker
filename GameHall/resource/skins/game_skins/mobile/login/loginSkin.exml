@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="loginSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image id="bg" source="login_pic_bg_png" width="1440" height="1920" verticalCenter="0" horizontalCenter="0"/>
+	<e:Image source="bg_mask2_png" left="0" right="0" top="0" bottom="0" alpha="0.6" visible="false"/>
+	<e:Group id="logoGroup" width="1080" height="100%" y="0" horizontalCenter="0">
+		<eui:ALabel text="Powered By" x="320" y="600" textColor="0xd9ba93" width="236" height="30" size="30"/>
+		<e:Image id="logo" source="login_pic_uee_png" x="320" y="650" scaleX="1" scaleY="1" width="445" height="138"/>
+		<eui:ALabel text="© 2017-2017  TGBUS Corporation, All Rights Reserved" width="1000" size="30" height="30" horizontalCenter="0" isFixed="true" textAlign="center" x="-390" scaleX="1" scaleY="1" textColor="0xe9b76f" bottom="40"/>
+	</e:Group>
+	<e:Group id="loginGroup" width="1080" height="100%" horizontalCenter="0" y="0" touchThrough="true" visible="false">
+		<eui:ALabel text="HeyU" y="202" size="180" width="600" horizontalCenter="0" textAlign="center" x="-12" scaleX="1" scaleY="1"/>
+		<e:Group id="nameLoginGroup" width="1080" height="100%" horizontalCenter="0" verticalCenter="0" touchThrough="true">
+			<e:Image source="login_pic_username_png" x="56" y="594" width="86" height="86"/>
+			<e:Image source="login_pic_password_png" x="56" y="766" width="86" height="86"/>
+			<e:Image source="login_pic_separateline_png" x="134" y="679" width="890"/>
+			<e:Image source="login_pic_separateline_png" y="850" width="890" x="134"/>
+			<eui:AButton id="loginBtn" label="login_btn_login" y="890" width="968" height="98" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+					<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000" textColor.down="0xE9B76F" size="50"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:ALabel id="forgetLabel" text="login_btn_forget_password" y="1040" size="45" width="257" textColor="0xffffff" color_press="0xE9B76F" touchEnabled="true" horizontalCenter="-347" isFixed="true"/>
+			<eui:ALabel id="inviteNumLabel" text="login_btn_invitecode" y="1040" size="45" width="257" horizontalCenter="0" textAlign="center" color_press="0xE9B76F" isFixed="true"/>
+			<eui:ALabel id="registerLabel" text="login_btn_register" y="1040" size="45" width="257" textAlign="right" color_press="0xE9B76F" horizontalCenter="347" isFixed="true"/>
+			<eui:ALabel id="versionLabel" text="V1.0.0" width="200" height="32" size="32" horizontalCenter="-384" bottom="82"/>
+			<eui:ALabel id="userTipLabel" text="login_lbl_agreement_title" width="250" height="32" size="32" bottom="40" textColor="0xe9b76f" left="378" verticalAlign="middle" isFixed="true"/>
+			<eui:ALabel text="login_btn_agree" width="320" height="32" size="32" bottom="40" left="54" verticalAlign="middle" isFixed="true"/>
+			<eui:ALabel text="PowerBy" size="28" width="200" textAlign="right" horizontalCenter="388" bottom="90"/>
+			<e:Image id="smallLogo" source="login_pic_uee_png" width="135" horizontalCenter="419" height="48" top="1836"/>
+			<e:EditableText id="nameInput" width="750" height="90" text="" y="582" anchorOffsetX="0" anchorOffsetY="0" size="80" prompt="username" textColor="0xffffff" textAlign="center" horizontalCenter="0" maxChars="12"/>
+			<e:EditableText id="passwordInput" width="750" height="90" text="" y="756" anchorOffsetX="0" anchorOffsetY="0" size="80" prompt="password" textColor="0xffffff" textAlign="center" horizontalCenter="0" maxChars="16"/>
+			<eui:ALabel id="remenberLabel" text="login_btn_remenber_name" y="130" size="35" width="314" textAlign="right" textColor="0xb8b8b8" color_press="0xE9B76F" color_default="0xB8B8B8" horizontalCenter="273" isFixed="true"/>
+			<e:Image id="rememberNameIcon" y="120" horizontalCenter="463" source="btn_choose_png"/>
+		</e:Group>
+		<e:Group id="inviteLoginGroup" width="1080" height="100%" horizontalCenter="0" verticalCenter="0" visible="false">
+			<e:Image source="club_pic_card_png" y="560" horizontalCenter="0" width="1006" height="497"/>
+			<e:Image source="mine_pic_decoration_png" top="580" left="67"/>
+			<e:Image source="mine_pic_decoration_png" top="580" right="67" scaleX="-1"/>
+			<e:Image source="mine_pic_decoration_png" top="923" left="67" scaleY="-1"/>
+			<e:Image source="mine_pic_decoration_png" top="923" scaleX="-1" scaleY="-1" right="67"/>
+			<eui:ALabel text="login_lbl_invitation_code" y="615" width="600" height="40" size="40" textColor="0x000000" horizontalCenter="0" textAlign="center" isFixed="true"/>
+			<e:Image source="club_pic_decoration_png" top="683" horizontalCenter="0"/>
+			<e:Image source="club_pic_number_png" x="155" y="765" width="50" height="38"/>
+			<e:Image source="club_pic_wordsline_png" width="645" horizontalCenter="0" top="950"/>
+			<e:EditableText id="inviteInput" width="700" text="" horizontalCenter="0" size="130" textColor="0x000000" maxChars="8" textAlign="center" top="820" height="130" verticalAlign="bottom"/>
+			<eui:AButton id="inviteLoginBtn" label="加入" y="1055" width="968" height="98" horizontalCenter="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+					<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000" textColor.down="0xE9B76F" size="50"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+
+			<e:Group id="returnLogin" width="300" height="66" horizontalCenter="0" bottom="116">
+				<eui:AImage width="66" height="66" x="0" y="0" source="main_btn_return_png" source_default="main_btn_return_png" source_press="main_btn_return_p_png" scaleX="1" scaleY="1" name="img"/>
+				<eui:ALabel text="login_btn_return_login" y="12" width="200" size="40" textColor="0xe9b76f" color_default="0xE9B76F" color_press="0x654D29" textAlign="center" horizontalCenter="0" x="49" scaleX="1" scaleY="1" name="label" isFixed="true"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="tipGroup" width="1080" height="1920" scaleX="1" scaleY="1" touchThrough="true" touchChildren="false" touchEnabled="false" anchorOffsetX="540" anchorOffsetY="960" verticalCenter="0" horizontalCenter="0" visible="false">
+			<e:Image source="pic_popup1_png" scaleX="-1" scaleY="1" width="544" height="81" anchorOffsetX="272" horizontalCenter="-272" verticalCenter="250.5"/>
+			<e:Image source="pic_popup1_png" scaleX="1" scaleY="1" width="544" height="81" horizontalCenter="272" verticalCenter="250.5"/>
+			<eui:ALabel id="tipLabel" text="login_lbl_username_or_password_wrong" width="710" size="35" textColor="0xff0000" horizontalCenter="0" textAlign="center" isFixed="true" verticalCenter="252.5"/>
+
+		</e:Group>
+	</e:Group>
+	<e:Group id="registerGroup" width="1080" verticalCenter="0" horizontalCenter="0" height="100%" visible="false">
+		<eui:ALabel text="login_lbl_welcome" y="255" size="70" width="800" textAlign="center" horizontalCenter="0" isFixed="true"/>
+		<eui:ALabel text="login_lbl_register_info" y="357" size="40" width="400" horizontalCenter="0" textAlign="center" isFixed="true"/>
+		<e:Image source="login_pic_username_png" y="537" width="86" height="86" horizontalCenter="-442"/>
+		<e:Image source="login_pic_password_png" y="707" width="86" height="86" horizontalCenter="-442"/>
+		<e:Image source="login_pic_confirmpassword_png" y="883" horizontalCenter="-442"/>
+		<e:Image y="1050" width="86" height="86" horizontalCenter="-442" source="login_pic_mail_png"/>
+		<e:Image source="login_pic_separateline_png" y="622" width="890" horizontalCenter="39"/>
+		<e:Image source="login_pic_separateline_png" y="793" width="890" horizontalCenter="39"/>
+		<e:Image source="login_pic_separateline_png" y="964" width="890" horizontalCenter="39"/>
+		<e:Image source="login_pic_separateline_png" y="1135" width="890" horizontalCenter="39"/>
+		<e:EditableText id="registerNameInput" width="750" height="40" text="" y="567" anchorOffsetX="0" anchorOffsetY="0" size="40" prompt="login_lbl_accoun_tip" textColor="0xffffff" textAlign="center" horizontalCenter="0" maxChars="12"/>
+		<e:EditableText id="registerPasswordInput" width="750" height="40" text="" y="739" anchorOffsetX="0" anchorOffsetY="0" size="40" prompt="login_lbl_password_tip" textColor="0xffffff" textAlign="center" horizontalCenter="0" maxChars="16"/>
+		<e:EditableText id="registerPasswordInput2" width="750" height="40" text="" y="912" anchorOffsetX="0" anchorOffsetY="0" size="40" prompt="login_lbl_confirm_password" textColor="0xffffff" textAlign="center" horizontalCenter="0" maxChars="16"/>
+		<e:EditableText id="registerMailInput" width="750" height="40" text="" y="1079" anchorOffsetX="0" anchorOffsetY="0" size="40" prompt="login__lbl_email_tip" textColor="0xffffff" textAlign="center" horizontalCenter="0"/>
+		<eui:AButton id="registerBtn" label="login_btn_confirm" y="1196" width="968" height="97" horizontalCenter="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+				<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000" textColor.down="0xE9B76F" size="50"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="invitRegisterBtn" label="login_btn_club_into" y="1196" width="968" height="97" horizontalCenter="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+				<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000" textColor.down="0xE9B76F" size="50"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group id="registerTipGroup" width="1080" height="1920" touchChildren="false" touchEnabled="false" touchThrough="true" anchorOffsetX="540" anchorOffsetY="960" verticalCenter="0" horizontalCenter="0" visible="false">
+			<e:Image source="pic_popup1_png" scaleX="-1" scaleY="1" width="544" height="81" anchorOffsetX="272" horizontalCenter="-272" verticalCenter="418.5"/>
+			<e:Image source="pic_popup1_png" scaleX="1" scaleY="1" width="544" height="81" horizontalCenter="272" verticalCenter="418.5"/>
+			<eui:ALabel id="registerTipLabel" text="邮箱格式错误" width="603" size="35" textColor="0xff0000" horizontalCenter="0" textAlign="center" verticalCenter="419.5"/>
+		</e:Group>
+
+		<eui:AButton  id="returnLoginFromRegister" label="global_btn_back_text" width="300" height="40" bottom="124" horizontalCenter="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image left="-20" verticalCenter="0" source="main_btn_return_png" source.down="main_btn_return_p_png"/>
+				<eui:ALabel id="labelDisplay" width="250" isFixed="true" left="50" verticalCenter="0" size="40"  textColor="0xe9b76f" textColor.down="0x654D29"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group id="resetPasswordGroup" width="1080" horizontalCenter="0" verticalCenter="0" height="100%" visible="false">
+		<eui:ALabel text="login_lbl_forget_password_title" y="255" size="70" width="800" textAlign="center" horizontalCenter="0" isFixed="true"/>
+		<eui:ALabel text="login_lbl_forget_password_prompt" y="357" size="40" width="800" horizontalCenter="0" textAlign="center" isFixed="true"/>
+		<e:Image source="login_pic_username_png" y="537" width="86" height="86" horizontalCenter="-442"/>
+		<e:Image y="707" width="86" height="86" horizontalCenter="-442" source="login_pic_mail_png"/>
+		<e:Image source="login_pic_code_png" y="880" width="86" height="86" horizontalCenter="-442"/>
+		<e:Image source="login_pic_separateline_png" y="622" width="890" horizontalCenter="39"/>
+		<e:Image source="login_pic_separateline_png" y="793" width="890" horizontalCenter="39"/>
+		<e:Image source="login_pic_separateline_png" y="964" width="890" horizontalCenter="39"/>
+		<e:EditableText id="forgetNameInput" width="560" height="50" text="" y="559" anchorOffsetX="0" anchorOffsetY="0" size="35" prompt="login_lbl_forget_password_prompt_account" textColor="0xffffff" textAlign="center" horizontalCenter="-95" maxChars="12" verticalAlign="middle"/>
+		<e:EditableText id="forgetMailInput" width="560" height="50" text="" y="726" anchorOffsetX="0" anchorOffsetY="0" size="35" prompt="login_lbl_forget_password_prompt_email" textColor="0xffffff" textAlign="center" horizontalCenter="-95" verticalAlign="middle"/>
+		<e:EditableText id="forgetVerifyCodeInput" width="560" height="50" text="" y="899" anchorOffsetX="0" anchorOffsetY="0" size="35" prompt="login_lbl_verification_code" textColor="0xffffff" textAlign="center" maxChars="4" horizontalCenter="-95" verticalAlign="middle"/>
+		<e:Image id="verifyImg" y="809" width="290" height="101" horizontalCenter="339" source=""/>
+		<eui:ALabel id="verifyRefresh" text="global_lbl_refresh_vericode" size="30" width="290" textAlign="center" horizontalCenter="339" textColor="0xe9b76f" color_press="0x654D29" color_default="0xE9B76F" y="925" isFixed="true"/>
+
+
+
+		<eui:AButton id="sureResetPasswordBtn" label="login_btn_confirm" y="1021" width="970" height="97" horizontalCenter="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+				<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000" size="50"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group id="returnLoginFromForget" width="300" height="66" horizontalCenter="0" bottom="116">
+			<eui:AImage width="66" height="66" x="0" y="0" source="main_btn_return_png" source_default="main_btn_return_png" source_press="main_btn_return_p_png" scaleX="1" scaleY="1" name="img"/>
+			<eui:ALabel text="login_btn_return_login" y="12" width="200" size="40" textColor="0xe9b76f" color_default="0xE9B76F" color_press="0x654D29" textAlign="center" horizontalCenter="0" x="49" scaleX="1" scaleY="1" name="label" isFixed="true"/>
+		</e:Group>
+		<e:Group id="forgetTipGroup" width="1080" height="1920" touchChildren="false" touchEnabled="false" touchThrough="true" anchorOffsetX="540" anchorOffsetY="960" verticalCenter="0" horizontalCenter="0" visible="false">
+			<e:Image source="pic_popup1_png" scaleX="-1" scaleY="1" width="544" height="81" anchorOffsetX="272" horizontalCenter="-272" verticalCenter="242.5"/>
+			<e:Image source="pic_popup1_png" scaleX="1" scaleY="1" width="544" height="81" horizontalCenter="272" verticalCenter="242.5"/>
+			<eui:ALabel id="forgetTipLabel" text="login_lbl_email_Inconsistent" width="603" size="35" textColor="0xff0000" horizontalCenter="0" textAlign="center" verticalCenter="244.5"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="loginByNameAndCodeGroup" width="1080" height="100%" horizontalCenter="0" verticalCenter="0" visible="false">
+		<eui:ALabel text="login_lbl_welcome" y="255" size="70" width="800" textAlign="center" horizontalCenter="0" isFixed="true"/>
+		<eui:ALabel text="请登入账户" y="357" size="40" width="400" horizontalCenter="0" textAlign="center" isFixed="true"/>
+		<e:Image source="login_pic_username_png" y="537" width="86" height="86" horizontalCenter="-442"/>
+		<e:Image source="login_pic_password_png" y="707" width="86" height="86" horizontalCenter="-442"/>
+		<e:Image source="login_pic_separateline_png" y="622" width="890" horizontalCenter="39"/>
+		<e:Image source="login_pic_separateline_png" y="793" width="890" horizontalCenter="39"/>
+		<e:EditableText id="joinNameInput" width="750" height="90" text="" y="522" anchorOffsetX="0" anchorOffsetY="0" size="80" prompt="username" textColor="0xffffff" textAlign="center" horizontalCenter="0" maxChars="16"/>
+		<e:EditableText id="joinPasswordInput" width="750" height="90" text="" y="690" anchorOffsetX="0" anchorOffsetY="0" size="80" prompt="password" textColor="0xffffff" textAlign="center" horizontalCenter="0" maxChars="16"/>
+		<eui:AButton id="joinLoginBtn" label="登录" width="968" height="98" horizontalCenter="0" y="863">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+			<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000"  textColor.down="0xE9B76F" size="50"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="nowRegisterBtn" label="login_btn_straightway_register" horizontalCenter="395" bottom="131" width="180" height="40">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xe9b76f" size="40"  textColor.down="0x654D29"/>
+						</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+
+		<e:Group id="returnRegister" width="300" height="66" bottom="118" horizontalCenter="-337">
+			<eui:AImage width="66" height="66" x="0" y="0" source="main_btn_return_png" source_default="main_btn_return_png" source_press="main_btn_return_p_png" scaleX="1" scaleY="1" name="img"/>
+			<eui:ALabel text="global_btn_back_text" y="12" width="200" size="40" textColor="0xe9b76f" color_default="0xE9B76F" color_press="0x654D29" textAlign="center" horizontalCenter="0" x="49" scaleX="1" scaleY="1" name="label" isFixed="true"/>
+		</e:Group>
+		<e:Group id="loginByNameAndCodeTipGroup" width="1080" height="1920" scaleX="1" scaleY="1" touchThrough="true" touchChildren="false" touchEnabled="false" anchorOffsetX="540" anchorOffsetY="960" verticalCenter="0" horizontalCenter="0" visible="false">
+			<e:Image source="pic_popup1_png" scaleX="-1" scaleY="1" width="544" height="81" anchorOffsetX="272" horizontalCenter="-272" verticalCenter="217.5"/>
+			<e:Image source="pic_popup1_png" scaleX="1" scaleY="1" width="544" height="81" horizontalCenter="272" verticalCenter="217.5"/>
+			<eui:ALabel id="loginByNameAndCodeTipLabel" text="账号或密码错误，您还可以尝试2次" width="603" size="35" textColor="0xff0000" horizontalCenter="0" textAlign="center" verticalCenter="220.5"/>
+
+		</e:Group>
+	</e:Group>
+	<e:Group id="openAppGroup" width="425" height="158" bottom="265" horizontalCenter="0" visible="false">
+		<e:Image source="login_pic_icon_png" top="0" horizontalCenter="0"/>
+		<eui:AButton id="openAPPBtn" label="在APP中打开" width="425" height="72" horizontalCenter="0" bottom="0" x="304" y="366" scaleX="1" scaleY="1">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%"  scale9Grid="21,16,39,41" source="login_btn_open_png" source.down="login_btn_open_p_png"/>
+				<eui:ALabel id="labelDisplay" isFixed="true" width="425" textAlign="center"  textColor="0x000000" textColor.down="0xE9B76F" size="35" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+
+
+</e:Skin>

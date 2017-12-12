@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="cardBuyRecordItemSkin" width="1080" height="165" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="menu_btn_all_bg2_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Image id="imgBgd" width="100%" height="100%" x="0" y="0" source="menu_btn_all_bg1_png" visible="false"/>
+	<e:Rect width="155" height="45" x="15" y="93" fillColor="0x000000" alpha="0.6"/>
+	<eui:ALabel id="labelYear" text="2017/10/13" x="15" y="50" size="30" height="30" verticalAlign="middle" textAlign="center" width="155"/>
+	<eui:ALabel id="labelHour" text="16:08:37" x="15" y="100" size="30" height="30" verticalAlign="middle" textAlign="center" width="155" textColor="0xb5b1ac"/>
+	<eui:ALabel id="labelNumber" text="serial_number" size="30" height="30" verticalAlign="middle" textAlign="left" width="250" isFixed="true" left="260" y="68"/>
+
+	<eui:ALabel id="labelCount" textAlign="right" width="220" height="30" right="350" text="0" size="30" isFixed="true" y="68" textColor="0x00ff00"/>
+
+	<eui:ALabel id="labelMoney" text="0" right="25" width="280" size="35" height="35" verticalCenter="0" textAlign="right" verticalAlign="middle" isFixed="true" textColor="0xe7b570"/>
+</e:Skin>

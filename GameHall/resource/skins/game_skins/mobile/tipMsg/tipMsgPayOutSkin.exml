@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="tipMsgPayOut" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group top="0" left="0" bottom="0" right="0">
+		<e:Group id="payOutGroup" bottom="330" left="0" right="0" x="0" y="1170" scaleX="1" scaleY="1">
+			<e:Group height="200" scaleX="1" scaleY="1" bottom="220" left="0" right="0">
+			<e:Image id="payOutBg" source="pic_light_png" y="9.05" horizontalCenter="0" left="0" right="0"/>
+			<e:Image id="payOutImg0" y="94.31" horizontalCenter="-67" source="pic_chip1_png"/>
+			<e:Image id="payOutImg1" y="75.67" horizontalCenter="-67" source="pic_chip2_png"/>
+			<e:Image id="payOutImg2" y="58.84" horizontalCenter="-67" source="pic_chip3_png"/>
+			<e:Image id="payOutImg3" y="102.84" horizontalCenter="32" source="pic_chip1_png"/>
+			<e:Image id="payOutImg4" y="86.21" horizontalCenter="32" source="pic_chip3_png"/>
+			<e:Image id="payOutImg5" y="72.45" horizontalCenter="32" source="pic_chip2_png"/>
+			<e:Image id="payOutImg6" source="pic_chip1_png" y="57.55" horizontalCenter="32"/>
+			</e:Group>
+			<e:Group id="payOutTxtGroup" left="0" right="0" height="220" x="-273" scaleX="1" scaleY="1" bottom="0">
+			<e:Image source="pic_popup5_png" y="0" width="50%" left="50%"/>
+			<e:Image source="pic_popup5_png" y="0" scaleY="1" scaleX="-1" width="50%" right="50%"/>
+			<e:BitmapLabel id="payOutNum" horizontalCenter="0" font="game_share_golden_105_fnt" text="0" left="0" right="0" bottom="0" top="100" textAlign="center" verticalAlign="middle"/>
+			<e:Label text="您获得派彩" y="27" textAlign="center" verticalAlign="middle" size="45" horizontalCenter="0"/>
+			<e:Group id="isWinnerGroup" horizontalCenter="0" x="250" scaleX="1" scaleY="1" top="-122">
+				<e:Image source="pic_winner_png" y="67.08999999999992" horizontalCenter="0" x="100" scaleX="1" scaleY="1"/>
+				<eui:ALabel xmlns:eui="eui.*" text="天生赢家" y="89.70000000000005" size="35" width="300" horizontalCenter="0" textAlign="center" textColor="0x000000" x="240" scaleX="1" scaleY="1"/>
+			</e:Group>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

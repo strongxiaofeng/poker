@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="re" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="bg_black_png" x="0" y="0" width="100%" height="100%" alpha="0.5"/>
+	<e:Image source="club_pic_popupbg2_pc_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="club_pic_card_pc_png" horizontalCenter="0" verticalCenter="9"/>
+</e:Skin>

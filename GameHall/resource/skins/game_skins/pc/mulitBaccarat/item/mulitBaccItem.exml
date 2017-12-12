@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="baccaratItemSkin" width="1170" height="305" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="multipledesk_pic_tablebg_pc_png" top="0" bottom="0" left="0" right="0" scale9Grid="146,14,882,91" />
+	<e:Group height="45" left="0" right="0" top="5">
+		<eui:ALabel id="roomNumText" width="60" left="10" verticalAlign="middle" textAlign="left" text="1" size="30"
+		            textColor="0xe9b76f" top="0" bottom="0" />
+		<e:Group top="0" left="70" bottom="53">
+			<e:ALabel id="roomName" text="百家乐一号房" size="22" verticalAlign="middle" textAlign="left" width="135"
+			          textColor="0xecbc74" isFixed="true" x="0" verticalCenter="0" />
+			<e:Group width="320" top="5" bottom="0" right="-390">
+				<eui:ALabel id="limitAlebel" text="限额：300-1,000" size="15" alpha="0.8" verticalAlign="middle" textAlign="left"
+				            width="320" isFixed="true" x="0" y="0" />
+				<eui:ALabel id="gamesNum" text="局数：200" size="15" width="100" alpha="0.8" scaleX="1" scaleY="1"
+				            verticalAlign="middle" textAlign="left" isFixed="true" y="25" x="0" />
+				<eui:ALabel id="roundID" text="牌局号：B1-170605753686009" size="15" alpha="0.8" scaleX="1" scaleY="1"
+				            verticalAlign="middle" textAlign="left" y="25" isFixed="true" width="212" x="108" />
+			</e:Group>
+		</e:Group>
+		<e:Group id="stageGroup" width="45" height="45" top="0" right="20">
+			<e:Image id="isHireImg" width="35" height="35" left="-60" source="mine_pic_free_png" verticalCenter="0" />
+		</e:Group>
+		<e:Group top="0" bottom="0" right="160">
+			<e:Label text="本局我下注：" textColor="0xecbc74" verticalCenter="0" size="20" left="0" />
+			<e:BitmapLabel id="betMsgText" left="120" text="0" font="game_share_golden_75_pc_fnt" scaleX="0.5" scaleY="0.5"
+			               verticalCenter="0" />
+		</e:Group>
+	</e:Group>
+	<e:Group width="545" height="205" top="55" left="5">
+		<e:Group id="roadMap" anchorOffsetX="0" anchorOffsetY="0" height="205" width="545" left="0" top="0" x="0" y="0"
+		         scaleX="1" scaleY="1">
+			<e:Image id="roadBgImg" source="pic_popup2_bg_png" width="545" x="-1" height="205" y="-1" />
+			<e:Group id="bead_road" anchorOffsetX="0" width="185.3" x="0" height="205" y="0" />
+			<e:Group id="big_road" height="102.5" y="0" width="359.7" x="185.3"></e:Group>
+			<e:Group id="big_eye_road" height="51.25" y="102.5" width="359.7" x="185.3" />
+			<e:Group id="small_road" height="51.25" y="153.75" width="179.84999999999997" x="185.30000000000004" />
+			<e:Group id="cockroach_road" height="51.25" y="153.75" width="179.84999999999997" x="365.15000000000003" />
+			<eui:ALabel id="shuffleLabel" text="洗牌中" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" bottom="0"
+			            right="0" left="0" top="0" size="55" verticalAlign="middle" textAlign="center" alpha="0.7"
+			            visible="false" />
+		</e:Group>
+		<e:Group id="dealCardGroup" left="0" right="0" top="0" x="-5" scaleX="1" scaleY="1" bottom="0" visible="false">
+			<e:Group id="blueDealCard" left="0" right="50%" top="0" bottom="0">
+				<e:Image id="playerBlueBg" left="0" right="0" top="0" bottom="0" alpha="1" source="opencard_pic_blue_png" />
+				<e:Group width="75" height="110" top="5" anchorOffsetX="0" anchorOffsetY="0" right="100">
+					<e:Image id="player_1" source="mpoker_pic_back_png" scaleX="1" width="75" x="0" height="110" y="0" visible="false" />
+					<e:Image source="opencard_pic_cardarea_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" left="0" right="0"
+					         top="0" bottom="0" />
+				</e:Group>
+				<e:Group width="75" height="110" top="5" right="15">
+					<e:Image id="player_2" source="mpoker_pic_back_png" width="75" x="0" height="110" y="0" visible="false" />
+					<e:Image source="opencard_pic_cardarea_png" top="0" bottom="0" right="0" left="0" />
+				</e:Group>
+				<e:Group width="110" height="75" bottom="5" right="15">
+					<e:Image id="player_3" source="mpoker_pic_back_png" rotation="90" width="75" x="110" height="110" y="0"
+					         visible="false" />
+					<e:Image source="opencard_pic_cardarea_png" left="0" right="0" top="0" bottom="0" />
+				</e:Group>
+				<e:Image id="playPayImg" bottom="0" left="0" height="40" width="150" source="multipledesk_pic_blue2_pc_png" />
+				<e:BitmapLabel id="playCardNum" anchorOffsetX="0" anchorOffsetY="0" font="game_share_blue_260_fnt" text="0"
+				               alpha="1" left="10" scaleX="0.5" scaleY="0.5" bottom="45" />
+				<e:Image id="playerGrayBg" source="opencard_pic_gray_png" left="0" top="0" bottom="0" right="0" visible="false" />
+				<eui:ALabel text="闲" size="20" width="20" left="15" bottom="10" />
+			</e:Group>
+			<e:Group id="redDealCard" right="0" top="0" bottom="0" left="50%">
+				<e:Image id="bankerRedBg" anchorOffsetX="0" anchorOffsetY="0" alpha="1" left="0" right="0" top="0"
+				         source="opencard_pic_red_png" bottom="0" />
+				<e:Image id="bankerPayImg" bottom="0" height="40" right="0" width="150" source="multipledesk_pic_red2_pc_png" />
+				<e:Group width="75" height="110" top="5" left="100">
+					<e:Image id="banker_2" source="mpoker_pic_back_png" width="75" x="0" height="110" y="0"  visible="false"/>
+					<e:Image source="opencard_pic_cardarea_png" left="0" right="0" top="0" bottom="0" />
+				</e:Group>
+				<e:Group width="75" height="110" top="5" left="15">
+					<e:Image id="banker_1" source="mpoker_pic_back_png" width="75" x="0" height="110" y="0" scaleX="1"  visible="false"/>
+					<e:Image source="opencard_pic_cardarea_png" right="0" left="0" bottom="0" top="0" />
+				</e:Group>
+				<e:Group width="110" height="75" top="125" left="15">
+					<e:Image id="banker_3" source="mpoker_pic_back_png" rotation="270" width="75" x="0" height="110" y="75"
+					         visible="false" />
+					<e:Image source="opencard_pic_cardarea_png" right="0" left="0" bottom="0" top="0" />
+				</e:Group>
+				<e:BitmapLabel id="bankerCardNum" font="game_share_red_260_fnt" text="0" scaleX="0.5" scaleY="0.5" right="10"
+				               bottom="45" />
+				<e:Image id="bankerGrayBg" top="0" bottom="0" source="opencard_pic_gray_png" visible="false" width="272.5" x="0" />
+				<eui:ALabel text="庄" size="20" width="20" bottom="10" y="175" scaleX="1" scaleY="1" right="15" />
+			</e:Group>
+			<eui:AMovieClip id="lightningE" width="85" top="0" bottom="0" horizontalCenter="0" sources="light_a_|1-3|_png"
+			                alpha="1" source="light_a_1_png" />
+			<e:Group id="tiePayout" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" visible="false">
+				<e:Image id="tieDealCard" source="opencard_pic_light_png" horizontalCenter="0" verticalCenter="0" width="286"
+				         height="286" anchorOffsetX="143" anchorOffsetY="143" />
+				<e:Image id="tieDealCardTxt" source="baccarat_pic_tie_png" verticalCenter="0" horizontalCenter="0" />
+			</e:Group>
+		</e:Group>
+		<e:Group id="payOutGroup" left="0" top="0" bottom="0" right="0" visible="false">
+			<e:Group left="0" right="0" x="-185" scaleX="1" scaleY="1" top="0" bottom="15">
+				<e:Group height="50%" scaleX="1" scaleY="1" left="0" right="0" anchorOffsetY="0" y="0">
+					<e:Image id="payOutBg" source="pic_light_pc_png" scaleX="0.5" scaleY="0.5" y="33.08" horizontalCenter="0" />
+					<e:Image id="payOutImg0" y="62.44" horizontalCenter="-20.5" source="pic_chip1_pc_png" scaleX="0.5" scaleY="0.5" />
+					<e:Image id="payOutImg1" y="53.87" horizontalCenter="-20.5" source="pic_chip2_pc_png" scaleX="0.5" scaleY="0.5" />
+					<e:Image id="payOutImg2" y="44.97" horizontalCenter="-20.5" source="pic_chip3_pc_png" scaleX="0.5" scaleY="0.5" />
+					<e:Image id="payOutImg3" y="66.36" horizontalCenter="22.5" source="pic_chip1_pc_png" scaleX="0.5" scaleY="0.5" />
+					<e:Image id="payOutImg4" y="57.3" horizontalCenter="22.5" source="pic_chip3_pc_png" scaleX="0.5" scaleY="0.5" />
+					<e:Image id="payOutImg5" y="50.43" horizontalCenter="23.5" source="pic_chip2_pc_png" scaleX="0.5" scaleY="0.5" />
+					<e:Image id="payOutImg6" y="41.54" horizontalCenter="22.5" source="pic_chip1_pc_png" scaleX="0.5" scaleY="0.5" />
+				</e:Group>
+				<e:Group id="payOutTxtGroup" left="0" right="0" x="-273" scaleX="1" scaleY="1" anchorOffsetY="0" bottom="10" height="80">
+					<e:Image width="50%" left="50%" top="0" source="pic_popup3_pc_png" bottom="0" />
+					<e:Image scaleY="1" scaleX="-1" width="50%" right="50%" source="pic_popup3_pc_png" bottom="0" top="0" />
+					<e:BitmapLabel id="payOutNum" font="game_share_golden_105_fnt" text="0" textAlign="center" verticalAlign="middle"
+					               horizontalCenter="0" scaleX="0.5" scaleY="0.5" y="31.68" />
+					<e:Label text="您获得派彩" textAlign="center" verticalAlign="middle" size="15" horizontalCenter="0" textColor="0xFFFFFF"
+					         top="12" />
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="mulitGroup" top="0" bottom="0" width="545" x="0" visible="false">
+			<e:Image source="bg_black_png" left="0" right="0" top="0" bottom="0" />
+			<e:Group id="limitGroup" left="0" top="0" bottom="5" right="0" visible="false">
+				<e:Image source="multipledesk_pic_slidebg2_pc_png" y="0" scaleX="1" scaleY="1" right="0" width="545" height="205" />
+
+				<eui:ALabel text="投注项" width="100" height="30" top="35" size="15" verticalAlign="middle" textColor="0xecbc74"
+				            left="10" x="10" y="35" scaleX="1" scaleY="1" />
+				<eui:ALabel text="闲" width="100" height="27" top="65" size="15" verticalAlign="middle" left="10"
+				            textColor="0xffffff" x="10" y="65" scaleX="1" scaleY="1" />
+				<eui:ALabel text="庄" width="100" height="27" top="92" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            left="10" x="10" y="92" scaleX="1" scaleY="1" />
+				<eui:ALabel text="1:1" width="100" top="98" size="15" verticalAlign="middle" textColor="0xFFFFFF" left="160"
+				            isFixed="true" x="160" y="98" scaleX="1" scaleY="1" />
+				<eui:ALabel text="和" width="100" height="27" top="119" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            left="10" x="10" y="119" scaleX="1" scaleY="1" />
+				<eui:ALabel text="1:8" width="100" top="125" size="15" verticalAlign="middle" textColor="0xFFFFFF" left="160"
+				            isFixed="true" x="160" y="125" scaleX="1" scaleY="1" />
+				<eui:ALabel text="闲对" width="100" height="27" top="146" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            left="10" x="10" y="146" scaleX="1" scaleY="1" />
+				<eui:ALabel text="1:11" width="100" top="151" size="15" verticalAlign="middle" textColor="0xFFFFFF" left="160"
+				            isFixed="true" x="160" y="151" scaleX="1" scaleY="1" />
+				<eui:ALabel text="庄对" width="100" height="27" size="15" verticalAlign="middle" textColor="0xFFFFFF" left="10"
+				            bottom="0" x="10" y="178" scaleX="1" scaleY="1" />
+				<eui:ALabel text="1:11" width="100" size="15" verticalAlign="middle" textColor="0xFFFFFF" left="160" isFixed="true"
+				            bottom="6" x="160" y="184" scaleX="1" scaleY="1" />
+				<eui:ALabel text="赔率" width="100" height="30" top="35" size="15" verticalAlign="middle" textColor="0xECBC74"
+				            left="160" x="160" y="35" scaleX="1" scaleY="1" />
+				<eui:ALabel text="1:1" width="100" top="71" size="15" verticalAlign="middle" left="160" textColor="0xffffff"
+				            isFixed="true" x="160" y="71" scaleX="1" scaleY="1" />
+				<eui:ALabel id="bankerMinNum" text="1" width="100" top="98" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            isFixed="true" right="180" textAlign="right" x="265" y="98" scaleX="1" scaleY="1" />
+				<eui:ALabel id="tieMinNum" text="1" width="100" top="125" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            isFixed="true" y="125" right="180" textAlign="right" x="265" scaleX="1" scaleY="1" />
+				<eui:ALabel id="player_pairMinNum" text="1" width="100" top="151" size="15" verticalAlign="middle"
+				            textColor="0xFFFFFF" isFixed="true" y="151" right="180" textAlign="right" x="265" scaleX="1" scaleY="1" />
+				<eui:ALabel id="banker_pairMinNum" text="1" width="100" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            bottom="6" isFixed="true" y="184" right="180" textAlign="right" x="265" scaleX="1" scaleY="1" />
+				<eui:ALabel id="playerMinNum" text="1" width="100" top="71" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            isFixed="true" right="180" textAlign="right" x="265" y="71" scaleX="1" scaleY="1" />
+				<eui:ALabel id="bankerMaxNum" text="1" width="100" top="98" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            isFixed="true" right="10" textAlign="right" x="435" y="98" scaleX="1" scaleY="1" />
+				<eui:ALabel id="tieMaxNum" text="1" width="100" top="125" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            isFixed="true" y="125" right="10" textAlign="right" x="435" scaleX="1" scaleY="1" />
+				<eui:ALabel id="player_pairMaxNum" text="1" width="100" top="151" size="15" verticalAlign="middle"
+				            textColor="0xFFFFFF" isFixed="true" y="151" right="10" textAlign="right" x="435" scaleX="1" scaleY="1" />
+				<eui:ALabel id="banker_pairMaxNum" text="1" width="100" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            bottom="6" isFixed="true" y="184" right="10" textAlign="right" x="435" scaleX="1" scaleY="1" />
+				<eui:ALabel id="playerMaxNum" text="1" width="100" top="71" size="15" verticalAlign="middle" textColor="0xFFFFFF"
+				            isFixed="true" right="10" textAlign="right" x="435" y="71" scaleX="1" scaleY="1" />
+				<eui:ALabel text="最小投注" width="100" height="30" top="35" size="15" verticalAlign="middle" textColor="0xECBC74"
+				            textAlign="right" right="180" x="265" y="35" scaleX="1" scaleY="1" />
+				<eui:ALabel text="最大投注" width="100" height="30" top="35" size="15" verticalAlign="middle" textColor="0xECBC74"
+				            textAlign="right" right="10" x="435" y="35" scaleX="1" scaleY="1" />
+				<e:Group height="35" left="0" right="0" top="0" x="0" y="0" scaleX="1" scaleY="1">
+					<eui:ALabel text="房间限额" width="100" left="10" top="10" size="15" textAlign="left" verticalAlign="middle" textColor="0xECBC74" isFixed="true"/>
+					<eui:AButton id="limitBackBtn" label="" top="0" right="0" width="50" height="35" enabled="true">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source.down="multipledesk_btn_all2_p_pc_png"/>
+						<e:Image source="desk_btn_limiticon_pc_png" source.down="desk_btn_limiticon_p_pc_png" horizontalCenter="0" verticalCenter="0" scaleX="-1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</eui:skinName>
+					</eui:AButton>
+				</e:Group>
+			</e:Group>
+			<e:Group id="trendGroup" left="0" top="0" bottom="5" right="0" visible="false">
+				<e:Image source="multipledesk_pic_slidebg_pc_png" left="0" top="0" bottom="0" right="0" />
+				<e:Group height="35" left="0" right="0" top="0" x="0" y="0" scaleX="1" scaleY="1">
+					<eui:ALabel text="已开局走势" width="100" left="10" top="10" size="15" textAlign="left" verticalAlign="middle"
+					            textColor="0xECBC74" isFixed="true" />
+					<eui:AButton id="trendBackBtn" label="" top="0" right="0" width="50" height="35" enabled="true">
+						<eui:skinName>
+							<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source.down="multipledesk_btn_all2_p_pc_png" />
+								<e:Image source="desk_btn_limiticon_pc_png" source.down="desk_btn_limiticon_p_pc_png" horizontalCenter="0"
+								         verticalCenter="0" scaleX="-1" />
+								<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+							</e:Skin>
+						</eui:skinName>
+					</eui:AButton>
+				</e:Group>
+				<e:Group top="35" bottom="0" left="0" right="0" scaleX="0.5" scaleY="0.5">
+
+
+					<e:Image height="15" top="41"  left="115" source="multipledesk_pic_scale_pc_png" anchorOffsetX="0" width="964" anchorOffsetY="0"/>
+					<e:Image verticalCenter="4.5" width="964" height="13"  left="115" source="multipledesk_pic_scale_pc_png"/>
+					<e:Image width="964" height="13" bottom="33"  left="115" source="multipledesk_pic_scale_pc_png"/>
+					<e:Image source="baccarat_pic_bk1_png" left="40" height="50" width="50" top="35" />
+					<e:Image source="baccarat_pic_tie_png" left="40" height="50" width="50" verticalCenter="0" />
+					<e:Image source="baccarat_pic_pl1_png" left="40" height="50" width="50" bottom="30" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<e:Group id="groupLine" width="962" top="40" bottom="40"  left="115"/>
+					<e:Group id="groupDots" width="962" top="40" bottom="40" left="115" anchorOffsetX="0">
+						<e:Image id="dotB1" source="roominfo_pic_dot1_png" x="-10" height="35" width="35" top="-7" />
+						<e:Image id="dotT1" source="roominfo_pic_dot2_png" x="-10" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP1" source="roominfo_pic_dot3_png" x="-10" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB2" source="roominfo_pic_dot1_png" x="40" height="35" width="35" top="-7" />
+						<e:Image id="dotT2" source="roominfo_pic_dot2_png" x="40" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP2" source="roominfo_pic_dot3_png" x="40" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB3" source="roominfo_pic_dot1_png" x="90" height="35" width="35" top="-7" />
+						<e:Image id="dotT3" source="roominfo_pic_dot2_png" x="90" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP3" source="roominfo_pic_dot3_png" x="90" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB4" source="roominfo_pic_dot1_png" x="140" height="35" width="35" top="-7" />
+						<e:Image id="dotT4" source="roominfo_pic_dot2_png" x="140" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP4" source="roominfo_pic_dot3_png" x="140" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB5" source="roominfo_pic_dot1_png" x="190" height="35" width="35" top="-7" />
+						<e:Image id="dotT5" source="roominfo_pic_dot2_png" x="190" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP5" source="roominfo_pic_dot3_png" x="190" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB6" source="roominfo_pic_dot1_png" x="240" height="35" width="35" top="-7" />
+						<e:Image id="dotT6" source="roominfo_pic_dot2_png" x="240" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP6" source="roominfo_pic_dot3_png" x="240" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB7" source="roominfo_pic_dot1_png" x="290" height="35" width="35" top="-7" />
+						<e:Image id="dotT7" source="roominfo_pic_dot2_png" x="290" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP7" source="roominfo_pic_dot3_png" x="290" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB8" source="roominfo_pic_dot1_png" x="340" height="35" width="35" top="-7" />
+						<e:Image id="dotT8" source="roominfo_pic_dot2_png" x="340" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP8" source="roominfo_pic_dot3_png" x="340" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB9" source="roominfo_pic_dot1_png" x="390" height="35" width="35" top="-7" />
+						<e:Image id="dotT9" source="roominfo_pic_dot2_png" x="390" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP9" source="roominfo_pic_dot3_png" x="390" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB10" source="roominfo_pic_dot1_png" x="440" height="35" width="35" top="-7" />
+						<e:Image id="dotT10" source="roominfo_pic_dot2_png" x="440" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP10" source="roominfo_pic_dot3_png" x="440" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB11" source="roominfo_pic_dot1_png" x="490" height="35" width="35" top="-7" />
+						<e:Image id="dotT11" source="roominfo_pic_dot2_png" x="490" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP11" source="roominfo_pic_dot3_png" x="490" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB12" source="roominfo_pic_dot1_png" x="540" height="35" width="35" top="-7" />
+						<e:Image id="dotT12" source="roominfo_pic_dot2_png" x="540" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP12" source="roominfo_pic_dot3_png" x="540" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB13" source="roominfo_pic_dot1_png" x="590" height="35" width="35" top="-7" />
+						<e:Image id="dotT13" source="roominfo_pic_dot2_png" x="590" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP13" source="roominfo_pic_dot3_png" x="590" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB14" source="roominfo_pic_dot1_png" x="640" height="35" width="35" top="-7" />
+						<e:Image id="dotT14" source="roominfo_pic_dot2_png" x="640" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP14" source="roominfo_pic_dot3_png" x="640" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB15" source="roominfo_pic_dot1_png" x="690" height="35" width="35" top="-7" />
+						<e:Image id="dotT15" source="roominfo_pic_dot2_png" x="690" height="35" width="35" verticalCenter="4" />
+						<e:Image id="dotP15" source="roominfo_pic_dot3_png" x="690" height="35" width="35" bottom="-15" />
+						<e:Image id="dotB16" source="roominfo_pic_dot1_png" x="740" height="35" width="35" top="-7"/>
+						<e:Image id="dotT16" source="roominfo_pic_dot2_png" x="740" height="35" width="35" verticalCenter="4" y="10"/>
+						<e:Image id="dotP16" source="roominfo_pic_dot3_png" x="740" height="35" width="35" bottom="-15" y="10"/>
+						<e:Image id="dotB17" source="roominfo_pic_dot1_png" x="790" height="35" width="35" top="-7"/>
+						<e:Image id="dotT17" source="roominfo_pic_dot2_png" x="790" height="35" width="35" verticalCenter="4" y="10"/>
+						<e:Image id="dotP17" source="roominfo_pic_dot3_png" x="790" height="35" width="35" bottom="-15" y="20"/>
+						<e:Image id="dotB18" source="roominfo_pic_dot1_png" x="840" height="35" width="35" top="-7"/>
+						<e:Image id="dotT18" source="roominfo_pic_dot2_png" x="840" height="35" width="35" verticalCenter="4" y="10"/>
+						<e:Image id="dotP18" source="roominfo_pic_dot3_png" x="840" height="35" width="35" bottom="-15" y="20"/>
+						<e:Image id="dotB19" source="roominfo_pic_dot1_png" x="890" height="35" width="35" top="-7"/>
+						<e:Image id="dotT19" source="roominfo_pic_dot2_png" x="890" height="35" width="35" verticalCenter="4" y="10"/>
+						<e:Image id="dotP19" source="roominfo_pic_dot3_png" x="890" height="35" width="35" bottom="-15" y="20"/>
+						<e:Image id="dotB20" source="roominfo_pic_dot1_png" x="940" height="35" width="35" top="-7"/>
+						<e:Image id="dotT20" source="roominfo_pic_dot2_png" x="940" height="35" width="35" verticalCenter="4" y="10"/>
+						<e:Image id="dotP20" source="roominfo_pic_dot3_png" x="940" height="35" width="35" bottom="-15" y="20"/>
+					</e:Group>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+
+	<e:Group top="55" anchorOffsetY="0" bottom="45" width="540" x="550" scrollEnabled="true">
+		<e:Group id="betGroup" top="0" anchorOffsetY="0" bottom="0" width="540" x="0">
+			<e:Image source="bettingarea_pic_bg_png" left="0" right="0" x="0" scaleX="1" scaleY="1" top="0" bottom="0"/>
+			<e:Image top="0" left="0" right="0" bottom="0" verticalCenter="0" source="multipledesk_pic_table_pc_png"/>
+			<e:Image source="desk_btn_confirm1_bg_png" left="0" right="0" top="0" alpha="0.1" bottom="0"/>
+			<e:Group top="50%" bottom="0" left="0" right="0">
+			<e:Group id="playerBetZone" top="0" bottom="0" left="0" right="50%" touchChildren="false">
+				<e:Image id="playerBetBg" right="0" left="0" top="0" bottom="0" source="multipledesk_pic_player_pc_png" visible="false"/>
+				<e:Image id="playerNumImg" verticalCenter="0" source="bettingarea_pic_ratiopb1_pc_png" scaleX="0.7" scaleY="0.7" x="29.67"/>
+
+				<e:Group id="playerUnSureNumG" horizontalCenter="0" verticalCenter="0">
+				<e:Image id="playerImg" verticalCenter="0" horizontalCenter="0" x="-81" y="-1" scaleX="0.5" scaleY="0.5" source="baccarat_pic_player_y_png"/>
+				<e:Group id="playerUnSureG" horizontalCenter="0" top="-30" visible="false">
+					<e:Image source="bettingarea_pic_putbar_png" anchorOffsetX="0" width="165" anchorOffsetY="0" height="40" x="0" top="0"/>
+					<e:BitmapLabel id="playerUnSureNum" height="78" font="game_share_golden_105_fnt" text="965.3" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.2" scaleY="0.2" top="5"/>
+					<e:Image source="desk_pic_pay_chips_png" anchorOffsetX="0" width="25" anchorOffsetY="0" height="27" left="10" top="0"/>
+				</e:Group>
+				</e:Group>
+				<e:Group verticalCenter="0" right="25" x="465" y="0" scaleX="1" scaleY="1" height="40" width="40">
+				<e:Group id="bluePercentGroup" scaleX="1" scaleY="1" verticalCenter="0" width="40" height="40" right="0">
+					<e:Image source="bettingarea_pic_percentage_bg_png" scaleX="1" scaleY="1" right="0" bottom="0" top="0" left="0"/>
+					<e:BitmapLabel id="bluePercent" right="0" verticalCenter="3" horizontalCenter="0" scaleX="0.5" scaleY="0.5" text="0%" font="game_share_blue_35_fnt" verticalAlign="middle" textAlign="center" top="3" bottom="-3" left="0"/>
+				</e:Group>
+				<e:Group height="32" anchorOffsetX="0" anchorOffsetY="0" right="0" bottom="-30" x="92" y="61" scaleX="1" scaleY="1">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_chips_pc_png"/>
+					<e:Label id="playerAmount" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15"/>
+					<e:Group height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" right="110%" bottom="0">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_people_pc_png"/>
+					<e:Label id="playerUNum" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15"/>
+					</e:Group>
+				</e:Group>
+				</e:Group>
+				<e:Group id="playerBetNumGroup" height="25" top="0" right="0" left="0" visible="false">
+					<e:Image right="0" top="0" bottom="0" rotation="270" source="play_pic_numbg1_png" left="0"/>
+					<e:Group horizontalCenter="0" verticalCenter="0" top="0" bottom="0">
+					<e:Image source="bettingarea_pic_confirmchips_png" width="25" height="25" rotation="357.73" verticalCenter="0" x="0"/>
+					<e:BitmapLabel id="playerBetNum" left="40" text="965.3" scaleX="0.3" scaleY="0.3" textAlign="center" verticalAlign="middle" font="game_share_golden_105_fnt" verticalCenter="0"/>
+					</e:Group>
+				</e:Group>
+			</e:Group>
+			<e:Group id="bankerBetZone" left="50%" right="0" top="0" bottom="0" touchChildren="false">
+				<e:Image id="bankerBetBg" left="0" top="0" bottom="0" right="0" source="multipledesk_pic_banker_pc_png" visible="false"/>
+				<e:Group height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" bottom="0" left="20">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_people_pc_png"/>
+				<e:Label id="bankerUNum" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="10" size="15"/>
+				<e:Group height="32" anchorOffsetX="0" anchorOffsetY="0" bottom="0" y="0" scaleX="1" scaleY="1" left="110%">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="0" source="multipledesk_pic_chips_pc_png" left="0"/>
+					<e:Label id="bankerAmount" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" size="15" left="15"/>
+				</e:Group>
+				</e:Group>
+				<e:Group id="bankerUnSureNumG" horizontalCenter="0" verticalCenter="0">
+				<e:Image id="bankerImg" source="baccarat_pic_banker_y_png" verticalCenter="0" horizontalCenter="0" x="-81" y="-1" scaleX="0.5" scaleY="0.5"/>
+				<e:Group id="bankerUnSureG" top="-30" horizontalCenter="0" visible="false">
+					<e:Image source="bettingarea_pic_putbar_png" anchorOffsetX="0" width="165" anchorOffsetY="0" height="40" x="0" top="0"/>
+					<e:BitmapLabel id="bankerUnSureNum" height="78" font="game_share_golden_105_fnt" text="965.3" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.2" scaleY="0.2" top="5"/>
+					<e:Image source="desk_pic_pay_chips_png" anchorOffsetX="0" width="25" anchorOffsetY="0" height="27" left="10" top="0"/>
+				</e:Group>
+				</e:Group>
+				<e:Group verticalCenter="0" left="25" width="40" height="40">
+				<e:Group id="redPercentGroup" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" width="40" height="40">
+					<e:Image source="bettingarea_pic_percentage_bg_png" scaleX="1" scaleY="1" left="0" bottom="0" right="0" top="0"/>
+					<e:BitmapLabel id="redPercent" right="0" verticalCenter="0" horizontalCenter="0" scaleX="0.5" scaleY="0.5" text="0%" verticalAlign="middle" textAlign="center" bottom="0" font="game_share_red_35_fnt" top="0" left="0"/>
+				</e:Group>
+				</e:Group>
+				<e:Group id="bankerOdds1" verticalCenter="0" horizontalCenter="80" scaleX="1">
+				<e:Image id="bankerNumImg" scaleX="0.5" scaleY="0.5" width="66" x="0" source="bettingarea_pic_ratiopb1_pc_png" top="0"/>
+				<e:Label text="6点赔0.5" top="30" horizontalCenter="0" alpha="0.5" size="15"/>
+				</e:Group>
+				<e:Image id="bankerOdds2" source="bettingarea_pic_ratiob2_1_png" verticalCenter="0" right="10" x="365" y="126" scaleX="0.5" scaleY="0.5" visible="false"/>
+				<e:Group id="bankerBetNumGroup" height="25" top="0" right="0" left="0" visible="false">
+				<e:Image right="0" bottom="0" rotation="270" source="play_pic_numbg1_png" scaleX="1" scaleY="1" left="0" top="0"/>
+				<e:Group horizontalCenter="0" verticalCenter="0">
+					<e:Image source="bettingarea_pic_confirmchips_png" width="25" height="25" rotation="357.73" verticalCenter="0" x="0"/>
+					<e:BitmapLabel id="bankerBetNum" left="40" text="965.3" scaleX="0.3" scaleY="0.3" textAlign="center" verticalAlign="middle" font="game_share_golden_105_fnt" verticalCenter="0"/>
+				</e:Group>
+				</e:Group>
+			</e:Group>
+			</e:Group>
+			<e:Group top="0" bottom="50%" y="68.75" scaleX="1" scaleY="1" left="0" right="0">
+			<e:Group id="player_pairBetZone" width="193" top="0" bottom="-0.5" left="0" skewY="0" anchorOffsetX="0" touchChildren="false">
+				<e:Image id="player_pairBetBg" left="0" right="0" top="0" bottom="0" anchorOffsetX="0" anchorOffsetY="0" source="multipledesk_pic_playerpair_pc_png" visible="false"/>
+				<e:Image id="player_pairNumImg" source="bettingarea_pic_ratioppbp1_png" scaleX="0.5" scaleY="0.5" verticalCenter="7.5" left="100"/>
+				<e:Group id="player_pairUnSureNumG" verticalCenter="0" x="0">
+				<e:Image id="player_pairImg" source="baccarat_pic_playerpair_y_png" verticalCenter="0" anchorOffsetY="0" scaleX="0.5" scaleY="0.5" left="0"/>
+				<e:Group id="player_pairUnSureG" top="-20" horizontalCenter="0" visible="false">
+					<e:Image anchorOffsetX="0" width="165" anchorOffsetY="0" height="40" x="0" top="0" source="bettingarea_pic_putbar_png"/>
+					<e:BitmapLabel id="player_pairUnSureNum" height="78" font="game_share_golden_105_fnt" text="965.3" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.2" scaleY="0.2" top="5"/>
+					<e:Image source="desk_pic_pay_chips_png" anchorOffsetX="0" width="25" anchorOffsetY="0" height="27" left="10" top="0"/>
+				</e:Group>
+				</e:Group>
+				<e:Group anchorOffsetX="0" anchorOffsetY="0" bottom="5" right="45">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_chips_pc_png"/>
+				<e:Label id="playerPairAmount" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15" textAlign="right"/>
+				<e:Group anchorOffsetX="0" anchorOffsetY="0" bottom="0" y="-5" scaleX="1" scaleY="1" height="20" right="110%">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_people_pc_png"/>
+					<e:Label id="playerPairUnum" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15"/>
+				</e:Group>
+				</e:Group>
+				<e:Group id="player_pairBetNumGroup" top="0" right="0" left="0" height="25" visible="false">
+				<e:Image  source="play_pic_numbg3_png" left="0" top="0" bottom="0" right="0" scaleX="-1"/>
+				<e:Group horizontalCenter="0" verticalCenter="0">
+					<e:Image source="bettingarea_pic_confirmchips_png" width="25" height="25" rotation="357.73" verticalCenter="0" x="0"/>
+					<e:BitmapLabel id="player_pairBetNum" left="40" text="965.3" scaleX="0.3" scaleY="0.3" textAlign="center" verticalAlign="middle" font="game_share_golden_105_fnt" verticalCenter="0"/>
+				</e:Group>
+				</e:Group>
+			</e:Group>
+			<e:Group id="banker_pairBetZone" width="192.33" top="0" bottom="-0.5" right="0" touchChildren="false" anchorOffsetX="0">
+				<e:Image id="banker_pairBetBg" left="0" right="0" top="0" bottom="0" source="multipledesk_pic_bankerpair_pc_png" visible="false"/>
+				<e:Group id="banker_pairUnSureNumG" verticalCenter="0" right="0" y="30.999999999999993" scaleX="1" scaleY="1" anchorOffsetX="0" width="192.33">
+				<e:Image id="banker_pairImg" verticalCenter="0" anchorOffsetY="0" height="94" source="baccarat_pic_bankerpair_y_png" scaleX="0.5" scaleY="0.5" right="0"/>
+				<e:Group id="banker_pairUnSureG" top="-20" horizontalCenter="0" visible="false">
+					<e:Image source="bettingarea_pic_putbar_png" anchorOffsetX="0" width="165" anchorOffsetY="0" height="40" x="0" top="0"/>
+					<e:BitmapLabel id="banker_pairUnSureNum" height="78" font="game_share_golden_105_fnt" text="965.3" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.2" scaleY="0.2" top="5"/>
+					<e:Image source="desk_pic_pay_chips_png" anchorOffsetX="0" width="25" anchorOffsetY="0" height="27" left="10" top="0"/>
+				</e:Group>
+				</e:Group>
+				<e:Image id="banker_pairNumImg" source="bettingarea_pic_ratioppbp1_png" verticalCenter="7.5" right="100" scaleX="0.5" scaleY="0.5"/>
+				<e:Group anchorOffsetX="0" anchorOffsetY="0" bottom="4.5" left="45">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_people_pc_png"/>
+				<e:Label id="bankerPairUnum" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15"/>
+				<e:Group anchorOffsetX="0" anchorOffsetY="0" bottom="0" left="110%">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_chips_pc_png"/>
+					<e:Label id="bankerPairAmount" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15"/>
+				</e:Group>
+				</e:Group>
+				<e:Group id="banker_pairBetNumGroup" height="25" top="0" right="0" left="0" visible="false">
+				<e:Image left="0" right="0" top="0" bottom="0" source="play_pic_numbg3_png"/>
+				<e:Group horizontalCenter="0" verticalCenter="0">
+					<e:Image source="bettingarea_pic_confirmchips_png" width="25" height="25" rotation="357.73" verticalCenter="0" x="0"/>
+					<e:BitmapLabel id="banker_pairBetNum" left="40" text="965.3" scaleX="0.3" scaleY="0.3" textAlign="center" verticalAlign="middle" font="game_share_golden_105_fnt" verticalCenter="0"/>
+				</e:Group>
+				</e:Group>
+			</e:Group>
+			<e:Group id="tieBetZone" top="0" bottom="0" left="151" right="150" touchChildren="false" anchorOffsetX="0">
+				<e:Image id="tieBetBg" source="play_pic_colorbg4_png" left="0" right="0" top="0" bottom="0" visible="false"/>
+				<e:Group id="tieUnSureNumG" verticalCenter="0" width="223" horizontalCenter="0">
+				<e:Image id="tieImg" source="baccarat_pic_tie_y_png" verticalCenter="0" horizontalCenter="-60" scaleX="0.5" scaleY="0.5"/>
+				<e:Group id="tieUnSureG" top="-30" horizontalCenter="0" visible="false">
+					<e:Image source="bettingarea_pic_putbar_png" anchorOffsetX="0" width="165" anchorOffsetY="0" height="40" x="0" top="0"/>
+					<e:BitmapLabel id="tieUnSureNum" height="78" font="game_share_golden_105_fnt" text="965.3" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.2" scaleY="0.2" top="5"/>
+					<e:Image source="desk_pic_pay_chips_png" anchorOffsetX="0" width="25" anchorOffsetY="0" height="27" left="10" top="0"/>
+				</e:Group>
+				</e:Group>
+				<e:Group verticalCenter="0" horizontalCenter="0" top="0" bottom="0">
+				<e:Group id="greenPercentGroup" scaleX="1" scaleY="1" horizontalCenter="0" width="40" height="40" verticalCenter="0">
+					<e:Image source="bettingarea_pic_percentage_bg_png" scaleX="1" scaleY="1" top="0" bottom="0" right="0" left="0"/>
+					<e:BitmapLabel id="greenPercent" right="0" verticalCenter="0" horizontalCenter="0" scaleX="0.5" scaleY="0.5" text="0%" verticalAlign="middle" textAlign="center" top="0" bottom="0" font="game_share_green_35_fnt" height="75" left="0"/>
+				</e:Group>
+				<e:Group height="32" anchorOffsetX="0" anchorOffsetY="0" right="0" bottom="0" x="92" y="61" scaleX="1" scaleY="1">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_chips_pc_png"/>
+					<e:Label id="tieAmount" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15"/>
+					<e:Group height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" right="110%" bottom="0">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="0" left="0" source="multipledesk_pic_people_pc_png"/>
+					<e:Label id="tieUNum" text="0" alpha="0.5" scaleX="1" scaleY="1" verticalCenter="0" left="15" size="15"/>
+					</e:Group>
+				</e:Group>
+				</e:Group>
+				<e:Group id="tieBetNumGroup" height="25" top="0" left="30" right="30" anchorOffsetX="0" visible="false">
+				<e:Image rotation="0" anchorOffsetY="0" source="play_pic_numbg2_png" anchorOffsetX="0" left="0" right="0" top="0" bottom="0"/>
+				<e:Group horizontalCenter="0" verticalCenter="0">
+					<e:Image source="bettingarea_pic_confirmchips_png" width="25" height="25" rotation="357.73" verticalCenter="0" x="0"/>
+					<e:BitmapLabel id="tieBetNum" left="40" text="965.3K" scaleX="0.3" scaleY="0.3" textAlign="center" verticalAlign="middle" font="game_share_golden_105_fnt" verticalCenter="0"/>
+				</e:Group>
+				</e:Group>
+				<e:Image id="tieNumImg" source="bettingarea_pic_ratiot1_png" verticalCenter="0" horizontalCenter="60" scaleX="0.5" scaleY="0.5"/>
+			</e:Group>
+			</e:Group>
+			<e:Group id="msgGroup" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" touchEnabled="false" touchChildren="false" scaleX="1" scaleY="1" y="-55.00000000000001" height="60" left="0" right="0" visible="false">
+			<e:Image verticalCenter="0" source="pic_popup5_pc_png" width="50%" right="0"/>
+			<e:Image scaleX="-1" verticalCenter="0.5" source="pic_popup5_pc_png" width="50%" left="0"/>
+			<e:Label id="msgTxt" text="下注成功" size="20" verticalCenter="0" horizontalCenter="0.20999999999997954"/>
+			<e:Image top="0" left="0" right="0" source="home_pic_decoration_pc_png" height="10"/>
+			<e:Image bottom="0" left="0" right="0" source="home_pic_decoration_pc_png" height="10"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="editChipsGroup" top="0" anchorOffsetY="0" bottom="0" width="540" x="0" y="0" scaleX="1" scaleY="1" visible="false">
+			<e:Image source="pic_popup4_bg_pc_png" bottom="0" right="0" left="0" top="0"/>
+			<e:Image source="multipledesk_pic_editchips_bg2_pc_png" left="15" right="15" top="10" bottom="50"/>
+			<e:Group height="120" width="165" top="30" left="20">
+			<e:Image horizontalCenter="0" top="0" source="chips_pic_bg_png" width="142" height="142" scaleX="0.6" scaleY="0.6"/>
+			<e:Image horizontalCenter="0" top="5" width="124" height="124" scaleX="0.6" scaleY="0.6" source="chips_btn_low_pc_png"/>
+			<eui:ALabel id="chipNum0" text="0.5" horizontalCenter="0" top="35" width="100" size="20" verticalAlign="middle" textAlign="center" textColor="0x1D6F8E" isFixed="true" scaleX="1" scaleY="1"/>
+			<e:Image id="chipBg0" horizontalCenter="0" height="35" bottom="0" alpha="0.5" source="chips_pic_numbg_pc_png" left="0" right="0" scale9Grid="0,9,136,6"/>
+			<e:TextInput id="chipEdit0" height="25" horizontalCenter="0" bottom="0" textColor="0xffffff" left="0" right="0" name="chipEdit1"/>
+			</e:Group>
+			<e:Group height="120" width="164" y="30" horizontalCenter="0">
+			<e:Image horizontalCenter="0" top="0" source="chips_pic_bg_png" width="142" height="142" scaleX="0.6" scaleY="0.6"/>
+			<e:Image horizontalCenter="0" top="5" width="124" height="124" source="chips_btn_middle_png" scaleX="0.6" scaleY="0.6"/>
+			<eui:ALabel id="chipNum1" text="0.5" horizontalCenter="0" top="35" width="100" size="20" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0x3E9B18" scaleX="1" scaleY="1"/>
+			<e:Image id="chipBg1" horizontalCenter="0" scale9Grid="0,9,136,6" height="35" bottom="0" alpha="0.5" left="0" right="0" source="chips_pic_numbg_pc_png"/>
+			<e:TextInput id="chipEdit1" height="25" horizontalCenter="0" bottom="0" textColor="0xffffff" left="0" right="0" name="chipEdit0"/>
+			</e:Group>
+			<e:Group height="120" width="165" y="30" right="20">
+			<e:Image horizontalCenter="0" top="0" source="chips_pic_bg_png" width="142" height="142" scaleX="0.6" scaleY="0.6"/>
+			<e:Image horizontalCenter="0" top="5" width="124" height="124" source="chips_btn_high_png" scaleX="0.6" scaleY="0.6"/>
+			<eui:ALabel id="chipNum2" text="0.5" horizontalCenter="0" width="100" size="20" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0xA90B00" scaleX="1" scaleY="1" y="35"/>
+			<e:Image id="chipBg2" horizontalCenter="0" scale9Grid="0,9,136,6" height="35" bottom="0" alpha="0.5" left="0" right="0" source="chips_pic_numbg_pc_png"/>
+			<e:TextInput id="chipEdit2" height="25" horizontalCenter="0" textColor="0xffffff" bottom="0" left="0" right="0" name="chipEdit2"/>
+			</e:Group>
+			<eui:AButton id="chipCancelBtn" label="取消" width="254" height="35" bottom="7" x="15">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="desk_btn_all_p_pc_png" source.down="desk_btn_all_d_pc_png" scale9Grid="9,9,7,6" scale9Grid.down="9,9,7,6"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="chipSureBtn" label="确认" width="254" height="35" bottom="7" right="15" enabled="false">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="desk_btn_all_p_pc_png" source.down="desk_btn_all_d_pc_png" source.disabled="desk_btn_all_d_pc_png" scale9Grid="9,9,7,6" scale9Grid.down="9,9,7,6"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<eui:ALabel text="请设置您常用的筹码金额" width="200" size="13" textColor="0x000000" horizontalCenter="0" textAlign="center" verticalAlign="middle" top="15"/>
+			<e:Group id="groupMsg" height="40" verticalCenter="0" y="428" scaleX="1" scaleY="1" width="100%" horizontalCenter="0" visible="false">
+				<e:Image source="pic_popup1_png" verticalCenter="0" width="50%" horizontalCenter="-50%" scaleX="-1" top="0" bottom="0"/>
+				<e:Image source="pic_popup1_png" verticalCenter="0" width="50%" horizontalCenter="50%" top="0" bottom="0"/>
+				<eui:ALabel id="labelMsg" text="最大只能输入9位整数和一位小数" horizontalCenter="0" verticalCenter="0" height="40" size="20" verticalAlign="middle" textAlign="center" textColor="0xFF0000" isFixed="true" width="540"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group width="80" right="0" top="55" bottom="0">
+		<e:Group top="0" bottom="45" y="-55" scaleX="1" scaleY="1" left="0" right="0">
+			<e:Image id="ChipBg" source="chips_pic_light_png" scaleY="1" width="100" height="100" anchorOffsetX="100"
+			         anchorOffsetY="100" horizontalCenter="0" verticalCenter="0" />
+			<e:Image id="blueChip" source="chips_btn_low_png" height="65" verticalCenter="-66%" y="8" scaleX="1" scaleY="1"
+			         horizontalCenter="0" width="65" />
+			<e:Image id="greenChip" source="chips_btn_middle_png" verticalCenter="0" y="4" scaleX="1" scaleY="1"
+			         horizontalCenter="0" width="65" height="65" />
+			<e:Image id="redChip" source="chips_btn_high_png" verticalCenter="66%" y="-6" scaleX="1" scaleY="1"
+			         horizontalCenter="0" height="65" width="65" />
+			<e:BitmapLabel id="blueChipNum" verticalCenter="-66%" horizontalCenter="0" text="0.5K" font="game_share_blue_49_fnt"
+			               verticalAlign="middle" textAlign="center" width="80" height="65" x="15" y="11.000000000000227"
+			               scaleX="0.5" scaleY="0.5" touchEnabled="false" />
+			<e:BitmapLabel id="redChipNum" text="10K" font="game_share_red_49_fnt" verticalAlign="middle" textAlign="center"
+			               horizontalCenter="0" width="80" height="65" verticalCenter="66%" x="316.5" y="11" scaleX="0.5"
+			               scaleY="0.5" touchEnabled="false" />
+			<e:BitmapLabel id="greenChipNum" verticalCenter="0" font="game_share_green_49_fnt" text="100" verticalAlign="middle"
+			               textAlign="center" width="80" height="65" horizontalCenter="0" x="163.5" y="11" scaleX="0.5"
+			               scaleY="0.5" touchEnabled="false" />
+		</e:Group>
+		<eui:AButton id="editChipBtn" label="" width="40" height="40" scaleX="1" scaleY="1" horizontalCenter="0" bottom="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="multi_btn_edit_png" source.down="multi_btn_edit_p_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group width="545" height="45" bottom="0" left="5">
+		<eui:AButton id="trendBtn" label="牌局走势" top="5" left="0" bottom="5" width="25%" enabled="true">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="multipledesk_btn_all1_pc_png"
+					         source.down="multipledesk_btn_all1_p_pc_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xECBC74"
+					         textColor.down="0x000000" textColor.disabled="0x545454" />
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="limitBtn" label="房间限额" top="5" left="25%" enabled="true" scaleX="1" scaleY="1" width="135.75"
+		             bottom="5">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="multipledesk_btn_all2_pc_png"
+					         source.down="multipledesk_btn_all2_p_pc_png" />
+					<e:Image height="100%" left="0" source="multipledesk_pic_btnline_pc_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xECBC74"
+					         textColor.down="0x000000" textColor.disabled="0x545454" />
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="bankerAskBtn" label="庄问路" top="5" left="50%" enabled="true" scaleX="1" scaleY="1" width="135.75"
+		             x="287.5" bottom="5">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="multipledesk_btn_all2_pc_png"
+					         source.down="multipledesk_btn_all2_p_pc_png" />
+					<e:Image height="100%" left="0" source="multipledesk_pic_btnline_pc_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xff0017"
+					         textColor.down="0x000000" textColor.disabled="0x545454" />
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="playerAskBtn" label="闲问路" top="5" width="25%" enabled="true" scaleX="1" scaleY="1" right="0"
+		             bottom="5">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="multipledesk_btn_all1_pc_png"
+					         source.down="multipledesk_btn_all1_p_pc_png" scaleX="-1" left="0" />
+					<e:Image height="100%" left="0" source="multipledesk_pic_btnline_pc_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0x0fb0f4"
+					         textColor.down="0x000000" textColor.disabled="0x545454" />
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group width="540" bottom="0" left="550" height="45">
+		<eui:AButton id="cancelBtn" label="撤销" left="0" top="5" bottom="5" enabled="false" mouseTexture="multipledesk_btn_cancel_h_pc_png" width="178">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="multipledesk_btn_cancel_pc_png"
+					         source.down="multipledesk_btn_cancel_p_pc_png" source.disabled="multipledesk_btn_cancel_d_pc_png" />
+					<e:Label id="labelDisplay" verticalCenter="0" size="20" left="100" textColor="0xFFFFFF" textColor.down="0x000000" />
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="sureBtn" label="确定" top="5" bottom="5" y="-255" scaleX="1" scaleY="1" enabled="false" mouseTexture="multipledesk_btn_confirm_h_pc_png" width="178" left="179">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="multipledesk_btn_confirm_pc_png"
+					         source.down="multipledesk_btn_confirm_p_pc_png" source.disabled="multipledesk_btn_confirm_d_pc_png" />
+					<e:Label id="labelDisplay" verticalCenter="0" size="20" left="100" textColor="0xFFFFFF" textColor.down="0x000000" />
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group top="5" bottom="5" right="0" left="360">
+			<eui:AButton id="placeTopBtn" label="" top="0" bottom="0" left="0" enabled="true" mouseTexture="multipledesk_btn_top_h_pc_png">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="multipledesk_btn_top_pc_png"
+						         source.down="multipledesk_btn_top_p_pc_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="placeBottomBtn" label="" top="0" bottom="0" left="61" scaleY="-1" mouseTexture="multipledesk_btn_top_h_pc_png">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="multipledesk_btn_top_pc_png"
+						         source.down="multipledesk_btn_top_p_pc_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="joinBtn" label="" top="0" bottom="0" left="122" scaleY="1" width="58" mouseTexture="multipledesk_btn_into_h_pc_png">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="multipledesk_btn_into_pc_png"
+						         source.down="multipledesk_btn_into_p_pc_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:Group top="-35" bottom="35" horizontalCenter="-66%" visible="false">
+				<e:Image source="multipledesk_pic_popup_pc_png" x="-1.33" y="0" />
+				<eui:ALabel text="置顶" y="0" size="15" width="100" horizontalCenter="0" verticalAlign="middle" textAlign="center"
+				            height="35" textColor="0xecbc74" />
+			</e:Group>
+			<e:Group id="bottomHoverGroup" y="-38.66" horizontalCenter="0" visible="false">
+				<e:Image source="multipledesk_pic_popup_pc_png" x="0" y="0" scaleX="1" scaleY="1"/>
+				<eui:ALabel id="bottomHoverLabel" text="置顶" width="100" size="20" textColor="0xecbc74" scaleX="1" scaleY="1" horizontalCenter="0" textAlign="center" y="4"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

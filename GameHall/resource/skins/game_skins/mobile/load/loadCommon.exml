@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="loadCommon" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image id="imgBg" source="bg_mask2_png" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" alpha="1"/>
+	<e:Group id="groupConnect" width="100%" height="100%" x="0" y="0">
+		<eui:ALabel text="正在建立连接......" horizontalCenter="0" width="600" height="40" size="40" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" x="240" scaleX="1" scaleY="1" verticalCenter="45"/>
+		<eui:AMovieClip id="amcConnect" width="350" height="350" horizontalCenter="0" verticalCenter="-200" source="1_png" sources="|1-20|_png"/>
+	</e:Group>
+
+
+</e:Skin>

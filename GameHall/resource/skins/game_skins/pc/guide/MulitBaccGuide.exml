@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Mu" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="185" right="15" top="65" bottom="15" locked="true"/>
+	<e:Group id="page1" left="0" right="0" top="0" bottom="0" visible="false">
+		<eui:ALabel text="game_lbl_bacc_tutorial_step_1_tips" width="550" horizontalCenter="0" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" x="554" scaleX="1" scaleY="1" top="435"/>
+		<eui:ALabel text="game_lbl_tutorial_touch_screen_continue" width="550" size="25" lineSpacing="15" horizontalCenter="0" textAlign="center" fontFamily="SimHei" x="554" scaleX="1" scaleY="1" top="670" textColor="0xFFDB93"/>
+	</e:Group>
+	<e:Group id="page2" width="550" x="259" height="296" y="295" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+		<eui:ALabel text="这是游戏房间，您可以查看房间信息、进行下注和筹码编辑等操作。" width="550" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" y="70"/>
+		<e:Image source="tutorial_pic_arrow_pc_png" rotation="90" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="page3" width="550" x="259" height="296" y="295" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+		<eui:ALabel text="这里显示房间视频桌号、房间名称、房间限额、游戏局数、牌局号以及房间路书。" width="550" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" y="70"/>
+		<e:Image source="tutorial_pic_arrow_pc_png" rotation="90" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="page4" width="550" x="269" height="296" y="305" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+		<eui:ALabel text="这里是牌局走势、房间限额以及庄闲问路按钮。" width="550" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" y="70"/>
+		<e:Image source="tutorial_pic_arrow_pc_png" rotation="90" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="page5" width="550" x="279" height="296" y="315" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+		<eui:ALabel text="这里显示您本局下注的筹码金额、房间是否免佣和游戏状态。" width="550" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" y="70"/>
+		<e:Image source="tutorial_pic_arrow_pc_png" rotation="90" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="page6" width="550" x="289" height="296" y="325" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+		<eui:ALabel text="这里是游戏下注区，您可以进行游戏下注、筹码编辑、置顶或置底房间以及进入房间等操作。" width="550" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" y="70"/>
+		<e:Image source="tutorial_pic_arrow_pc_png" rotation="90" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="page7" width="620" x="299" height="296" y="335" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+		<eui:ALabel text="这里是房间视频区，您可以自由选择想要观看的房间视频。" width="550" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" y="0" x="10.64"/>
+		<e:Image source="tutorial_pic_arrow_pc_png" rotation="180" y="54" right="0"/>
+	</e:Group>
+	<e:Group id="page8" width="620" height="296" y="345" anchorOffsetY="0" anchorOffsetX="0" x="297" visible="false">
+		<eui:ALabel text="这里将会显示您在多枱游戏中的实时下注和派彩记录，便于您查看自己的筹码记录。" width="550" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" y="2"/>
+		<e:Image source="tutorial_pic_arrow_pc_png" rotation="180" right="0" y="54"/>
+	</e:Group>
+	<e:Group id="page9" left="0" right="0" top="0" bottom="0" visible="false">
+		<eui:ALabel text="好了！基础说明就到这里，您还可以通过左侧导航栏中的“游戏规则”了解更多详情，祝您游戏愉快！" size="25" lineSpacing="15" fontFamily="SimHei" newlineAble="true" scaleX="1" scaleY="1" width="550" top="438" horizontalCenter="0"/>
+	</e:Group>
+	<eui:AButton id="btn_skip" label="game_btn_skip_tutorial" width="180" height="86" right="20" bottom="20">
+		<eui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image right="0" verticalCenter="0" source="tutorial_btn_enter_pc_png" source.down="tutorial_btn_enter_p_pc_png"/>
+			<eui:ALabel id="labelDisplay" left="0" verticalCenter="0" size="30" textColor="0xFFDB93" textColor.down="0x654D29"/>
+		</e:Skin>
+		</eui:skinName>
+	</eui:AButton>
+	<eui:AButton id="btn_startGame" label="game_btn_start_game" width="180" height="86" right="20" bottom="20" visible="false">
+		<eui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image right="0" verticalCenter="0" source="tutorial_btn_enter_pc_png" source.down="tutorial_btn_enter_p_pc_png"/>
+			<eui:ALabel id="labelDisplay" left="0" verticalCenter="0" size="30" textColor="0xFFDB93" textColor.down="0x654D29"/>
+		</e:Skin>
+		</eui:skinName>
+	</eui:AButton>
+</e:Skin>

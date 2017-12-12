@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="roomInfoSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image id="imgBgd" width="100%" height="100%" x="0" y="0" source="bg_mask_png"/>
+	<e:Group id="groupMenu" width="860" top="0" bottom="0" x="220">
+		<e:Image source="menu_btn_all_bg2_png" left="0" right="0" top="0" bottom="0"/>
+		<e:Group top="0" right="0" left="0" height="100">
+            <e:Image left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0" top="0"/>
+			<eui:ALabel id="labelInfo" text="room_info" verticalCenter="0" left="30" height="50" width="700" verticalAlign="middle" textAlign="left" size="30" isFixed="true" textColor="0x969696"/>
+			<eui:AButton id="btnClose" label="" verticalCenter="0" right="20" width="50" height="40">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="anchor_btn_close_png" source.down="anchor_btn_close_p_png" source.disabled="anchor_btn_close_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Group top="100" left="0" right="0" height="550">
+			<eui:ALabel text="game_lbl_already_open_statistic" horizontalCenter="0" height="50" width="500" verticalAlign="middle" textAlign="center" size="40" textColor="0xe9b76f" top="20"/>
+			<e:Image source="roominfo_pic_frequency1_png" right="55" bottom="170" width="100" height="35"/>
+            <e:Image source="roominfo_pic_frequency2_png" right="55" bottom="120" width="100" height="35"/>
+            <e:Image source="roominfo_pic_frequency3_png" right="55" bottom="70" width="100" height="35"/>
+			<eui:ALabel id="numPlayer" text="7" bottom="170" right="73" textAlign="right" width="35" height="30" size="30" verticalAlign="middle" isFixed="true"/>
+            <eui:ALabel id="numBanker" text="30" bottom="120" right="75" textAlign="right" width="35" height="30" size="30" verticalAlign="middle" isFixed="true"/>
+            <eui:ALabel id="numTie" text="21" bottom="70" right="75" textAlign="right" width="35" height="30" size="30" verticalAlign="middle" isFixed="true"/>
+			<e:Image source="baccarat_pic_tie_png" left="60" bottom="120"/>
+			<eui:ALabel text="0%" left="60" bottom="70" width="80" height="45" size="45" verticalAlign="middle" textAlign="center" isFixed="true" textColor="0x02aa30" visible="false"/>
+			<e:BitmapLabel id="rateTie" height="45" text="0%" left="60" width="120" bottom="70" font="game_share_green_50_fnt"/>
+            <e:Image source="baccarat_pic_bk1_png" top="130" right="65"/>
+			<eui:ALabel text="0%" width="80" height="45" size="45" verticalAlign="middle" textAlign="center" isFixed="true" right="65" top="215" textColor="0xff1310" visible="false"/>
+			<e:BitmapLabel id="rateBanker" height="45" top="215" text="0%" font="game_share_red_50_fnt" width="120" right="60" textAlign="right"/>
+            <e:Image source="baccarat_pic_pl1_png" left="60" top="130"/>
+			<eui:ALabel text="0%" left="60" width="80" height="45" size="45" verticalAlign="middle" textAlign="center" isFixed="true" top="215" textColor="0x0085ff" visible="false"/>
+			<e:BitmapLabel id="ratePlayer" width="120" height="45" top="215" left="60" text="0%" font="game_share_blue_50_fnt"/>
+			<e:Group id="groupCircle" top="85" bottom="25" left="160" right="160">
+				<e:Image source="roominfo_pic_percentagebg_png" horizontalCenter="0" verticalCenter="0"/>
+                <e:Image id="circleBanker" source="roominfo_pic_percentage3_png" horizontalCenter="0" verticalCenter="0" height="355"/>
+                <e:Image id="circlePlayer" source="roominfo_pic_percentage2_png" horizontalCenter="0" verticalCenter="0" height="298"/>
+				<e:Image id="circleTie" source="roominfo_pic_percentage1_png" horizontalCenter="0" verticalCenter="0" height="240"/>
+				<eui:ALabel text="global_lbl_round" verticalCenter="-40" horizontalCenter="0" width="100" height="40" size="35" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" isFixed="true"/>
+                <eui:ALabel text="68" verticalCenter="20" horizontalCenter="0" width="160" height="80" size="70" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" isFixed="true" visible="false"/>
+				<e:BitmapLabel id="numRound" width="160" height="80" horizontalCenter="0" verticalCenter="20" font="game_share_golden_56_fnt" text="68" scaleX="1.3" scaleY="1.3" textAlign="center" verticalAlign="middle"/>
+			</e:Group>
+		</e:Group>
+		<e:Group top="650" right="0" left="0" bottom="540">
+			<e:Image source="menu_btn_all_bg1_png" left="0" right="0" top="0" bottom="0"/>
+            <eui:ALabel text="已开局走势" horizontalCenter="0" height="50" width="500" verticalAlign="middle" textAlign="center" size="40" textColor="0xe9b76f" top="20"/>
+			<e:Image source="roominfo_pic_scale_png" width="718" height="13" right="30" top="120"/>
+            <e:Image source="roominfo_pic_scale_png" verticalCenter="0" width="718" height="13" right="30"/>
+            <e:Image source="roominfo_pic_scale_png" width="718" height="13" right="30" bottom="120"/>
+			<e:Image source="baccarat_pic_bk1_png" left="40" height="50" width="50" top="100"/>
+			<e:Image source="baccarat_pic_tie_png" left="40" height="50" width="50" verticalCenter="0"/>
+            <e:Image source="baccarat_pic_pl1_png" left="40" height="50" width="50" bottom="100"/>
+			<eui:ALabel text="global_lbl_round" left="35" bottom="40" height="35" width="60" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" visible="false"/>
+            <eui:ALabel text="1" left="100" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="2" left="150" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="3" left="200" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="4" left="250" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="5" left="300" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="6" left="350" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="7" left="400" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="8" left="450" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="9" left="500" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="10" left="550" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="11" left="600" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="12" left="650" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="13" left="700" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="14" left="750" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+            <eui:ALabel text="15" left="800" bottom="40" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xc8c8c8" isFixed="true" width="40" visible="false"/>
+			<e:Group id="groupLine" width="718" top="120" bottom="120" right="30"/>
+            <e:Group id="groupDots" width="718" top="120" bottom="120" right="30">
+                <e:Image id="dotB1" source="roominfo_pic_dot1_png" x="-10" height="35" width="35" top="-7"/>
+                <e:Image id="dotT1" source="roominfo_pic_dot2_png" x="-10" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP1" source="roominfo_pic_dot3_png" x="-10" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB2" source="roominfo_pic_dot1_png" x="40" height="35" width="35" top="-7"/>
+                <e:Image id="dotT2" source="roominfo_pic_dot2_png" x="40" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP2" source="roominfo_pic_dot3_png" x="40" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB3" source="roominfo_pic_dot1_png" x="90" height="35" width="35" top="-7"/>
+                <e:Image id="dotT3" source="roominfo_pic_dot2_png" x="90" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP3" source="roominfo_pic_dot3_png" x="90" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB4" source="roominfo_pic_dot1_png" x="140" height="35" width="35" top="-7"/>
+                <e:Image id="dotT4" source="roominfo_pic_dot2_png" x="140" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP4" source="roominfo_pic_dot3_png" x="140" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB5" source="roominfo_pic_dot1_png" x="190" height="35" width="35" top="-7"/>
+                <e:Image id="dotT5" source="roominfo_pic_dot2_png" x="190" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP5" source="roominfo_pic_dot3_png" x="190" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB6" source="roominfo_pic_dot1_png" x="240" height="35" width="35" top="-7"/>
+                <e:Image id="dotT6" source="roominfo_pic_dot2_png" x="240" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP6" source="roominfo_pic_dot3_png" x="240" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB7" source="roominfo_pic_dot1_png" x="290" height="35" width="35" top="-7"/>
+                <e:Image id="dotT7" source="roominfo_pic_dot2_png" x="290" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP7" source="roominfo_pic_dot3_png" x="290" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB8" source="roominfo_pic_dot1_png" x="340" height="35" width="35" top="-7"/>
+                <e:Image id="dotT8" source="roominfo_pic_dot2_png" x="340" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP8" source="roominfo_pic_dot3_png" x="340" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB9" source="roominfo_pic_dot1_png" x="390" height="35" width="35" top="-7"/>
+                <e:Image id="dotT9" source="roominfo_pic_dot2_png" x="390" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP9" source="roominfo_pic_dot3_png" x="390" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB10" source="roominfo_pic_dot1_png" x="440" height="35" width="35" top="-7"/>
+                <e:Image id="dotT10" source="roominfo_pic_dot2_png" x="440" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP10" source="roominfo_pic_dot3_png" x="440" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB11" source="roominfo_pic_dot1_png" x="490" height="35" width="35" top="-7"/>
+                <e:Image id="dotT11" source="roominfo_pic_dot2_png" x="490" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP11" source="roominfo_pic_dot3_png" x="490" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB12" source="roominfo_pic_dot1_png" x="540" height="35" width="35" top="-7"/>
+                <e:Image id="dotT12" source="roominfo_pic_dot2_png" x="540" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP12" source="roominfo_pic_dot3_png" x="540" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB13" source="roominfo_pic_dot1_png" x="590" height="35" width="35" top="-7"/>
+                <e:Image id="dotT13" source="roominfo_pic_dot2_png" x="590" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP13" source="roominfo_pic_dot3_png" x="590" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB14" source="roominfo_pic_dot1_png" x="640" height="35" width="35" top="-7"/>
+                <e:Image id="dotT14" source="roominfo_pic_dot2_png" x="640" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP14" source="roominfo_pic_dot3_png" x="640" height="35" width="35" bottom="-15"/>
+                <e:Image id="dotB15" source="roominfo_pic_dot1_png" x="690" height="35" width="35" top="-7"/>
+                <e:Image id="dotT15" source="roominfo_pic_dot2_png" x="690" height="35" width="35" verticalCenter="4"/>
+                <e:Image id="dotP15" source="roominfo_pic_dot3_png" x="690" height="35" width="35" bottom="-15"/>
+            </e:Group>
+		</e:Group>
+		<e:Group right="0" bottom="0" left="0" height="540">
+			<e:Image height="90" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="360"/>
+			<e:Image height="90" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="180"/>
+			<e:Image left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0" height="90"/>
+			<eui:ALabel text="founder_lbl_data_center_bet_option" width="215" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" left="0" isFixed="true" bottom="477"/>
+            <eui:ALabel text="赔率" width="215" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" left="215" isFixed="true" bottom="477"/>
+            <eui:ALabel text="founder_lbl_min_bet" width="215" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" left="430" isFixed="true" bottom="477"/>
+            <eui:ALabel text="founder_lbl_max_bet" width="215" height="35" size="30" verticalAlign="middle" textAlign="center" textColor="0xe9b76f" left="645" isFixed="true" bottom="477"/>
+            <eui:ALabel text="game_lbl_player_simple" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="85" textColor="0xffffff" isFixed="true" bottom="387"/>
+            <eui:ALabel text="game_lbl_banker_simple" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="85" textColor="0xffffff" isFixed="true" bottom="297"/>
+            <eui:ALabel text="game_lbl_tie_simple" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="85" textColor="0xffffff" isFixed="true" bottom="207"/>
+            <eui:ALabel text="game_lbl_player_pair_sim" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="85" textColor="0xffffff" isFixed="true" bottom="117"/>
+            <eui:ALabel text="game_lbl_banker_pair_sim" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="85" textColor="0xffffff" isFixed="true" bottom="27"/>
+            <eui:ALabel text="1:1" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="300" textColor="0xffffff" isFixed="true" bottom="387"/>
+            <eui:ALabel id="ratioBanker" text="1:1" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="300" textColor="0xffffff" isFixed="true" bottom="312"/>
+            <eui:ALabel id="ratioBankerTip" text="game_lbl_baccarat_super6" width="200" height="20" size="20" verticalAlign="middle" textAlign="center" left="221" textColor="0xffffff" isFixed="true" bottom="280"/>
+            <eui:ALabel text="1:8" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="300" textColor="0xffffff" isFixed="true" bottom="207"/>
+            <eui:ALabel text="1:11" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="300" textColor="0xffffff" isFixed="true" bottom="117"/>
+            <eui:ALabel text="1:11" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="300" textColor="0xffffff" isFixed="true" bottom="27"/>
+            <eui:ALabel id="minP" text="0.5" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="515" textColor="0xffffff" isFixed="true" bottom="387"/>
+            <eui:ALabel id="minB" text="0.5" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="515" textColor="0xffffff" isFixed="true" bottom="297"/>
+            <eui:ALabel id="minT" text="0.5" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="515" textColor="0xffffff" isFixed="true" bottom="207"/>
+            <eui:ALabel id="minPP" text="0.5" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="515" textColor="0xffffff" isFixed="true" bottom="117"/>
+            <eui:ALabel id="minBP" text="0.5" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="515" textColor="0xffffff" isFixed="true" bottom="27"/>
+            <eui:ALabel id="maxP" text="5k" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="730" textColor="0xffffff" isFixed="true" bottom="387"/>
+            <eui:ALabel id="maxB" text="5k" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="730" textColor="0xffffff" isFixed="true" bottom="297"/>
+            <eui:ALabel id="maxT" text="5k" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="730" textColor="0xffffff" isFixed="true" bottom="207"/>
+            <eui:ALabel id="maxPP" text="5k" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="730" textColor="0xffffff" isFixed="true" bottom="117"/>
+            <eui:ALabel id="maxBP" text="5k" width="100" height="35" size="30" verticalAlign="middle" textAlign="left" left="730" textColor="0xffffff" isFixed="true" bottom="27"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

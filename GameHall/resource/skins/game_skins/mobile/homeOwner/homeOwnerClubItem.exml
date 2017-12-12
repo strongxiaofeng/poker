@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="homeOwnerClubItem" width="1000" height="350" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="MyClubGroup" touchChildren="false" top="0" bottom="0" left="0" right="0">
+		<e:Image id="itemBg" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" left="40" top="8" bottom="8" source="main_pic_club_bg2_png"/>
+		<e:Image id="itemBg0" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" right="40" top="8" bottom="8" source="main_pic_club_bg2_png"/>
+		<e:Image id="itemBg1" anchorOffsetX="0" scaleX="1" scaleY="1" top="8" bottom="8" source="main_pic_club_bg2_2_png" left="60" right="60"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" left="40" right="40" top="84" bottom="5">
+		<e:Image id="clubFace" height="170" left="40" verticalCenter="0" y="32.33000000000001" scaleX="1" scaleY="1" width="200" source="home_pic_clubbg_png"/>
+		<e:Image source="home_btn_bg_png" height="200" verticalCenter="0" left="260" width="4"/>
+		<e:Image id="clubFaceImg" width="145" height="145" verticalCenter="-20" left="67.5" source="home_btn_creat_png"/>
+		<e:Group id="clubInfo" height="200" verticalCenter="0" left="300" right="80">
+			<eui:ALabel xmlns:eui="eui.*" text="房间数量 : " height="40" left="0" size="30" verticalAlign="middle" verticalCenter="-75" anchorOffsetX="0" textColor="0xE9B76F" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="在线玩家 : " height="40" left="0" size="30" verticalCenter="-25" verticalAlign="middle" textColor="0xE9B76F" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="今日盈余 : " height="40" left="0" size="30" verticalCenter="25" verticalAlign="middle" textColor="0xE9B76F" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="游戏类型 : " height="40" left="0" size="30" verticalCenter="75" verticalAlign="middle" textColor="0xE9B76F" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="玩家总数 : " height="40" size="30" verticalAlign="middle" verticalCenter="-75" textColor="0xE9B76F" left="310" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="在线主播 : " height="40" size="30" verticalAlign="middle" verticalCenter="-25" textColor="0xE9B76F" left="310" width="150"/>
+			<eui:ALabel xmlns:eui="eui.*" text="房卡消耗 : " height="40" size="30" verticalAlign="middle" verticalCenter="25" textColor="0xE9B76F" left="310" width="150"/>
+			<eui:ALabel id="rooms" xmlns:eui="eui.*" text="0" left="150" verticalCenter="-75" size="30" height="40" verticalAlign="middle" textAlign="left" width="151" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel id="players" xmlns:eui="eui.*" text="0" left="150" verticalCenter="-25" size="30" height="40" verticalAlign="middle" textAlign="left" width="150" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel id="profits" xmlns:eui="eui.*" text="0" left="150" verticalCenter="25" size="30" height="40" verticalAlign="middle" textAlign="left" width="155" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel id="games" xmlns:eui="eui.*" text="百家乐" left="150" verticalCenter="75" size="30" height="40" verticalAlign="middle" textAlign="left" width="331" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel id="allPlayer" xmlns:eui="eui.*" text="0" verticalCenter="-75" size="24" height="40" verticalAlign="middle" textAlign="left" left="455" width="141" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel id="anchor" xmlns:eui="eui.*" text="0" verticalCenter="-25" size="24" height="40" verticalAlign="middle" textAlign="left" left="455" width="147" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel id="roomCard" xmlns:eui="eui.*" text="0" verticalCenter="25" size="24" height="40" verticalAlign="middle" textAlign="left" left="455" width="146" isFixed="true" anchorOffsetX="0"/>
+		</e:Group>
+		</e:Group>
+		<e:Group id="itemTopGroup" anchorOffsetY="0" anchorOffsetX="0" top="8" bottom="267" left="40" right="41">
+			<eui:ALabel id="clubItemName" xmlns:eui="eui.*" text="俱乐部名称" size="40" width="335" textColor="0x1B190D" bold="true" verticalCenter="0" verticalAlign="middle" left="30" isFixed="true"/>
+			<e:Group y="10" right="20">
+				<eui:ALabel id="clubInvitation" text="" height="40" size="40" textAlign="left" anchorOffsetX="0" width="182.67" verticalAlign="middle" textColor="0x000000" x="107" y="8" isFixed="true"/>
+				<eui:ALabel id="clubCreateMan" text="邀请码 :" size="30" width="114.67" verticalAlign="middle" anchorOffsetX="0" textColor="0x000000" x="0" y="13"/>
+				<e:Image id="share" width="180" height="55" source="mine_btn_share_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="12,11,67,54" x="349.66999999999996" y="0"/>
+				<eui:ALabel text="分享" width="100" height="40" size="35" verticalAlign="middle" textColor="0xe9b76f" anchorOffsetX="0" textAlign="center" x="389.66999999999996" y="8"/>
+				<e:Image width="40" height="40" x="299.66999999999996" y="8" source="mine_btn_copy_png"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

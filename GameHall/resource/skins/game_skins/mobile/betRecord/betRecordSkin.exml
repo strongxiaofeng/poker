@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="betRecordSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="menu_btn_all_bg2_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group id="groupTop" top="0" height="165" width="100%" x="0">
+		<eui:AButton id="btnClose" label="" scaleX="1" scaleY="1" verticalCenter="0" left="40">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_return_png" source.down="main_btn_return_p_png" source.disabled="main_btn_return_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+        <e:ALabel text="joined_btn_history_bet_record" size="50" horizontalCenter="0" verticalCenter="0" textColor="0xe7b570" width="600" verticalAlign="middle" textAlign="center" isFixed="true"/>
+		<eui:AButton id="btnPeriod" label="founder_btn_date_type_today" verticalCenter="0" right="35" height="40" width="240">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image right="0" verticalCenter="0" source="data_btn_choosedate_png" source.down="data_btn_choosedate_p_png" source.disabled="data_btn_choosedate_p_png"/>
+				<e:ALabel id="labelDisplay" textColor="0xe7b570" textColor.down="0x654D29" size="40" right="60" width="180" isFixed="true" textAlign="right" verticalAlign="middle" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group id="groupSearch" height="100" top="165" width="100%" x="0">
+		<e:Image top="0" left="0" right="0" touchEnabled="false" bottom="0" x="0" y="-165" scaleX="1" scaleY="1" source="data_pic_inputbg3_png"/>
+		<e:Image top="8" left="8" right="140" touchEnabled="false" bottom="8" x="0" y="-165" scaleX="1" scaleY="1" source="data_pic_inputbg1_png"/>
+		<e:Image id="imgActiveInput" top="8" left="8" right="140" touchEnabled="false" bottom="8" x="0" y="-165" scaleX="1" scaleY="1" source="data_pic_inputbg2_png" visible="false"/>
+		<eui:AButton id="btnSearch" label="" verticalCenter="0" right="25">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="72" height="72" verticalCenter="0" right="0" source="data_btn_find_png" source.down="data_btn_find_p_png" source.disabled="data_btn_find_p_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:TextInput id="inputSearch" left="20" verticalCenter="0" height="40" right="150" prompt="请输入玩家账号" textColor="0xffffff"/>
+	</e:Group>
+	<e:Group id="groupCondition" width="100%" height="95" top="265" x="0">
+		<e:Image id="bgdTimeBtn" height="95" width="620" x="0" y="0" source="btn_login_png" visible="false"/>
+		<e:Label id="labelBtnTime" text="2017/08/13  -  2017/09/12" height="95" y="0" width="620" x="30" textColor="0xe7b570" size="40" textAlign="center" verticalAlign="middle" touchEnabled="false"/>
+		<e:Button id="btnTime" label="" height="95" y="0" width="620" left="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" x="0" y="0" alpha="0.01" source="btn_login_png"/>
+				<e:Image width="200" height="2" verticalCenter="20" horizontalCenter="-100" source="btn_login_png" source.down="mine_btn_add_p_png"/>
+				<e:Image width="200" height="2" verticalCenter="20" horizontalCenter="160" source="btn_login_png" source.down="mine_btn_add_p_png"/>
+				<e:Image left="20" verticalCenter="0" source="data_btn_calendar_png" source.down="data_btn_calendar_p_png" source.disabled="data_btn_calendar_png"/>
+				<e:Label id="labelDisplay" textColor="0xe7b570" textColor.down="0x000000" size="40" horizontalCenter="30" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</e:Button>
+		<eui:AButton id="btnType" label="founder_btn_search_type_all" verticalCenter="0" right="35" height="40" width="240">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image right="0" verticalCenter="0" source="data_btn_choosedate_png" source.down="data_btn_choosedate_p_png" source.disabled="data_btn_choosedate_p_png"/>
+				<e:ALabel id="labelDisplay" textColor="0xe7b570" textColor.down="0x654D29" size="40" right="60" width="180" isFixed="true" textAlign="right" verticalAlign="middle" verticalCenter="0"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+    <e:Group id="groupTitle" width="100%" height="60" top="360" x="0">
+		<e:Image top="0" left="0" right="0" source="menu_btn_all_bg1_png" touchEnabled="false" bottom="0" x="0" y="-100" scaleX="1" scaleY="1"/>
+        <e:Image width="100%" height="1" x="0" y="0" source="data_pic_inputbg1_png"/>
+        <e:Image width="100%" height="1" x="0" source="data_pic_inputbg1_png" bottom="0"/>
+        <e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="52" left="225"/>
+
+        <e:Image source="data_pic_inputbg1_png" verticalCenter="0" height="52" right="340" width="1"/>
+        <eui:ALabel text="founder_lbl_date_type_date" verticalCenter="0" size="35" height="35" width="225" verticalAlign="middle" textAlign="center" x="0" textColor="0xffffff" alpha="0.3" isFixed="true"/>
+
+
+        <eui:ALabel text="派彩" verticalCenter="0" size="35" height="35" width="340" verticalAlign="middle" textAlign="center" textColor="0xffffff" alpha="0.3" isFixed="true" right="0"/>
+		<e:Group height="60" y="0" left="225" right="340">
+			<e:Group width="45%" height="60" x="0" y="0">
+				<e:Image width="1" source="data_pic_inputbg1_png" verticalCenter="0" height="52" y="3.999999999999943" scaleX="1" scaleY="1" right="0"/>
+				<eui:ALabel text="founder_lbl_data_center_account" verticalCenter="0" size="35" height="35" width="235" verticalAlign="middle" textAlign="center" textColor="0xffffff" alpha="0.3" isFixed="true" horizontalCenter="0" x="1" y="13" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group width="55%" height="60" y="0" right="0">
+				<eui:ALabel text="founder_lbl_data_center_betting" verticalCenter="0" size="35" height="35" width="280" verticalAlign="middle" textAlign="center" textColor="0xffffff" alpha="0.3" isFixed="true" horizontalCenter="0" x="3.000000000000057" y="13" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupList" width="100%" top="420" x="0" bottom="0">
+
+		<e:Scroller id="scrollerRecord" width="100%" height="100%" x="0" y="0">
+		<e:List id="listRecord"/>
+		</e:Scroller>
+		<e:Group id="groupEmptyTip" width="100%" height="220" horizontalCenter="0" y="440" visible="false">
+			<eui:ALabel id="labelNoResult" text="founder_lbl_data_center_bet_none" y="0" scaleX="1" scaleY="1" horizontalCenter="0" width="600" height="45" size="45" textAlign="center" verticalAlign="middle"/>
+			<e:Image id="imgDecoration1" verticalCenter="-10" horizontalCenter="200" source="main_pic_decoration2_png" width="400" height="30"/>
+			<e:Image id="imgDecoration2" verticalCenter="-10" horizontalCenter="-200" source="main_pic_decoration2_png" width="400" height="30" scaleX="-1"/>
+			<eui:AButton id="btnClearSearch" label="global_btn_back_text" bottom="0" horizontalCenter="-80" width="77" height="77">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_return_png" source.down="main_btn_return_p_png"/>
+				<e:ALabel id="labelDisplay" textColor="0xE7B570" height="45" size="45" width="100" left="85" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupTotal" width="100%" height="145" x="0" bottom="0">
+		<e:Image width="100%" height="100%" x="0" y="0" source="mine_btn_add_p_png" locked="true"/>
+		<e:Image source="main_pic_decoration3_png" horizontalCenter="240" width="125" height="50" bottom="75" locked="true"/>
+		<e:Image source="main_pic_decoration3_png" horizontalCenter="-240" width="125" height="50" bottom="75" scaleX="-1" locked="true"/>
+		<e:Image y="0" source="data_pic_decoration2_png" height="16" left="19" right="19" locked="true"/>
+		<eui:ALabel text="founder_lbl_data_center_total" bottom="75" horizontalCenter="0" width="200" height="40" size="30" textAlign="center" verticalAlign="middle" locked="true"/>
+		<e:Image width="2" source="data_pic_inputbg1_png" height="50" horizontalCenter="0" bottom="10" locked="true"/>
+
+
+
+		<e:Group width="50%" height="145" x="0" y="0">
+			<eui:ALabel text="founder_lbl_data_center_bet_title" width="210" height="35" size="35" verticalAlign="middle" textAlign="left" tailFix=":" textColor="0xe7b570" verticalCenter="38" left="20" x="20" y="93" scaleX="1" scaleY="1"/>
+			<e:ABitmapLabel id="labelTotalBet" fixedWidth="210" font="game_share_yellow_46_fnt" text="0" verticalCenter="38" right="20" textAlign="right" x="496" y="94" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="50%" height="145" y="0" right="0">
+			<eui:ALabel id="labelPayoutTitle" text="founder_lbl_data_center_payout" width="210" height="35" size="35" verticalAlign="middle" textAlign="left" verticalCenter="38" textColor="0xff0000" left="20" x="20" y="93" scaleX="1" scaleY="1"/>
+			<e:ABitmapLabel id="labelTotalPayout" fixedWidth="210" text="0" verticalCenter="38" font="game_share_red_46_fnt" right="20" textAlign="right" x="496" y="94" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupPickPeriod" width="350" height="270" right="15" y="110" visible="false">
+		<e:Image scaleX="1" scaleY="1" source="data_btn_choosedate2_png" height="270" y="0" width="350" x="0" locked="true"/>
+		<eui:AButton id="labelToday" label="founder_btn_date_type_today" left="0" right="0" top="1" height="89">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="labelWeek" label="founder_btn_date_type_week" left="0" right="0" top="91" height="89">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="labelMonth" label="founder_btn_date_type_month" left="0" right="0" top="181" height="89">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+
+	</e:Group>
+	<e:Group id="groupPickType" width="350" height="450" right="15" y="340" visible="false">
+		<e:Image scaleX="1" scaleY="1" height="450" y="0" width="350" x="0" source="data_btn_choosegame_png" locked="true"/>
+		<eui:AButton id="labelAll" label="founder_btn_search_type_all" left="0" right="0" top="1" height="89">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="labelBaccarat" label="global_lbl_baccarat" left="0" right="0" top="91" height="89">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="labelDT" label="founder_btn_search_type_dt" left="0" right="0" top="181" height="89">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="labelRoulette" label="founder_btn_search_type_rt" left="0" right="0" top="271" height="89">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="labelSicbo" label="founder_btn_search_type_sibo" left="0" right="0" top="361" height="89">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="" source.down="data_btn_choosedate2_p_png"/>
+				<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor="0xe7b570"/>
+				<e:Rect width="100%" height="100%" x="0" y="0" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Image id="imgMask" x="0" y="360" width="100%" height="0" source="bg_black_png" visible="false"/>
+
+
+</e:Skin>

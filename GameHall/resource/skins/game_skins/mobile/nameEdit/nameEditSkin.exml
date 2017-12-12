@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="nameEditSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image id="bgd" width="100%" height="100%" x="0" y="0" touchEnabled="true" source="roominfo_pic_bgcolor1_png"/>
+	<e:Group height="165" left="0" top="0" right="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="roominfo_pic_bgcolor2_png"/>
+		<eui:ALabel id="cancelLabel" text="取消" left="40" verticalCenter="0" height="60" width="200" textAlign="left" verticalAlign="middle" size="45" textColor="0xb5b1ac" isFixed="true" visible="false"/>
+		<eui:ALabel id="titleLabel" text="更换昵称" verticalCenter="0" height="60" width="400" textAlign="center" verticalAlign="middle" size="45" horizontalCenter="0" textColor="0xe9b76f" isFixed="true"/>
+		<eui:ALabel id="confirmLabel" text="确定" verticalCenter="0" height="60" textAlign="right" verticalAlign="middle" size="45" right="40" width="200" isFixed="true" textColor="0x17be2f" visible="false"/>
+		<eui:AButton id="backBtn" label="" verticalCenter="0" left="40">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_return_png" source.down="main_btn_return_p_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group height="100" left="0" right="0" top="165">
+		<e:Image source="main_pic_decoration2_png" width="400" height="30" horizontalCenter="200" x="540" scaleX="1" scaleY="1" verticalCenter="0"/>
+        <e:Image source="main_pic_decoration2_png" width="400" height="30" horizontalCenter="-200" x="540" scaleX="-1" scaleY="1" verticalCenter="0"/>
+	</e:Group>
+	<e:Group height="120" left="0" right="0" top="265">
+		<e:Image left="0" top="0" bottom="0" right="0" source="mine_pic_inputbg_png" scale9Grid="18,18,38,90"/>
+		<e:EditableText id="inputLabel" height="80" text="现有名称" verticalCenter="0" left="40" right="120" verticalAlign="middle" textAlign="left" size="40" textColor="0x000000"/>
+		<eui:AButton id="deleteBtn" label="" verticalCenter="0" right="45" width="41" height="41">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mine_btn_delete_png" source.down="mine_btn_delete_p_png" source.disabled="mine_btn_delete_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+    <e:Group id="tipGroup" height="81" width="1080" anchorOffsetX="540" anchorOffsetY="40.5" top="400" horizontalCenter="0">
+        <e:Image source="pic_popup1_png" width="544" height="81" scaleX="-1" scaleY="1" horizontalCenter="-272" verticalCenter="0"/>
+        <e:Image source="pic_popup1_png" width="544" height="81" scaleX="1" scaleY="1" horizontalCenter="272" verticalCenter="0"/>
+        <eui:ALabel id="errorLabel" text="最多只能输入10个字符" verticalCenter="0" horizontalCenter="0" width="800" height="60" verticalAlign="middle" textAlign="center" textColor="0xff0000" size="35" isFixed="true"/>
+    </e:Group>
+	<e:Group height="98" bottom="18" left="55" right="55">
+		<eui:AButton id="cancelBtn" label="取消" scaleX="1" scaleY="1" verticalCenter="0" height="98" width="49.58%" left="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_line_p_png" source.down="main_btn_all_bg2_p_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76F" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="confirmBtn" label="确定" width="49.58%" scaleX="1" scaleY="1" verticalCenter="0" height="98" right="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_line_p_png" source.down="main_btn_all_bg2_p_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76F" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

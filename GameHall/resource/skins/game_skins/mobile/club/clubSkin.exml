@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="clubSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+
+
+
+	<e:Group id="guidGroup" width="1080" height="200" horizontalCenter="0" top="528">
+		<eui:ALabel id="clubLabel" text="global_lbl_list_empty_tips" width="521" size="45" textAlign="center" verticalAlign="middle" horizontalCenter="0" x="450" scaleX="1" scaleY="1" isFixed="true" top="-15"/>
+		<eui:ALabel id="joinClubLabel" text="club_lbl_club_list_empty" width="1080" size="45" textAlign="center" verticalAlign="middle" horizontalCenter="0" x="450" scaleX="1" scaleY="1" top="170" isFixed="true"/>
+		<e:Image horizontalCenter="203" source="main_pic_decoration2_png" top="90"/>
+		<e:Image horizontalCenter="-203" scaleX="-1" source="main_pic_decoration2_png" top="90"/>
+	</e:Group>
+	<e:Group id="guidGroup1" width="200" height="200" horizontalCenter="2" bottom="165">
+		<e:Image id="back" source="club_pic_arrow_png" horizontalCenter="10" scaleX="1" scaleY="1" bottom="0"/>
+	</e:Group>
+
+	<e:Group id="ClubTopGroup" height="140" top="165" left="0" right="0">
+		<e:Image scaleX="1" scaleY="1" bottom="-20" left="19" right="19" source="main_pic_decoration_png"/>
+		<eui:ALabel id="Homeowner" text="" width="361" height="40" size="35" verticalAlign="middle" textAlign="left" verticalCenter="0" left="183" textColor="0xcacaca"/>
+		<e:Image id="HomeOwnerFace" width="117" height="117" left="40" source="mine_pic_default_png" verticalCenter="0"/>
+		<e:Image id="userFaceMask" width="117" height="117" left="40" source="mine_pic_default_png" verticalCenter="0"/>
+		<e:Image id="RoomCardicon" verticalCenter="0" right="240" source="main_pic_card_png"/>
+		<eui:ALabel id="RoomCard" text="房卡：0" width="420" size="35" verticalAlign="middle" textAlign="right" anchorOffsetX="0" verticalCenter="0" right="100" textColor="0xcacaca" height="45" isFixed="true"/>
+		<e:AButton id="Addicon" width="50" height="50" right="40" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="home_btn_join_p_png" source.down="home_btn_join_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+
+	</e:Group>
+	<e:Group top="340" left="0" right="0" bottom="165">
+		<e:Scroller id="ClubScroller" anchorOffsetX="0" x="0" y="0" scaleX="1" scaleY="1" width="100%" height="100%">
+			<eui:List id="ClubList"/>
+		</e:Scroller>
+	</e:Group>
+
+</e:Skin>

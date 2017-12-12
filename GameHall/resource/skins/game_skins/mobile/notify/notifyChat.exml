@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NotifyChat" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect height="1920" y="0" left="0" right="0" fillColor="0x302f2f"/>
+	<e:Group height="165" y="-3" left="0" right="0">
+		<e:Image left="0" right="0" bottom="0" top="0" source="main_pic_topbg_png"/>
+		<e:Image id="goBackBtn" source="main_btn_return_png" verticalCenter="0" left="35"/>
+		<e:Label id="clubName" text="俱乐部名称" size="50" horizontalCenter="0" verticalCenter="0" textColor="0xE7B570"/>
+	</e:Group>
+	<eui:ALabel id="titleTxt" text="房主(俱乐部名称)" y="180" size="45" height="50" left="80" right="80" textAlign="center" visible="false"/>
+	<e:Image source="main_pic_decoration_png" y="262" height="16" left="20" right="20" visible="false"/>
+	<e:Label id="timeTxt" text="2017/10/12  18:01" y="200" anchorOffsetX="0" textAlign="center" left="160" right="160" visible="false"/>
+	<e:Scroller id="scroller" width="100%" top="164" bottom="88">
+		<e:List id="itemList"/>
+	</e:Scroller>
+	<e:Group id="inputGroup" width="100%" height="88" bottom="590">
+		<e:Image width="100%" height="88" x="0" source="chat_pic_bg1_png" scaleX="1" scaleY="1"/>
+		<e:Image width="100" height="76" source="chat_btn_all_bg_png" right="106" bottom="6"/>
+		<e:Button id="sendBtn" label="" right="116" bottom="6">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="chat_btn_send_png" source.down="chat_btn_send_p_png" source.disabled="chat_btn_send_d_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Image id="emojiBg" width="100" height="76" bottom="6" right="0" source="chat_btn_all_bg_png"/>
+		<e:Button id="emojiBtn" label="" right="16" bottom="10">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="chat_btn_face_png" source.down="chat_btn_face_p_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="inputBg" anchorOffsetX="0" anchorOffsetY="0" height="76" left="6" bottom="6" right="214" source="chat_pic_inputbg1_png"/>
+		<e:TextInput id="input" anchorOffsetX="0" anchorOffsetY="0" bottom="14" height="55" left="12" prompt="请在此输入......" right="222"/>
+	</e:Group>
+	<e:Image id="emojiBgImg" source="chat_pic_popupbg_png" height="590" bottom="0" left="0" right="0"/>
+	<e:Group id="emojiGroup" height="590" bottom="0" left="0" right="0">
+
+		<e:Image touchEnabled="true" x="58" y="32" name="sweat"  source="chant_pic_emoji1_png" width="112" height="112"/>
+		<e:Image touchEnabled="true" x="260" y="32" width="112" height="112" source="chant_pic_emoji2_png" name="my god" />
+		<e:Image touchEnabled="true" x="476" y="32" width="112" height="112" source="chant_pic_emoji3_png" name="Kissing" />
+		<e:Image touchEnabled="true" x="690" y="32" width="112" height="112" source="chant_pic_emoji4_png" name="Crazy Face" />
+		<e:Image touchEnabled="true" y="32" width="112" height="112" source="chant_pic_emoji5_png" name="LOL"  x="910"/>
+		<e:Image touchEnabled="true" x="58" y="176" width="112" height="112" source="chant_pic_emoji6_png" name="Pensive" />
+		<e:Image touchEnabled="true" x="260" y="176" width="112" height="112" source="chant_pic_emoji7_png" name="Money-Mouth Face" />
+		<e:Image touchEnabled="true" x="476" y="176" width="112" height="112" source="chant_pic_emoji8_png" name="Crying" />
+		<e:Image touchEnabled="true" x="690" y="176" width="112" height="112" source="chant_pic_emoji9_png" name="grin" />
+		<e:Image touchEnabled="true" x="910" y="176" width="112" height="112" source="chant_pic_emoji10_png" name="Flushed" />
+		<e:Image touchEnabled="true" x="58" y="318" width="112" height="112" source="chant_pic_emoji11_png" name="smile" />
+		<e:Image touchEnabled="true" x="260" y="318" width="112" height="112" source="chant_pic_emoji12_png" name="evil" />
+		<e:Image touchEnabled="true" x="476" y="318" width="112" height="112" source="chant_pic_emoji13_png" name="Heart" />
+		<e:Image touchEnabled="true" x="690" y="318" width="112" height="112" source="chant_pic_emoji14_png" name="Pouting" />
+		<e:Image touchEnabled="true" x="910" y="318" width="112" height="112" source="chant_pic_emoji15_png" name="^^" />
+		<e:Image touchEnabled="true" x="58" y="450" width="112" height="112" source="chant_pic_emoji16_png" name="cool" />
+		<e:Image touchEnabled="true" x="260" y="450" width="112" height="112" source="chant_pic_emoji17_png" name="smirk" />
+		<e:Image touchEnabled="true" x="476" y="450" width="112" height="112" source="chant_pic_emoji18_png" name="Thinking" />
+		<e:Image touchEnabled="true" x="690" y="450" width="112" height="112" source="chant_pic_emoji19_png" name="Flirtatious" />
+		<e:Image touchEnabled="true" x="910" y="450" width="112" height="112" source="chant_pic_emoji20_png" name="Zipper-Mouth" />
+		<e:layout>
+			<e:TileLayout horizontalGap="90" verticalGap="32" paddingLeft="58" paddingRight="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="tipGroup" width="1080" height="1920" scaleX="1" scaleY="1" touchThrough="true" touchChildren="false" touchEnabled="false" top="0" horizontalCenter="0">
+		<e:Image source="pic_popup1_png" scaleX="-1" scaleY="1" width="544" height="81" anchorOffsetX="272" horizontalCenter="-272" top="1170"/>
+		<e:Image source="pic_popup1_png" scaleX="1" scaleY="1" width="544" height="81" horizontalCenter="272" top="1170"/>
+		<eui:ALabel id="tipLabel" text="输入的字符数量不能超过100" width="603" size="35" textColor="0xFF0000" horizontalCenter="0" textAlign="center" top="1195"/>
+	</e:Group>
+</e:Skin>

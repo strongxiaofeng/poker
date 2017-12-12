@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="watchBac" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_mask_pc_png" left="0" right="0" top="0" bottom="0" alpha="0.3"/>
+	<e:Group width="1319" height="780" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="web_pic_bg_pc_png" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image source="data_pic_separateline1_pc_png" left="6" right="6" top="13" bottom="13"/>
+		<e:Image source="looker_pic_separateline_pc_png" left="6" right="6" height="8" top="80" alpha="0.5"/>
+		<e:Image source="looker_pic_separateline_pc_png" width="8" alpha="0.5" left="366" top="88" bottom="13"/>
+		<eui:ALabel id="roomName" text="当前房间名称" textColor="0xE6BA6C" size="26" top="35" verticalAlign="middle" textAlign="center" width="500" horizontalCenter="0"/>
+		<eui:AButton id="closeBtn" label="" mouseTexture="btn_close_h_pc_png" right="10" top="17">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_close_pc_png" source.down="btn_close_p_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group width="360" height="270" left="6" top="88">
+			<eui:AButton id="msgBtn" label="" mouseTexture="looker_btn_description_h_pc_png" scaleX="1" scaleY="1" top="5" right="5">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="looker_btn_description_pc_png" source.down="looker_btn_description_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:Image source="looker_pic_decoration_pc_png" left="5" top="5"/>
+            <e:Image source="looker_pic_decoration_pc_png" left="5" scaleY="-1" bottom="5"/>
+            <e:Image source="looker_pic_decoration_pc_png" scaleX="-1" scaleY="-1" bottom="5" right="5"/>
+			<e:Image source="looker_pic_decoration2_pc_png" horizontalCenter="0" bottom="5"/>
+			<e:Group id="stageGroup" width="130" height="130" scaleX="1" scaleY="1" horizontalCenter="0" top="15"/>
+			<e:Image source="looker_pic_table2_pc_png" left="125" top="168"/>
+			<e:Image source="looker_pic_people_pc_png" left="125" top="196"/>
+			<eui:ALabel id="deskCount" text="桌枱：8" textAlign="left" verticalAlign="middle" size="20" textColor="0x959595" top="165" left="155" width="200"/>
+			<eui:ALabel id="playerCount" text="玩家：29" textAlign="left" verticalAlign="middle" size="20" textColor="0x959595" top="195" left="155" width="200"/>
+			<eui:ALabel id="roomCardTxt" text="" y="224" size="18" width="100" height="20" horizontalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Group width="360" top="358" bottom="13" left="6">
+			<e:Group width="360" height="96" top="0" horizontalCenter="0">
+				<e:Image source="main_pic_roller_pc_png" width="1" horizontalCenter="0" verticalCenter="0"/>
+				<eui:ALabel text="今日记录" textColor="0xe6ba6c" size="20" width="100" textAlign="center" verticalAlign="middle" verticalCenter="0" horizontalCenter="-90"/>
+				<eui:ALabel text="本局记录" textColor="0xE6BA6C" size="20" width="100" textAlign="center" verticalAlign="middle" verticalCenter="0" horizontalCenter="90"/>
+			</e:Group>
+			<e:Group bottom="0" top="96" left="0" width="360">
+				<e:BitmapLabel id="todayBet" width="180" height="50" text="99.5K" scaleX="0.7" scaleY="0.7" font="game_share_golden_75_pc_fnt" textAlign="left" verticalAlign="middle" left="10" top="0"/>
+				<e:Image source="looker_pic_bet_pc_png" left="10" top="40"/>
+				<eui:ALabel text="今日投注" size="18" textColor="0x959595" verticalAlign="middle" textAlign="left" width="100" left="33" top="40"/>
+				<e:BitmapLabel id="theBet" width="180" height="50" text="8.5K" scaleX="0.7" scaleY="0.7" font="game_share_golden_75_pc_fnt" textAlign="right" verticalAlign="middle" top="0" right="10"/>
+				<e:Image source="looker_pic_bet_pc_png" top="40" right="10"/>
+				<eui:ALabel text="本局投注" size="18" textColor="0x959595" verticalAlign="middle" textAlign="right" width="100" top="40" right="33"/>
+				<e:BitmapLabel id="todayPayout" height="50" text="34.5K" scaleX="0.7" scaleY="0.7" font="game_share_golden_75_pc_fnt" textAlign="left" verticalAlign="middle" top="120" left="10" width="180"/>
+				<e:Image source="looker_pic_chips_pc_png" left="10" top="160"/>
+				<eui:ALabel text="今日派彩" size="18" textColor="0x959595" verticalAlign="middle" textAlign="left" width="100" left="33" top="158"/>
+				<e:BitmapLabel id="thePayout" width="180" height="50" text="17K" scaleX="0.7" scaleY="0.7" font="game_share_golden_75_pc_fnt" textAlign="right" verticalAlign="middle" top="120" right="10"/>
+				<e:Image source="looker_pic_chips_pc_png" top="160" right="10"/>
+				<eui:ALabel text="本局派彩" size="18" textColor="0x959595" verticalAlign="middle" textAlign="right" width="100" top="158" right="33"/>
+				<e:BitmapLabel id="todayZone" width="140" height="35" text="+65K" textAlign="left" verticalAlign="middle" top="240" left="10" font="game_share_red_48_pc_fnt"/>
+				<e:Image source="looker_pic_surplus_pc_png" left="10" top="280"/>
+				<eui:ALabel text="今日盈余" size="18" textColor="0x959595" verticalAlign="middle" textAlign="left" width="100" left="33" top="280"/>
+				<e:BitmapLabel id="theZone" width="140" height="35" text="-8.5K" textAlign="right" verticalAlign="middle" top="240" right="10" font="game_share_green_48_pc_fnt"/>
+				<e:Image source="looker_pic_surplus_pc_png" top="280" right="10"/>
+				<eui:ALabel text="本局盈余" size="18" textColor="0x959595" verticalAlign="middle" textAlign="right" width="100" top="280" right="33"/>
+			</e:Group>
+		</e:Group>
+		<e:Group left="374" right="3" top="88" bottom="13">
+			<e:Scroller id="mulitScroller" width="100%" height="640" left="0" verticalCenter="0">
+				<eui:AList id="mulitList" width="100%" height="100%">
+					<eui:layout>
+						<e:TileLayout requestedColumnCount="2"/>
+					</eui:layout>
+				</eui:AList>
+
+			</e:Scroller>
+			<eui:ALabel id="label_HaveNothing" text="此房间没有玩家" size="25" verticalAlign="middle" textAlign="center" width="300" verticalCenter="0" horizontalCenter="0" visible="false"/>
+		</e:Group>
+
+	</e:Group>
+	<e:Group id="msgGroup" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Image source="bg_mask_pc_png" left="0" right="0" top="0" bottom="0" alpha="0.3" x="0" y="0" scaleX="1" scaleY="1"/>
+		<eui:ALabel text="虚拟桌枱说明" size="28" width="200" verticalAlign="middle" textAlign="center" horizontalCenter="0" top="275"/>
+		<eui:ALabel text="    玩家进入游戏后会被分配到虚拟的7人桌枱，桌枱坐满玩家后，新玩家进入系统会自动生成新的桌枱。桌枱内的7名玩家均离开桌枱后，系统会自动销毁该桌枱。" width="950" horizontalCenter="0" newlineAble="true" top="337" lineSpacing="30" size="23" height="75"/>
+		<eui:ALabel text="    所有虚拟桌共用该房间的牌局数据，即所有桌枱的牌局视频，房间状态和开牌结果均一致。" width="950" size="23" horizontalCenter="0" top="435"/>
+		<eui:ALabel text="    您可以进入桌枱内，旁观该桌枱所有玩家的牌局行为并与他们聊天。" width="950" size="23" horizontalCenter="0" top="487"/>
+		<eui:AButton id="joinConfirmBtn" label="我知道了" horizontalCenter="0" top="673" width="105">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="27" textColor="0xE6BA6C"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

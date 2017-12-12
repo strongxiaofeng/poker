@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="announceListItem" width="1042" height="195" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<eui:ALabel id="label_title" text="消息标题消息标题消息标题消息标题" x="30" y="37" width="685" height="40" textColor="0xb5b5b5" size="40" isFixed="true"/>
+	<eui:ALabel id="label_date" text="2017/09/01" x="30" y="106" width="685" height="40" textColor="0xb5b5b5" size="40" isFixed="true"/>
+	<e:Button id="btn_delete" label="" width="59" height="59" verticalCenter="0" right="30">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mine_btn_deletenotice_png" source.down="mine_btn_deletenotice_p_png" source.disabled="mine_btn_deletenotice_p_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image source="mine_pic_separateline2_png" bottom="0" left="0" right="0"/>
+</e:Skin>

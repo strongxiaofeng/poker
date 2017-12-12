@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="watchBacItem" width="470" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="looker_pic_table_pc_png" scaleX="-1" scaleY="1" horizontalCenter="53" top="0"/>
+		<e:Image source="looker_pic_table_pc_png" scaleX="1" scaleY="1" horizontalCenter="-53" top="0"/>
+		<eui:ALabel text="玩家自己昵称" textColor="0xbcbcbc" size="18" width="120" verticalAlign="middle" textAlign="right" left="0" top="1"/>
+		<e:Group width="20" height="20" top="0" left="122">
+			<e:Image source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel text="1" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xf9f5e5"/>
+		</e:Group>
+		<eui:ALabel text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="right" left="5" top="47"/>
+		<e:Group width="20" height="20" top="46" left="125">
+			<e:Image source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel text="2" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xF9F5E5"/>
+		</e:Group>
+		<eui:ALabel text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="right" left="55" top="71"/>
+		<e:Group width="20" height="20" top="70" left="175">
+			<e:Image width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" source="looker_pic_seat2_pc_png"/>
+			<eui:ALabel text="3" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0x686868"/>
+		</e:Group>
+		<eui:ALabel text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="right" top="103" horizontalCenter="0"/>
+		<e:Group width="20" height="20" top="78" horizontalCenter="0">
+			<e:Image source="looker_pic_seat2_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel text="5" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0x686868"/>
+		</e:Group>
+		<eui:ALabel text="玩家自己昵称" textColor="0xBCBCBC" size="18" verticalAlign="middle" textAlign="left" top="71" right="42" width="120"/>
+		<e:Group height="20" top="70" right="165" width="20">
+			<e:Image source="looker_pic_seat2_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel text="6" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0x686868"/>
+		</e:Group>
+		<eui:ALabel text="玩家自己昵称" textColor="0xBCBCBC" size="18" verticalAlign="middle" textAlign="left" top="47" right="2" width="120"/>
+		<e:Group height="20" top="46" right="124" width="20">
+			<e:Image source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel text="7" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xF9F5E5"/>
+		</e:Group>
+		<eui:ALabel text="玩家自己昵称" textColor="0xBCBCBC" size="18" width="120" verticalAlign="middle" textAlign="left" top="1" right="0"/>
+		<e:Group width="20" height="20" top="0" right="122">
+			<e:Image source="looker_pic_seat_pc_png" width="20" height="20" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<eui:ALabel text="8" size="13" width="20" height="20" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" textColor="0xF9F5E5"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

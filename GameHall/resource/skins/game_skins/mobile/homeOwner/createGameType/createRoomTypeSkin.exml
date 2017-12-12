@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="createRoomTypeSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+
+	<e:Group id="homeOwnerTop" height="110" top="165" left="0" right="0">
+		<e:Group id="roomCardGroup" verticalCenter="0" right="0">
+
+
+
+
+			<e:Image id="roomCardImg" width="54" height="38" source="main_pic_card_png" scaleX="1" scaleY="1" verticalCenter="0" right="255"/>
+			<eui:ALabel id="homeCard" text="房卡 : 0" width="320" size="35" verticalAlign="middle" textAlign="right" textColor="0xC8C8C8" scaleX="1" scaleY="1" verticalCenter="0" right="100" isFixed="true"/>
+			<eui:AButton id="add" label="" width="50" height="50" scaleX="1" scaleY="1" verticalCenter="0" right="30">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="home_btn_join_p_png" source.down="home_btn_join_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Image source="main_pic_decoration_png" left="19" right="19" top="94"/>
+		<e:Group height="70" left="30" verticalCenter="0">
+		<eui:ALabel xmlns:eui="eui.*" text="global_lbl_game_type" left="0" verticalCenter="0" width="169.7" height="70" size="35" verticalAlign="middle" textAlign="left" textColor="0xC8C8C8" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel id="gameType" text="1" left="180" verticalCenter="0" width="169.7" height="70" size="35" verticalAlign="middle" textAlign="left" textColor="0xC8C8C8" anchorOffsetX="0" x="10" y="10"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller id="selectScroll" top="275" left="0" right="0" bottom="0">
+		<e:List id="selectList"/>
+
+	</e:Scroller>
+</e:Skin>

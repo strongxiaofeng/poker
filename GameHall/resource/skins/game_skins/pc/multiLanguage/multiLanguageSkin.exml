@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="multiLanguageSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_mask_pc_png" left="0" right="0" top="0" bottom="0" alpha="0.6"/>
+
+		<e:Group width="587" height="776" horizontalCenter="0" top="153">
+			<e:Image source="pic_popup4_bg_pc_png" top="71" left="0" right="0" bottom="0"/>
+			<e:Image source="pic_popuptitle_pc_png" top="10" right="6" left="6" height="66"/>
+			<e:Image source="pic_popup4_pc_png" top="0" bottom="0" scale9Grid="22,18,738,31" left="0" right="0"/>
+			<eui:ALabel text="set_lbl_lan_select_title" size="27" width="220" textColor="0xe7b56f" x="24" y="32" isFixed="true" height="27"/>
+			<eui:AButton id="closeBtn" label="" mouseTexture="btn_close_h_pc_png" x="513" y="12">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_close_pc_png" source.down="btn_close_p_pc_png" source.disabled="btn_close_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:Image source="window_pic_decoration_pc_png" width="561" top="70" horizontalCenter="0"/>
+			<e:Scroller id="multiLanguageScroll" width="548" height="626" x="20" y="83">
+				<e:List id="multiLanguageList"/>
+			</e:Scroller>
+			<e:Group bottom="13" height="50" left="7" right="12" >
+
+				<eui:AButton id="cancelBtn" label="global_btn_cancel_text" height="50" width="292" x="0" y="0" mouseTexture="btn_confirm_h_pc_png">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled,hover">
+						<e:Image source.up="btn_confirm_pc_png" source.down="btn_confirm_p_pc_png"  source.disabled="btn_confirm_pc_png" left="0" bottom="0" top="0" right="0" scale9Grid="5,6,4,39"/>
+						<e:ALabel id="labelDisplay" size="22" height="22" width="80" isFixed="true" text="" textColor.up="0xca0c09" textColor.down="0xE7B56F" textColor.hover="0x654D29" textColor.disabled="0xc8c8c8" horizontalCenter="0" verticalCenter="0"/>
+						<e:Rect width="100%" height="100%" alpha="0.01"/>
+						</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<eui:AButton id="confirmBtn" label="global_btn_ok_text" height="50" y="0" width="281" x="292" mouseTexture="btn_confirm_h_pc_png">
+					<eui:skinName>
+					<e:Skin states="up,down,disabled,hover">
+						<e:Image source="btn_confirm_pc_png" source.down="btn_confirm_p_pc_png" source.disabled="btn_confirm_pc_png" left="0" bottom="0" top="0" right="0" scale9Grid="5,6,4,39"/>
+						<e:ALabel id="labelDisplay" size="22" height="22" width="80" isFixed="true" text="" textColor.up="0x00C83C" textColor.down="0xE7B56F" textColor.hover="0x654D29" textColor.disabled="0x868686" horizontalCenter="0" verticalCenter="0"/>
+						<e:Rect width="100%" height="100%" alpha="0.01"/>
+					</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<e:Image source="login_pic_btnseparateline_pc_png" y="0" width="2" x="292"/>
+			</e:Group>
+		</e:Group>
+</e:Skin>

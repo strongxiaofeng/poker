@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="detailItem" width="482" height="23" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupBaccarat" x="0" y="0" height="20">
+		<eui:ALabel id="labelTitle" text="投注项" x="0" y="0" width="160" height="23" size="20" textColor="0xe7b56f" textAlign="center" verticalAlign="bottom"/>
+		<eui:ALabel id="labelBet" text="投注" y="0" width="140" height="23" size="20" textColor="0xE7B56F" textAlign="right" verticalAlign="bottom" left="160"/>
+		<eui:ALabel id="labelPayout" text="派彩" y="0" width="140" height="23" size="20" textColor="0xE7B56F" textAlign="right" verticalAlign="bottom" left="320"/>
+	</e:Group>
+</e:Skin>

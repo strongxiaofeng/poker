@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="sidebarItemSkin" width="718" height="370" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="690" height="350" source="menu_pic_roomlist_bg_png" scale9Grid="27,27,10,10" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group width="690" height="350" verticalCenter="0" horizontalCenter="0">
+		<e:Group height="72" top="0" left="14" right="14">
+			<eui:ALabel id="roomName" text="房间名" verticalCenter="0" width="300" textColor="0xc8c8c8" verticalAlign="middle" textAlign="left" height="40" size="35" left="0" isFixed="true"/>
+
+			<e:Image verticalCenter="0" right="120" source="mine_pic_free2_png"/>
+			<e:Image id="imgFree" verticalCenter="0" right="120" source="mine_pic_free_png" visible="false"/>
+			<e:Image id="imgCount" source="menu_pic_count_png" verticalCenter="0" right="0" visible="false"/>
+			<e:Image id="imgShuffle" source="menu_pic_shuffle_png" verticalCenter="0" right="0" visible="false"/>
+			<e:Group id="groupCount" width="100" right="0" height="72" verticalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Image source="menu_pic_roomlist_dark_png" width="662" height="264" left="14" top="72"/>
+		<e:Group id="groupRoadMap" height="264" width="662" left="14" top="72">
+		</e:Group>
+		<e:Image id="imgLock" source="menu_pic_lock_png" bottom="14" right="14"/>
+		<eui:ALabel id="labelShuffle" text="global_lbl_shuffling" horizontalCenter="0" verticalCenter="28" width="400" height="60" size="60" verticalAlign="middle" textAlign="center" textColor="0x828282" visible="false"/>
+	</e:Group>
+</e:Skin>

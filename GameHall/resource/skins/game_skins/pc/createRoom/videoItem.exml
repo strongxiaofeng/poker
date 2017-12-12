@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="videoItem" width="478" height="218" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image left="0" source="mine_pic_videobg_pc_png" right="0" bottom="0" scale9Grid="20,20,15,11" top="8"/>
+	<eui:ALabel id="videoNum" text="编号：ABCD0123456789" left="8" width="177" size="14" textColor="0xe7b56f" top="16"/>
+	<eui:ALabel id="dealerName" text="荷官：Yuki" width="120" size="14" textColor="0xE7B56F" x="209" y="16"/>
+	<e:Image source="mine_pic_buttonbg_pc_png" left="125" right="5" bottom="5" top="40"/>
+	<e:Image id="dealerImg" source="main_pic_dealer_pc_png" left="5" width="114" height="168" top="40"/>
+	<e:Group id="roadGroup" width="225" height="167" x="125" y="40">
+
+	</e:Group>
+	<e:Group height="167" top="40" width="127" right="1">
+		<e:Image source="pic_separateline_pc_png" width="125" verticalCenter="0" horizontalCenter="-2"/>
+		<eui:AButton id="previewBtn" label="" mouseTexture="mine_btn_preview_h_pc_png" horizontalCenter="0" top="16">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mine_btn_preview_pc_png" source.down="mine_btn_preview_p_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="sureBtn" label="" mouseTexture="mine_btn_confirm_h_pc_png" horizontalCenter="0" bottom="39">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mine_btn_confirm_pc_png" source.down="mine_btn_confirm_p_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:ALabel text="founder_btn_preview" size="17" textColor="0xe7b56f" textAlign="center" width="51" verticalAlign="middle" top="58" horizontalCenter="0" height="17" isFixed="true"/>
+		<eui:ALabel text="global_btn_ok_text" size="17" textColor="0xE7B56F" textAlign="center" width="51" verticalAlign="middle" horizontalCenter="0" bottom="15" height="17" isFixed="true"/>
+	</e:Group>
+	<e:Group id="stageGroup" width="30" height="30" top="5" x="440"/>
+	<eui:ALabel id="shuffleLabel" text="global_lbl_shuffling" size="30" width="120" textAlign="center" verticalAlign="middle" y="94" height="30" isFixed="true" x="189"/>
+</e:Skin>

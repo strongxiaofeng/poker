@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="homeSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+
+	<e:Group id="infoGroup" top="165" height="140" left="0" right="0">
+		<e:Image id="avatar" verticalCenter="0" source="mine_pic_default_png" width="117" height="117" left="40"/>
+		<eui:ALabel id="nickName" text="nick_name" left="170" width="361" height="44" textColor="0xcacaca" size="35" verticalAlign="middle" textAlign="left" isFixed="true" verticalCenter="0"/>
+		<e:Image id="cardIcon" source="main_pic_card_png" verticalCenter="0" right="240"/>
+		<eui:ALabel id="cardLabel" text="global_lbl_room_card" verticalCenter="0" right="100" width="397" height="45" size="35" verticalAlign="middle" textAlign="right" textColor="0xc8c8c8"/>
+		<eui:AButton id="cardBtn" label="" right="40" width="50" height="50" verticalCenter="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_btn_morecard_png" source.down="main_btn_morecard_p_png" source.disabled="main_btn_morecard_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Image source="main_pic_decoration_png" top="305" height="16" left="19" right="19"/>
+
+	<e:Group left="0" right="0" top="320" bottom="165">
+		<eui:ALabel id="tipLabel" text="global_lbl_has_no_recent_club" horizontalCenter="0" top="280" width="700" height="65" size="45" verticalAlign="middle" textAlign="center" textColor="0xffffff" visible="false"/>
+		<e:Group id="currentClub" width="100%" horizontalCenter="0" top="45" bottom="490" touchThrough="true">
+
+
+			<eui:ALabel id="clubName" text="Club" horizontalCenter="0" top="455" width="637" height="60" size="55" verticalAlign="middle" textAlign="center" isFixed="true"/>
+			<e:Group id="joinedClubInfo" left="0" top="0" bottom="0" right="0" visible="false">
+				<e:Group width="640" height="40" top="570" horizontalCenter="0" x="220" y="570" scaleX="1" scaleY="1">
+					<e:Image width="30" height="30" left="0" verticalCenter="0" source="icon_pic_chip_png"/>
+					<eui:ALabel text="global_lbl_chip_balance" verticalCenter="0" left="50" height="40" width="160" tailFix="：" size="35" verticalAlign="middle" textAlign="left" textColor="0xE9B76F" isFixed="true"/>
+					<eui:ALabel text="0" left="225" height="40" verticalCenter="0" width="415" isFixed="true" size="35" verticalAlign="middle" textAlign="left" visible="false"/>
+					<e:BitmapLabel id="chipMoney" width="415" height="40" verticalCenter="0" left="225" font="white_42_fnt" text="0" verticalAlign="middle" textAlign="left"/>
+				</e:Group>
+				<e:Group width="640" height="40" top="640" horizontalCenter="0" x="220" y="640" scaleX="1" scaleY="1">
+					<e:Image width="30" height="30" left="0" verticalCenter="0" source="icon_pic_creator_png"/>
+					<eui:ALabel text="global_lbl_creator" verticalCenter="0" left="50" height="40" width="160" size="35" verticalAlign="middle" textAlign="left" textColor="0xE9B76F" isFixed="true"/>
+					<eui:ALabel id="creator" text="name" left="225" height="40" verticalCenter="0" width="415" isFixed="true" verticalAlign="middle" textAlign="left" size="35"/>
+				</e:Group>
+				<e:Group width="640" height="40" top="710" horizontalCenter="0" x="220" y="710" scaleX="1" scaleY="1">
+					<e:Image width="30" height="30" left="0" verticalCenter="0" source="icon_pic_room_png"/>
+					<eui:ALabel text="global_lbl_room_nums" verticalCenter="0" left="50" height="40" width="160" size="35" verticalAlign="middle" textAlign="left" textColor="0xE9B76F" isFixed="true"/>
+					<eui:ALabel id="roomNum" text="0" left="225" height="40" verticalCenter="0" width="415" isFixed="true" size="35" verticalAlign="middle" textAlign="left"/>
+				</e:Group>
+				<e:Group width="640" height="40" top="780" horizontalCenter="0" x="220" y="780" scaleX="1" scaleY="1">
+					<e:Image width="30" height="30" left="0" verticalCenter="0" source="icon_pic_anchor_png"/>
+					<eui:ALabel text="global_lbl_online_anchor" verticalCenter="0" left="50" height="40" width="160" size="35" verticalAlign="middle" textAlign="left" textColor="0xE9B76F" isFixed="true"/>
+					<eui:ALabel id="anchorNum" text="0" left="225" height="40" verticalCenter="0" width="415" isFixed="true" size="35" verticalAlign="middle" textAlign="left"/>
+				</e:Group>
+				<e:Group width="640" height="40" top="850" horizontalCenter="0" x="220" y="850" scaleX="1" scaleY="1">
+					<e:Image width="30" height="30" left="0" verticalCenter="0" source="icon_pic_type_png"/>
+					<eui:ALabel text="global_lbl_game_type" verticalCenter="0" left="50" height="40" width="160" size="35" verticalAlign="middle" textAlign="left" textColor="0xE9B76F" isFixed="true"/>
+					<eui:ALabel id="gameType" text="baccarat" left="225" height="40" verticalCenter="0" width="415" isFixed="true" size="35" verticalAlign="middle" textAlign="left"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="myClubInfo" left="0" right="0" top="0" bottom="0"  touchThrough="true">
+				<eui:ALabel text="global_lbl_main_my_created" horizontalCenter="0" width="500" height="60" top="530" size="45" verticalAlign="middle" textAlign="center" textColor="0xdeb76f"/>
+				<eui:ALabel text="global_lbl_room_nums" width="180" height="40" top="630" size="35" verticalAlign="middle" textAlign="right" textColor="0xdeb76f" horizontalCenter="-300" isFixed="true"/>
+				<eui:ALabel text="global_lbl_main_my_online_players" width="180" height="40" top="690" size="35" verticalAlign="middle" textAlign="right" textColor="0xdeb76f" horizontalCenter="-300" isFixed="true"/>
+				<eui:ALabel text="global_lbl_main_my_today_profit" width="180" height="40" top="750" size="35" verticalAlign="middle" textAlign="right" textColor="0xdeb76f" horizontalCenter="-300" isFixed="true"/>
+				<eui:ALabel text="global_lbl_game_type" width="180" height="40" top="810" size="35" verticalAlign="middle" textAlign="right" textColor="0xdeb76f" horizontalCenter="-300" isFixed="true"/>
+				<eui:ALabel text="global_lbl_main_my_total_player" horizontalCenter="180" width="180" height="40" top="630" size="35" verticalAlign="middle" textAlign="right" textColor="0xdeb76f" isFixed="true"/>
+				<eui:ALabel text="global_lbl_online_anchor" horizontalCenter="180" width="180" height="40" top="690" size="35" verticalAlign="middle" textAlign="right" textColor="0xdeb76f" isFixed="true"/>
+				<eui:ALabel text="global_lbl_main_card_expend" horizontalCenter="180" width="180" height="40" top="750" size="35" verticalAlign="middle" textAlign="right" textColor="0xdeb76f" isFixed="true"/>
+
+				<eui:ALabel id="myClubRoomNum" text="0" width="180" height="40" top="630" size="35" verticalAlign="middle" textAlign="left" textColor="0xffffff" horizontalCenter="-90"/>
+				<eui:ALabel id="myClubOnlinePlayer" text="0" width="180" height="40" top="690" size="35" verticalAlign="middle" textAlign="left" textColor="0xffffff" horizontalCenter="-90"/>
+				<eui:ALabel id="myClubProfit" text="0" width="180" height="40" top="750" size="35" verticalAlign="middle" textAlign="left" textColor="0xffffff" horizontalCenter="-90"/>
+				<eui:ALabel id="myClubGameType" text="global_lbl_no" width="180" height="40" top="810" size="35" verticalAlign="middle" textAlign="left" textColor="0xffffff" horizontalCenter="-90"/>
+				<eui:ALabel id="myClubTotalPlayer" text="0" horizontalCenter="381" width="180" height="40" top="630" size="35" verticalAlign="middle" textAlign="left" textColor="0xffffff"/>
+				<eui:ALabel id="myClubAnchor" text="0" horizontalCenter="381" width="180" height="40" top="690" size="35" verticalAlign="middle" textAlign="left" textColor="0xffffff"/>
+				<eui:ALabel id="myClubCard" text="0" horizontalCenter="381" width="180" height="40" top="750" size="35" verticalAlign="middle" textAlign="left" textColor="0xffffff"/>
+			</e:Group>
+			<e:Group id="clubFace"  horizontalCenter="0" top="0">
+				<e:Image id="clubIcon" width="388" height="388" source="main_pic_defaultclub_png" x="75.99999999999994" y="0"/>
+				<e:Image id="iconMask" width="388" height="388" source="main_pic_defaultclub_png" x="76" y="0"/>
+				<e:Group id="lockGroup" x="174" y="98">
+					<e:Image source="club_pic_lockbg1_png" x="0" y="0"/>
+					<e:Image source="club_pic_lock_png" x="52.99999999999994" y="42.00000000000006"/>
+				</e:Group>
+				<e:Image id="clubDecoration" source="home_pic_clubbg_png" x="0" y="45" touchEnabled="false"/>
+			</e:Group>
+		</e:Group>
+		<e:Group bottom="0" left="0" width="50%" top="1135">
+			<eui:AButton id="joinBtn" width="400" height="210" label="global_lbl_join_clue" horizontalCenter="0" bottom="80">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="146" height="146" horizontalCenter="0" bottom="64" source="home_btn_join_png" source.down="home_btn_join_p_png" source.disabled="home_btn_join_png"/>
+					<e:ALabel id="labelDisplay" horizontalCenter="0" bottom="0" textColor="0xE9B76F" height="40" verticalAlign="middle" textAlign="center" size="40"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Group width="50%" bottom="0" right="0" top="1135">
+			<eui:AButton id="creatBtn" width="400" height="210" label="global_lbl_create_clue" horizontalCenter="0" bottom="80">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="146" height="146" horizontalCenter="0" bottom="64" source="home_btn_creat_png" source.down="home_btn_creat_p_png" source.disabled="home_btn_creat_png"/>
+					<e:ALabel id="labelDisplay" horizontalCenter="0" bottom="0" textColor="0xE9B76F" height="40" verticalAlign="middle" textAlign="center" size="40"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+	</e:Group>
+	<e:Group id="joinGroup" top="0" bottom="0" left="0" right="0" visible="false">
+		<e:Image id="joinGroupBgd" source="bg_mask_png" touchEnabled="true" right="0" left="0" top="0" bottom="0"/>
+		<e:Group id="joinInputGroup" width="1080" height="1920" anchorOffsetX="540" anchorOffsetY="960" verticalCenter="0" horizontalCenter="0">
+			<e:Image horizontalCenter="0" source="home_pic_decoration1_png" height="190" width="180" top="358" x="450" y="358" scaleX="1" scaleY="1"/>
+			<e:Image source="home_pic_decoration2_png" height="190" width="320" top="358" horizontalCenter="280" x="660" y="358" scaleX="1" scaleY="1"/>
+			<e:Image source="home_pic_decoration2_png" height="190" width="320" top="358" horizontalCenter="-280" scaleX="-1" x="420" y="358" scaleY="1"/>
+			<e:Image width="1030" height="650" source="home_pic_cardbg_png" horizontalCenter="0" top="545" scale9Grid="34,31,41,600" x="25" y="545" scaleX="1" scaleY="1"/>
+			<e:Image source="club_pic_card_png" horizontalCenter="0" top="565"/>
+			<e:Image scaleX="1" scaleY="1" source="mine_pic_decoration_png" horizontalCenter="-421.5" top="590"/>
+			<e:Image scaleX="-1" scaleY="1" source="mine_pic_decoration_png" horizontalCenter="421.5" top="590"/>
+			<e:Image scaleX="1" scaleY="-1" source="mine_pic_decoration_png" horizontalCenter="-421.5" top="920"/>
+			<e:Image scaleX="-1" scaleY="-1" source="mine_pic_decoration_png" horizontalCenter="421.5" top="920"/>
+			<e:Image top="700" y="368" scaleX="1" scaleY="-1" source="mine_pic_decoration2_png" horizontalCenter="0"/>
+			<eui:ALabel id="joinGroupTitle" text="login_lbl_invitation_code" horizontalCenter="0" width="600" height="50" top="609" size="40" verticalAlign="middle" textAlign="center" textColor="0x000000" isFixed="true"/>
+			<e:Image source="club_pic_number_png" horizontalCenter="-364" top="765"/>
+			<e:Image source="club_pic_wordsline_png" horizontalCenter="0" top="945" width="790"/>
+			<e:EditableText id="joinInput" width="790" height="160" text="Label" horizontalCenter="0" verticalAlign="middle" textAlign="center" size="130" textColor="0x000000" top="794" maxChars="8"/>
+			<eui:AButton id="joinCancelBtn" label="global_btn_cancel_text" horizontalCenter="-243" top="1053" width="482" height="96">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+					<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76F"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="joinConfirmBtn" label="login_btn_join" horizontalCenter="243" top="1053" width="482" height="96">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+					<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76F"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Group id="joinTipGroup" width="1080" height="81" horizontalCenter="0" anchorOffsetX="540" anchorOffsetY="40.5" y="1240.5" visible="false">
+			<e:Image source="pic_popup1_png" width="544" height="81" scaleX="-1" scaleY="1" horizontalCenter="-272" verticalCenter="0"/>
+			<e:Image source="pic_popup1_png" width="544" height="81" scaleX="1" scaleY="1" horizontalCenter="272" verticalCenter="0"/>
+			<eui:ALabel id="joinTipLabel" text="login_lbl_invitation_code_error_tips" verticalCenter="0" horizontalCenter="0" width="600" height="60" verticalAlign="middle" textAlign="center" textColor="0xff0000" size="35" isFixed="true"/>
+		</e:Group>
+
+	</e:Group>
+
+	<e:Group id="createGroup" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Image id="createGroupBgd" source="bg_mask_png" touchEnabled="true" left="0" top="0" right="0" bottom="0"/>
+		<e:Group id="createInputGroup" width="1080" height="1920" anchorOffsetX="540" anchorOffsetY="960" verticalCenter="0" horizontalCenter="0">
+			<e:Image id="spinImg" source="home_pic_light_png" horizontalCenter="0" width="400" height="400" anchorOffsetX="200" anchorOffsetY="200" verticalCenter="-500"/>
+			<e:Image horizontalCenter="0" height="190" width="180" top="365" x="450" y="358" scaleX="1" scaleY="1" source="home_pic_decoration1_2_png"/>
+			<e:Image height="190" width="320" top="365" horizontalCenter="280" x="660" y="358" scaleX="1" scaleY="1" source="home_pic_decoration2_2_png"/>
+			<e:Image height="190" width="320" top="365" horizontalCenter="-280" scaleX="-1" x="420" y="358" scaleY="1" source="home_pic_decoration2_2_png"/>
+			<e:Group id="shineGroup" width="870" height="180" horizontalCenter="0" top="365">
+				<e:Image id="shineImg0" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg1" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg2" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg3" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg4" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg5" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg6" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg7" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+				<e:Image id="shineImg8" x="0" y="0" source="home_pic_star_png" width="55" height="55"/>
+			</e:Group>
+			<e:Image width="1030" height="650" source="home_pic_cardbg_png" horizontalCenter="0" top="545" scale9Grid="34,31,41,600" x="25" y="545" scaleX="1" scaleY="1"/>
+			<e:Image horizontalCenter="0" top="565" source="club_pic_card_png"/>
+			<e:Image scaleX="1" scaleY="1" source="mine_pic_decoration_png" horizontalCenter="-421.5" top="590"/>
+			<e:Image scaleX="-1" scaleY="1" source="mine_pic_decoration_png" horizontalCenter="421.5" top="590"/>
+			<e:Image scaleX="1" scaleY="-1" source="mine_pic_decoration_png" horizontalCenter="-421.5" top="920"/>
+			<e:Image scaleX="-1" scaleY="-1" source="mine_pic_decoration_png" horizontalCenter="421.5" top="920"/>
+			<e:Image top="700" y="368" scaleX="1" scaleY="-1" source="mine_pic_decoration2_png" horizontalCenter="0"/>
+			<eui:ALabel id="createGroupTitle" text="home_lbl_create_club_input_name" horizontalCenter="0" width="600" height="50" top="609" size="40" verticalAlign="middle" textAlign="center" textColor="0x000000" isFixed="true"/>
+			<eui:ALabel text="创建后名称将不能修改" horizontalCenter="0" width="600" height="40" top="966" size="30" verticalAlign="middle" textAlign="center" textColor="0x3c3c3c" visible="false"/>
+
+			<e:Image source="club_pic_wordsline_png" horizontalCenter="0" top="945" width="790"/>
+			<e:EditableText id="createInput" width="790" height="100" text="Label" horizontalCenter="0" verticalAlign="middle" textAlign="center" size="60" textColor="0x000000" top="840" maxChars="20"/>
+			<eui:AButton id="createCancelBtn" label="global_btn_cancel_text" horizontalCenter="-243" top="1053" width="482" height="96">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+					<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000"  textColor.down="0xE9B76F"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="createConfirmBtn" label="login_btn_confirm" horizontalCenter="243" top="1053" width="482" height="96">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+					<e:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000"  textColor.down="0xE9B76F"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Group id="createTipGroup" width="1080" height="81" anchorOffsetX="540" anchorOffsetY="40.5" y="1240.5" x="540" visible="false">
+			<e:Image source="pic_popup1_png" width="544" height="81" scaleX="-1" scaleY="1" horizontalCenter="-272" verticalCenter="0"/>
+			<e:Image source="pic_popup1_png" width="544" height="81" scaleX="1" scaleY="1" horizontalCenter="272" verticalCenter="0"/>
+			<eui:ALabel id="createErrorMsg" text="home_lbl_name_exists" verticalCenter="0" horizontalCenter="0" width="600" height="60" verticalAlign="middle" textAlign="center" textColor="0xff0000" size="35" isFixed="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="loginJoinTip" width="1080" height="81" touchThrough="true" anchorOffsetX="540" anchorOffsetY="40.5" y="934.5" x="540" visible="false">
+		<e:Image width="544" scaleX="-1" scaleY="1" horizontalCenter="-272" verticalCenter="0" source="pic_popup3_png"/>
+		<e:Image width="544" scaleX="1" scaleY="1" horizontalCenter="272" verticalCenter="0" source="pic_popup3_png"/>
+		<eui:ALabel id="loginJoinTipLabel" text="login_lbl_invitation_code_error_tips" verticalCenter="0" horizontalCenter="0" width="600" height="60" verticalAlign="middle" textAlign="center" size="45" isFixed="true" textColor="0xffffff"/>
+	</e:Group>
+</e:Skin>

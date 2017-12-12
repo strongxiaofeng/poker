@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VideoItem" width="1040" height="440" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="mainGroup" width="100%" horizontalCenter="0" height="100%" verticalCenter="0">
+		<e:Group scaleX="1" scaleY="1" top="20" anchorOffsetX="0" bottom="0" width="100%" horizontalCenter="0">
+		<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" scale9Grid="15,15,30,27" height="100%" left="0" width="50" source="main_btn_room_png"/>
+		<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" scale9Grid="15,15,30,27" height="100%" right="0" source="main_btn_room_png"/>
+		<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" height="100%" left="20" right="20" alpha="1" source="main_btn_room2_png"/>
+		<e:Group left="0" right="0" top="0">
+			<eui:Label id="roomName" text="百家乐一号房" fontFamily="Arial" textColor="0xE9B76F" size="35" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="249" x="0" verticalCenter="1"/>
+			<eui:ALabel id="anchorName" text="主播：小雪" size="25" textAlign="left" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" width="200" height="25" x="252" textColor="0xc0c0c0" y="4" visible="false"/>
+			<eui:Label id="dealerName" text="荷官：" size="30" textAlign="left" verticalAlign="middle" textColor="0xC0C0C0" anchorOffsetX="0" anchorOffsetY="0" width="200" x="252" top="0" bottom="0"/>
+			<eui:ALabel id="limitLabel" text="限额：300-1,000" size="25" textAlign="left" verticalAlign="middle" textColor="0xC0C0C0" anchorOffsetX="0" anchorOffsetY="0" width="292" x="630" top="10"/>
+			<eui:ALabel id="playerCountLabel" text="人数：0" size="25" textAlign="left" verticalAlign="middle" textColor="0xC0C0C0" anchorOffsetX="0" anchorOffsetY="0" width="292" height="25" x="630" bottom="10"/>
+			<eui:ALabel id="time" text="23" size="45" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="100" height="75" verticalCenter="0" right="0" textColor="0xe9b76f" visible="false"/>
+			<eui:AImage id="shuffleIcon" width="100" height="75" top="0" right="0" source="desk_pic_shuffle_png" visible="false"/>
+			<e:Image id="isHireImg" source="mine_pic_free_png" x="579" y="17"/>
+			<e:Group id="timeGroup" width="100" top="0" bottom="0" right="0" height="75"/>
+		</e:Group>
+		<e:Image id="touxiangImg0" left="10" top="75" width="230" height="335" source="main_pic_dealer_png"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" left="250" right="10" top="75" bottom="10">
+			<e:Image source="pic_popup2_bg_png" left="0" right="0" top="0" bottom="0"/>
+			<e:Group id="groupMap" width="530" height="335" y="0" right="250">
+				<e:Group id="roadGroup" anchorOffsetX="0" height="335" y="0" width="530" scaleX="1" scaleY="1" right="0">
+				</e:Group>
+				<e:Group id="pwdGroup" width="200" height="40" bottom="0" y="294" scaleX="1" scaleY="1" x="330" visible="false">
+					<e:Image right="0" top="0" bottom="0" source="btn_login_png" left="0"/>
+					<e:Image source="mine_pic_locked2_png" anchorOffsetX="0" width="45" anchorOffsetY="0" left="0" top="0" bottom="0"/>
+					<eui:ALabel id="pwdNum" text="" left="45" width="155" size="35" verticalAlign="middle" textAlign="center" textColor="0x000000" bold="true" height="40" y="0"/>
+				</e:Group>
+			</e:Group>
+
+			<e:Group id="btnsGroup" touchChildren="false" right="0" top="0" bottom="0" width="250">
+
+
+				<e:Button id="closeRoomBtn" label="关闭房间" x="53" y="92" height="86" width="141" visible="false">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_control_p_png" source.down="mine_btn_control_p_png" source.disabled="mine_btn_control_p_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="80" textColor="0xedb66c" size="35"/>
+						</e:Skin>
+					</e:skinName>
+
+				</e:Button>
+
+				<e:Image id="closingImg" x="53" y="92" source="btn_control_png" visible="false"/>
+				<eui:ALabel id="closingLabel1" text="关闭中，等待所有玩家退出" y="197" height="70" size="32" horizontalCenter="0" right="10" left="10" width="229" textColor="0xedb66c" visible="false"/>
+				<e:AButton id="deleteRoomBtn" label="删除房间" y="80" height="106" width="106" horizontalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" name="imgRoomBtn" source="mine_btn_deleteroom_png" source.down="mine_btn_deleteroom_p_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="86" textColor="0xedb66c" size="35"/>
+						</e:Skin>
+					</e:skinName>
+
+				</e:AButton>
+				<e:Label id="closingLabel" text="关闭中，等待所有玩家退出" y="210" left="20" right="20" textColor="0xedb66c" size="32" visible="false"/>
+
+			</e:Group>
+
+
+		</e:Group>
+		</e:Group>
+		<eui:ALabel id="shuffleLabel" text="洗牌中" width="200" size="55" top="217" textColor="0xacacac" right="420"/>
+	</e:Group>
+
+</e:Skin>

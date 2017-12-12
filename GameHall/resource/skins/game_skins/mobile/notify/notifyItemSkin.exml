@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyItemSkin" width="1080" height="192" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+	</w:Declarations>
+	<e:Group id="bigGroup" width="100%" height="192">
+		<e:Image id="headImg" x="36" y="22" source="news_pic_system_png" width="143" height="143" scaleX="1" scaleY="1" mask="head_default" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="head_default" x="36" y="22" source="news_pic_system_png" width="143" height="143" scaleX="1" scaleY="1"/>
+		<e:Rect id="headMask" width="143" height="143" x="36" y="22" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.6"/>
+		<eui:ALabel id="nameTxt" text="俱乐部公告" x="218" y="46" anchorOffsetY="0" height="50" size="45" anchorOffsetX="0" width="408" textColor="0xaeaeae" scaleX="1" scaleY="1" isFixed="true"/>
+		<eui:ALabel id="typeTxt" text="系统消息" x="218" y="109" width="443" height="46" anchorOffsetY="0" size="40" anchorOffsetX="0" textColor="0xdbba85" scaleX="1" scaleY="1"/>
+		<eui:ALabel id="lastmsgTxt" text="最后一条消息内容最后一条......" y="49.5" width="448" height="36" anchorOffsetY="0" size="30" anchorOffsetX="0" right="36" textColor="0x747474" textAlign="right" x="630" scaleX="1" scaleY="1"/>
+		<eui:ALabel id="dateTxt" text="2017/08/03" y="114.5" width="190" height="36" anchorOffsetY="0" size="30" anchorOffsetX="0" right="36" textAlign="right" textColor="0xbebebe" x="854" scaleX="1" scaleY="1"/>
+		<e:Image id="newImg" source="main_pic_dot_png" x="151" y="23" scaleX="1" scaleY="1"/>
+		<e:Image id="lockedImg" x="139" y="15" scaleX="1" scaleY="1" source="news_pic_lock_png"/>
+		<e:Image id="clubImg" source="home_pic_clubbg_png" x="8" y="35" anchorOffsetX="0" width="200" anchorOffsetY="0" height="153" scaleX="1" scaleY="1"/>
+
+	</e:Group>
+	<e:Group id="smallGroup" width="100%" height="192" visible="false">
+		<e:Image id="sheadImg" x="51" y="39" source="news_pic_system_png" width="112" height="112" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="shead_default" x="51" y="39" width="112" height="112" scaleX="1" scaleY="1" source="news_pic_club_png"/>
+		<e:Image id="sclubImg" source="home_pic_clubbg_png" x="30" y="52" anchorOffsetX="0" width="154" anchorOffsetY="0" height="117" scaleX="1" scaleY="1"/>
+		<eui:ALabel id="snameTxt" text="消息标题消息标题。。。。" x="193" anchorOffsetY="0" height="52" size="45" anchorOffsetX="0" width="663" scaleX="1" scaleY="1" y="73" textColor="0xffffff"/>
+		<eui:ALabel id="sdateTxt" text="2017/08/03" width="190" height="36" anchorOffsetY="0" size="30" anchorOffsetX="0" right="36" textAlign="right" textColor="0xBEBEBE" x="864" scaleX="1" scaleY="1" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="chipAskGroup" width="100%" height="192" visible="false">
+		<e:Image id="askImg" x="36" y="22" source="news_pic_system_png" width="143" height="143" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="ask_default" x="36" y="22" width="143" height="143" scaleX="1" scaleY="1" source="news_pic_chips_png"/>
+		<eui:ALabel id="askNameTxt" text="俱乐部名称" x="218" y="46" anchorOffsetY="0" height="50" size="45" anchorOffsetX="0" width="408" scaleX="1" scaleY="1" isFixed="true" textColor="0xAEAEAE"/>
+		<e:Image id="statusImg" source="news_pic_request1_png" x="218" y="111" scaleX="1" scaleY="1"/>
+		<eui:ALabel id="askDateTxt" text="2017/08/03" y="78" width="263" height="36" anchorOffsetY="0" size="36" anchorOffsetX="0" right="36" textAlign="right" textColor="0xBEBEBE" x="781" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Image source="main_btn_all_separateline_png" y="190" left="36" right="36" x="36" scaleX="1" scaleY="1"/>
+	<e:Rect height="192" fillAlpha="0.01" left="0" right="0"/>
+</e:Skin>

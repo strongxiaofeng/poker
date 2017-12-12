@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="testList" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Rect width="200" height="30" x="100" y="50" fillColor="0xA9B0B2" alpha="0.5"/>
+	<e:EditableText id="input1" width="200" height="30" text="Label" x="100" y="50" size="30" prompt="输入一个数据" promptColor="0xffffff"/>
+	<e:Button id="btn1" label="添加" x="386" y="47" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Rect width="200" height="30" x="100" y="100" fillColor="0xA9B0B2" alpha="0.5"/>
+	<e:EditableText id="input2" width="200" height="30" text="Label" x="100" y="100" size="30" prompt="输入一个数据" promptColor="0xffffff"/>
+	<e:Button id="btn2" label="执行" x="386" y="95" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Rect width="200" height="30" x="100" y="150" fillColor="0xA9B0B2" alpha="0.5"/>
+	<e:EditableText id="input3" width="200" height="30" text="Label" x="100" y="150" size="30" prompt="输入一个数据" promptColor="0xffffff"/>
+	<e:Button id="btn3" label="删除" x="386" y="145" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Button id="btn4" label="清除" x="386" y="195" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn5" label="到底部" x="523" y="45" width="100" height="40">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn6" label="自动滚动" x="523" y="95" width="200" height="40">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Rect width="800" height="700" x="100" y="300" fillColor="0xa9b0b2" alpha="0.5"/>
+	<e:Scroller id="scroller1" width="800" height="700" x="100" y="300">
+        <eui:BaseList id="list" width="800" height="800" x="239" y="248" vgap="5"/>
+	</e:Scroller>
+
+
+
+
+
+	<e:Rect width="200" height="30" x="1000" y="50" fillColor="0xA9B0B2" alpha="0.5"/>
+	<e:EditableText id="input11" width="200" height="30" text="Label" x="1000" y="50" size="30" prompt="输入一个数据" promptColor="0xffffff"/>
+	<e:Button id="btn11" label="添加" x="1286" y="47" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Rect width="200" height="30" x="1000" y="100" fillColor="0xA9B0B2" alpha="0.5"/>
+	<e:EditableText id="input22" width="200" height="30" text="Label" x="1000" y="100" size="30" prompt="输入一个数据" promptColor="0xffffff"/>
+	<e:Button id="btn22" label="执行" x="1286" y="95" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Rect width="200" height="30" x="1000" y="150" fillColor="0xA9B0B2" alpha="0.5"/>
+	<e:EditableText id="input33" width="200" height="30" text="Label" x="1000" y="150" size="30" prompt="输入一个数据" promptColor="0xffffff"/>
+	<e:Button id="btn33" label="删除" x="1286" y="145" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+	<e:Button id="btn44" label="清除" x="1286" y="195" width="100" height="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chips__btn_all_pc_png" source.down="chips__btn_all_pc_png" source.disabled="chips__btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
+
+	<e:Rect width="800" height="400" x="1000" y="300" fillColor="0xa9b0b2" alpha="0.5"/>
+	<e:Scroller id="scroller2" width="800" height="400" x="1000" y="300">
+        <eui:BaseList id="list2" width="800" height="400" x="239" y="248" vgap="5" column="4" hgap="5"/>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="createRoomSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="bg_mask_pc_png" right="0" left="0" top="0" bottom="0" alpha="0.6"/>
+	<e:Group id="allGroup" width="1531" height="785" top="154" left="199">
+		<e:Group id="videoGroup" width="524" left="504" height="785" y="0">
+			<e:Image source="window_pic_bg_pc_png" right="0" left="0" top="0" bottom="0"/>
+
+			<e:Image scale9Grid="55,31,337,36" right="0" left="0" top="-4" bottom="-4" x="-1007" y="-4" scaleX="1" scaleY="1" source="window_pic_frame3_pc_png"/>
+			<e:Image source="window_pic_titlebg_pc_png" left="0" right="6" top="11" height="64"/>
+			<eui:ALabel id="videoGroupName" text="视频组名称" size="25" width="190" textColor="0xE7B56F" left="35" top="33" x="-972" y="33" scaleX="1" scaleY="1" isFixed="true"/>
+			<eui:AButton id="closeVideoGroup" label="" top="29" right="18" x="488" y="29" scaleX="1" scaleY="1" mouseTexture="window_btn_close_h_pc_png">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="window_btn_close_pc_png" source.down="window_btn_close_p_pc_png" source.disabled="window_btn_close_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:Scroller id="videoScroll" width="490" height="665" left="24" top="85">
+				<e:List id="videoList" height="666" width="489"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="selectVideoGroup" height="785" top="0" left="542">
+			<e:Image source="window_pic_bg_pc_png" right="0" left="0" top="0" bottom="0"/>
+			<e:Image source="window_pic_titlebg_pc_png" left="0" right="6" top="11" height="64"/>
+
+			<e:Image source="window_pic_frame2_pc_png" scale9Grid="55,31,337,36" right="0" left="0" top="-4" bottom="-4"/>
+			<eui:ALabel text="founder_lbl_video_source_select" size="20" width="220" textColor="0xe7b56f" left="35" top="33" height="20" isFixed="true"/>
+			<eui:AButton id="closeSelectGroup" label="" top="29" right="18">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image right="0" source="window_btn_close_pc_png" source.down="window_btn_close_p_pc_png" source.disabled="window_btn_close_h_pc_png"/>
+					<e:Image right="18" source="window_btn_close_pc_png" source.down="window_btn_close_p_pc_png" source.disabled="window_btn_close_h_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+
+			<e:Scroller id="selectVideoScroll" top="85" left="24" height="665" right="12">
+				<e:List id="selectVideoList"/>
+
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="mainGroup" scaleX="1" scaleY="1" width="573" height="785" left="479" top="0">
+			<e:Image source="window_pic_bg_pc_png" right="0" left="0" top="0" bottom="0"/>
+			<e:Image right="6" left="6" top="11" height="64" source="window_pic_titlebg_pc_png"/>
+			<e:Image alpha="0.6" scaleX="1" scaleY="1" scale9Grid="97,25,585,14" right="-4" left="-4" top="-4" bottom="-4" source="window_pic_frame1_pc_png"/>
+
+			<eui:ALabel id="gameType" text="global_lbl_baccarat" size="25" width="80" textColor="0xe7b56f" left="24" top="33" isFixed="true" height="25"/>
+			<eui:AButton id="selectType" label="" width="24" top="30" left="112" height="24" mouseTexture="window_btn_more_h_pc_png">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="window_btn_more_pc_png" source.down="window_btn_more_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+
+			</eui:AButton>
+			<eui:AButton id="closeBtn" label="" width="59" top="13" right="15" height="59" mouseTexture="btn_close_h_pc_png">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_close_pc_png" source.down="btn_close_p_pc_png" source.disabled="btn_close_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+
+			</eui:AButton>
+			<e:Image source="window_pic_decoration_pc_png" left="8" width="563" top="69"/>
+			<eui:ALabel text="founder_lbl_create_room_video" width="90" size="20" left="26" top="104"  isFixed="true" textAlign="left" height="20"/>
+			<eui:ALabel text="founder_lbl_room_name" width="90" size="20" left="26" top="145"  isFixed="true" textAlign="left" height="20"/>
+			<eui:ALabel text="founder_lbl_room_type" width="90" size="20" left="26" top="186"  isFixed="true" textAlign="left" height="20"/>
+			<eui:ALabel text="founder_lbl_no_commission" width="90" size="20" left="26" top="227"  isFixed="true" textAlign="left" height="20"/>
+			<eui:ALabel text="founder_lbl_bet_limit" width="90" size="20" left="26" top="270"  isFixed="true" textAlign="left" height="20"/>
+			<eui:ALabel id="videoName" text="" width="100" height="20" size="20" left="155" top="103" textColor="0xe7b56f"/>
+			<eui:AButton id="selectVideoBtn" label="global_btn_select" mouseTexture="window_btn_change_h_pc_png" width="124" y="95" x="427">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="window_btn_change_pc_png" source.down="window_btn_change_p_pc_png"/>
+				<eui:ALabel id="labelDisplay" text="" bottom="7" size="20" width="50" height="20" isFixed="true" textColor.up="0xe7b56f" textColor.down="0x000000" textAlign="center" verticalAlign="middle" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<e:Image source="sidebar_pic_separateline_pc_png" left="148" top="166" width="404"/>
+			<e:EditableText id="roomName" width="280" text="" size="20" textAlign="left" verticalAlign="middle" textColor="0xe7b56f" left="155" top="141" height="28" maxChars="20"/>
+			<e:Image source="mine_btn_chooseroom_pc_png" top="204" left="148" width="404" scale9Grid="25,0,9,4"/>
+			<eui:AButton id="publicBtn" label="founder_btn_normal_room" width="202" top="179" left="148" height="30">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" bottom="0" source="" source.down="mine_btn_chooseroom_p_pc_png" scale9Grid="25,0,9,4"/>
+				<eui:ALabel id="labelDisplay" text="" size="20" isFixed="true" height="20" width="80" bottom="12" textColor.down="0xe7b56f" textColor.up="0xc8c8c8" textAlign="center" verticalAlign="middle" horizontalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="privateBtn" label="founder_btn_private_room" width="202" top="179" left="350" height="30">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" bottom="0" scale9Grid="25,0,9,4" source="" source.down="mine_btn_chooseroom_p_pc_png"/>
+				<eui:ALabel id="labelDisplay" text="" size="20" isFixed="true" height="20" width="80" bottom="12" textColor.down="0xe7b56f" textColor.up="0xc8c8c8" textAlign="center" verticalAlign="middle" horizontalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<e:Group id="passWordGroup" x="350" y="209" visible="false">
+				<eui:AButton id="roomKey" label="" width="202" height="39" mouseTexture="mine_btn_refreshpassword_h_pc_png" x="0" y="0">
+					<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image source="mine_btn_refreshpassword_pc_png" source.down="mine_btn_refreshpassword_p_pc_png" source.disabled="mine_btn_refreshpassword_p_pc_png" left="0" top="0" width="202" scale9Grid="8,4,18,29"/>
+						<e:ALabel id="labelDisplay"/>
+					</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<eui:ALabel id="passWord" text="123456" size="20" width="120" textAlign="center" textColor="0xe7b56f" y="8" x="15"/>
+			</e:Group>
+			<e:ToggleSwitch id="isFreeBtn" label="" width="58" height="35" left="147" top="220">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_control_p_pc_png" source.down="main_btn_control_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:ToggleSwitch>
+			<eui:ALabel id="isFreeLabel" text="是" x="225" y="225" size="20" textColor="0xe7b56f" width="20"/>
+			<e:Group height="255" left="23" top="299" right="23">
+			<e:Image right="0" left="0" top="0" bottom="0" source="mine_pic_setlimit_bg_pc_png" scale9Grid="7,31,6,193"/>
+			<e:Image top="0" bottom="0" scale9Grid="59,0,0,597" width="527" left="0" source="mine_pic_setlimit_line_pc_png" visible="false"/>
+
+			<e:Image top="0" bottom="0" width="1" left="134" source="mine_pic_setlimit_line_pc_png"/>
+			<e:Image top="0" bottom="0" width="1" left="330" source="mine_pic_setlimit_line_pc_png"/>
+			<e:Image top="0" bottom="0" right="0" width="1" source="mine_pic_setlimit_line_pc_png"/>
+			<eui:ALabel text="game_lbl_banker_simple" size="20" width="134" height="20" verticalAlign="middle" textAlign="center" textColor="0xff0000" isFixed="true" x="0" y="15"/>
+			<eui:ALabel text="game_lbl_player_simple" size="20" width="133" height="20" verticalAlign="middle" textAlign="center" textColor="0x00b4ff" isFixed="true" x="0" y="66"/>
+			<eui:ALabel text="game_lbl_tie_simple" size="20" width="133" height="20" verticalAlign="middle" textAlign="center" x="0" textColor="0x00ff32" isFixed="true" y="117"/>
+			<eui:ALabel text="game_lbl_banker_pair_sim" size="20" width="133" height="20" verticalAlign="middle" textAlign="center" x="0" textColor="0xff0000" isFixed="true" y="169"/>
+			<eui:ALabel text="game_lbl_player_pair_sim" size="20" width="133" height="20" verticalAlign="middle" textAlign="center" textColor="0x00b4ff" isFixed="true" x="0" y="220"/>
+			<e:EditableText id="limit00" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7d7d7d" prompt="最小" size="20" textColor="0xe7b56f" maxChars="16" name="limit00" x="136" y="0"/>
+			<e:EditableText id="limit10" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最小" size="20" textColor="0xe7b56f" maxChars="16" name="limit10" x="136" y="51"/>
+			<e:EditableText id="limit20" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最小" size="20" textColor="0xe7b56f" maxChars="16" name="limit20" x="136" y="102"/>
+			<e:EditableText id="limit30" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最小" size="20" textColor="0xe7b56f" maxChars="16" name="limit30" x="136" y="153"/>
+			<e:EditableText id="limit40" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最小" size="20" textColor="0xe7b56f" maxChars="16" name="limit40" x="136" y="204"/>
+			<e:EditableText id="limit01" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最大" size="20" textColor="0xe7b56f" maxChars="16" name="limit01" x="329" y="0"/>
+			<e:EditableText id="limit11" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最大" size="20" textColor="0xe7b56f" maxChars="16" name="limit11" x="329" y="51"/>
+			<e:EditableText id="limit21" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最大" size="20" textColor="0xe7b56f" maxChars="16" name="limit21" x="329" y="102"/>
+			<e:EditableText id="limit31" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最大" size="20" textColor="0xe7b56f" maxChars="16" name="limit31" x="329" y="153"/>
+			<e:EditableText id="limit41" width="196" height="51" text="" textAlign="center" verticalAlign="middle" promptColor="0x7D7D7D" prompt="最大" size="20" textColor="0xe7b56f" maxChars="16" name="limit41" x="329" y="204"/>
+			<e:Group id="mask00" width="196" height="51" touchThrough="false" touchEnabled="true" y="0" x="136"/>
+			<e:Group id="mask10" width="196" height="51" touchThrough="false" touchEnabled="true" y="51" x="136"/>
+			<e:Group id="mask20" width="196" height="51" touchThrough="false" touchEnabled="true" y="102" x="136"/>
+			<e:Group id="mask30" width="196" height="51" touchThrough="false" touchEnabled="true" y="153" x="136"/>
+			<e:Group id="mask40" width="196" height="51" touchThrough="false" touchEnabled="true" y="204" x="136"/>
+			<e:Group id="mask01" width="196" height="51" touchThrough="false" touchEnabled="true" y="0" x="329"/>
+			<e:Group id="mask11" width="196" height="51" touchThrough="false" touchEnabled="true" y="51" x="329"/>
+			<e:Group id="mask21" width="196" height="51" touchThrough="false" touchEnabled="true" x="329" y="102"/>
+			<e:Group id="mask31" width="196" touchThrough="false" touchEnabled="true" height="51" x="329" y="153"/>
+			<e:Group id="mask41" width="196" height="51" touchThrough="false" touchEnabled="true" y="204" x="331"/>
+			</e:Group>
+			<eui:ALabel text="founder_lbl_chip_config" width="90" size="20" left="26" bottom="196" isFixed="true" textAlign="left" height="20"/>
+			<e:Group height="117" left="23" right="23" bottom="70">
+			<e:Group width="176" left="0" top="0" bottom="0">
+				<e:Image id="input1" alpha="0.5" source="mine_pic_chipinput_bg1_pc_png" scale9Grid="7,6,15,36" width="113" bottom="0" left="0"/>
+				<e:Image id="input2" alpha="0.5" right="2" height="35" bottom="0" width="61" source="mine_pic_chipinput_bg3_pc_png"/>
+				<e:Image source="chips_btn_high_pc_png" width="63" height="63" horizontalCenter="0" top="0"/>
+
+
+				<e:BitmapLabel id="chip0"  textAlign="center" width="85" height="40" font="game_share_red_29_pc_fnt" text="0.5" scaleX="0.6" scaleY="0.6" x="63" y="22"/>
+				<e:EditableText id="editChip0" text="0.5" textAlign="center" verticalAlign="middle" textColor="0xe7b56f" size="24" width="155" y="83" maxChars="11" x="11"/>
+			</e:Group>
+			<e:Group width="176" top="0" bottom="0" horizontalCenter="0">
+				<e:Image id="input3" alpha="0.5" source="mine_pic_chipinput_bg2_pc_png" horizontalCenter="0" bottom="0"/>
+				<e:Image id="input4" alpha="0.5" right="2" height="34.8" width="64" bottom="0" source="mine_pic_chipinput_bg3_pc_png"/>
+				<e:Image id="input5" alpha="0.5" height="34.8" width="65" bottom="0" left="2" source="mine_pic_chipinput_bg3_pc_png"/>
+				<e:Image width="63" height="63" horizontalCenter="0" top="0" source="chips_btn_middle_pc_png"/>
+				<e:BitmapLabel id="chip1" textAlign="center" width="85" height="40" text="100" scaleX="0.6" scaleY="0.6" font="game_share_green_29_pc_fnt" x="63" y="22"/>
+				<e:EditableText id="editChip1" text="100" textAlign="center" verticalAlign="middle" textColor="0xE7B56F" size="24" width="155" y="83" maxChars="11" x="11"/>
+			</e:Group>
+			<e:Group width="176" top="0" bottom="0" right="0">
+				<e:Image id="input7" alpha="0.5" source="mine_pic_chipinput_bg1_pc_png" scale9Grid="7,6,15,36" width="110" scaleX="-1" scaleY="1" right="0" bottom="0"/>
+				<e:Image id="input6" alpha="0.5"  height="35" bottom="0" left="2" x="-278" y="82.5" scaleX="1" scaleY="1" width="64" source="mine_pic_chipinput_bg3_pc_png"/>
+				<e:Image width="63" height="63" horizontalCenter="0" top="0" source="chips_btn_low_pc_png"/>
+				<e:BitmapLabel id="chip2" textAlign="center" width="85" height="40" text="1K" scaleX="0.6" scaleY="0.6" font="game_share_blue_29_pc_fnt" x="63" y="22"/>
+				<e:EditableText id="editChip2" text="1000" textAlign="center" verticalAlign="middle" textColor="0xE7B56F" size="24" width="155" y="83" maxChars="11" x="11"/>
+			</e:Group>
+			</e:Group>
+			<eui:AButton id="sureBtn" label="global_btn_ok_text" left="7" right="7" width="200" bottom="14" height="50" mouseTexture="window_btn_bottom_h_pc_png">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" source="window_btn_bottom_pc_png" source.down="window_btn_bottom_p_pc_png" height="50"/>
+				<eui:ALabel id="labelDisplay" text="" size="20" width="300" horizontalCenter="0" bottom="16" textAlign="center" verticalAlign="middle" textColor.down="0x000000" textColor.disabled="0xc8c8c8" textColor.up="0xe7b56f"/>
+				</e:Skin>
+			</eui:skinName>
+			</eui:AButton>
+			<e:Group id="tipGroup" horizontalCenter="0" width="480" verticalCenter="0" touchThrough="true" visible="false">
+				<e:Image source="pic_popup5_pc_png" y="0" height="37" width="240" right="0"/>
+				<e:Image source="pic_popup5_pc_png" y="0" height="37" scaleX="-1" left="0" width="240"/>
+				<eui:ALabel id="tipMsgLabel" text="tipMsg" size="17" width="300" verticalAlign="middle" textAlign="center" textColor="0xff0503" isFixed="true" x="90" y="10"/>
+			</e:Group>
+			<e:Group id="gameTypeGroup" width="222" height="330" top="65" left="23" anchorOffsetX="0" visible="false">
+				<e:Image source="window_pic_bg_pc_png" width="210" height="314" x="6" y="8"/>
+				<e:Image alpha="0.6" scaleX="1" scaleY="1" source="window_pic_frame1_pc_png" width="100%" x="0" height="330" y="0" scale9Grid="18,20,545,61"/>
+				<e:Scroller id="typeScroll" left="8" right="6" top="16" bottom="16">
+					<e:List id="gameTypeList" height="210"/>
+				</e:Scroller>
+			</e:Group>
+
+		</e:Group>
+	</e:Group>
+	<e:Group id="previewGroup" right="0" left="0" top="0" bottom="0" visible="false">
+		<e:Image source="bg_mask_pc_png" right="0" left="0" top="0" bottom="0" alpha="0.6"/>
+		<e:Image source="window_pic_bg_pc_png" left="486" top="205" width="950" height="610"/>
+		<e:Image source="window_pic_titlebg_pc_png" top="205" left="486" width="950" height="70"/>
+		<e:Image source="mine_pic_playvedio_bg_pc_png" horizontalCenter="0" top="197" width="961" height="626" scale9Grid="120,44,725,9"/>
+		<eui:ALabel id="previewTime" text="10s" size="23" width="50" textColor="0xe7b56f" left="510" top="228"/>
+		<eui:AButton id="closePreviewBtn" label="" mouseTexture="btn_close_h_pc_png" right="497" top="213">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_close_pc_png" source.down="btn_close_p_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

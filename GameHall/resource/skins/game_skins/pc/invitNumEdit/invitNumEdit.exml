@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="invitNumEdit" width="447" height="775" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group id="groupPE" width="447" height="775" verticalCenter="0" horizontalCenter="0">
+		<eui:ALabel id="labelTop" xmlns:eui="eui.*" text="founder_lbl_title_invcode_or_link" textColor="0xFBC278" size="20" width="300" left="32" top="32" verticalAlign="middle" textAlign="left"/>
+		<e:Image source="window_pic_decoration3_pc_png" horizontalCenter="0" top="82"/>
+		<e:Image source="window_pic_decoration3_pc_png" horizontalCenter="0" scaleY="-1" bottom="70"/>
+		<e:Image source="window_pic_decoration2_pc_png" right="15" top="85"/>
+		<e:Image source="window_pic_decoration2_pc_png" scaleX="-1" left="15" width="39" top="85"/>
+		<e:Image source="window_pic_decoration2_pc_png" bottom="72" left="15" width="39" scaleX="-1" scaleY="-1"/>
+		<e:Image source="window_pic_decoration2_pc_png" right="15" bottom="72" scaleY="-1"/>
+		<e:Group id="groupGuide" height="210" width="410" horizontalCenter="0" top="108">
+			<eui:ALabel text="founder_lbl_edit_description" size="20" verticalAlign="middle" textAlign="center" textColor="0xc4c4c4" width="410" horizontalCenter="0" top="0"/>
+			<eui:ALabel id="descriptionLabel" text="founder_lbl_edit_club_descrp_content1" horizontalCenter="0" width="410" height="180" newlineAble="true" size="17" lineSpacing="15" textColor="0xc4c4c4" top="30"/>
+		</e:Group>
+		<e:Group id="groupEdit" width="410" height="205" horizontalCenter="0" top="440">
+			<e:Image source="mine_pic_timeicon_pc_png" top="0" left="125"/>
+			<eui:ALabel id="effectiveDay" text="founder_lbl_valid_time" size="24" textColor="0xf8f8f8" verticalAlign="bottom" textAlign="left" width="250" left="154" top="0" height="24"/>
+			<eui:ALabel text="（天）" size="15" textColor="0xF8F8F8" verticalAlign="bottom" textAlign="right" width="135" left="154" top="0" height="24" visible="false"/>
+			<e:Image source="mine_pic_menbericon_pc_png" left="125" top="123"/>
+			<eui:ALabel id="effectiveMan" text="founder_lbl_valid_player_amount" size="24" textColor="0xF8F8F8" verticalAlign="middle" textAlign="left" width="250" left="154" top="123" height="24"/>
+			<eui:ALabel text="（个）" size="15" textColor="0xF8F8F8" verticalAlign="bottom" textAlign="right" width="135" left="154" top="123" height="24" visible="false"/>
+			<e:Image id="imgDataBg" width="410" height="46" horizontalCenter="0" top="37" source="window_pic_search_inputbg_p_pc_png" alpha="0.3"/>
+			<e:EditableText id="inputDate" width="410" height="46" text="founder_lbl_none_limit" horizontalCenter="0" verticalAlign="middle" textAlign="center" backgroundColor="0xC0C0C0" size="22" top="37" maxChars="3" textColor="0xa29b8e"/>
+			<e:Image id="imgTimesBg" source="window_pic_search_inputbg_p_pc_png" width="410" height="46" horizontalCenter="0" top="158" alpha="0.3"/>
+			<e:EditableText id="inputTimes" width="410" height="46" text="founder_lbl_none_limit" horizontalCenter="0" verticalAlign="middle" textAlign="center" backgroundColor="0xC0C0C0" size="22" top="158" maxChars="3" textColor="0xa29b8e"/>
+		</e:Group>
+		<e:Group id="groupErr" height="36" y="345" left="0" right="0" visible="false">
+		<e:Image source="pic_popup1_pc_png" horizontalCenter="50%" verticalCenter="0"/>
+		<e:Image source="pic_popup1_pc_png" horizontalCenter="-50%" verticalCenter="0" scaleX="-1"/>
+		<eui:ALabel id="label_Err" xmlns:eui="eui.*" text="图片上传失败，请重试。" textColor="0xFF0000" size="20" width="400" horizontalCenter="0" x="24" scaleX="1" scaleY="1" verticalAlign="middle" textAlign="center" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="groupBtn" height="52" bottom="0" left="0" right="0">
+			<eui:AButton id="btn_Cancel" width="223" label="global_btn_cancel_text" mouseTexture="btn_confirm_h_pc_png" scaleX="1" scaleY="1" bottom="0" top="0" left="0">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_confirm_pc_png" source.down="btn_confirm_p_pc_png" source.disabled="btn_confirm_pc_png" scale9Grid="6,12,3,25"/>
+					<eui:ALabel id="labelDisplay" size="25" horizontalCenter="0" verticalCenter="0" textColor="0xff0400" textColor.down="0xe5b776" textColor.disabled="0xacacac"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<e:Image id="imgCenter" source="window_pic_search_inputbg_pc_png" width="1" height="50" horizontalCenter="0" verticalCenter="0"/>
+			<eui:AButton id="btn_Sure" width="223" label="global_btn_ok_text" mouseTexture="btn_confirm_h_pc_png" scaleX="1" scaleY="1" bottom="0" top="0" right="0">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_confirm_pc_png" source.down="btn_confirm_p_pc_png" source.disabled="btn_confirm_pc_png" scaleX="-1" scale9Grid="6,12,3,25" right="0"/>
+					<eui:ALabel id="labelDisplay" size="25" horizontalCenter="0" verticalCenter="0" textColor="0x00cc3e" textColor.down="0xe5b776" textColor.disabled="0xacacac"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+	</e:Group>
+</e:Skin>

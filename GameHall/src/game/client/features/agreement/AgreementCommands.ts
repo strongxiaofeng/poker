@@ -1,0 +1,4 @@
+enum AgreementCommands {
+	initListener,
+	setAgreement
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyItem_systemMsg" width="434" height="72" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group width="434" height="72" x="0" y="0">
+	</e:Group>
+	<e:Image id="selectedBg" source="window_btn_bottom_p_pc_png" x="0" y="0" width="434" height="72" visible="false"/>
+	<e:Image id="headImg" x="12" y="10" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+	<e:Image id="head_default" x="12" y="10" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+	<e:Rect id="headMask" width="52" height="52" x="12" y="10" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.6" visible="false"/>
+	
+	<eui:ALabel id="contentTxt" text="消息标题消息标题...." x="70" size="18" width="220" verticalCenter="0" textColor="0xc0c0c0" isFixed="true" fontFamily="SimHei"/>
+	<eui:ALabel id="dateTxt" text="2017/10/01" size="18" width="100" textColor="0xC0C0C0" verticalCenter="0" textAlign="right" right="15" isFixed="true"/>
+	<e:Image source="main_btn_all_separateline_png" y="69" left="14" right="14" x="36" scaleX="1" scaleY="1"/>
+	<e:Image id="newImg" source="chat_pic_new_pc_png" x="50" y="12"/>
+
+</e:Skin>

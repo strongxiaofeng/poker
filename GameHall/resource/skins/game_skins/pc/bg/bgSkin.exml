@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="bgSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="bg_scene_pc_png" verticalCenter="0" horizontalCenter="0" width="100%" height="100%" locked="true"/>
+	<e:Image id="spinImg1" x="-100" y="-100" source="bg_poker1_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg2" x="-100" y="-100" source="bg_poker2_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg3" x="-100" y="-100" source="bg_poker3_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg4" x="-100" y="-100" source="bg_poker4_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+    <e:Image id="spinImg5" x="-100" y="-100" source="bg_poker1_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg6" x="-100" y="-100" source="bg_poker2_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg7" x="-100" y="-100" source="bg_poker3_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg8" x="-100" y="-100" source="bg_poker4_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+    <e:Image id="spinImg9" x="-100" y="-100" source="bg_poker1_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg10" x="-100" y="-100" source="bg_poker2_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg11" x="-100" y="-100" source="bg_poker3_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg12" x="-100" y="-100" source="bg_poker4_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg13" x="-100" y="-100" source="bg_poker3_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg14" x="-100" y="-100" source="bg_poker4_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+    <e:Image id="spinImg15" x="-100" y="-100" source="bg_poker1_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+	<e:Image id="spinImg16" x="-100" y="-100" source="bg_poker2_pc_png" width="66" height="68" anchorOffsetX="33" anchorOffsetY="34"/>
+
+</e:Skin>

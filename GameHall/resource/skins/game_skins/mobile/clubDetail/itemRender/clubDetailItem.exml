@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="club_pic_decoration_png" width="1040" height="440" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="mainGroup" width="100%" horizontalCenter="0" height="100%" verticalCenter="0">
+		<e:Group scaleX="1" scaleY="1" top="20" anchorOffsetX="0" bottom="0" width="100%" horizontalCenter="0">
+			<!--<e:Image id="mainBgImg" fillMode="scale" rotation="0" source="home_btn_room_png" anchorOffsetX="0" width="1040"
+			             x="0" height="420" y="0" scale9Grid="15,15,30,27" />
+			-->
+			<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" scale9Grid="15,15,30,27" height="100%" left="0"
+			         width="50" source="main_btn_room_png" />
+			<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" scale9Grid="15,15,30,27" height="100%" right="0"
+			         source="main_btn_room_png" />
+			<e:Image fillMode="scale" rotation="0" anchorOffsetX="0" y="0" height="100%" left="20" right="20" alpha="1"
+			         source="main_btn_room2_png" />
+			<eui:Label id="roomName" text="百家乐一号房" fontFamily="Arial" textColor="0xe9b76f" size="35" textAlign="center"
+			            verticalAlign="middle" anchorOffsetX="0" bottom="345" left="0" top="0" width="250" />
+			<eui:ALabel id="anchorName" text="主播 ：小雪" size="25" textAlign="left" verticalAlign="middle" textColor="0xc8c8c8"
+			            anchorOffsetX="0" anchorOffsetY="0" left="245" top="0" bottom="383" width="200" visible="false" />
+			<eui:ALabel id="dealerName" text="荷官 ：Yuki" size="25" textAlign="left" verticalAlign="middle" textColor="0xc8c8c8"
+			            top="38" left="245" width="140" height="25" visible="false" />
+			<e:Image id="anchorImg" left="10" top="75" width="230" height="335" source="main_pic_dealer_png" />
+			<e:Group id="roadMap" anchorOffsetX="0" anchorOffsetY="0" height="335" width="780" x="250" y="75">
+				<e:Image id="roadBgImg" source="pic_popup2_bg_png" width="780" x="0" height="335" y="0" />
+				<e:Group id="bead_road" anchorOffsetX="0" width="275" height="335" x="0" y="0" />
+				<e:Group id="big_road" height="167.5" width="505" x="275" y="0" />
+				<e:Group id="big_eye_road" width="505" x="275" height="83.75" y="167.5" />
+				<e:Group id="small_road" width="252.5" x="275" height="83.75" y="251.25" />
+				<e:Group id="cockroach_road" width="252.5" x="527.5" height="83.75" y="251.25" />
+				<eui:ALabel id="shuffleLabel" text="洗牌中" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" bottom="0"
+				            right="0" left="0" top="0" size="55" verticalAlign="middle" textAlign="center" alpha="0.7"
+				            visible="false" />
+			</e:Group>
+			<eui:ALabel id="onlyDealerName" text="荷官：" bottom="345" left="250" top="0" size="26" verticalAlign="middle"
+			            textAlign="left" right="514" anchorOffsetX="0"  textColor="0xc8c8c8"/>
+			<e:Group id="stageGroup" width="100" top="0" right="0" bottom="345"></e:Group>
+			<e:Group top="0" right="100" left="574">
+				<eui:ALabel id="limitAlebel" text="限额：10,000 - 10,000,000" anchorOffsetX="0" size="25" textColor="0xc8c8c8"
+				            textAlign="right" verticalAlign="middle" scaleX="1" scaleY="1" top="0" height="75" width="366"  right="0"/>
+				<e:Image id="isHire" source="mine_pic_free_png" verticalCenter="0"  right="366" width="39"/>
+			</e:Group>
+		</e:Group>
+		<eui:AImage id="locked" right="30" bottom="15" width="80" height="100" source="club_pic_lock_png" visible="false" />
+	</e:Group>
+</e:Skin>

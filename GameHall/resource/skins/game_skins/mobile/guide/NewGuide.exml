@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NewGuide" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Rect width="100%" height="100%"/>
+	<e:Group id="page1" width="1080" height="100%" y="0" horizontalCenter="0">
+		<eui:ALabel text="老板！欢迎您来到自选多枱，基础说明将帮助您快速了解游戏操作" y="717" width="812" horizontalCenter="0" size="45" lineSpacing="15" fontFamily="SimHei" newlineAble="true"/>
+		<eui:ALabel text="点击屏幕继续" width="812" size="45" lineSpacing="15" horizontalCenter="0" textAlign="center" fontFamily="SimHei" bottom="254" textColor="0xFFDB93"/>
+	</e:Group>
+	<e:Group id="page2" width="100%" height="600" x="0" y="325" anchorOffsetY="0" visible="false">
+		<e:Rect height="3" y="0" anchorOffsetY="0" fillColor="0xFFFFFF" left="20" right="20"/>
+		<e:Image source="pic_arrow_png" horizontalCenter="0" top="23"/>
+		<eui:ALabel text="这里是您的昵称以及在此俱乐部的筹码余额" size="45" width="750" fontFamily="SimHei" lineSpacing="15" newlineAble="true" horizontalCenter="0" top="92"/>
+	</e:Group>
+	<e:Group id="page3" width="100%" height="500" x="0" y="360" visible="false">
+		<e:Rect height="3" y="0" anchorOffsetY="0" fillColor="0xFFFFFF" left="20" right="20"/>
+		<e:Image source="pic_arrow_png" horizontalCenter="0" top="23"/>
+		<eui:ALabel text="这里可以便捷的查看你的下注和派彩" size="45" width="610" fontFamily="SimHei" lineSpacing="15" newlineAble="true" horizontalCenter="0" top="92"/>
+	</e:Group>
+	<e:Group id="page4" width="100%" height="500" x="0" y="800" visible="false">
+		<e:Image source="pic_arrow_png" horizontalCenter="0" top="0"/>
+		<eui:ALabel text="每个游戏房间的信息列表，点击后能展开下注区域" size="45" width="610" fontFamily="SimHei" lineSpacing="15" newlineAble="true" horizontalCenter="0" top="69"/>
+	</e:Group>
+	<e:Group id="page5" width="100%" height="500" x="0" y="1000" visible="false">
+		<e:Image source="pic_arrow_png" horizontalCenter="0" top="0"/>
+		<eui:ALabel text="展开下注区后，您可以进行下注和编辑筹码等操作。" size="45" width="610" fontFamily="SimHei" lineSpacing="15" newlineAble="true" horizontalCenter="0" top="69"/>
+	</e:Group>
+	<e:Group id="page6" width="100%" height="500" anchorOffsetY="0">
+		<e:Image source="pic_arrow_png" horizontalCenter="0" scaleY="-1" bottom="0" height="49"/>
+		<eui:ALabel text="当您长按某个房间，还能将此房间置顶和置底，来排列出您中意的房间顺序。" size="45" width="788" fontFamily="SimHei" lineSpacing="15" newlineAble="true" horizontalCenter="19" anchorOffsetX="0" bottom="69"/>
+	</e:Group>
+	<e:Group id="page7" width="100%" height="100%" visible="false">
+		<eui:ALabel text="好了！基础说明就到这里，您还可以通过房间菜单中的“游戏规则”了解更多详情，祝您游戏愉快！" size="45" fontFamily="SimHei" width="820" lineSpacing="15" horizontalCenter="0" newlineAble="true" verticalCenter="-159.5"/>
+	</e:Group>
+	<e:Button id="btn_skip" label="跳过说明" width="970" height="100" horizontalCenter="0" bottom="22">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:eui="eui.*">
+			<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+			<e:Image verticalCenter="0" right="35" source="btn_skip_png" source.down="btn_skip_p_png" source.disabled="btn_skip_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76E" fontFamily="SimHei"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_skipIcon" label="" horizontalCenter="434" bottom="54" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:eui="eui.*">
+			<e:Image width="100%" height="100%" source="btn_skip_png" source.down="btn_skip_p_png" source.disabled="btn_skip_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_startGame" label="开始游戏" width="970" height="100" horizontalCenter="0" bottom="22" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:eui="eui.*">
+			<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76E" fontFamily="SimHei"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

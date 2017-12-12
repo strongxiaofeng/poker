@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="exitClubItem" width="1030" height="348" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group id="joinedClub" touchChildren="true" bottom="0" left="0" right="0" height="348">
+		<e:Image id="ItemBg0" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" right="0" top="8" bottom="0" source="main_pic_club_bg_png"/>
+		<e:Image id="ItemBg3" scale9Grid="18,18,23,293" anchorOffsetX="0" scaleX="1" scaleY="1" left="0" top="8" bottom="0" source="main_pic_club_bg_png"/>
+		<e:Image id="ItemBg1" anchorOffsetX="0" scaleX="1" scaleY="1" left="20" right="20" top="8" bottom="0" source="main_pic_club_bg_2_png"/>
+		<e:Group id="ItemTopGroup" anchorOffsetY="0" anchorOffsetX="0" top="0" bottom="267" left="0" right="0" touchChildren="true">
+		<eui:ALabel id="clubName" xmlns:eui="eui.*" text="" size="40" width="300" verticalAlign="middle" isFixed="true" y="30" x="32" textColor="0xffffff" fontFamily="Microsoft YaHei"/>
+			<eui:ALabel id="joinedTime" text="加入的时间：2017/08/01" size="26" width="301" verticalAlign="middle" isFixed="true" textColor="0xc8c8c8" anchorOffsetX="0" right="269" top="38" fontFamily="Microsoft YaHei"/>
+			<eui:AButton id="exitClubBtn" label="personal_btn_quit" width="241" touchEnabled="true" enabled="true" right="8" bottom="1" height="65">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source.up="mine_btn_quitclub_png"  source.disabled="mine_btn_quitclub_png" source.down="mine_btn_quitclub_p_png" scale9Grid="52,13,13,52"/>
+                    <eui:ALabel id="labelDisplay" text="" horizontalCenter="0" verticalCenter="0" size="36" width="150" textAlign="center" textColor.down="0x654D29" textColor.up="0xe7b56f"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="84" bottom="5">
+		<e:Image source="home_btn_bg_png" height="200" verticalCenter="0" left="298" width="4"/>
+		<e:Group id="clubInfo" height="200" verticalCenter="0" left="325" right="80">
+			<eui:ALabel xmlns:eui="eui.*" text="global_lbl_chip_balance" height="40" left="0" size="30" verticalAlign="middle" verticalCenter="-75" anchorOffsetX="0" textColor="0xE9B76F" width="142" isFixed="true"/>
+			<eui:ALabel xmlns:eui="eui.*" text="global_lbl_creator" height="40" left="0" size="30" verticalCenter="-25" verticalAlign="middle" textColor="0xE9B76F" width="144.67" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel xmlns:eui="eui.*" text="global_lbl_room_nums" height="40" left="0" size="30" verticalCenter="25" verticalAlign="middle" textColor="0xE9B76F" width="140.67" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel xmlns:eui="eui.*" text="global_lbl_game_type" height="40" left="0" size="30" verticalCenter="75" verticalAlign="middle" textColor="0xE9B76F" width="136.67" anchorOffsetX="0" isFixed="true"/>
+			<eui:ALabel xmlns:eui="eui.*" text="0" left="150" size="30" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true" y="5" visible="false"/>
+			<e:BitmapLabel id="chipNum" font="white_42_fnt" scaleX="0.7" scaleY="0.7" text="0" left="150" top="15"/>
+			<eui:ALabel id="creator" xmlns:eui="eui.*" text="" left="120" verticalCenter="-25" size="30" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true"/>
+			<eui:ALabel id="roomNum" xmlns:eui="eui.*" text="0" left="150" verticalCenter="25" size="30" height="40" verticalAlign="middle" textAlign="left" width="180" isFixed="true"/>
+			<eui:ALabel id="gameType" xmlns:eui="eui.*" text="百家乐" left="150" verticalCenter="75" size="30" height="40" verticalAlign="middle" textAlign="left" width="400" isFixed="true"/>
+		</e:Group>
+			<e:Image id="clubIcon" width="169" height="169" source="home_btn_creat_png" y="28" x="71"/>
+			<e:Image id="clubIconMask" width="169" height="169" y="28" x="71" source="home_pic_defaultclub_pc_png"/>
+			<e:Image id="clubFace" scaleX="1" scaleY="1" source="home_pic_clubbg_png" width="239" height="181" y="44" x="36"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyList" width="434" height="772" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<eui:ALabel id="listTitle" text="系统消息" x="28" y="32" size="22" width="200" textColor="0xe8ba5f"/>
+	<e:Scroller width="434" height="670" x="0" y="78" anchorOffsetY="0">
+		<e:List id="itemList"/>
+	</e:Scroller>
+</e:Skin>

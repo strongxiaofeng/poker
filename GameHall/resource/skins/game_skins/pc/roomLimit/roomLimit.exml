@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="roomLimit" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_mask_pc_png" left="0" right="0" top="0" bottom="0" alpha="0.5"/>
+	<e:Group horizontalCenter="0" top="304" width="779" height="467">
+		<e:Image source="pic_popup4_pc_png" left="0" height="467" scale9Grid="97,26,585,17" top="0"/>
+		<e:Image source="btn_confirm2_pc_png" scale9Grid="5,11,9,32" top="14" right="6" scaleY="-1" left="6" height="64"/>
+		<eui:ALabel id="limitMineRoomName" text="百家乐六号房" size="25" width="400" left="25" verticalAlign="middle" textAlign="left" top="32" textColor="0xe0b468" touchEnabled="false"/>
+		<eui:AButton id="closeLimitBtn" label="" mouseTexture="btn_close_h_pc_png" height="59" width="59" right="18" top="16">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="59" height="59" source="btn_close_pc_png" source.down="btn_close_p_pc_png" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Image source="pic_popuptitle_pc_png" height="63.5" left="6" right="6" top="78"/>
+		<e:Image horizontalCenter="0" top="70" source="pic_decoration_pc_png"/>
+		<e:Image source="pic_popup4_bg_pc_png" left="6" right="6" top="141.5" height="63.5"/>
+		<e:Image source="pic_popuptitle_pc_png" height="63.5" left="6" right="6" top="205"/>
+		<e:Image source="pic_popup4_bg_pc_png" left="6" right="6" top="268.5" height="63.5"/>
+		<e:Image source="pic_popuptitle_pc_png" height="62" left="6" right="6" top="332"/>
+		<e:Image source="pic_popup4_bg_pc_png" left="6" right="6" top="394" height="60"/>
+		<eui:ALabel text="founder_lbl_data_center_bet_option" textColor="0xe0b468" size="22" width="195" verticalAlign="middle" textAlign="center" left="0" top="98"/>
+		<eui:ALabel text="赔率" textColor="0xE0B468" size="22" width="195" verticalAlign="middle" textAlign="center" left="195" top="98"/>
+		<eui:ALabel text="founder_lbl_min_bet" textColor="0xE0B468" size="22" width="195" verticalAlign="middle" textAlign="center" left="390" x="10" top="98"/>
+		<eui:ALabel text="founder_lbl_max_bet" textColor="0xE0B468" size="22" verticalAlign="middle" textAlign="center" right="0" width="195" top="98"/>
+		<eui:ALabel text="game_lbl_player_simple" size="22" verticalAlign="middle" textAlign="center" width="195" top="164" textColor="0xffffff" left="0"/>
+		<eui:ALabel text="game_lbl_banker_simple" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" top="227" left="0"/>
+		<eui:ALabel text="game_lbl_tie_simple" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" top="292" left="0"/>
+		<eui:ALabel text="game_lbl_player_pair_sim" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" top="354" left="0"/>
+		<eui:ALabel text="game_lbl_banker_pair_sim" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" top="413" left="0"/>
+        <eui:ALabel text="1:1" size="22" verticalAlign="middle" textAlign="center" width="195" top="164" textColor="0xffffff" left="195"/>
+		<eui:ALabel id="ratioBanker" text="1:0.95" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" left="195" y="227"/>
+		<eui:ALabel id="ratioBanker2" text="6点赔0.5" textColor="0xFFFFFF" size="16" verticalAlign="middle" textAlign="center" width="195" left="195" y="240" visible="false"/>
+		<eui:ALabel text="1:8" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" top="292" left="195"/>
+		<eui:ALabel text="1:11" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" top="354" left="195"/>
+		<eui:ALabel text="1:11" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="195" top="413" left="195"/>
+        <eui:ALabel id="playerMinBet" text="500" size="22" verticalAlign="middle" textAlign="center" width="190" top="164" textColor="0xffffff" left="390" isFixed="true"/>
+		<eui:ALabel id="bankerMinBet" text="500" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="190" top="227" left="390" isFixed="true"/>
+		<eui:ALabel id="tieMinBet" text="100" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="190" top="292" left="390" isFixed="true"/>
+		<eui:ALabel id="player_pairMinBet" text="100" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="190" top="354" left="390" isFixed="true"/>
+		<eui:ALabel id="banker_pairMinBet" text="100" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="190" top="413" left="390" isFixed="true"/>
+        <eui:ALabel id="playerMaxBet" text="5000" size="22" verticalAlign="middle" textAlign="center" width="193" top="164" textColor="0xffffff" isFixed="true" right="7"/>
+		<eui:ALabel id="bankerMaxBet" text="5000" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="193" top="227" right="7" isFixed="true"/>
+		<eui:ALabel id="tieMaxBet" text="500" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="193" top="292" right="7" isFixed="true"/>
+		<eui:ALabel id="player_pairMaxBet" text="500" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="193" top="354" right="7" isFixed="true"/>
+		<eui:ALabel id="banker_pairMaxBet" text="500" textColor="0xFFFFFF" size="22" verticalAlign="middle" textAlign="center" width="193" top="413" right="7" isFixed="true"/>
+	</e:Group>
+</e:Skin>

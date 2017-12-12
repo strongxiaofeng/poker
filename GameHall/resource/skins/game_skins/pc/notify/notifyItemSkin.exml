@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyItemSkin" width="572" height="72" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image id="hoverImg" source="window_btn_all_h_pc_png" x="0" y="0" width="572" height="72" visible="false"/>
+	<e:Image id="selectedBg" source="window_btn_bottom_p_pc_png" x="0" y="0" width="572" height="72" visible="false"/>
+	<e:Group id="bigGroup" width="572" height="72">
+		<e:Image id="headImg" x="23" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" verticalCenter="0"/>
+		<e:Image id="head_default" x="23" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" verticalCenter="0"/>
+		<e:Rect id="headMask" width="52" height="52" x="23" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.6" verticalCenter="0" visible="false"/>
+		<eui:ALabel id="nameTxt" text="系统消息" x="87" y="13" anchorOffsetY="0" size="21" anchorOffsetX="0" width="120" scaleX="1" scaleY="1" fontFamily="SimHei" isFixed="true" textColor="0xc8c8c8"/>
+		<eui:ALabel id="typeTxt" text="系统消息" x="87" y="38" width="120" anchorOffsetY="0" size="18" anchorOffsetX="0" textColor="0xdbba85" scaleX="1" scaleY="1" isFixed="true"/>
+		<eui:ALabel id="lastmsgTxt" text="AAAAAAAAAABBBBBBBBBBCCC" y="13" width="203" anchorOffsetY="0" size="17" anchorOffsetX="0" right="41" textColor="0x747474" textAlign="right" x="630" scaleX="1" scaleY="1" isFixed="true" fontFamily="SimHei"/>
+		<eui:ALabel id="dateTxt" text="2017/08/03" y="38" width="200" anchorOffsetY="0" size="18" anchorOffsetX="0" textAlign="right" textColor="0xbebebe" scaleX="1" scaleY="1" right="41" isFixed="true"/>
+
+		<e:Image source="main_btn_all_separateline_png" y="69" left="36" right="36" x="36" scaleX="1" scaleY="1"/>
+
+	</e:Group>
+	<e:Group id="smallGroup" width="572" height="72" visible="false">
+		<e:Image id="sheadImg" x="23" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" verticalCenter="0"/>
+		<e:Image id="shead_default" x="23" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" verticalCenter="0"/>
+		<eui:ALabel id="snameTxt" text="消息标题消" x="87" anchorOffsetY="0" size="21" anchorOffsetX="0" width="189" scaleX="1" scaleY="1" textColor="0xc8c8c8" verticalCenter="0"/>
+		<eui:ALabel id="slastmsgTxt" text="最后一条消息内容" y="14" width="203" anchorOffsetY="0" size="17" anchorOffsetX="0" right="41" textColor="0x747474" textAlign="right" x="630" scaleX="1" scaleY="1" isFixed="true" fontFamily="SimHei"/>
+		<eui:ALabel id="sdateTxt" text="2017/08/03" width="190" anchorOffsetY="0" size="18" anchorOffsetX="0" textAlign="right" textColor="0xBEBEBE" scaleX="1" scaleY="1" y="38" right="41"/>
+		<e:Image source="main_btn_all_separateline_png" y="69" left="36" right="36" x="36" scaleX="1" scaleY="1"/>
+
+	</e:Group>
+	<e:Image id="newImg" source="main_pic_dot_png" x="60" y="9" scaleX="1" scaleY="1" width="18" height="18"/>
+	<e:Image id="arrow" source="window_btn_into_pc_png" x="543" verticalCenter="0"/>
+	<e:Rect width="1080" height="192" fillAlpha="0.1" visible="false"/>
+</e:Skin>

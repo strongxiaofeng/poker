@@ -1,0 +1,12 @@
+{
+	"name": "egret",
+	"version": "3.2.4",
+	"modules": [
+		{
+			"name": "livestream",
+			"description": "livestream",
+			"files": ["canvas.min.js","xplayer.js","xplayer.d.ts"],
+			"root": "src"
+		}
+	]
+}

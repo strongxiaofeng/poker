@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="clubDetail" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" bottom="0" top="0">
+
+		<eui:ALabel id="label_HaveNothing" text="此俱乐部没有房间" size="50" verticalCenter="0" horizontalCenter="0" width="400"
+		            textColor="0xffffff" />
+		<e:Group id="mainGroup" top="250" left="0" right="0" bottom="0">
+			<e:Group left="0" right="0" top="0" bottom="0">
+				<e:Group scaleX="1" scaleY="1" height="90" width="700" top="0" horizontalCenter="0" visible="false">
+					<e:Image source="main_pic_decoration3_png" top="0" bottom="0" right="0" />
+					<e:Label text="百家乐" horizontalCenter="0" verticalCenter="0" size="50" />
+					<e:Image source="main_pic_decoration3_png" left="0" top="0" bottom="0" scaleX="-1" />
+				</e:Group>
+				<e:Group id="topButtons" height="115" top="0" left="40" right="40" anchorOffsetY="0">
+					<eui:AButton id="allRoom" label="所有房间" width="33%" left="0" bottom="0" top="0" enabled="true" anchorOffsetY="0">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="8" source="main_btn_line_png" source.down="main_btn_line_p_png" bottom="0"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xC8C8C8" textColor.down="0xE9B76F" bottom="30" size="40"/>
+						</e:Skin>
+					</eui:skinName>
+					</eui:AButton>
+					<eui:AButton id="commonRoom" label="普通房间" width="34%" left="33%" bottom="0" top="0" enabled="true" anchorOffsetY="0">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="8" source="main_btn_line_png" source.down="main_btn_line_p_png" bottom="0"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xC8C8C8" textColor.down="0xE9B76F" bottom="30" size="40"/>
+						</e:Skin>
+					</eui:skinName>
+					</eui:AButton>
+					<eui:AButton id="privateRoom" label="私人房间" bottom="0" top="0" enabled="true" anchorOffsetY="0" width="33%" right="0">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="8" source="main_btn_line_png" source.down="main_btn_line_p_png" bottom="0"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xC8C8C8" textColor.down="0xE9B76F" bottom="30" size="40"/>
+						</e:Skin>
+					</eui:skinName>
+					</eui:AButton>
+				</e:Group>
+				<e:Group left="0" right="0" x="0" scaleX="1" scaleY="1" top="115" bottom="0">
+					<e:Scroller id="myScroller" left="20" right="20" top="0" bottom="0">
+						<eui:AList id="gameIDList" />
+					</e:Scroller>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group height="85" top="165" left="0" right="0">
+			<e:Image source="club_pic_head_png" left="20" verticalCenter="0" />
+			<e:Label id="userName" text="玩家姓名2" verticalCenter="0" size="35" left="70" />
+			<e:Group id="balanceGroup" width="0" top="0" bottom="0" right="0">
+				<e:Image id="chipImg" source="club_pic_chip_png" height="35" width="35" verticalCenter="0" x="-312.5" />
+				<e:BitmapLabel id="userBalance" height="35" right="20" font="gray_45_fnt" text="0" verticalCenter="0"
+				               textAlign="right" />
+			</e:Group>
+			<e:Group id="roomCardGroup" width="0" top="0" bottom="0" right="0" visible="false">
+				<e:Image id="roomCardImg" height="35" width="50" verticalCenter="0" x="-270" source="main_pic_card_png" />
+				<eui:AButton id="cardBtn" label="" verticalCenter="0" right="40" width="45" height="45">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="main_btn_morecard_png" source.down="main_btn_morecard_p_png"
+							         source.disabled="main_btn_morecard_png" />
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<e:Label id="roomCardTxt" text="房卡：0" scaleX="1" scaleY="1" top="0" bottom="0" right="100" verticalCenter="0"
+				         verticalAlign="middle" textAlign="center" />
+			</e:Group>
+		</e:Group>
+		<e:Image source="main_pic_decoration_png" left="20" right="20" top="245" x="20" y="330" scaleX="1" scaleY="1" />
+		<e:Group id="txtPwd" left="0" right="0" bottom="0" top="0" visible="false">
+			<e:Image left="0" source="club_btn_all_p_png" right="0" top="0" bottom="0" />
+			<e:Group id="pwGroup" anchorOffsetX="540" anchorOffsetY="960" height="1920" width="1080" verticalCenter="0" horizontalCenter="0">
+				<e:Image width="1030" height="650" source="home_pic_cardbg_png" horizontalCenter="0" top="545" scale9Grid="34,31,41,600" x="25" y="545" scaleX="1" scaleY="1"/>
+				<eui:AButton id="joinCancelBtn" label="取消" horizontalCenter="-243" top="1053" width="482" height="96" x="56" y="1053" scaleX="1" scaleY="1">
+					<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000"/>
+					</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<eui:AButton id="joinConfirmBtn" label="进入" horizontalCenter="243" top="1053" width="482" height="96" enabled="false" x="542" y="1053" scaleX="1" scaleY="1">
+					<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000"/>
+					</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<e:Image horizontalCenter="0" top="565" source="club_pic_card_png" x="37" y="565" scaleX="1" scaleY="1"/>
+				<e:Image source="club_pic_key_png" horizontalCenter="0" verticalCenter="-205" x="135" y="709" scaleX="1" scaleY="1"/>
+				<e:EditableText id="joinInput" width="790" height="160" text="" horizontalCenter="0" verticalAlign="middle" textAlign="center" size="130" textColor="0x000000" top="794" maxChars="6" x="145" y="794" scaleX="1" scaleY="1"/>
+				<e:Image source="club_pic_wordsline_png" horizontalCenter="0" top="945" width="790" x="145" y="945" scaleX="1" scaleY="1"/>
+				<e:Label text="请输入房间密码" anchorOffsetX="0" anchorOffsetY="0" textAlign="center" verticalAlign="middle" size="50" textColor="0x000000" horizontalCenter="0" verticalCenter="-297" x="365" y="638" scaleX="1" scaleY="1"/>
+				<e:Image top="585" source="mine_pic_decoration_png" horizontalCenter="-425.5" x="66" y="585" scaleX="1" scaleY="1"/>
+				<e:Image top="928" scaleY="-1" source="mine_pic_decoration_png" horizontalCenter="-425.5" x="66" y="1025" scaleX="1"/>
+				<e:Image top="585" scaleX="-1" source="mine_pic_decoration_png" horizontalCenter="425.5" x="1014" y="585" scaleY="1"/>
+				<e:Image top="928" scaleX="-1" scaleY="-1" source="mine_pic_decoration_png" horizontalCenter="425.5" x="1014" y="1025"/>
+			</e:Group>
+			<e:Group id="redMsgGroup" anchorOffsetX="540" anchorOffsetY="41" touchEnabled="false" scaleX="1" scaleY="1" width="1080" height="82" verticalCenter="300" horizontalCenter="0" visible="false">
+				<e:Image verticalCenter="0.3149999999999977" horizontalCenter="266.21" source="pic_popup1_png"/>
+				<e:Image scaleX="-1" verticalCenter="0.3149999999999977" horizontalCenter="-271.79" source="pic_popup1_png"/>
+				<e:Label id="redMsgTxt" text="前一局计算中，请稍后" size="35" horizontalCenter="0" verticalCenter="0" textColor="0xff0000"/>
+			</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</e:Group>
+
+
+
+	</e:Group>
+</e:Skin>

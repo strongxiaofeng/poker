@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="roomManager" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group left="0" right="0" bottom="0" top="0">
+
+		<e:Group id="topPlayerID" height="85" top="165" left="0" right="0">
+			<e:Image id="img_headPicture" source="club_pic_head_png" height="35" width="35" verticalCenter="0" left="20"  visible="false"/>
+			<eui:ALabel id="userName" text="玩家自己昵称" height="35" verticalCenter="0" left="20" size="35"  textAlign="left" width="600"/>
+			<e:Group id="roomCardGroup" top="0" bottom="0" right="0">
+				<e:Image id="roomCardImg" height="35" width="50" verticalCenter="0" source="main_pic_card_png"  right="110%"/>
+				<eui:AButton id="cardBtn" label="" verticalCenter="0" right="40" width="45" height="45">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="main_btn_morecard_png" source.down="main_btn_morecard_p_png"
+							         source.disabled="main_btn_morecard_png" />
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+				<e:Label id="roomCardTxt" text="房卡：0" scaleX="1" scaleY="1" top="0" bottom="0" right="100" verticalCenter="0"
+				         verticalAlign="middle" textAlign="center" />
+			</e:Group>
+		</e:Group>
+		<e:Image source="main_pic_decoration_png" left="20" right="20" top="242" x="20" y="250" scaleX="1" scaleY="1" />
+		<e:Group id="topButtons" height="130" top="250" left="20" right="20" anchorOffsetY="0">
+			<eui:AButton id="allRoom" label="所有房间" width="33%" left="0" bottom="0" top="0" enabled="true" anchorOffsetY="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" source="main_btn_line_png" source.down="main_btn_line_p_png" bottom="0" />
+						<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xC8C8C8" textColor.down="0xE9B76F" bottom="30"
+						         size="40" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="commonRoom" label="普通房间" width="34%" left="33%" bottom="0" top="0" enabled="true" anchorOffsetY="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" source="main_btn_line_png" source.down="main_btn_line_p_png" bottom="0" />
+						<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xC8C8C8" textColor.down="0xE9B76F" bottom="30"
+						         size="40" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="privateRoom" label="私人房间" bottom="0" top="0" enabled="true" anchorOffsetY="0" width="33%" right="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" source="main_btn_line_png" source.down="main_btn_line_p_png" bottom="0" />
+						<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xC8C8C8" textColor.down="0xE9B76F" bottom="30"
+						         size="40" />
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Group top="380" bottom="0" left="20" right="20">
+			<e:Scroller id="listScroller" enabled="true" scaleX="1" scaleY="1" height="100%" width="100%" top="0" left="0">
+				<e:List id="roomList"/>
+			</e:Scroller>
+			<e:Group id="noListGroup" scaleX="1" scaleY="1" left="0" top="0" right="0" bottom="0">
+				<eui:ALabel text="global_lbl_list_empty_tips" size="48" textAlign="center" verticalAlign="middle" width="1000" horizontalCenter="0" top="558"/>
+				<e:Image source="main_pic_decoration2_png" top="650" horizontalCenter="202.5"/>
+				<e:Image source="main_pic_decoration2_png" scaleX="-1" top="650" horizontalCenter="-202.5"/>
+				<eui:AButton id="creatNowBtn" label="founder_btn_right_away_to_create_room" horizontalCenter="0" top="725">
+					<eui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image right="0" verticalCenter="0" source="mine_btn_creatnow_png" source.down="mine_btn_creatnow_p_png"/>
+						<eui:ALabel id="labelDisplay" size="45" textColor="0xE9B76F" textColor.down="0x654D29" right="50" verticalCenter="0"/>
+						</e:Skin>
+					</eui:skinName>
+				</eui:AButton>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

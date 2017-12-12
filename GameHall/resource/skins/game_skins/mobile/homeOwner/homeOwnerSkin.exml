@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="homeOwner" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+
+	<e:Group id="HomeOwnerTop" height="110" top="165" left="0" right="0">
+
+
+		<e:Group id="RoomCardGroup" right="0" verticalCenter="0">
+
+
+			<e:Image id="RoomCardImg" width="54" height="38" source="main_pic_card_png" verticalCenter="0" right="255" x="61" y="19" scaleX="1" scaleY="1"/>
+			<eui:ALabel id="homeCard" text="房卡 : 0" width="240" size="35" verticalAlign="middle" textAlign="right" textColor="0xC8C8C8" right="100" verticalCenter="0" x="130" y="0" scaleX="1" scaleY="1"/>
+			<eui:AButton id="Add" label="" width="50" height="50" right="30" x="310.0000000000001" scaleX="1" scaleY="1" verticalCenter="0" y="13.000000000000028">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="home_btn_join_p_png" source.down="home_btn_join_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+		<e:Image source="main_pic_decoration_png" horizontalCenter="0" left="19" right="19" bottom="0"/>
+
+		<e:Group id="faceGroup" width="500" height="70" left="0" verticalCenter="0">
+			<e:Image id="userFace" source="main_btn_mine_png" width="35" height="35" verticalCenter="0" left="30"/>
+
+			<eui:ALabel id="userName" text="" left="72" verticalCenter="0" width="400" height="70" size="40" verticalAlign="middle" textAlign="left" textColor="0xc8c8c8" isFixed="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="HomeOwnerTotal" top="275" left="0" right="0" height="150">
+		<eui:ALabel text="俱乐部总数 : " left="30" verticalCenter="0" width="226" height="70" size="38" verticalAlign="middle" textAlign="left" textColor="0xc8c8c8" anchorOffsetX="0" isFixed="true"/>
+		<eui:ALabel text="房间总数 : " verticalCenter="0" width="194" height="70" size="38" verticalAlign="middle" textAlign="left" textColor="0xC8C8C8" anchorOffsetX="0" horizontalCenter="-40" isFixed="true"/>
+		<eui:ALabel text="在线总人数 : " verticalCenter="0" width="226" height="70" size="38" verticalAlign="middle" textAlign="left" textColor="0xC8C8C8" anchorOffsetX="0" right="100" isFixed="true"/>
+		<eui:ALabel id="clubNum" text="0" left="255" verticalCenter="0" width="120" height="80" size="38" verticalAlign="middle" textAlign="left" textColor="0xc8c8c8" isFixed="true"/>
+		<eui:ALabel id="roomNum" text="0" verticalCenter="0" width="120" height="80" size="38" verticalAlign="middle" textAlign="left" horizontalCenter="98" textColor="0xc8c8c8" isFixed="true"/>
+		<eui:ALabel id="players" text="0" verticalCenter="0" width="80" height="80" size="38" verticalAlign="middle" textAlign="left" right="22" textColor="0xc8c8c8" isFixed="true"/>
+	</e:Group>
+	<e:Group id="HomeOwnerList" left="0" right="0" top="425" bottom="165">
+		<e:Scroller id="HomeOwnerScroll" left="0" right="0" top="0" bottom="0">
+			<eui:List id="HomeownerList"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

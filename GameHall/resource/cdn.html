@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome Back</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,minimal-ui"
+	/>
+	<meta http-equiv="expires" content="Sunday 26 October 2008 01:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="full-screen" content="true" />
+	<meta name="screen-orientation" content="landscape" />
+	<meta name="renderer" content="webkit" />
+	<meta name="360-fullscreen" content="true" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true" />
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application" />
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no" />
+</head>
+<body>
+	<script type="text/javascript">
+		//整个项目入口
+		//如果是分享的url,href是长这个样子的:http://192.168.8.158:8989/admin/applink?schema=xxx&invitation_code=49748428&h=/h5/yl8esd
+		// alert("resoure下的cdnhtml ："+location.href);
+		var urlParams = getAllParams();
+		function getAllParams(){
+			var url = location.href;
+			var position = url.indexOf("?");
+			var parameterStr = url.substr(position + 1);
+			var arr = parameterStr.split("&");
+			var obj = {};
+			for(var i=0; i<arr.length; i++){
+				var data = arr[i].split("=");
+				obj[data[0]] = data[1];
+			}
+			return obj;
+		}
+		function getParameterValue(key) {
+			if(key && urlParams && urlParams[key]){
+				return urlParams[key];
+			}
+			return "";
+		}
+		var username = getParameterValue("username");
+		var accessToken = getParameterValue("accessToken");
+		var mode = getParameterValue("mode");
+		var c_params = getParameterValue("c");
+		var p_params = getParameterValue("p");
+		var invitation_code = getParameterValue("invitation_code");
+
+		params = null;
+
+		//-----------------cdn speed test--------------------
+		function CdnWebSocket(url, rtmp, h5rtmp) {
+			this.url = url;
+			this.rtmp = rtmp;
+			this.h5rtmp = h5rtmp;
+			this.testCount = 3;
+			this.webSocket = null;
+			this.startTime = 0;
+		}
+		CdnWebSocket.prototype.startConnec = function () {
+			var self = this;
+			this.testCount--;
+
+			this.webSocket = new WebSocket("ws://" + this.url + "/goral/ws/echo");
+			this.startTime = new Date().getTime();
+			this.webSocket.onopen = function () {
+				self.sendPing();
+			};
+			this.webSocket.onmessage = function (e) {
+				if (self.testCount > 0) {
+					self.testCount--;
+					self.sendPing();
+				} else {
+					self.testComplement();
+				}
+			};
+			this.webSocket.onerror = function () {
+				//cdnTestDone(self.url,new Date().getTime());	
+			}
+		};
+		CdnWebSocket.prototype.sendPing = function () {
+			if (this.webSocket.readyState == 1) {
+				this.webSocket.send("testConnection");
+			} else {
+				egret.setTimeout(this.sendPing, this, 10);
+			}
+		};
+		CdnWebSocket.prototype.testComplement = function () {
+			cdnTestDone(this.url, this.rtmp, this.h5rtmp);
+		};
+		CdnWebSocket.prototype.close = function () {
+			try {
+				this.webSocket.close();
+			} catch (e) {
+
+			}
+		};
+		//-----------------cdn speed test--------------------
+		var bestCdnUrl = "";
+		var wsArrInfo = []; // [{"url":url1,ws":obj}, {"url":url2,"ws":obj} }
+
+		//cdnTestDone("127.0.0.1");
+
+		// 测试跳转不支持webSocket的页面
+		// jumpToNoWebsocketPage();
+
+		var xmlhttp = new XMLHttpRequest();
+		var localUrl = document.location.href;
+		var staticIndex = localUrl.indexOf("static");
+		var cdnIndex = localUrl.indexOf("cdn.html");
+		console.log("staticIndex:" + staticIndex);
+		var host = localUrl.slice(0, staticIndex);
+		var path = localUrl.slice(staticIndex, cdnIndex);
+
+		console.log("host:" + host);
+		console.log("path:" + path);
+		xmlhttp.onreadystatechange = zswFun;
+		xmlhttp.open("GET", host + "goral/api/cdns", true);
+
+		//test
+		//xmlhttp.open("GET","http://192.168.8.229:7780/goral/api/stat?user_id=1",true);
+		xmlhttp.send(null);
+
+		function zswFun() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var b = xmlhttp.responseText;
+				console.warn(b);
+				if (b) {
+					var cdnAddrs = JSON.parse(b);
+					console.warn(cdnAddrs);// [{"cdn_host":"192.168.8.227","cdn_port":777}, {"cdn_host":"192.168.8.223","cdn_port":666}]
+					if (window.WebSocket && window.WebSocket.prototype.send) {
+						if (cdnAddrs) {
+							var url, ws, rtmp, h5rtmp;
+							for (var i = 0; i < cdnAddrs.length; i++) {
+								if (!cdnAddrs[i]) continue;
+								url = cdnAddrs[i].cdn_host + ":" + cdnAddrs[i].cdn_port;
+								h5rtmp = cdnAddrs[i].h5_rtmp_port;
+								rtmp = cdnAddrs[i].rtmp_port;
+								ws = new CdnWebSocket(url, rtmp, h5rtmp);
+								ws.startConnec();
+							}
+						}
+					} else {
+						var url =  cdnAddrs[0].cdn_host + ":" + cdnAddrs[0].cdn_port;
+						var h5rtmp = cdnAddrs[0].h5_rtmp_port;
+						var rtmp = cdnAddrs[0].rtmp_port;
+						cdnTestDone(url, h5rtmp, rtmp);
+					}
+				}
+			}
+		}
+
+		//cdn 检测结束
+		function cdnTestDone(url, rtmp, h5rtmp) {
+			if (bestCdnUrl) return;
+			console.log("检测结束 best:" + url);
+			bestCdnUrl = url;
+			var gameIP = bestCdnUrl.split(":")[0];
+			console.log("gameIP:" + gameIP);
+			var d = new Date();
+			var gameUrl = "http://" + bestCdnUrl + "/" + path + "index.html";
+			//gameUrl = gameUrl + "?rtmp=" + rtmp + "&h5rtmp=" + h5rtmp + "&c=" + c_params;
+			//gameUrl = gameUrl + "?c=" + c_params + "&" + d.getTime();
+			gameUrl = gameUrl + "?c=" + c_params;
+			if (username) gameUrl += "&username=" + username;
+			if (accessToken) gameUrl += "&accessToken=" + accessToken;
+			if (mode) gameUrl += "&mode=" + mode;
+			if(invitation_code) gameUrl += "&invitation_code=" + invitation_code;
+			//界面跳转
+			console.log("界面跳转 "+gameUrl);
+			window.location.href = gameUrl;
+
+			//			var xmlhttp = new XMLHttpRequest();
+			//			xmlhttp.open("POST",gameUrl);
+			//			xmlhttp.send(null);
+
+			for (var i = 0; i < wsArrInfo.length; i++) {
+				wsArrInfo[i][ws] && wsArrInfo[i][ws].close();
+			}
+		}
+	</script>
+</body>
+
+</html>

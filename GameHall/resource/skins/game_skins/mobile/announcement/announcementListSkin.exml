@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="announcementSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<eui:ALabel id="announceCountTxt" text="公告数量：0" x="34" y="195" width="300" size="35" textColor="0xc5c5c5" fontFamily="SimHei" isFixed="true"/>
+	<eui:ALabel id="roomCardCountTxt" text="房卡：0" y="187" width="210" size="37" textColor="0xC5C5C5" fontFamily="SimHei" isFixed="true" right="86"/>
+	<eui:AButton id="btn_addRoomCard" label="" y="177" width="57" height="57" mouseTexture="topbar_btn_morecard_h_pc_png" right="29">
+		<eui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="topbar_btn_morecard_pc_png" source.down="topbar_btn_morecard_p_pc_png" source.disabled="topbar_btn_morecard_pc_png"/>
+			<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</eui:skinName>
+	</eui:AButton>
+	<e:Image source="main_pic_decoration4_png" y="258" x="22"/>
+	<e:Image source="main_pic_decoration4_png" rotation="180" y="503" right="22"/>
+	<e:Image source="main_pic_decoration4_png" y="503" rotation="270" x="22"/>
+	<e:Image source="main_pic_decoration4_png" y="258" rotation="90" right="22"/>
+	<e:Image source="main_pic_decoration_png" y="240" left="19" right="19"/>
+	<e:Image source="mine_pic_separateline_png" y="515" left="19" right="19"/>
+	<e:AButton id="btn_addAnnounce" label="founder_btn_add_notice" y="280" horizontalCenter="13" width="146" height="146">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="home_btn_join_png" source.down="home_btn_join_p_png" source.disabled=""/>
+			<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="120" size="42" textColor="0xc9a45d"/>
+			</e:Skin>
+		</e:skinName>
+	</e:AButton>
+	<e:Scroller height="1380" y="520" left="19" right="19">
+		<e:List id="announceList"/>
+	</e:Scroller>
+	<e:Image source="topbar_pic_card_pc_png" y="186" width="57" height="41" right="311"/>
+</e:Skin>

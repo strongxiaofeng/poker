@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mulitBaccarat" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="bodyGroup" left="185" top="65" bottom="15" right="15">
+		<e:Group width="520" right="0" bottom="0" top="20">
+			<e:Group id="infoGroup" height="470" bottom="0" left="0" right="0">
+				<e:Image source="bg_mask_pc_png" top="35" left="0" right="0" bottom="0" alpha="0.3" />
+				<e:Group height="35" left="0" right="0" top="0" scrollEnabled="true">
+					<e:Image left="0" right="0" top="0" bottom="0" source="bg_mask_pc_png" />
+					<e:Image source="multipledesk_pic_icon_pc_png" left="15" verticalCenter="0" />
+					<eui:ALabel text="投注" height="35" horizontalCenter="45" size="20" verticalAlign="middle" textAlign="center"
+					            alpha="0.5" width="50" verticalCenter="0"  textColor="0xe9b76f"/>
+					<eui:ALabel text="派彩" height="35" size="20" alpha="0.5" textAlign="center" verticalAlign="middle"
+					            verticalCenter="0" width="50" x="435.34"  textColor="0xff0000"/>
+					<e:Image source="desk_btn_red_png" x="489.6" width="5" height="20" verticalCenter="0.5" />
+					<e:Image x="336.52" width="5" height="20" verticalCenter="0.5" source="record_pic_morebg1_png" />
+				</e:Group>
+				<e:Scroller id="recordScroller" width="520" top="35" left="0" bottom="0" enabled="true">
+					<eui:BaseList id="recordList" />
+				</e:Scroller>
+			</e:Group>
+			<e:Group id="videoInfoGroup" height="500" top="0" left="0" right="0">
+				<e:Group id="videoGroup" width="520" height="330" left="0" top="0" scrollEnabled="true">
+					<e:Image source="desk_bg_desk_pc_png" left="-198" right="-166" top="0" bottom="-114" anchorOffsetX="0"
+					         anchorOffsetY="0" horizontalCenter="0" />
+					<e:Group height="40" bottom="0" left="0" right="0">
+						<e:Image left="0" right="0" top="0" bottom="0" alpha="0.7" source="desk_pic_bg_pc_png" />
+						<eui:ALabel id="roomNameLabel" text="百家乐房间名称" width="200" top="0" bottom="0" size="20" textAlign="left"
+						            verticalAlign="middle" left="10" />
+						<eui:ALabel id="souresPlayerName" text="1号桌" width="200" top="0" bottom="0" size="20" textAlign="right"
+						            verticalAlign="middle" y="-375" scaleX="1" scaleY="1" right="10" />
+					</e:Group>
+				</e:Group>
+				<e:Group width="520" height="170" bottom="0" left="0">
+					<e:Image source="bg_mask_pc_png" left="0" width="520" height="170" bottom="0" alpha="0.3" />
+					<e:Scroller id="souresScroller" height="165" bottom="5" left="5" right="5" x="5" y="0" scaleX="1" scaleY="1">
+						<e:List id="souresList">
+							<e:layout>
+								<e:TileLayout orientation="rows" horizontalAlign="left" verticalAlign="top" horizontalGap="3" />
+							</e:layout>
+						</e:List>
+					</e:Scroller>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group top="20" right="550" left="0" bottom="0">
+			<e:Scroller id="mulitScroller" top="0" left="0" bottom="0" right="0" enabled="true" x="0" y="0" scaleX="1" scaleY="1">
+				<eui:BaseList id="mulitList">
+				<eui:ALabel id="scrollerMsg" text="暂无更多房间" textColor="0xd32a2a" size="30" width="500" textAlign="center" verticalAlign="middle" horizontalCenter="0" bottom="20" touchEnabled="false" visible="false"/>
+				</eui:BaseList>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+	<eui:ALabel id="label_HaveNothing" text="列表为空" size="32" textAlign="center" verticalAlign="middle" width="200"
+	            top="454" horizontalCenter="0" visible="false" />
+</e:Skin>

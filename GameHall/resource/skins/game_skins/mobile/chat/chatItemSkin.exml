@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="chatItemSkin" width="1080" height="152" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="leftGroup" height="150" y="0" left="0" right="0">
+		<e:Image id="leftIcon" width="120" height="120" left="20" y="29" source="mine_pic_default_mini_png"/>
+		<e:Image id="leftIconMask" width="120" height="120" left="20" y="29" source="mine_pic_default_mini_png"/>
+		<e:Image id="leftBg" source="chat_pic_wordsbg4_png" x="154" scale9Grid="24,25,40,35" width="173" height="85" y="48"/>
+		<e:Label id="leftNameTxt" text="哪个发的" x="193" y="15" size="26" textColor="0xacaba2" fontFamily="SimHei"/>
+		<e:Image source="chat_pic_seatnum_bg_png" x="153" y="12"/>
+		<e:Image id="hostIcon" source="chat_pic_roomhost_pc_png" x="153" y="12" width="31" height="31"/>
+		<e:BitmapLabel id="leftSeatNum" height="20" x="163" y="15" font="game_share_gray_32_fnt" text="2"/>
+		<e:Label id="leftContent" text="内容内容内容内容" x="188" y="69" size="38" lineSpacing="10" anchorOffsetX="0" anchorOffsetY="0" maxWidth="686"/>
+		<e:Image id="leftEmoji" source="chant_pic_emoji19_pc_png" x="214" y="55" width="75" height="75" visible="false"/>
+		<e:Image id="leftVoice" source="chat_pic_icon1_png" x="208" y="58" height="70" width="50"/>
+	</e:Group>
+	<e:Group id="rightGroup" height="140" y="0" left="0" right="0">
+
+		<e:Image id="rightBg" scale9Grid="24,25,40,35" width="686" right="175" height="85" y="34" source="chat_pic_wordsbg2_png"/>
+		<e:Label id="rightContent" text="内容内容内容内容内容内容内容内容" y="54" size="38" lineSpacing="10" right="205" textAlign="right" maxWidth="686"/>
+		<e:Image id="rightEmoji" source="chant_pic_emoji19_pc_png" y="34" width="75" height="75" right="190" visible="false"/>
+		<e:Image id="rightVoice" source="chat_pic_icon1_png" y="36" height="70" width="50" right="212" visible="false"/>
+		<e:Image id="rightIcon" width="120" height="120" y="10" right="43" source="mine_pic_default_mini_png"/>
+		<e:Image id="rightIconMask" width="120" height="120" y="10" right="43" source="mine_pic_default_mini_png"/>
+    </e:Group>    
+</e:Skin>

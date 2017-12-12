@@ -1,0 +1,5 @@
+enum LeftBarCommand
+{
+	initCreateOrJoin,
+	selectType
+}

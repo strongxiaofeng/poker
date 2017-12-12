@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VideoLaodingSkin" width="766" height="260" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="pic_popup5_pc_png" x="383" y="146"/>
+	<e:Image source="pic_popup5_pc_png" x="383" y="146" scaleX="-1"/>
+	<e:Label id="loadingTxt" text="链接视频中......" y="166" anchorOffsetX="0" width="343" x="283" textAlign="left"/>
+	<e:Image source="pic_connect_pc_png" x="278" y="18"/>
+</e:Skin>

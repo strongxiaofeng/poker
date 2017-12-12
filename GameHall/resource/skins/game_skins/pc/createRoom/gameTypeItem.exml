@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameTypeItem" width="207" height="52" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group right="0" left="0" top="0" bottom="0">
+		<e:Image id="gameTypeImg" source="icon_pic_baccarat_pc_png" verticalCenter="0" left="16"/>
+		<eui:ALabel id="gameType" text="百家乐" width="70" size="20" textColor="0xe7b56f" isFixed="true" y="16" x="100"/>
+		<e:Image source="main_pic_separateline_pc_png" scaleY="207" scaleX="1" height="1" rotation="90" left="0" right="0" bottom="2"/>
+	</e:Group>
+</e:Skin>

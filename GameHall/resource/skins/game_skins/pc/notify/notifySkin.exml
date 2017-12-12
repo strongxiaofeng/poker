@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifySkin" width="572" height="773" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<eui:ALabel id="notifyTitle" text="消息" x="23" y="30" size="28" textAlign="left" textColor="0xF0B667" fontFamily="SimHei"/>
+	<eui:ALabel id="notifyTxt" text="消息" x="23" y="98" size="20" width="263" textAlign="center" textColor="0xf0b667" fontFamily="SimHei"/>
+	<eui:ALabel id="personsTxt" text="联系人" x="286" y="98" size="20" width="263" textAlign="center" fontFamily="SimHei" textColor="0xaeaeae"/>
+
+	<e:Image source="news_btn_line_pc_png" x="23" y="123" width="263" scale9Grid="3,0,24,4"/>
+	<e:Image source="news_btn_line_pc_png" x="286" y="123" width="263" scale9Grid="3,0,24,4"/>
+	<e:Image id="selectImg" source="news_btn_line_p_pc_png" x="23" y="123" width="263" scale9Grid="32,0,198,4"/>
+	<e:Scroller width="572" height="580" x="0" y="140" anchorOffsetY="0">
+		<e:List id="list"/>
+	</e:Scroller>
+</e:Skin>

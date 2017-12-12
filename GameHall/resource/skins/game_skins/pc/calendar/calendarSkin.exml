@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="calendarSkin" width="1080" height="801" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+
+	<e:Group id="groupMain" width="1080" height="801" x="0" y="0" scaleX="1" scaleY="1">
+		<e:Image left="0" right="0" top="0" bottom="0" source="bg_mask_pc_png" visible="false"/>
+		<e:Image height="801" x="0" y="0" width="1080" source="data_pic_calendarbg_pc_png" scale9Grid="7,13,18,8"/>
+		<e:Group width="1080" height="100" x="0" y="0">
+			<e:AButton id="btnStart" label="2017/09/01" y="0" width="526" height="100" horizontalCenter="-263">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="526" height="100" x="0" y="0" source="data_pic_line_p_pc_png" alpha="0.01"/>
+					<e:Image width="526" height="8" bottom="0" source="data_pic_line_pc_png" source.down="data_pic_line_p_pc_png" source.disabled="data_pic_line_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor.down="0xe7b570" textColor="0xffffff" alpha="0.5" alpha.down="1"/>
+					</e:Skin>
+				</e:skinName>
+			</e:AButton>
+			<e:AButton id="btnEnd" label="2017/09/30" y="0" width="526" height="100" horizontalCenter="263">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="526" height="100" x="0" y="0" source="data_pic_line_p_pc_png" alpha="0.01"/>
+					<e:Image width="526" height="8" bottom="0" source="data_pic_line_pc_png" source.down="data_pic_line_p_pc_png" source.disabled="data_pic_line_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="40" textColor.down="0xe7b570" textColor="0xffffff" alpha="0.5" alpha.down="1"/>
+				</e:Skin>
+				</e:skinName>
+			</e:AButton>
+			<e:Image width="45" height="4" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png" locked="true"/>
+		</e:Group>
+		<e:Group width="135" right="0" height="690" y="100">
+			<eui:AButton id="btnPrevious" label="" horizontalCenter="0" mouseTexture="data_btn_nextmonth_h_pc_png" top="45" scaleY="-1" width="65" height="36">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" alpha="1" alpha.down="0.3" alpha.disabled="0.3" source="data_btn_nextmonth_pc_png" source.down="data_btn_nextmonth_p_pc_png" source.disabled="data_btn_nextmonth_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="btnNext" label="" horizontalCenter="0" mouseTexture="data_btn_nextmonth_h_pc_png" bottom="45" enabled="false" width="65" height="36">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%"  alpha="1" alpha.down="0.3" alpha.disabled="0.3" source="data_btn_nextmonth_pc_png" source.down="data_btn_nextmonth_p_pc_png" source.disabled="data_btn_nextmonth_p_pc_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:ALabel id="labelMonth" text="01" verticalCenter="0" horizontalCenter="0" width="100" height="50" size="50" verticalAlign="middle" textAlign="center" textColor="0xe7b570"/>
+		</e:Group>
+		<e:Group id="groupDate" width="945" height="690" y="100" x="0">
+
+			<e:Group id="date_0_0" name="date_0_0" width="135" height="115" x="0" y="0" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png" visible="false"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_0_1" name="date_0_1" width="135" height="115" x="135" y="0" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_0_2" name="date_0_2" width="135" height="115" x="270" y="0" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_0_3" name="date_0_3" width="135" height="115" x="405" y="0" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_0_4" name="date_0_4" width="135" height="115" x="540" y="0" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_0_5" name="date_0_5" width="135" height="115" x="675" y="0" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_0_6" name="date_0_6" width="135" height="115" x="810" y="0" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+
+            <e:Group id="date_1_0" name="date_1_0" width="135" height="115" x="0" y="115" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_1_1" name="date_1_1" width="135" height="115" x="135" y="115" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_1_2" name="date_1_2" width="135" height="115" x="270" y="115" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_1_3" name="date_1_3" width="135" height="115" x="405" y="115" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_1_4" name="date_1_4" width="135" height="115" x="540" y="115" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_1_5" name="date_1_5" width="135" height="115" x="675" y="115" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_1_6" name="date_1_6" width="135" height="115" x="810" y="115" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+
+            <e:Group id="date_2_0" name="date_2_0" width="135" height="115" x="0" y="230" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_2_1" name="date_2_1" width="135" height="115" x="135" y="230" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_2_2" name="date_2_2" width="135" height="115" x="270" y="230" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_2_3" name="date_2_3" width="135" height="115" x="405" y="230" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_2_4" name="date_2_4" width="135" height="115" x="540" y="230" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_2_5" name="date_2_5" width="135" height="115" x="675" y="230" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_2_6" name="date_2_6" width="135" height="115" x="810" y="230" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+
+            <e:Group id="date_3_0" name="date_3_0" width="135" height="115" x="0" y="345" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_3_1" name="date_3_1" width="135" height="115" x="135" y="345" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_3_2" name="date_3_2" width="135" height="115" x="270" y="345" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_3_3" name="date_3_3" width="135" height="115" x="405" y="345" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_3_4" name="date_3_4" width="135" height="115" x="540" y="345" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_3_5" name="date_3_5" width="135" height="115" x="675" y="345" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_3_6" name="date_3_6" width="135" height="115" x="810" y="345" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+
+            <e:Group id="date_4_0" name="date_4_0" width="135" height="115" x="0" y="460" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_4_1" name="date_4_1" width="135" height="115" x="135" y="460" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_4_2" name="date_4_2" width="135" height="115" x="270" y="460" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_4_3" name="date_4_3" width="135" height="115" x="405" y="460" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_4_4" name="date_4_4" width="135" height="115" x="540" y="460" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_4_5" name="date_4_5" width="135" height="115" x="675" y="460" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_4_6" name="date_4_6" width="135" height="115" x="810" y="460" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+
+            <e:Group id="date_5_0" name="date_5_0" width="135" height="115" x="0" y="575" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_5_1" name="date_5_1" width="135" height="115" x="135" y="575" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_5_2" name="date_5_2" width="135" height="115" x="270" y="575" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_5_3" name="date_5_3" width="135" height="115" x="405" y="575" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_5_4" name="date_5_4" width="135" height="115" x="540" y="575" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_5_5" name="date_5_5" width="135" height="115" x="675" y="575" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+            <e:Group id="date_5_6" name="date_5_6" width="135" height="115" x="810" y="575" touchEnabled="true" touchChildren="false" touchThrough="false">
+				<e:Image name="bgd" visible="false" width="105" height="105" verticalCenter="0" horizontalCenter="0" source="data_pic_line_p_pc_png"/>
+				<e:Label name="txt" text="1" horizontalCenter="0" verticalCenter="0" textAlign="center" verticalAlign="middle" textColor="0xe7b570" size="35" height="35" width="70" alpha="1"/>
+			</e:Group>
+
+		</e:Group>
+	</e:Group>
+</e:Skin>

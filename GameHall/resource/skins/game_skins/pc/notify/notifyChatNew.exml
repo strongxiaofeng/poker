@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NotifyChatNew" width="515" height="774" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<eui:ALabel id="titleTxt" text="用户昵称名字" y="33" size="22" textAlign="left" width="355" x="28" textColor="0xf4ba6b"/>
+	<e:Scroller id="scroller" width="500" height="646" y="76">
+		<eui:BaseList id="itemList"/>
+	</e:Scroller>
+	<e:Group id="inputGroup" width="515" height="774" y="0" touchThrough="true">
+		<e:Image source="chat_pic_inputbg1_png" anchorOffsetX="0" anchorOffsetY="0" height="40" width="508" y="730" x="6"/>
+		<e:Image id="focusBg" source="window_pic_search_inputbg_p_pc_png" x="6" y="730" width="388" visible="false"/>
+
+		<e:Image width="58" height="37" source="chat_btn_all_bg_png" y="732" x="396" visible="false"/>
+		<e:AButton id="sendBtn" label="" width="57" height="35" x="397" y="733" mouseTexture="news_btn_send_h_pc_png">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="news_btn_send_pc_png" source.down="news_btn_send_p_pc_png" source.disabled="news_btn_send_d_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+
+		</e:AButton>
+		<e:Image width="58" height="37" source="chat_btn_all_bg_png" x="456" y="732" visible="false"/>
+		<e:AButton id="emojiBtn" label="" width="57" height="35" x="457" y="733" mouseTexture="news_btn_emoji_h_pc_png">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="news_btn_emoji_pc_png" source.down="news_btn_emoji_p_pc_png" source.disabled="news_btn_emoji_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+
+		</e:AButton>
+
+		<e:EditableText id="input" anchorOffsetX="0" anchorOffsetY="0" width="386" x="8" y="732" size="16" prompt="请在此输入......" promptColor="0x9e9e9e" textColor="0x000000" text="" verticalAlign="middle" height="36"/>
+	</e:Group>
+	<e:Group id="emojiGroup" width="512" height="145" y="577">
+		<e:Image x="0" y="0" width="515" height="147" touchEnabled="false" source="pic_popuptitle_pc_png"/>
+		<e:Image source="news_pic_decoration_pc_png" y="3" horizontalCenter="0"/>
+		<e:Image touchEnabled="true" x="28" y="17" width="33" height="33" name="sweat"  source="chant_pic_emoji1_png" />
+		<e:Image touchEnabled="true" x="90" y="17" width="33" height="33" source="chant_pic_emoji2_png" name="my god" />
+		<e:Image touchEnabled="true" x="151" y="17" width="33" height="33" source="chant_pic_emoji3_png" name="Kissing" />
+		<e:Image touchEnabled="true" x="212" y="17" width="33" height="33" source="chant_pic_emoji4_png" name="Crazy Face" />
+		<e:Image touchEnabled="true" x="272" y="17" width="33" height="33" source="chant_pic_emoji5_png" name="LOL"/>
+		<e:Image touchEnabled="true" x="335" y="17" width="33" height="33" source="chant_pic_emoji6_png" name="Pensive" />
+		<e:Image touchEnabled="true" x="394" y="17" width="33" height="33" source="chant_pic_emoji7_png" name="Money-Mouth Face" />
+		<e:Image touchEnabled="true" x="456" y="17" width="33" height="33" source="chant_pic_emoji8_png" name="Crying" />
+		<e:Image touchEnabled="true" x="28" y="64" width="33" height="33" source="chant_pic_emoji9_png" name="grin" />
+		<e:Image touchEnabled="true" x="90" y="64" width="33" height="33" source="chant_pic_emoji10_png" name="Flushed" />
+		<e:Image touchEnabled="true" x="151" y="64" width="33" height="33" source="chant_pic_emoji11_png" name="smile" />
+		<e:Image touchEnabled="true" x="212" y="64" width="33" height="33" source="chant_pic_emoji12_png" name="evil" />
+		<e:Image touchEnabled="true" x="272" y="64" width="33" height="33" source="chant_pic_emoji13_png" name="Heart" />
+		<e:Image touchEnabled="true" x="335" y="64" width="33" height="33" source="chant_pic_emoji14_png" name="Pouting" />
+		<e:Image touchEnabled="true" x="394" y="64" width="33" height="33" source="chant_pic_emoji15_png" name="^^" />
+		<e:Image touchEnabled="true" x="456" y="64" width="33" height="33" source="chant_pic_emoji16_png" name="cool" />
+		<e:Image touchEnabled="true" x="28" y="109" width="33" height="33" source="chant_pic_emoji17_png" name="smirk" />
+		<e:Image touchEnabled="true" x="90" y="109" width="33" height="33" source="chant_pic_emoji18_png" name="Thinking" />
+		<e:Image touchEnabled="true" x="151" y="109" width="33" height="33" source="chant_pic_emoji19_png" name="Flirtatious" />
+		<e:Image touchEnabled="true" x="212" y="109" width="33" height="33" source="chant_pic_emoji20_png" name="Zipper-Mouth" />
+	</e:Group>
+	<eui:AButton id="newMsgBtn" label="有新消息" y="538" mouseTexture="chat_btn_new_h_pc_png" horizontalCenter="0">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="chat_btn_new_pc_png" source.down="chat_btn_new_p_pc_png" source.disabled="chat_btn_new_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="2" textColor="0x000000" textColor.down="0xe9b76f" size="18"/>
+			</e:Skin>
+		</eui:skinName>
+	</eui:AButton>
+</e:Skin>

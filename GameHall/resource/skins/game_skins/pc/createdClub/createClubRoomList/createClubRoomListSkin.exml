@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="createClubRoomListSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="1687" height="935" x="184" y="114">
+		<e:Scroller id="createdRoomScroll" width="1687" height="935" y="0" x="0" scaleX="1" scaleY="1">
+			<e:List id="createdRoomList">
+			<e:layout>
+				<e:TileLayout orientation="rows" horizontalGap="16" verticalGap="16" requestedColumnCount="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+
+
+	<eui:AButton id="allBtn" label="所有房间" height="32" width="224" mouseTexture="created_btn_chooseroom1_h_pc_png" top="68" right="51">
+		<eui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source.disabled="created_btn_chooseroom1_pc_png" source.up="created_btn_chooseroom1_pc_png" source.down="created_btn_chooseroom1_p_pc_png"/>
+			<eui:ALabel text="" id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" width="120" textAlign="center" textColor.up="0xe7b56f" textColor.down="0x000000" fontFamily="Microsoft YaHei"/>
+		</e:Skin>
+		</eui:skinName>
+	</eui:AButton>
+	<e:Group id="btnGroup" width="224" height="100" right="51" top="101">
+		<eui:AButton id="allRoomBtn" label="所有房间" width="224" height="32" right="0" mouseTexture="created_btn_chooseroom2_h_pc_png"  top="0">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source.disabled="created_btn_chooseroom2_pc_png" source.up="created_btn_chooseroom2_pc_png" source.down="created_btn_chooseroom2_p_pc_png"/>
+			<eui:ALabel text="" id="labelDisplay" alpha.disabled="0.4" horizontalCenter="0" verticalCenter="0" size="20" width="120" textAlign="center" verticalAlign="middle" textColor.up="0xe7b56f" textColor.disabled="0x7d6e4a" textColor.down="0x000000" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="publicBtn" label="普通房间" height="33" width="224" right="0" mouseTexture="created_btn_chooseroom2_h_pc_png" top="33">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source.disabled="created_btn_chooseroom2_pc_png" source.up="created_btn_chooseroom2_pc_png" source.down="created_btn_chooseroom2_p_pc_png"/>
+			<eui:ALabel text="" id="labelDisplay" alpha.disabled="0.4" horizontalCenter="0" verticalCenter="0" size="20" width="120" textAlign="center" verticalAlign="middle" textColor.up="0xe7b56f" textColor.disabled="0x7d6e4a" textColor.down="0x000000" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="privateBtn" label="私人房间" height="33" width="224" right="0" mouseTexture="created_btn_chooseroom2_h_pc_png" top="66">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image scaleY="-1" bottom="0" width="100%" height="100%" source.disabled="created_btn_chooseroom2_pc_png" source.up="created_btn_chooseroom2_pc_png" source.down="created_btn_chooseroom2_p_pc_png"/>
+			<eui:ALabel text="" id="labelDisplay" alpha.disabled="0.4" horizontalCenter="0" verticalCenter="0" size="20" width="120" textAlign="center" verticalAlign="middle" textColor.up="0xe7b56f" textColor.disabled="0x7d6e4a" textColor.down="0x000000" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<eui:ALabel id="roomNum" text="房间数量：0" size="20" width="160" x="184" y="75" fontFamily="Microsoft YaHei"/>
+	<e:Group id="tipGroup" width="600" horizontalCenter="0" top="0">
+		<eui:ALabel text="global_lbl_list_empty_tips" height="40" size="30" textAlign="center" verticalAlign="middle" scaleX="1" scaleY="1" textColor="0xFFFFFF" top="453" width="580" x="10" isFixed="true"/>
+		<e:Image source="home_pic_decoration_pc_png" horizontalCenter="0" top="518"/>
+		<eui:AButton id="tipCreateBtn" label="" horizontalCenter="0" height="32" top="562">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image source="window_btn_into_pc_png" source.disabled="window_btn_into_pc_png" source.down="window_btn_into_p_pc_png" right="-24"/>
+				<eui:ALabel id="tipCreateRoom" text="founder_btn_right_away_to_create_room" height="40" size="25" textAlign="center" width='155' verticalAlign="middle" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="10" isFixed="true" textColor="0xe7b56f"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+</e:Skin>

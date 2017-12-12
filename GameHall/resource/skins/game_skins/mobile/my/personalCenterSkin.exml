@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NewFile" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+
+	<e:Group id="group_MaxOut" top="165" left="0" right="0" bottom="0">
+		<eui:AButton id="btn_PictureEditor" label="global_lbl_head_portrait" top="0" left="0" right="0" height="155">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_head_png" verticalCenter="0" left="70"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+
+		<e:Image source="mine_pic_separateline_png" left="40" right="40" top="155" locked="true"/>
+		<eui:AButton id="btn_NickName" label="global_lbl_user_name" top="155" height="155" left="0" right="0">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_nickname_png" verticalCenter="0" left="70"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:ALabel id="label_NickName" text="Label" size="40" right="120" width="400" textAlign="right" textColor="0xC8C8C8" top="213" touchEnabled="false"/>
+		<e:Image source="mine_pic_separateline_png" left="40" right="40" top="310" locked="true"/>
+		<eui:AButton id="btn_ID" label="ID" height="155" left="40" right="40" top="310">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="icon_pic_id_png" verticalCenter="0" left="30"/>
+				<e:Label id="labelDisplay" size="45" verticalCenter="0" left="120" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:ALabel id="label_ID" text="Label" size="40" right="120" width="400" textAlign="right" textColor="0xC8C8C8" top="368" touchEnabled="false"/>
+		<e:Image source="mine_pic_separateline_png" left="40" right="40" top="465" locked="true"/>
+		<eui:AButton id="btn_Back" label="personal_btn_exit_club" height="155" left="0" right="0" top="465">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source.down="window_btn_all_h_pc_png" verticalCenter="0" height="100%" width="100%" left="0"/>
+				<e:Image verticalCenter="0" right="40" source="mine_btn_enter_png" source.down="mine_btn_enter_p_png" source.disabled="mine_btn_enter_png"/>
+				<e:Image source="icon_pic_quit_png" verticalCenter="0" left="70"/>
+				<eui:ALabel id="labelDisplay" size="45" verticalCenter="0" left="160" width="500" textColor="0xe9b76f"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:ALabel id="label_Back" text="Label" size="40" right="120" width="400" textAlign="right" textColor="0xc8c8c8" top="523" touchEnabled="false"/>
+		<e:Image source="mine_pic_separateline_png" left="40" right="40" top="620" locked="true"/>
+
+
+
+
+
+
+		<eui:AButton id="btn_BackUser" label="personal_btn_exit_account" height="60" width="340" horizontalCenter="0" bottom="110">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image verticalCenter="0" left="0" source="mine_btn_quit_png" source.down="mine_btn_quit_p_png" source.disabled="mine_btn_quit_p_png"/>
+				<eui:ALabel id="labelDisplay" size="40" verticalCenter="0" left="90" width="300" textColor="0xFF0000" textColor.down="0x654D29"/>
+				<e:Rect width="100%" height="100%" fillAlpha="1" alpha="0.01"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<e:Group id="group_ShowCircle" width="130" height="130" right="120" top="13">
+			<e:Image id="img_ShowCircle" source="main_btn_all_mine_p_png" touchEnabled="false" scaleX="1" scaleY="1" top="0" left="0" right="0" bottom="0"/>
+		</e:Group>
+	</e:Group>
+
+</e:Skin>

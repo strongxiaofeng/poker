@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoomIndex" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image left="0" right="0" top="0" bottom="0" source="roulette_play_pic_histogram5_png"/>
+	<e:Group id="groupGrid" width="1094" height="1500" verticalCenter="0" horizontalCenter="0" visible="false" locked="true">
+		<e:Image touchEnabled="false" source="roulette_play_pic_desk_png" verticalCenter="0" horizontalCenter="0" width="1094" height="1500" locked="true"/>
+		<e:Group id="groupGirdNum" width="916" height="1400" verticalCenter="0" horizontalCenter="0" touchEnabled="false" touchChildren="false" locked="true">
+			<e:Image id="grid_0" width="641" height="72" x="268" y="7" source="bigarea_pic_numbg_select2_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_1" width="213" height="100" x="267" y="82" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_2" width="213" height="100" x="481" y="82" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_3" width="213" height="100" x="695" y="82" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_4" width="213" height="100" x="267" y="183" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_5" width="213" height="100" x="481" y="183" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_6" width="213" height="100" x="695" y="183" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_7" width="213" height="100" x="267" y="284" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_8" width="213" height="100" x="481" y="284" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_9" width="213" height="100" x="695" y="284" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_10" width="213" height="100" x="267" y="385" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_11" width="213" height="100" x="481" y="385" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_12" width="213" height="100" x="695" y="385" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_13" width="213" height="100" x="267" y="486" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_14" width="213" height="100" x="481" y="486" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_15" width="213" height="100" x="695" y="486" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_16" width="213" height="100" x="267" y="587" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_17" width="213" height="100" x="481" y="587" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_18" width="213" height="100" x="695" y="587" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_19" width="213" height="100" x="267" y="688" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_20" width="213" height="100" x="481" y="688" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_21" width="213" height="100" x="695" y="688" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_22" width="213" height="100" x="267" y="789" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_23" width="213" height="100" x="481" y="789" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_24" width="213" height="100" x="695" y="789" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_25" width="213" height="100" x="267" y="890" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_26" width="213" height="100" x="481" y="890" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_27" width="213" height="100" x="695" y="890" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_28" width="213" height="100" x="267" y="991" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_29" width="213" height="100" x="481" y="991" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_30" width="213" height="100" x="695" y="991" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_31" width="213" height="100" x="267" y="1092" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_32" width="213" height="100" x="481" y="1092" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_33" width="213" height="100" x="695" y="1092" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_34" width="213" height="100" x="267" y="1193" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_35" width="213" height="100" x="481" y="1193" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_36" width="213" height="100" x="695" y="1193" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_37" width="213" height="100" x="267" y="1294" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_38" width="213" height="100" x="481" y="1294" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_39" width="213" height="100" x="695" y="1294" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_40" width="128" height="400" x="138" y="82" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_41" width="128" height="400" x="138" y="486" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_42" width="128" height="400" x="138" y="890" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_43" width="128" height="200" x="6" y="82" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_44" width="128" height="200" x="6" y="284" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_45" width="128" height="200" x="6" y="486" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_46" width="128" height="200" x="6" y="688" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_47" width="128" height="200" x="6" y="890" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+			<e:Image id="grid_48" width="128" height="200" x="6" y="1092" source="roulette_play_pic_numbg_select1_png" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Image id="imgGridBg" width="916" height="1400" source="bigarea_pic_roulettebg_png" touchEnabled="false" verticalCenter="0" horizontalCenter="0" locked="true"/>
+		<e:Group id="groupGridLabel" width="916" height="1400" verticalCenter="0" horizontalCenter="0" touchEnabled="false" touchChildren="false" locked="true"/>
+		<e:Group id="groupGridChip" width="916" height="1400" verticalCenter="0" horizontalCenter="0"  touchEnabled="false" touchChildren="false" locked="true"/>
+		<e:Group id="groupGridTouch" width="916" height="1400" verticalCenter="0" horizontalCenter="0" alpha="0.01" touchChildren="true" touchEnabled="true" touchThrough="true" locked="true">
+
+			<e:Image id="touch_column_1" name="touch_column_1" width="213" height="100" source="roulette_play_pic_numbg_select1_png" x="267" y="1294"/>
+			<e:Image id="touch_column_2" name="touch_column_2" width="213" height="100" source="roulette_play_pic_histogram4_png" x="481" y="1294"/>
+			<e:Image id="touch_column_3" name="touch_column_3" width="213" height="100" source="roulette_play_pic_numbg_select1_png" x="695" y="1294"/>
+			<e:Image id="touch_dozen_1" name="touch_dozen_1" width="128" height="400" source="roulette_play_pic_numbg_select1_png" x="138" y="83"/>
+			<e:Image id="touch_dozen_2" name="touch_dozen_2" width="128" height="400" source="roulette_play_pic_histogram4_png" x="138" y="486"/>
+			<e:Image id="touch_dozen_3" name="touch_dozen_3" width="128" height="400" source="roulette_play_pic_numbg_select1_png" x="138" y="890"/>
+			<e:Image id="touch_small" name="touch_small" width="128" height="200" source="roulette_play_pic_histogram4_png" x="6" y="82"/>
+			<e:Image id="touch_double" name="touch_double" width="128" height="200" source="roulette_play_pic_numbg_select1_png" x="6" y="284"/>
+			<e:Image id="touch_red" name="touch_red" width="128" height="200" source="roulette_play_pic_histogram4_png" x="6" y="486"/>
+			<e:Image id="touch_black" name="touch_black" width="128" height="200" source="roulette_play_pic_numbg_select1_png" x="6" y="688"/>
+			<e:Image id="touch_single" name="touch_single" width="128" height="200" source="roulette_play_pic_histogram4_png" x="6" y="890"/>
+			<e:Image id="touch_big" name="touch_big" width="128" height="200" source="roulette_play_pic_numbg_select1_png" x="6" y="1092"/>
+
+			<e:Image id="touch_direct_1" name="touch_direct_1" width="189" height="70" source="roulette_play_pic_histogram4_png" y="97" x="266"/>
+			<e:Image id="touch_direct_2" name="touch_direct_2" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="97"/>
+			<e:Image id="touch_direct_3" name="touch_direct_3" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="97"/>
+			<e:Image id="touch_direct_4" name="touch_direct_4" width="189" height="70" source="roulette_play_pic_histogram4_png" y="198" x="266"/>
+			<e:Image id="touch_direct_5" name="touch_direct_5" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="198"/>
+			<e:Image id="touch_direct_6" name="touch_direct_6" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="198"/>
+			<e:Image id="touch_direct_7" name="touch_direct_7" width="189" height="70" source="roulette_play_pic_histogram4_png" y="299" x="266"/>
+			<e:Image id="touch_direct_8" name="touch_direct_8" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="299"/>
+			<e:Image id="touch_direct_9" name="touch_direct_9" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="299"/>
+			<e:Image id="touch_direct_10" name="touch_direct_10" width="189" height="70" source="roulette_play_pic_histogram4_png" y="400" x="266"/>
+			<e:Image id="touch_direct_11" name="touch_direct_11" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="400"/>
+			<e:Image id="touch_direct_12" name="touch_direct_12" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="400"/>
+			<e:Image id="touch_direct_13" name="touch_direct_13" width="189" height="70" source="roulette_play_pic_histogram4_png" y="501" x="266"/>
+			<e:Image id="touch_direct_14" name="touch_direct_14" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="501"/>
+			<e:Image id="touch_direct_15" name="touch_direct_15" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="501"/>
+			<e:Image id="touch_direct_16" name="touch_direct_16" width="189" height="70" source="roulette_play_pic_histogram4_png" y="602" x="266"/>
+			<e:Image id="touch_direct_17" name="touch_direct_17" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="602"/>
+			<e:Image id="touch_direct_18" name="touch_direct_18" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="602"/>
+			<e:Image id="touch_direct_19" name="touch_direct_19" width="189" height="70" source="roulette_play_pic_histogram4_png" y="703" x="266"/>
+			<e:Image id="touch_direct_20" name="touch_direct_20" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="703"/>
+			<e:Image id="touch_direct_21" name="touch_direct_21" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="703"/>
+			<e:Image id="touch_direct_22" name="touch_direct_22" width="189" height="70" source="roulette_play_pic_histogram4_png" y="804" x="266"/>
+			<e:Image id="touch_direct_23" name="touch_direct_23" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="804"/>
+			<e:Image id="touch_direct_24" name="touch_direct_24" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="804"/>
+			<e:Image id="touch_direct_25" name="touch_direct_25" width="189" height="70" source="roulette_play_pic_histogram4_png" y="905" x="266"/>
+			<e:Image id="touch_direct_26" name="touch_direct_26" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="905"/>
+			<e:Image id="touch_direct_27" name="touch_direct_27" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="905"/>
+			<e:Image id="touch_direct_28" name="touch_direct_28" width="189" height="70" source="roulette_play_pic_histogram4_png" y="1006" x="266"/>
+			<e:Image id="touch_direct_29" name="touch_direct_29" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="1006"/>
+			<e:Image id="touch_direct_30" name="touch_direct_30" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="1006"/>
+			<e:Image id="touch_direct_31" name="touch_direct_31" width="189" height="70" source="roulette_play_pic_histogram4_png" y="1107" x="266"/>
+			<e:Image id="touch_direct_32" name="touch_direct_32" width="163" height="70" source="roulette_play_pic_histogram4_png" x="506" y="1107"/>
+			<e:Image id="touch_direct_33" name="touch_direct_33" width="163" height="70" source="roulette_play_pic_histogram4_png" x="720" y="1107"/>
+			<e:Image id="touch_direct_34" name="touch_direct_34" width="189" height="85" source="roulette_play_pic_histogram4_png" y="1208" x="266"/>
+			<e:Image id="touch_direct_35" name="touch_direct_35" width="163" height="85" source="roulette_play_pic_histogram4_png" x="506" y="1208"/>
+			<e:Image id="touch_direct_36" name="touch_direct_36" width="163" height="85" source="roulette_play_pic_histogram4_png" x="720" y="1208"/>
+
+			<e:Image id="touch_street_1_2_3" name="touch_street_1_2_3" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="97" x="883"/>
+			<e:Image id="touch_street_4_5_6" name="touch_street_4_5_6" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="198" x="883"/>
+			<e:Image id="touch_street_7_8_9" name="touch_street_7_8_9" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="299" x="883"/>
+			<e:Image id="touch_street_10_11_12" name="touch_street_10_11_12" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="400" x="883"/>
+			<e:Image id="touch_street_13_14_15" name="touch_street_13_14_15" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="501" x="883"/>
+			<e:Image id="touch_street_16_17_18" name="touch_street_16_17_18" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="602" x="883"/>
+			<e:Image id="touch_street_19_20_21" name="touch_street_19_20_21" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="703" x="883"/>
+			<e:Image id="touch_street_22_23_24" name="touch_street_22_23_24" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="804" x="883"/>
+			<e:Image id="touch_street_25_26_27" name="touch_street_25_26_27" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="905" x="883"/>
+			<e:Image id="touch_street_28_29_30" name="touch_street_28_29_30" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="1006" x="883"/>
+			<e:Image id="touch_street_31_32_33" name="touch_street_31_32_33" width="50" height="70" source="roulette_play_pic_numbg_select1_png" y="1107" x="883"/>
+			<e:Image id="touch_street_34_35_36" name="touch_street_34_35_36" width="50" height="85" source="roulette_play_pic_numbg_select1_png" y="1208" x="883"/>
+
+			<e:Image id="touch_line_1_2_3_4_5_6" name="touch_line_1_2_3_4_5_6" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="167"/>
+			<e:Image id="touch_line_4_5_6_7_8_9" name="touch_line_4_5_6_7_8_9" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="268"/>
+			<e:Image id="touch_line_7_8_9_10_11_12" name="touch_line_7_8_9_10_11_12" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="369"/>
+			<e:Image id="touch_line_10_11_12_13_14_15" name="touch_line_10_11_12_13_14_15" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="470"/>
+			<e:Image id="touch_line_13_14_15_16_17_18" name="touch_line_13_14_15_16_17_18" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="571"/>
+			<e:Image id="touch_line_16_17_18_19_20_21" name="touch_line_16_17_18_19_20_21" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="672"/>
+			<e:Image id="touch_line_19_20_21_22_23_24" name="touch_line_19_20_21_22_23_24" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="773"/>
+			<e:Image id="touch_line_22_23_24_25_26_27" name="touch_line_22_23_24_25_26_27" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="874"/>
+			<e:Image id="touch_line_25_26_27_28_29_30" name="touch_line_25_26_27_28_29_30" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="975"/>
+			<e:Image id="touch_line_28_29_30_31_32_33" name="touch_line_28_29_30_31_32_33" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="1076"/>
+			<e:Image id="touch_line_31_32_33_34_35_36" name="touch_line_31_32_33_34_35_36" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="1177"/>
+
+			<e:Image id="touch_split_1_2" name="touch_split_1_2" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="97" x="455"/>
+			<e:Image id="touch_split_4_5" name="touch_split_4_5" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="198" x="455"/>
+			<e:Image id="touch_split_7_8" name="touch_split_7_8" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="299" x="455"/>
+			<e:Image id="touch_split_10_11" name="touch_split_10_11" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="400" x="455"/>
+			<e:Image id="touch_split_13_14" name="touch_split_13_14" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="501" x="455"/>
+			<e:Image id="touch_split_16_17" name="touch_split_16_17" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="602" x="455"/>
+			<e:Image id="touch_split_19_20" name="touch_split_19_20" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="703" x="455"/>
+			<e:Image id="touch_split_22_23" name="touch_split_22_23" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="804" x="455"/>
+			<e:Image id="touch_split_25_26" name="touch_split_25_26" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="905" x="455"/>
+			<e:Image id="touch_split_28_29" name="touch_split_28_29" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="1006" x="455"/>
+			<e:Image id="touch_split_31_32" name="touch_split_31_32" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="1107" x="455"/>
+			<e:Image id="touch_split_34_35" name="touch_split_34_35" width="51" height="85" source="roulette_play_pic_numbg_select1_png" y="1208" x="455"/>
+
+			<e:Image id="touch_split_2_3" name="touch_split_2_3" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="97" x="669"/>
+			<e:Image id="touch_split_5_6" name="touch_split_5_6" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="198" x="669"/>
+			<e:Image id="touch_split_8_9" name="touch_split_8_9" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="299" x="669"/>
+			<e:Image id="touch_split_11_12" name="touch_split_11_12" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="400" x="669"/>
+			<e:Image id="touch_split_14_15" name="touch_split_14_15" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="501" x="669"/>
+			<e:Image id="touch_split_17_18" name="touch_split_17_18" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="602" x="669"/>
+			<e:Image id="touch_split_20_21" name="touch_split_20_21" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="703" x="669"/>
+			<e:Image id="touch_split_23_24" name="touch_split_23_24" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="804" x="669"/>
+			<e:Image id="touch_split_26_27" name="touch_split_26_27" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="905" x="669"/>
+			<e:Image id="touch_split_29_30" name="touch_split_29_30" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="1006" x="669"/>
+			<e:Image id="touch_split_32_33" name="touch_split_32_33" width="51" height="70" source="roulette_play_pic_numbg_select1_png" y="1107" x="669"/>
+			<e:Image id="touch_split_35_36" name="touch_split_35_36" width="51" height="85" source="roulette_play_pic_numbg_select1_png" y="1208" x="669"/>
+
+			<e:Image id="touch_split_3_6" name="touch_split_3_6" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="167" x="720"/>
+			<e:Image id="touch_split_6_9" name="touch_split_6_9" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="268" x="720"/>
+			<e:Image id="touch_split_9_12" name="touch_split_9_12" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="369" x="720"/>
+			<e:Image id="touch_split_12_15" name="touch_split_12_15" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="470" x="720"/>
+			<e:Image id="touch_split_15_18" name="touch_split_15_18" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="571" x="720"/>
+			<e:Image id="touch_split_18_21" name="touch_split_18_21" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="672" x="720"/>
+			<e:Image id="touch_split_21_24" name="touch_split_21_24" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="773" x="720"/>
+			<e:Image id="touch_split_24_27" name="touch_split_24_27" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="874" x="720"/>
+			<e:Image id="touch_split_27_30" name="touch_split_27_30" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="975" x="720"/>
+			<e:Image id="touch_split_30_33" name="touch_split_30_33" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="1076" x="720"/>
+			<e:Image id="touch_split_33_36" name="touch_split_33_36" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="1177" x="720"/>
+
+			<e:Image id="touch_split_2_5" name="touch_split_2_5" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="167"/>
+			<e:Image id="touch_split_5_8" name="touch_split_5_8" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="268"/>
+			<e:Image id="touch_split_8_11" name="touch_split_8_11" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="369"/>
+			<e:Image id="touch_split_11_14" name="touch_split_11_14" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="470"/>
+			<e:Image id="touch_split_14_17" name="touch_split_14_17" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="571"/>
+			<e:Image id="touch_split_17_20" name="touch_split_17_20" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="672"/>
+			<e:Image id="touch_split_20_23" name="touch_split_20_23" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="773"/>
+			<e:Image id="touch_split_23_26" name="touch_split_23_26" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="874"/>
+			<e:Image id="touch_split_26_29" name="touch_split_26_29" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="975"/>
+			<e:Image id="touch_split_29_32" name="touch_split_29_32" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="1076"/>
+			<e:Image id="touch_split_32_35" name="touch_split_32_35" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="1177"/>
+
+			<e:Image id="touch_split_1_4" name="touch_split_1_4" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="167"/>
+			<e:Image id="touch_split_4_7" name="touch_split_4_7" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="268"/>
+			<e:Image id="touch_split_7_10" name="touch_split_7_10" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="369"/>
+			<e:Image id="touch_split_10_13" name="touch_split_10_13" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="470"/>
+			<e:Image id="touch_split_13_16" name="touch_split_13_16" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="571"/>
+			<e:Image id="touch_split_16_19" name="touch_split_16_19" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="672"/>
+			<e:Image id="touch_split_19_22" name="touch_split_19_22" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="773"/>
+			<e:Image id="touch_split_22_25" name="touch_split_22_25" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="874"/>
+			<e:Image id="touch_split_25_28" name="touch_split_25_28" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="975"/>
+			<e:Image id="touch_split_28_31" name="touch_split_28_31" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="1076"/>
+			<e:Image id="touch_split_31_34" name="touch_split_31_34" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="1177"/>
+
+			<e:Image id="touch_corner_1_2_4_5" name="touch_corner_1_2_4_5" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="167"/>
+			<e:Image id="touch_corner_4_5_7_8" name="touch_corner_4_5_7_8" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="268"/>
+			<e:Image id="touch_corner_7_8_10_11" name="touch_corner_7_8_10_11" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="369"/>
+			<e:Image id="touch_corner_10_11_13_14" name="touch_corner_10_11_13_14" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="470"/>
+			<e:Image id="touch_corner_13_14_16_17" name="touch_corner_13_14_16_17" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="571"/>
+			<e:Image id="touch_corner_16_17_19_20" name="touch_corner_16_17_19_20" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="672"/>
+			<e:Image id="touch_corner_19_20_22_23" name="touch_corner_19_20_22_23" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="773"/>
+			<e:Image id="touch_corner_22_23_25_26" name="touch_corner_22_23_25_26" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="874"/>
+			<e:Image id="touch_corner_25_26_28_29" name="touch_corner_25_26_28_29" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="975"/>
+			<e:Image id="touch_corner_28_29_31_32" name="touch_corner_28_29_31_32" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="1076"/>
+			<e:Image id="touch_corner_31_32_34_35" name="touch_corner_31_32_34_35" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="1177"/>
+
+			<e:Image id="touch_corner_2_3_5_6" name="touch_corner_2_3_5_6" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="167"/>
+			<e:Image id="touch_corner_5_6_8_9" name="touch_corner_5_6_8_9" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="268"/>
+			<e:Image id="touch_corner_8_9_11_12" name="touch_corner_8_9_11_12" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="369"/>
+			<e:Image id="touch_corner_11_12_14_15" name="touch_corner_11_12_14_15" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="470"/>
+			<e:Image id="touch_corner_14_15_17_18" name="touch_corner_14_15_17_18" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="571"/>
+			<e:Image id="touch_corner_17_18_20_21" name="touch_corner_17_18_20_21" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="672"/>
+			<e:Image id="touch_corner_20_21_23_24" name="touch_corner_20_21_23_24" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="773"/>
+			<e:Image id="touch_corner_23_24_26_27" name="touch_corner_23_24_26_27" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="874"/>
+			<e:Image id="touch_corner_26_27_29_30" name="touch_corner_26_27_29_30" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="975"/>
+			<e:Image id="touch_corner_29_30_32_33" name="touch_corner_29_30_32_33" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="1076"/>
+			<e:Image id="touch_corner_32_33_35_36" name="touch_corner_32_33_35_36" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="1177"/>
+
+			<e:Image id="touch_split_0_3" name="touch_split_0_3" width="163" height="31" source="roulette_play_pic_numbg_select1_png" y="67" x="720"/>
+			<e:Image id="touch_split_0_2" name="touch_split_0_2" width="163" height="31" source="roulette_play_pic_numbg_select1_png" x="506" y="67"/>
+			<e:Image id="touch_split_0_1" name="touch_split_0_1" width="189" height="31" source="roulette_play_pic_numbg_select1_png" x="266" y="67"/>
+
+			<e:Image id="touch_four" name="touch_four" width="50" height="31" source="roulette_play_pic_histogram4_png" x="883" y="67"/>
+			<e:Image id="touch_three_0_1_2" name="touch_three_0_1_2" width="51" height="31" source="roulette_play_pic_histogram4_png" x="455" y="67"/>
+			<e:Image id="touch_three_0_2_3" name="touch_three_0_2_3" width="51" height="31" source="roulette_play_pic_histogram4_png" x="669" y="67"/>
+
+			<e:Image id="touch_direct_0" name="touch_direct_0" width="641" height="50" source="roulette_play_pic_histogram4_png" x="266" y="17"/>
+
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupRoll" width="1094" height="1500" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="cyclearea_pic_roulettebg1_png" width="847" height="1381" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image source="cyclearea_pic_roulettebg2_png" verticalCenter="0" horizontalCenter="0" width="423" height="957"/>
+		<e:Group id="groupRollNum" width="100%" height="100%" x="0" y="0" touchEnabled="false" touchChildren="false"/>
+		<e:Group id="groupRollLabel" width="100%" height="100%" x="0" y="0" touchChildren="false" touchEnabled="false"/>
+		<e:Group id="groupRollChip" width="100%" height="100%" x="10" y="10" touchEnabled="false" touchChildren="false"/>
+		<e:Group id="groupRollTouch" width="100%" height="100%" x="20" y="20" touchChildren="true" touchThrough="true"/>
+	</e:Group>
+	<e:Group id="firstGroup" left="0" top="0" right="0" bottom="0">
+		<e:Group id="stageGroup" width="100%" height="613" x="0" y="0">
+			<e:Group id="countdownGroup" width="185" height="185" right="111" top="15" x="784.0000000000001" y="15" scaleX="1" scaleY="1"/>
+			<eui:AButton id="backBtn" label="" top="20" left="20">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="desk_btn_hide_png" source.down="desk_btn_hide_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="mulitBtn" label="" right="20" top="20">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="desk_btn_roominfo_png" source.down="desk_btn_roominfo_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="homeBtn" label="" right="20" top="130">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="desk_btn_home_png" source.down="desk_btn_home_p_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="videoMaxBtn" label="" bottom="20" right="20" width="71" height="71" visible="false"/>
+			<eui:AButton id="videoMinBtn" label="" bottom="20" right="20" width="71" height="71" visible="false"/>
+		</e:Group>
+
+		<e:Group id="roadMapGroup" width="42.6%" height="885" left="0" top="44%">
+			<e:Image source="roulette_play_pic_numbg1_png" left="0" top="0" bottom="0" right="0"/>
+			<e:Group width="100%" height="212" x="0" y="0">
+			</e:Group>
+			<e:Group width="100%" height="340" x="0" y="220"/>
+			<e:Group id="percentageGroup" width="100%" x="0" y="560" height="325"/>
+		</e:Group>
+		<e:Group id="betGroup" width="57.4%" top="44%" right="0" height="1000">
+			<e:Group id="showBetGroup" width="595" height="910" horizontalCenter="0" top="20"/>
+			<eui:ALabel id="theBetNum" text="本局您下注：50.2K" width="600" horizontalCenter="0" size="35" height="35" bottom="18" textColor="0xffc979" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+		<e:Group id="seatGroup" width="100%" x="0" top="31.93%" bottom="56%">
+			<e:Group id="owerSeatGroup" width="100%" height="32.73%" x="0" top="0">
+			<e:Group width="50%" height="100%" right="50%" top="0">
+				<e:Group width="200" height="100%" right="10" verticalCenter="0">
+				<eui:ALabel id="owerName" text="玩家自己昵称" size="30" textColor="0xFFC979" verticalAlign="middle" textAlign="right" scaleX="1" scaleY="1" left="20" right="0" top="0" bottom="0"/>
+				<e:Group top="0" bottom="0" y="-26.000000000000114" scaleX="1" scaleY="1" right="100%">
+					<e:Image source="seat_pic_mybg_png" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+					<e:BitmapLabel id="owerSeatNum" width="45" top="0" font="game_share_black_50_fnt" text="3" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" bottom="0" verticalCenter="0" horizontalCenter="0"/>
+				</e:Group>
+				</e:Group>
+			</e:Group>
+			<e:Group width="50%" height="100%" top="0" y="10" left="50%">
+				<e:Image source="desk_pic_chip_png" verticalCenter="0" y="15" scaleX="1" scaleY="1" left="10"/>
+				<e:BitmapLabel id="owerBalance" left="50" font="game_share_yellow_46_fnt" text="3,456,789.5" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="0" y="0" scaleX="0.65" scaleY="0.65" height="100%" right="0"/>
+			</e:Group>
+			</e:Group>
+			<e:Group id="otherSeatGroup" width="100%" height="67.27%" x="0" top="32.73%">
+			<e:Image left="0" top="0" bottom="0" right="0" source="seat_pic_bg1_png"/>
+			<e:Group id="otherSeat0" width="16.66%" left="0" top="0" bottom="0" x="0" y="-2.0060000000000855" scaleX="1" scaleY="1">
+				<e:BitmapLabel id="steatNum0" height="50%" left="0" right="0" top="0" text="1" alpha="0.4" textAlign="center" verticalAlign="middle" font="game_share_yellow_65_fnt"/>
+				<e:Image source="seat_pic_separateline3_png" right="0" height="70" bottom="10" alpha="0.4"/>
+				<e:Group id="seatImgGroup0" left="0" right="0" bottom="0" top="50%" name="seatImg" visible="false">
+				<e:Image source="seat_pic_vacancy1_png" verticalCenter="0" horizontalCenter="0" alpha="0.35"/>
+				</e:Group>
+				<e:Group id="seatUser0" left="0" right="0" top="50%" bottom="0">
+				<e:Label id="seatUName0" text="其他玩家昵称" left="0" right="0" textAlign="center" verticalAlign="middle" size="25" x="0" scaleX="1" scaleY="1" top="10" alpha="0.5"/>
+				<e:Label id="seatUBce0" text="536.5K" right="0" verticalAlign="middle" textAlign="center" size="25" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" alpha="0.5"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="otherSeat1" width="16.66%" left="16.66%" top="0" bottom="0" x="179.928" y="-2.0060000000000855" scaleX="1" scaleY="1">
+				<e:BitmapLabel id="steatNum1" height="50%" left="0" right="0" top="0" text="2" alpha="0.4" textAlign="center" verticalAlign="middle" font="game_share_yellow_65_fnt"/>
+				<e:Group id="seatImgGroup1" left="0" right="0" bottom="0" top="50%" visible="false">
+				<e:Image source="seat_pic_vacancy1_png" verticalCenter="0" horizontalCenter="0" alpha="0.35"/>
+				</e:Group>
+				<e:Group id="seatUser1" left="0" right="0" top="50%" bottom="0">
+				<e:Label id="seatUName1" text="其他玩家昵称" left="0" right="0" textAlign="center" verticalAlign="middle" size="25" x="0" scaleX="1" scaleY="1" top="10" alpha="0.5"/>
+				<e:Label id="seatUBce1" text="536.5K" right="0" verticalAlign="middle" textAlign="center" size="25" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" alpha="0.5"/>
+				</e:Group>
+				<e:Image source="seat_pic_separateline3_png" right="0" height="70" bottom="10" alpha="0.4"/>
+			</e:Group>
+			<e:Group id="otherSeat2" width="16.66%" left="33.32%" top="0" bottom="0" x="359.856" y="-2.0060000000000855" scaleX="1" scaleY="1">
+				<e:BitmapLabel id="steatNum2" height="50%" left="0" right="0" top="0" text="3" alpha="0.4" textAlign="center" verticalAlign="middle" font="game_share_yellow_65_fnt"/>
+				<e:Group id="seatImgGroup2" left="0" right="0" bottom="0" top="50%" visible="false">
+				<e:Image source="seat_pic_vacancy1_png" verticalCenter="0" horizontalCenter="0" alpha="0.35"/>
+				</e:Group>
+				<e:Group id="seatUser2" left="0" right="0" top="50%" bottom="0">
+				<e:Label id="seatUName2" text="其他玩家昵称" left="0" right="0" textAlign="center" verticalAlign="middle" size="25" x="0" scaleX="1" scaleY="1" top="10" alpha="0.5"/>
+				<e:Label id="seatUBce2" text="536.5K" right="0" verticalAlign="middle" textAlign="center" size="25" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" alpha="0.5"/>
+				</e:Group>
+				<e:Image source="seat_pic_separateline3_png" right="0" height="70" bottom="10" alpha="0.4"/>
+			</e:Group>
+			<e:Group id="otherSeat3" width="16.66%" left="49.98%" top="0" bottom="0" x="539.784" y="-2.0060000000000855" scaleX="1" scaleY="1">
+				<e:BitmapLabel id="steatNum3" height="50%" left="0" right="0" top="0" text="5" alpha="0.4" textAlign="center" verticalAlign="middle" font="game_share_yellow_65_fnt"/>
+				<e:Group id="seatImgGroup3" left="0" right="0" bottom="0" top="50%" visible="false">
+				<e:Image source="seat_pic_vacancy1_png" verticalCenter="0" horizontalCenter="0" alpha="0.35"/>
+				</e:Group>
+				<e:Group id="seatUser3" left="0" right="0" top="50%" bottom="0">
+				<e:Label id="seatUName3" text="其他玩家昵称" left="0" right="0" textAlign="center" verticalAlign="middle" size="25" x="0" scaleX="1" scaleY="1" top="10" alpha="0.5"/>
+				<e:Label id="seatUBce3" text="536.5K" right="0" verticalAlign="middle" textAlign="center" size="25" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" alpha="0.5"/>
+				</e:Group>
+				<e:Image source="seat_pic_separateline3_png" right="0" height="70" bottom="10" alpha="0.4"/>
+			</e:Group>
+			<e:Group id="otherSeat4" width="16.66%" left="66.64%" top="0" bottom="0" x="719.712" y="-2.0060000000000855" scaleX="1" scaleY="1">
+				<e:BitmapLabel id="steatNum4" height="50%" left="0" right="0" top="0" text="6" alpha="0.4" textAlign="center" verticalAlign="middle" font="game_share_yellow_65_fnt"/>
+				<e:Group id="seatImgGroup4" left="0" right="0" bottom="0" top="50%" visible="false">
+				<e:Image source="seat_pic_vacancy1_png" verticalCenter="0" horizontalCenter="0" alpha="0.35"/>
+				</e:Group>
+				<e:Group id="seatUser4" left="0" right="0" top="50%" bottom="0">
+				<e:Label id="seatUName4" text="其他玩家昵称" left="0" right="0" textAlign="center" verticalAlign="middle" size="25" x="0" scaleX="1" scaleY="1" top="10" alpha="0.5"/>
+				<e:Label id="seatUBce4" text="536.5K" right="0" verticalAlign="middle" textAlign="center" size="25" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" alpha="0.5"/>
+				</e:Group>
+				<e:Image source="seat_pic_separateline3_png" right="0" height="70" bottom="10" alpha="0.4"/>
+			</e:Group>
+			<e:Group id="otherSeat5" width="16.7%" left="83.3%" top="0" bottom="0" x="899.6400000000001" y="-2.0060000000000855" scaleX="1" scaleY="1">
+				<e:BitmapLabel id="steatNum5" height="50%" left="0" right="0" top="0" text="7" alpha="0.4" textAlign="center" verticalAlign="middle" font="game_share_yellow_65_fnt"/>
+				<e:Group id="seatImgGroup5" left="0" right="0" bottom="0" top="50%" visible="false">
+				<e:Image source="seat_pic_vacancy1_png" verticalCenter="0" horizontalCenter="0" alpha="0.35"/>
+				</e:Group>
+				<e:Group id="seatUser5" left="0" right="0" top="50%" bottom="0">
+				<e:Label id="seatUName5" text="其他玩家昵称" left="0" right="0" textAlign="center" verticalAlign="middle" size="25" x="0" scaleX="1" scaleY="1" top="10" alpha="0.5"/>
+				<e:Label id="seatUBce5" text="536.5K" right="0" verticalAlign="middle" textAlign="center" size="25" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" alpha="0.5"/>
+				</e:Group>
+			</e:Group>
+			</e:Group>
+			<e:Group id="otherSeatBet" left="0" right="0" x="0" scaleX="1" scaleY="1" touchChildren="false" top="32.73%" visible="false">
+				<e:Group id="otherSeatData0" left="0" right="0" height="75" y="150">
+					<e:Image anchorOffsetY="0" x="0" scaleX="1" scaleY="-1" source="seat_pic_bg4_png" width="100%" scale9Grid="4,15,4,50" height="120" y="75"/>
+					<e:Group width="16.66%" left="0" top="0" height="75">
+					<e:Image source="mine_pic_blackbg_png" top="0" bottom="0" width="1" right="0"/>
+					<e:ALabel id="seatBet0" text="——" isFixed="true" textAlign="center" verticalAlign="middle" size="24" width="170" verticalCenter="0" y="1" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+					</e:Group>
+					<e:Group width="16.66%" left="16.66%" top="0" height="75">
+					<e:Image source="mine_pic_blackbg_png" top="0" bottom="0" width="1" right="0"/>
+					<e:ALabel id="seatBet1" text="——" isFixed="true" textAlign="center" verticalAlign="middle" size="24" width="170" verticalCenter="0" y="1" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+					</e:Group>
+					<e:Group width="16.66%" left="33.32%" top="0" height="75">
+					<e:Image source="mine_pic_blackbg_png" top="0" bottom="0" width="1" right="0"/>
+					<e:ALabel id="seatBet2" text="——" isFixed="true" textAlign="center" verticalAlign="middle" size="24" width="170" verticalCenter="0" y="1" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+					</e:Group>
+					<e:Group width="16.66%" left="49.98%" top="0" height="75">
+					<e:Image source="mine_pic_blackbg_png" top="0" bottom="0" width="1" right="0"/>
+					<e:ALabel id="seatBet3" text="——" isFixed="true" textAlign="center" verticalAlign="middle" size="24" width="170" verticalCenter="0" y="1" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+					</e:Group>
+					<e:Group width="16.66%" left="66.64%" top="0" height="75">
+					<e:Image source="mine_pic_blackbg_png" top="0" bottom="0" width="1" right="0"/>
+					<e:ALabel id="seatBet4" text="——" isFixed="true" textAlign="center" verticalAlign="middle" size="24" width="170" verticalCenter="0" y="1" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+					</e:Group>
+					<e:Group width="16.67%" left="83.3%" top="0" height="75">
+					<e:Image source="mine_pic_blackbg_png" top="0" bottom="0" width="1" right="0"/>
+					<e:ALabel id="seat5Bet5" text="——" isFixed="true" textAlign="center" verticalAlign="middle" size="24" width="170" verticalCenter="0" y="1" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x000000"/>
+					</e:Group>
+				</e:Group>
+			<e:Image left="0" top="0" right="0" height="150" source="seat_pic_bg5_png"/>
+			<e:Group width="16.66%" left="0" top="0" height="150">
+				<e:BitmapLabel id="steatBetNum0" height="50%" left="0" right="0" top="0" text="1" alpha="1" textAlign="center" verticalAlign="middle" font="game_share_black_50_fnt"/>
+				<e:Image right="0" height="70" bottom="10" source="seat_pic_separateline1_2_png" width="1"/>
+				<e:Group id="seatBetImgGroup0" left="0" right="0" bottom="0" top="50%" name="seatImg" visible="false">
+				<e:Image verticalCenter="0" horizontalCenter="0" source="seat_pic_vacancy2_png"/>
+				</e:Group>
+				<e:Group id="seatBetUser0" left="0" right="0" top="50%" bottom="0">
+				<eui:ALabel id="seatBetUName0" text="玩家昵称" left="0" right="0" textAlign="center" verticalAlign="middle" size="18" x="0" scaleX="1" scaleY="1" top="10" textColor="0x000000" bold="true" height="18.75" isFixed="true"/>
+				<eui:ALabel id="seatBetUBce0" text="555" right="0" verticalAlign="middle" textAlign="center" size="20" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" textColor="0x000000" bold="true" isFixed="true"/>
+				</e:Group>
+			</e:Group>
+			<e:Group width="16.66%" left="16.66%" top="0" height="150">
+				<e:BitmapLabel id="steatBetNum1" height="50%" left="0" right="0" top="0" text="2" alpha="1" textAlign="center" verticalAlign="middle" font="game_share_black_50_fnt"/>
+				<e:Group id="seatBetImgGroup1" left="0" right="0" bottom="0" top="50%">
+				<e:Image verticalCenter="0" horizontalCenter="0" source="seat_pic_vacancy2_png"/>
+				</e:Group>
+				<e:Group id="seatBetUser1" left="0" right="0" top="50%" bottom="0" visible="false">
+				<eui:ALabel id="seatBetUName1" text="" left="0" right="0" textAlign="center" verticalAlign="middle" size="18" x="0" scaleX="1" scaleY="1" top="10" textColor="0x000000" bold="true" height="18.75" isFixed="true"/>
+				<eui:ALabel id="seatBetUBce1" text="" right="0" verticalAlign="middle" textAlign="center" size="20" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" textColor="0x000000" bold="true" isFixed="true"/>
+				</e:Group>
+				<e:Image right="0" height="70" bottom="10" source="seat_pic_separateline1_2_png" width="1"/>
+			</e:Group>
+			<e:Group width="16.66%" left="33.32%" top="0" height="150">
+				<e:BitmapLabel id="steatBetNum2" height="50%" left="0" right="0" top="0" text="3" alpha="1" textAlign="center" verticalAlign="middle" font="game_share_black_50_fnt"/>
+				<e:Group id="seatBetImgGroup2" left="0" right="0" bottom="0" top="50%">
+				<e:Image verticalCenter="0" horizontalCenter="0" source="seat_pic_vacancy2_png"/>
+				</e:Group>
+				<e:Group id="seatBetUser2" left="0" right="0" top="50%" bottom="0" visible="false">
+				<eui:ALabel id="seatBetUName2" text="" left="0" right="0" textAlign="center" verticalAlign="middle" size="18" x="0" scaleX="1" scaleY="1" top="10" textColor="0x000000" bold="true" height="18.75" isFixed="true"/>
+				<eui:ALabel id="seatBetUBce2" text="" right="0" verticalAlign="middle" textAlign="center" size="20" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" textColor="0x000000" bold="true" isFixed="true"/>
+				</e:Group>
+				<e:Image right="0" height="70" bottom="10" source="seat_pic_separateline1_2_png" width="1"/>
+			</e:Group>
+			<e:Group width="16.66%" left="49.98%" top="0" height="150">
+				<e:BitmapLabel id="steatBetNum3" height="50%" left="0" right="0" top="0" text="5" alpha="1" textAlign="center" verticalAlign="middle" font="game_share_black_50_fnt"/>
+				<e:Group id="seatBetImgGroup3" left="0" right="0" bottom="0" top="50%">
+				<e:Image verticalCenter="0" horizontalCenter="0" source="seat_pic_vacancy2_png"/>
+				</e:Group>
+				<e:Group id="seatBetUser3" left="0" right="0" top="50%" bottom="0" visible="false">
+				<eui:ALabel id="seatBetUName3" text="" left="0" right="0" textAlign="center" verticalAlign="middle" size="18" x="0" scaleX="1" scaleY="1" top="10" textColor="0x000000" bold="true" height="18.75" isFixed="true"/>
+				<eui:ALabel id="seatBetUBce3" text="" right="0" verticalAlign="middle" textAlign="center" size="20" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" bold="true" textColor="0x000000" isFixed="true"/>
+				</e:Group>
+				<e:Image right="0" height="70" bottom="10" source="seat_pic_separateline1_2_png" width="1"/>
+			</e:Group>
+			<e:Group width="16.66%" left="66.64%" top="0" height="150">
+				<e:BitmapLabel id="steatBetNum4" height="50%" left="0" right="0" top="0" text="6" alpha="1" textAlign="center" verticalAlign="middle" font="game_share_black_50_fnt"/>
+				<e:Group id="seatBetImgGroup4" left="0" right="0" bottom="0" top="50%">
+				<e:Image verticalCenter="0" horizontalCenter="0" source="seat_pic_vacancy2_png"/>
+				</e:Group>
+				<e:Group id="seatBetUser4" left="0" right="0" top="50%" bottom="0" visible="false">
+				<eui:ALabel id="seatBetUName4" text="" left="0" right="0" textAlign="center" verticalAlign="middle" size="18" x="0" scaleX="1" scaleY="1" top="10" bold="true" textColor="0x000000" height="18.75" isFixed="true"/>
+				<eui:ALabel id="seatBetUBce4" text="" right="0" verticalAlign="middle" textAlign="center" size="20" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" bold="true" textColor="0x000000" isFixed="true"/>
+				</e:Group>
+				<e:Image right="0" height="70" bottom="10" source="seat_pic_separateline1_2_png" width="1"/>
+			</e:Group>
+			<e:Group width="16.7%" left="83.3%" top="0" height="150">
+				<e:BitmapLabel id="steatBetNum5" height="50%" left="0" right="0" top="0" text="7" alpha="1" textAlign="center" verticalAlign="middle" font="game_share_black_50_fnt"/>
+				<e:Group id="seatBetImgGroup5" left="0" right="0" bottom="0" top="50%">
+				<e:Image verticalCenter="0" horizontalCenter="0" source="seat_pic_vacancy2_png"/>
+				</e:Group>
+				<e:Group id="seatBetUser5" left="0" right="0" top="50%" bottom="0" visible="false">
+				<eui:ALabel id="seatBetUName5" text="" left="0" right="0" textAlign="center" verticalAlign="middle" size="18" x="0" scaleX="1" scaleY="1" top="10" bold="true" textColor="0x000000" height="18.75" isFixed="true"/>
+				<eui:ALabel id="seatBetUBce5" text="" right="0" verticalAlign="middle" textAlign="center" size="20" scaleX="1" scaleY="1" height="18.75" left="0" bottom="10" bold="true" textColor="0x000000" isFixed="true"/>
+				</e:Group>
+			</e:Group>
+			<e:Image id="otherSeatMask" left="0" right="0" source="seat_pic_bg2_png" y="150" height="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="btnGroup" height="115" left="0" width="42.6%" bottom="75">
+			<e:Image source="roulette_play_pic_numbg1_png" left="0" top="0" bottom="0" right="0"/>
+			<e:Group height="115" width="49.5%" verticalCenter="0" horizontalCenter="-116">
+			<eui:AButton id="chatBtn" left="0" bottom="0" width="100%" height="115">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="desk_btn_all1_d_png" source.down="desk_btn_all1_p_png"/>
+					<e:Image source="chat_btn_words_icon_png" source.down="chat_btn_words_icon_p_png" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			</e:Group>
+			<e:Group width="49.5%" height="115" verticalCenter="0" horizontalCenter="114">
+			<eui:AButton left="0" bottom="0" width="100%" height="115" x="-230.00000000000003" y="0" scaleX="1" scaleY="1">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="desk_btn_all1_d_png" source.down="desk_btn_all1_p_png"/>
+					<e:Image source="chat_btn_voice_icon_png" source.down="chat_btn_voice_icon_p_png" horizontalCenter="0" verticalCenter="0"/>
+					<eui:ALabel id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			</e:Group>
+		</e:Group>
+		<e:Group id="bottomGroup" height="75" left="0" right="0" bottom="0">
+			<e:Image source="roulette_play_pic_numbg1_png" left="0" top="0" bottom="0" right="0"/>
+			<eui:ALabel id="bottomAlabel" text="轮盘1号房|局数：86|局号：B1-170620100908|限额：100-1.5K" width="100%" height="30" verticalCenter="0" horizontalCenter="0" isFixed="true" size="30" verticalAlign="middle" textAlign="center" textColor="0x959595"/>
+		</e:Group>
+
+	</e:Group>
+</e:Skin>

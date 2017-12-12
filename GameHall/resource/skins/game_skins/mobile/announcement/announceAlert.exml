@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="announceAlert" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="announceGroup" width="100%" height="100%" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="bg_mask_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Group id="alertGroup" width="1080" height="1920" scaleX="1" scaleY="1" anchorOffsetX="540" anchorOffsetY="960" horizontalCenter="0" verticalCenter="0">
+			<e:Image source="pic_popup_bg_png" verticalCenter="0" y="462" scaleX="1" scaleY="1" left="19" right="19"/>
+			<e:Button id="closeBtn" label="" scaleX="1" scaleY="1" right="17" top="422">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_popup_close_png" source.down="btn_popup_close_p_png" source.disabled="btn_popup_close_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="titleTxt" text="" y="528" textColor="0xe6b76f" size="46" horizontalCenter="0"/>
+			<e:Scroller id="scroller" height="657" y="702" left="118" right="117">
+			<e:Group id="contentGroup" width="100%">
+				<e:Label id="contenteTxt" text="" y="0" size="46" textColor="0xc1c1c1" lineSpacing="12" width="100%" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			</e:Group>
+			</e:Scroller>
+			<e:Label id="timeTxt" text="" y="1357" textColor="0xC1C1C1" size="28" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+
+
+</e:Skin>

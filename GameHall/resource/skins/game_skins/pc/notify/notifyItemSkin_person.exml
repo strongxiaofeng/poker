@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="notifyItemSkin_person" width="572" height="72" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="hoverImg" source="window_btn_all_h_pc_png" x="0" y="0" width="572" height="72" visible="false"/>
+    <e:Group id="bigGroup" width="572" height="72">
+		<e:Image id="headImg" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<e:Image id="head_default" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<e:Rect id="headMask" width="52" height="52" x="23" y="13" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.6" visible="false"/>
+		<eui:ALabel id="nameTxt" text="系统消息" x="87" y="14" anchorOffsetY="0" size="21" anchorOffsetX="0" width="120" scaleX="1" scaleY="1" fontFamily="SimHei" isFixed="true" textColor="0xc8c8c8"/>
+		<eui:ALabel id="typeTxt" text="系统消息" x="87" y="42" width="120" anchorOffsetY="0" size="18" anchorOffsetX="0" textColor="0xdbba85" scaleX="1" scaleY="1" isFixed="true"/>
+		<e:Image id="newImg" source="main_pic_dot_png" x="60" y="9" scaleX="1" scaleY="1" width="18" height="18" visible="false"/>
+		<e:Image source="main_btn_all_separateline_png" y="69" left="36" right="36" x="36" scaleX="1" scaleY="1"/>
+		<eui:AButton id="intoBtn" label="" x="520" mouseTexture="window_btn_into_h_pc_png" width="18" height="32" verticalCenter="0">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="window_btn_into_pc_png" source.down="window_btn_into_p_pc_png" source.disabled="window_btn_into_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+	</e:Group>
+	<e:Group id="smallGroup" width="572" height="72" visible="false">
+		<e:Image id="sheadImg" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<e:Image id="shead_default" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<e:Image id="sclubImg" source="home_pic_clubbg_png" x="12" y="20" anchorOffsetX="0" width="74" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		<eui:ALabel id="snameTxt" text="俱乐部联系人" x="87" anchorOffsetY="0" size="21" anchorOffsetX="0" width="200" scaleX="1" scaleY="1" verticalCenter="0" textColor="0xc8c8c8"/>
+		<eui:ALabel id="numTxt" text="2人" width="100" anchorOffsetY="0" size="22" anchorOffsetX="0" textAlign="right" scaleX="1" scaleY="1" verticalCenter="0" textColor="0xb8b8b8" right="34"/>
+		<e:Image source="main_btn_all_separateline_png" y="69" left="36" right="36" x="36" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="ownerGroup" width="572" height="72" visible="false">
+		<e:Rect width="572" height="72" fillAlpha="0.2" visible="false"/>
+		<e:Image source="main_btn_all_separateline_png" y="69" left="36" right="36" x="36" scaleX="1" scaleY="1"/>
+		<e:Image id="osheadImg" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<e:Image id="oshead_default" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<eui:ALabel id="onameTxt" text="房主昵称" x="87" anchorOffsetY="0" size="21" anchorOffsetX="0" width="200" scaleX="1" scaleY="1" verticalCenter="0" textColor="0xbdbdbd"/>
+		<e:Group width="63" height="72" x="262" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="63" height="72" x="327" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="63" height="72" x="393" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="63" height="72" x="457" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="myPlayerGroup" width="572" height="72" visible="false">
+		<e:Rect width="572" height="72" fillAlpha="0.2" visible="false"/>
+		<e:Image source="main_btn_all_separateline_png" y="69" left="36" right="36" x="36" scaleX="1" scaleY="1"/>
+		<e:Image id="msheadImg" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<e:Image id="mshead_default" x="23" y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1"/>
+		<eui:ALabel id="mnameTxt" text="玩家昵称昵称" x="87" anchorOffsetY="0" size="21" anchorOffsetX="0" width="200" scaleX="1" scaleY="1" verticalCenter="0" textColor="0xbdbdbd"/>
+		<e:Group width="63" height="72" x="262" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="63" height="72" x="327" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="63" height="72" x="393" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="63" height="72" x="457" y="0" visible="false">
+			<e:Image y="13" source="news_pic_system_png" width="52" height="52" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="home_pic_clubbg_png" x="0" y="20" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="53" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Group>
+	<e:List width="572" x="0" y="0"/>
+</e:Skin>

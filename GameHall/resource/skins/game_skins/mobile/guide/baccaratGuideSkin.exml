@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="baccaratGuideSkin" width="1080" height="1638" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image width="100%" height="100%" alpha="0.6" horizontalCenter="0" verticalCenter="0" source="bg_mask2_png"/>
+	<e:Group id="page1" width="1080" height="100%" y="0" horizontalCenter="0">
+		<eui:ALabel text="老板！欢迎您来到百家乐游戏，基础说明将帮助您快速了解游戏操作" y="717" width="812" horizontalCenter="0" size="45" lineSpacing="15" fontFamily="SimHei" newlineAble="true"/>
+		<eui:ALabel text="点击屏幕继续" width="812" size="45" lineSpacing="15" horizontalCenter="0" textAlign="center" fontFamily="SimHei" bottom="254" textColor="0xffdb93"/>
+    </e:Group>
+	<e:Group id="page2" width="100%" height="100%" x="0" y="0" visible="false">
+		<e:Image source="pic_arrow_png" y="267" right="178"/>
+		<eui:ALabel text="这里显示的是房间当前状态（如：倒计时、结算、洗牌等）。" y="338" size="45" width="750" fontFamily="SimHei" lineSpacing="15" newlineAble="true" right="95"/>
+		<e:Image source="tutorial_pic_countdown_png" y="67" right="114"/>
+    </e:Group>
+	<e:Group id="page3" width="100%" height="100%" x="0" y="0" visible="false">
+		<eui:ALabel text="这里可以打开房间菜单以及房间信息列表" y="73" size="45" fontFamily="SimHei" width="565" lineSpacing="15" newlineAble="true" right="211"/>
+		<e:Image source="pic_arrow_png" y="99" rotation="90" right="163"/>
+		<e:Image source="tutorial_pic_btnline_png" y="20" right="19"/>
+		<e:Image source="tutorial_pic_btnline_png" y="130" right="19"/>
+		<e:Image source="desk_btn_roominfo_png" y="20" right="20"/>
+		<e:Image source="desk_btn_home_png" y="130" right="20"/>
+    </e:Group>
+	<e:Group id="page4" width="100%" height="100%" x="0" y="0" visible="false">
+		<eui:ALabel text="您自己的昵称、座位号以及在此俱乐部的筹码余额" y="460" width="720" size="40" lineSpacing="15" horizontalCenter="0" fontFamily="SimHei" newlineAble="true"/>
+		<e:Image source="pic_arrow_png" y="662" scaleY="-1" horizontalCenter="0"/>
+		<e:Image source="seat_pic_mybg_png" y="676" scaleX="1" scaleY="1" width="50" height="50" horizontalCenter="-200"/>
+		<eui:ALabel text="玩家昵称" y="687" size="30" width="181" textColor="0xf9cf80" fontFamily="SimHei" isFixed="true" horizontalCenter="-72.5"/>
+		<e:Image source="desk_pic_chip_png" y="687" horizontalCenter="65"/>
+		<eui:ALabel text="12,345" y="687" size="30" width="181" textColor="0xF9CF80" fontFamily="SimHei" horizontalCenter="180.5"/>
+	</e:Group>
+	<e:Group id="page5" width="100%" height="100%" y="0" horizontalCenter="0" visible="false">
+		<eui:ALabel text="同房间其他玩家的昵称、座位号以及他们在此俱乐部的筹码余额" size="40" fontFamily="SimHei" width="720" horizontalCenter="0" lineSpacing="15" newlineAble="true" y="385"/>
+		<e:Image source="pic_arrow_png" horizontalCenter="0" scaleY="-1" y="586"/>
+		<e:Image source="tutorial_pic_seatnum_png" horizontalCenter="15.5" y="680"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="-450" y="738"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="-270" y="738"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="-90" y="738"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="90" y="738"/>
+		<eui:ALabel text="10.6K" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="-450" y="777"/>
+		<eui:ALabel text="9.5K" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="-270" y="777"/>
+		<eui:ALabel text="926.35" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="-90" y="777"/>
+		<eui:ALabel text="360.8" size="26" width="180" textAlign="center" fontFamily="SimHei" textColor="0xffc66f" horizontalCenter="90" y="777"/>
+    </e:Group>
+	<e:Group id="page6" width="100%" height="100%" y="0" horizontalCenter="0" visible="false">
+		<eui:ALabel text="当您点击其他玩家列表时，还将显示他们在本局的下注明细" size="40" fontFamily="SimHei" width="766" horizontalCenter="0" lineSpacing="15" newlineAble="true" y="377"/>
+		<e:Image source="pic_arrow_png" horizontalCenter="0" scaleY="-1" y="569"/>
+		<e:Image source="tutorial_pic_seat_png" horizontalCenter="0" y="594"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="-450" y="666" textColor="0x000000"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="-270" y="666" textColor="0x000000"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="-90" y="666" textColor="0x000000"/>
+		<eui:ALabel text="其他玩家昵称" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="90" y="666" textColor="0x000000"/>
+		<eui:ALabel text="10.6K" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="-450" y="701" textColor="0x000000"/>
+		<eui:ALabel text="9.5K" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="-270" y="701" textColor="0x000000"/>
+		<eui:ALabel text="926.35" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="-90" y="701" textColor="0x000000"/>
+		<eui:ALabel text="360.8" size="26" width="180" textAlign="center" fontFamily="SimHei" horizontalCenter="90" y="701" textColor="0x000000"/>
+		<eui:ALabel text="庄" y="754" size="33" width="100" isFixed="true" horizontalCenter="-478"/>
+		<eui:ALabel text="闲" y="820" size="33" width="100" isFixed="true" horizontalCenter="-478"/>
+		<eui:ALabel text="和" y="886" size="33" width="100" isFixed="true" horizontalCenter="-478"/>
+		<eui:ALabel text="庄对" y="950" size="33" width="100" isFixed="true" horizontalCenter="-478"/>
+		<eui:ALabel text="闲对" y="1015" size="33" width="100" isFixed="true" horizontalCenter="-478"/>
+		<eui:ALabel text="1.5K" y="754" size="33" width="79" isFixed="true" textAlign="right" horizontalCenter="-404.5"/>
+		<eui:ALabel text="1K" y="818" size="33" width="79" isFixed="true" textAlign="right" horizontalCenter="-404.5"/>
+		<eui:ALabel text="50" y="886" size="33" width="79" isFixed="true" textAlign="right" horizontalCenter="-404.5"/>
+		<eui:ALabel text="--" y="950" size="33" width="79" isFixed="true" textAlign="right" horizontalCenter="-404.5"/>
+		<eui:ALabel text="--" y="1016" size="33" width="79" isFixed="true" textAlign="right" horizontalCenter="-404.5"/>
+		<eui:ALabel text="865" y="754" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-269.5"/>
+		<eui:ALabel text="--" y="818" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-269.5"/>
+		<eui:ALabel text="--" y="886" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-269.5"/>
+		<eui:ALabel text="--" y="950" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-269.5"/>
+		<eui:ALabel text="--" y="1016" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-269.5"/>
+		<eui:ALabel text="--" y="754" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-88.5"/>
+		<eui:ALabel text="--" y="818" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-88.5"/>
+		<eui:ALabel text="100" y="886" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-88.5"/>
+		<eui:ALabel text="--" y="950" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-88.5"/>
+		<eui:ALabel text="--" y="1016" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="-88.5"/>
+		<eui:ALabel text="--" y="754" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="91.5"/>
+		<eui:ALabel text="--" y="818" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="91.5"/>
+		<eui:ALabel text="--" y="886" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="91.5"/>
+		<eui:ALabel text="--" y="950" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="91.5"/>
+		<eui:ALabel text="56" y="1016" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="91.5"/>
+		<eui:ALabel text="--" y="754" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="271.5"/>
+		<eui:ALabel text="--" y="818" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="271.5"/>
+		<eui:ALabel text="--" y="886" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="271.5"/>
+		<eui:ALabel text="--" y="950" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="271.5"/>
+		<eui:ALabel text="--" y="1016" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="271.5"/>
+		<eui:ALabel text="--" y="754" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="451.5"/>
+		<eui:ALabel text="--" y="818" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="451.5"/>
+		<eui:ALabel text="--" y="886" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="451.5"/>
+		<eui:ALabel text="--" y="950" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="451.5"/>
+		<eui:ALabel text="--" y="1016" size="33" width="163" isFixed="true" textAlign="center" horizontalCenter="451.5"/>
+    </e:Group>
+	<e:Group id="page7" top="830" bottom="550" width="1080" horizontalCenter="0" visible="false">
+		<eui:ALabel text="游戏下注区，实时显示本局各下注项的投注人数和投注比例" size="40" fontFamily="SimHei" width="684" horizontalCenter="0" lineSpacing="15" newlineAble="true" y="-210"/>
+		<e:Image source="pic_arrow_png" horizontalCenter="0" scaleY="-1" y="-45"/>
+		<e:Image source="tutorial_pic_table_png" horizontalCenter="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1" width="1080"/>
+		<e:Group width="100%" height="50%" y="0" horizontalCenter="0">
+			<e:Image source="baccarat_pic_player_y_png" verticalCenter="0" horizontalCenter="-269"/>
+			<e:Image source="baccarat_pic_banker_y_png" verticalCenter="0" y="14" scaleX="1" scaleY="1" horizontalCenter="267.5"/>
+			<e:Image source="bettingarea_pic_ratiopb1_png" verticalCenter="0" horizontalCenter="-415"/>
+			<e:Image source="bettingarea_pic_ratiopb1_png" verticalCenter="0" horizontalCenter="418"/>
+			<eui:ALabel text="6点赔0.5" size="25" textColor="0xa1b9ac" width="146" fontFamily="SimHei" verticalCenter="32" horizontalCenter="460"/>
+		</e:Group>
+		<e:Group width="100%" bottom="0" height="129" horizontalCenter="0">
+			<e:Image source="baccarat_pic_bankerpair_y_png" verticalCenter="-18" y="-3" scaleX="1" scaleY="1" horizontalCenter="430.5"/>
+			<e:Image source="baccarat_pic_playerpair_y_png" scaleX="1" scaleY="1" verticalCenter="-16.5" horizontalCenter="-426"/>
+			<e:Image source="baccarat_pic_tie_y_png" verticalCenter="-20%" horizontalCenter="-120"/>
+			<e:Image source="bettingarea_pic_ratioppbp1_png" verticalCenter="0" horizontalCenter="-283"/>
+			<e:Image source="bettingarea_pic_ratioppbp1_png" verticalCenter="0" horizontalCenter="288"/>
+			<e:Image source="bettingarea_pic_ratiot1_png" verticalCenter="-20%" horizontalCenter="105"/>
+		</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+    </e:Group>
+	<e:Group id="page8" width="100%" height="100%" x="0" y="0" visible="false">
+		<eui:ALabel text="在这里您可以进行下注操作，筹码的数值能在房间菜单中改为您畅常用的数值。请注意已确认后的下注不能撤销。" size="40" fontFamily="SimHei" width="766" horizontalCenter="0" lineSpacing="15" newlineAble="true" bottom="749"/>
+		<e:Image source="pic_arrow_png" horizontalCenter="0" scaleY="-1" bottom="633"/>
+		<e:Image source="tutorial_pic_chips_png" horizontalCenter="-269" bottom="405"/>
+		<e:Image source="desk_btn_all1_d_png" width="268" height="144" horizontalCenter="136" bottom="404"/>
+		<e:Image source="desk_btn_all1_d_png" width="265" height="144" horizontalCenter="407.5" bottom="404"/>
+		<e:Image source="desk_btn_confirm_icon_d_png" horizontalCenter="136.5" bottom="484"/>
+		<e:Image source="desk_btn_cancel_icon_d_png" horizontalCenter="412" bottom="484"/>
+		<eui:ALabel text="确认" size="42" width="265" textAlign="center" textColor="0x747474" horizontalCenter="134.5" bottom="426"/>
+		<eui:ALabel text="撤销" size="42" width="265" textAlign="center" textColor="0x747474" horizontalCenter="407.5" bottom="426"/>
+    </e:Group>
+	<e:Group id="page9" width="100%" height="100%" x="0" y="76" visible="false">
+		<eui:ALabel text="最后当您长按路书时，将显示对应的放大图。" size="40" fontFamily="SimHei" width="800" horizontalCenter="0" lineSpacing="15" newlineAble="true" bottom="979"/>
+		<e:Image source="pic_arrow_png" horizontalCenter="0" scaleY="-1" bottom="895"/>
+		<e:Image source="tutorial_pic_roadmap_png" horizontalCenter="0" bottom="209"/>
+		<e:Image source="tutorial_pic_roadmap_zoomin_png" horizontalCenter="0" bottom="518"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="492" horizontalCenter="-504"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="492" horizontalCenter="-448"/>
+		<e:Image source="baccarat_pic_bead.T--_png" bottom="492" horizontalCenter="-391"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="492" horizontalCenter="-335"/>
+		<e:Image source="baccarat_pic_bead.T--_png" bottom="492" horizontalCenter="-281"/>
+		<e:Image source="baccarat_pic_bead.BB-_png" bottom="436" horizontalCenter="-504"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="436" horizontalCenter="-448"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="436" horizontalCenter="-391"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="436" horizontalCenter="-335"/>
+		<e:Image source="baccarat_pic_bead.PB-_png" bottom="436" horizontalCenter="-281"/>
+		<e:Image source="baccarat_pic_bead.B-P_png" bottom="381" horizontalCenter="-504"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="381" horizontalCenter="-448"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="381" horizontalCenter="-391"/>
+		<e:Image source="baccarat_pic_bead.PB-_png" bottom="381" horizontalCenter="-335"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="381" horizontalCenter="-281"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="325" horizontalCenter="-503"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="325" horizontalCenter="-448"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="325" horizontalCenter="-391"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="325" horizontalCenter="-335"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="325" horizontalCenter="-281"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="269" horizontalCenter="-503"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="269" horizontalCenter="-448"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="269" horizontalCenter="-391"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="269" horizontalCenter="-335"/>
+		<e:Image source="baccarat_pic_bead.T--_png" bottom="269" horizontalCenter="-281"/>
+		<e:Image source="baccarat_pic_bead.T--_png" bottom="213" horizontalCenter="-503"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="213" horizontalCenter="-448"/>
+		<e:Image source="baccarat_pic_bead.B--_png" bottom="213" horizontalCenter="-391"/>
+		<e:Image source="baccarat_pic_bead.T--_png" bottom="213" horizontalCenter="-335"/>
+		<e:Image source="baccarat_pic_bead.P--_png" bottom="213" horizontalCenter="-281"/>
+    </e:Group>
+	<e:Group id="page10" width="100%" height="100%" x="0" y="0" visible="false">
+		<eui:ALabel text="好了！基础说明就到这里，您还可以通过房间菜单中的“游戏规则”了解更多详情，祝您游戏愉快！" size="45" fontFamily="SimHei" width="820" lineSpacing="15" horizontalCenter="0" newlineAble="true" verticalCenter="-159.5"/>
+
+    </e:Group>
+	<e:Button id="btn_skip" label="跳过说明" width="970" height="100" horizontalCenter="0" bottom="22">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+			<e:Image verticalCenter="0" right="35" source="btn_skip_png" source.down="btn_skip_p_png" source.disabled="btn_skip_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76E" fontFamily="SimHei"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_skipIcon" label="" horizontalCenter="434" bottom="54" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_skip_png" source.down="btn_skip_p_png" source.disabled="btn_skip_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Button id="btn_startGame" label="开始游戏" width="970" height="100" horizontalCenter="0" bottom="22" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_login_png" source.down="btn_login_p_png" source.disabled="btn_login_d_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="50" textColor="0x000000" textColor.down="0xE9B76E" fontFamily="SimHei"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

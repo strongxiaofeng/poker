@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="clubMemberItemSkin" width="1000" height="293" xmlns:e="http://ns.egret.com/eui" xmlns:eui="eui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Image anchorOffsetX="0" source="mine_pic_memberlist_bg1_png" scale9Grid="25,114,17,82" left="0" right="0" verticalCenter="0" x="0" y="10" scaleX="1" scaleY="1"/>
+		<e:Image id="img_lockBgd" anchorOffsetX="0" source="mine_pic_memberlist_bg2_png" scale9Grid="25,114,17,82" left="0" right="0" verticalCenter="0" visible="false"/>
+		<eui:ALabel id="txt_name" text="玩家昵称名字" width="299" height="38" size="36" textColor="0xffffff" left="36" top="24"/>
+		<eui:ALabel id="txt_join_time" text="加入时间:2017/08/01" size="30" width="500" height="38" textAlign="right" right="20" top="24" verticalAlign="middle" alpha="0.5"/>
+		<e:Group id="groupAvatar" width="145" height="145" x="43" y="94">
+			<e:Image id="img_head" y="0" x="0" source="mine_pic_default_png" width="145" height="145" scaleX="1" scaleY="1"/>
+			<e:Image id="img_head_mask" y="0" x="0" source="mine_pic_default_png" width="145" height="145" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<eui:ALabel text="筹码余额:" y="91" width="140" size="30" textColor="0xeeb764" left="255" verticalAlign="middle" textAlign="center" isFixed="true"/>
+		<eui:ALabel text="founder_lbl_register_account" y="145" width="140" size="30" textColor="0xEEB764" left="255" verticalAlign="middle" textAlign="center" isFixed="true"/>
+		<eui:ALabel text="founder_lbl_last_login" y="201" width="140" size="30" textColor="0xEEB764" left="255" verticalAlign="middle" textAlign="center" isFixed="true"/>
+		<e:Image source="record_pic_separateline_png" anchorOffsetX="0" width="2" anchorOffsetY="0" height="200" left="225" top="76"/>
+		<e:Label text="356,366,789.5" y="94" left="438" visible="false"/>
+		<e:BitmapLabel id="txt_chips" y="96" left="400" font="white_42_fnt" text="356,366,789.5" scaleX="0.75" scaleY="0.75" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="txt_acc" text="abc123" y="145" left="400" verticalAlign="middle"/>
+		<e:Label id="txt_date" text="2017/08/13" y="202" left="400"/>
+		<eui:ALabel id="txt_set_chips3" text="founder_btn_allocation_chip" width="200" height="38" size="36" textColor="0xeeb764" textAlign="center" right="62" top="106" verticalAlign="middle" isFixed="true"/>
+		<eui:ALabel id="txt_set_lock3" text="founder_btn_lock_remember" width="200" size="36" textColor="0xEEB764" textAlign="center" right="62" top="206" height="38" isFixed="true"/>
+		<e:Image source="mine_pic_separateline_png" width="304" right="8" y="175"/>
+		<e:Image source="mine_pic_separateline_png" width="200" rotation="90" right="312" top="76"/>
+		<e:Image id="img_lock" source="mine_pic_locked3_png" left="142" top="92" visible="false"/>
+		<eui:ALabel id="txt_set_chips2" text="founder_btn_allocation_chip" width="200" height="38" right="62" top="99" textAlign="center" size="36" textColor="0xc8c8c8" isFixed="true" visible="false"/>
+		<e:Group width="100" height="100" top="0" horizontalCenter="0" visible="false">
+			<eui:AButton id="txt_set_lock2" label="founder_btn_unlock_remember" height="52" width="257" verticalCenter="0" right="0">
+				<eui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image touchEnabled="false" width="100%" height="100%" scaleX="-1" left="0" scale9Grid="6,12,3,25" source="btn_confirm_pc_png" source.disabled="btn_confirm_pc_png"/>
+					<e:Image touchEnabled="false" width="100%" height="100%" source.down="mine_btn_control_p_pc_png"/>
+					<e:Image touchEnabled="false" name="imgLock" left="60" verticalCenter="0" source="mine_btn_lockuser_pc_png" source.down="mine_btn_lockuser_p_pc_png" source.disabled="mine_btn_lockuser_d_pc_png"/>
+					<e:ALabel touchEnabled="false" id="labelDisplay" name="labelDisplay" size="23" left="90" verticalCenter="0" textColor="0xe9b964" textColor.down="0x000000" textColor.disabled="0xaaaaaa"/>
+					</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="txt_set_lock" label="founder_btn_lock_remember" height="52" width="257" verticalCenter="0" right="0">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image touchEnabled="false" width="100%" height="100%" scaleX="-1" left="0" scale9Grid="6,12,3,25" source="btn_confirm_pc_png" source.disabled="btn_confirm_pc_png"/>
+					<e:Image touchEnabled="false" width="100%" height="100%" source.down="mine_btn_control_p_pc_png"/>
+					<e:Image touchEnabled="false" name="imgLock" left="60" verticalCenter="0" source="mine_btn_lockuser_pc_png" source.down="mine_btn_lockuser_p_pc_png" source.disabled="mine_btn_lockuser_d_pc_png"/>
+					<e:ALabel touchEnabled="false" id="labelDisplay" name="labelDisplay" size="23" left="90" verticalCenter="0" textColor="0xe9b964" textColor.down="0x000000" textColor.disabled="0xaaaaaa"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+			<eui:AButton id="txt_set_chips" label="founder_btn_allocation_chip" height="52" width="257" verticalCenter="0" left="0">
+				<eui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image touchEnabled="false" width="100%" height="100%" scale9Grid="6,12,3,25" source="btn_confirm_pc_png" source.disabled="btn_confirm_pc_png"/>
+					<e:Image touchEnabled="false" width="100%" height="100%" source.down="mine_btn_control_p_pc_png"/>
+					<e:Image touchEnabled="false" name="imgChip" left="60" verticalCenter="0" source="mine_btn_distribution_pc_png" source.down="mine_btn_distribution_p_pc_png" source.disabled="mine_btn_distribution_d_pc_png"/>
+					<e:ALabel id="labelDisplay" name="labelDisplay" size="23" left="90" verticalCenter="0" textColor="0xe9b964" textColor.down="0x000000" textColor.disabled="0xaaaaaa"/>
+				</e:Skin>
+				</eui:skinName>
+			</eui:AButton>
+		</e:Group>
+	</e:Group>
+</e:Skin>

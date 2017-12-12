@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="leftMenuCreateSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Image source="sidebar_pic_bg_pc_png" x="14" y="83" width="159" height="983" scale9Grid="19,12,121,6"/>
+	<e:Group id="gamesGroup" width="1" height="1" x="0" y="0">
+		<e:Image source="sidebar_pic_separateline_pc_png" x="14" y="556" width="156"/>
+		<e:Image source="sidebar_pic_separateline_pc_png" x="14" y="622" width="156"/>
+		<e:Image source="sidebar_pic_separateline_pc_png" x="14" y="688" width="156"/>
+		<e:Image source="sidebar_pic_separateline_pc_png" x="14" y="755" width="156"/>
+		<e:Image source="sidebar_pic_separateline_pc_png" x="14" y="822" width="156"/>
+		<e:Image id="selectImg" source="sidebar_btn_all_p_pc_png" x="14" y="493" width="153" height="64"/>
+		<eui:AButton id="btn_baccarat" label="百家乐" x="14" y="493" scaleX="1" scaleY="1" height="64" width="153">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled,hover">
+			<e:Image width="100%" height="100%" source="sidebar_btn_all_pc_png" source.down="sidebar_btn_all_p_pc_png" source.disabled="sidebar_btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xbcbcbc" textColor.down="0xfcc86d" textColor.hover="0xeabf73" size="20"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_multi" label="自选多枱" x="14" y="559" scaleX="1" scaleY="1" height="64" width="153">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled,hover">
+			<e:Image width="100%" height="100%" source="sidebar_btn_all_pc_png" source.down="sidebar_btn_all_p_pc_png" source.disabled="sidebar_btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xbcbcbc" textColor.down="0xfcc86d" textColor.hover="0xeabf73" size="20"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_roulette" label="轮盘" x="14" y="625" scaleX="1" scaleY="1" height="64" width="153">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled,hover">
+			<e:Image width="100%" height="100%" source="sidebar_btn_all_pc_png" source.down="sidebar_btn_all_p_pc_png" source.disabled="sidebar_btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xbcbcbc" textColor.down="0xfcc86d" textColor.hover="0xeabf73" size="20"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_sicbo" label="骰宝" x="14" y="692" scaleX="1" scaleY="1" height="64" width="153">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled,hover">
+			<e:Image width="100%" height="100%" source="sidebar_btn_all_pc_png" source.down="sidebar_btn_all_p_pc_png" source.disabled="sidebar_btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xbcbcbc" textColor.down="0xfcc86d" textColor.hover="0xeabf73" size="20"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:AButton id="btn_niuniu" label="牛牛" x="14" y="759" scaleX="1" scaleY="1" height="64" width="153">
+		<eui:skinName>
+			<e:Skin states="up,down,disabled,hover">
+			<e:Image width="100%" height="100%" source="sidebar_btn_all_pc_png" source.down="sidebar_btn_all_p_pc_png" source.disabled="sidebar_btn_all_pc_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xbcbcbc" textColor.down="0xfcc86d" textColor.hover="0xeabf73" size="20"/>
+			</e:Skin>
+		</eui:skinName>
+		</eui:AButton>
+		<eui:ALabel id="selectLabel" text="百家乐" x="14" y="515" size="20" textColor="0xfcc86d" width="153" height="20" textAlign="center" verticalAlign="middle" isFixed="true" newlineAble="false" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="btnsGroup_created" width="1" height="1" x="0" y="0" visible="false">
+		<e:AButton id="btn_createRoom" label="" x="31" y="240" mouseTexture="created_btn_creatroom_h_pc_png" width="55" height="55" scaleX="1" scaleY="1" name="创建房间">
+			<e:skinName>
+			<e:Skin states="up,down,disabled,hover">
+				<e:Image width="100%" height="100%" source="created_btn_creatroom_pc_png" source.down="created_btn_creatroom_p_pc_png" source.disabled="created_btn_creatroom_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:AButton id="btn_people" label="" x="31" y="302" mouseTexture="created_btn_member_h_pc_png" width="55" height="55" scaleX="1" scaleY="1" name="成员">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="created_btn_member_pc_png" source.down="created_btn_member_p_pc_png" source.disabled="created_btn_member_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:AButton id="btn_notice" label="" x="31" y="364" mouseTexture="created_btn_announcement_h_pc_png" width="55" height="55" scaleX="1" scaleY="1" name="公告">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="created_btn_announcement_pc_png" source.down="created_btn_announcement_p_pc_png" source.disabled="created_btn_announcement_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:AButton id="btn_share" label="" x="31" y="426" mouseTexture="created_btn_share2_h_pc_png" width="55" height="55" scaleX="1" scaleY="1" name="分享">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="created_btn_share2_pc_png" source.down="created_btn_share2_p_pc_png" source.disabled="created_btn_share2_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:AButton id="btn_dataCenter" label="" x="103" y="240" mouseTexture="created_btn_datacenter_h_pc_png" name="数据中心">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="created_btn_datacenter_pc_png" source.down="created_btn_datacenter_p_pc_png" source.disabled="created_btn_datacenter_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:AButton id="btn_anchor" label="" x="103" y="302" mouseTexture="created_btn_anchor_h_pc_png" name="主播">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="created_btn_anchor_pc_png" source.down="created_btn_anchor_p_pc_png" source.disabled="created_btn_anchor_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:AButton id="btn_active" label="" x="103" y="364" mouseTexture="created_btn_activity_h_pc_png" name="活动">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="created_btn_activity_pc_png" source.down="created_btn_activity_p_pc_png" source.disabled="created_btn_activity_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:AButton id="btn_edit" label="" x="103" y="426" mouseTexture="created_btn_edit_h_pc_png" name="编辑">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="created_btn_edit_pc_png" source.down="created_btn_edit_p_pc_png" source.disabled="created_btn_edit_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:AButton>
+		<e:Group id="hoverGroup" width="112" height="37" x="5" y="478" scaleX="1" scaleY="1">
+			<e:Image source="created_pic_notice_pc_png" x="0" y="18" width="112" height="37" scaleY="-1" anchorOffsetY="18"/>
+			<eui:ALabel id="hoverLabel" text="数据中心" x="0" y="12" width="112" size="18" textAlign="center" textColor="0xe4be72" fontFamily="SimHei"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="btnsGroup_joined" width="1" height="1" x="0" y="0" visible="false">
+		<e:Image source="sidebar_pic_separateline_pc_png" x="17" y="470" width="153"/>
+		<e:Image source="sidebar_pic_separateline_pc_png" x="17" y="350" width="153"/>
+		<eui:AButton id="btn_balanceDetail" label="" x="63" y="244" mouseTexture="sidebar_btn_asset_h_pc_png" width="59" height="59" scaleX="1" scaleY="1">
+			<eui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="sidebar_btn_asset_pc_png" source.down="sidebar_btn_asset_p_pc_png" source.disabled="sidebar_btn_asset_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:ALabel id="label_balanceDetail" text="资产明细" x="14" y="315" size="20" textColor="0xf7ca72" width="159" textAlign="center" fontFamily="SimHei"/>
+		<eui:AButton id="btn_rule" label="" x="63" y="364" mouseTexture="sidebar_btn_rules_h_pc_png">
+			<eui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="sidebar_btn_rules_pc_png" source.down="sidebar_btn_rules_p_pc_png" source.disabled="sidebar_btn_rules_pc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</eui:skinName>
+		</eui:AButton>
+		<eui:ALabel id="label_rule" text="游戏规则" x="14" y="435" size="20" textColor="0xF7CA72" width="159" textAlign="center" fontFamily="SimHei"/>
+	</e:Group>
+
+	<e:Image source="sidebar_pic_club_pc_png" x="19" y="1030"/>
+	<eui:ALabel id="clubNameLabel" text="俱乐部名称" x="45" y="1035" textColor="0xb1b1b1" size="16" width="124" textAlign="center" isFixed="true"/>
+	<e:Image source="sidebar_pic_line_pc_png" x="17" y="1058"/>
+</e:Skin>

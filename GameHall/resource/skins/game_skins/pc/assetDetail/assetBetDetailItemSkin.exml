@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="betRecordDetailItemSkin" width="1095" height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:eui="eui.*">
+	<e:Group id="groupBaccarat" width="100%" height="100%" x="0" y="0" visible="false">
+		<eui:ALabel id="labelTitle" textAlign="left" width="60" height="15" text="投注项" isFixed="true" textColor="0xE7B570" verticalAlign="middle" verticalCenter="0" y="13" scaleX="1" scaleY="1" size="15" x="160"/>
+		<eui:ALabel id="labelBet" textAlign="left" width="100" height="15" text="投注" size="15" isFixed="true" textColor="0xE7B570" verticalAlign="middle" verticalCenter="0" y="13" scaleX="1" scaleY="1" x="525"/>
+		<eui:ALabel id="labelPayout" textAlign="right" width="160" height="15" text="派彩" size="15" isFixed="true" textColor="0xE7B570" verticalAlign="middle" verticalCenter="0" y="13" scaleX="1" scaleY="1" right="140"/>
+	</e:Group>
+	<e:Group id="groupRoulette" width="100%" height="100%" x="0" y="0">
+		<e:Group width="350" height="100%" x="0" y="0">
+			<eui:ALabel id="labelTitleRoulette" textAlign="center" width="80" height="15" text="投注项" size="15" isFixed="true" textColor="0xE7B570" verticalAlign="middle" verticalCenter="0" y="13" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Group id="groupRouletteBet" width="120" height="100%" verticalCenter="0" horizontalCenter="0">
+				<e:Image id="imgRoulette0" x="0" source="roadmap_pic_1_png" verticalCenter="0" width="20" height="20" y="-13" scaleX="1" scaleY="1"/>
+				<e:Image id="imgRoulette1" x="20" source="roadmap_pic_2_png" verticalCenter="0" width="20" height="20" y="-13" scaleX="1" scaleY="1"/>
+				<e:Image id="imgRoulette2" x="40" source="roadmap_pic_3_png" verticalCenter="0" width="20" height="20" y="-13" scaleX="1" scaleY="1"/>
+				<e:Image id="imgRoulette3" x="60" source="roadmap_pic_4_png" verticalCenter="0" width="20" height="20" y="-13" scaleX="1" scaleY="1"/>
+				<e:Image id="imgRoulette4" x="80" source="roadmap_pic_5_png" verticalCenter="0" width="20" height="20" y="-13" scaleX="1" scaleY="1"/>
+				<e:Image id="imgRoulette5" x="100" source="roadmap_pic_6_png" verticalCenter="0" width="20" height="20" y="-13" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<eui:ALabel id="labelBetRoulette" textAlign="left" width="100" height="15" text="投注" size="15" isFixed="true" textColor="0xE7B570" verticalAlign="middle" verticalCenter="0" y="13" scaleX="1" scaleY="1" x="525"/>
+		<eui:ALabel id="labelPayoutRoulette" textAlign="right" width="160" height="15" text="派彩" size="15" isFixed="true" textColor="0xE7B570" verticalAlign="middle" verticalCenter="0" y="13" scaleX="1" scaleY="1" right="140"/>
+	</e:Group>
+	<e:Group id="groupDT" width="100%" height="100%" x="0" y="0" visible="false"/>
+	<e:Group id="groupSicbo" width="100%" height="100%" x="0" y="0" visible="false"/>
+</e:Skin>

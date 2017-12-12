@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>webass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js"></script>
+	<script egret="lib" src="libs/modules/jszip/jszip.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js"></script>
+	<script egret="lib" src="libs/modules/mouse/mouse.js"></script>
+	<script egret="lib" src="libs/modules/livestream/livestream.js"></script>
+	<script egret="lib" src="libs/modules/uaparser/uaparser.js"></script>
+	<script egret="lib" src="libs/modules/gesture/gesture.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+    <!--game_files_start-->
+	<!--game_files_end-->
+	<script src="resource/js/override.js"></script>
+</head>
+<body>
+	<button class="copyBtn" id="copyBtn" data-clipboard-action="copy" style="position: absolute; opacity: 0.01; ">copy</button>
+
+    <div id="mainDiv" style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="portrait"
+         data-scale-mode="fixedHeight"
+         data-frame-rate="30"
+         data-content-width="1920"
+         data-content-height="1080"
+         data-show-paint-rect="false"
+         data-multi-fingered="1"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+	<style>
+		#pop-up {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: #282828;
+			overflow: hidden;
+		}
+		#pop-up-iframe {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		#pop-up img {
+			position: absolute;
+			left: 3%;
+			top: 2%;
+			width: 7%;
+			height: auto;
+		}
+	</style>
+	<div id="pop-up">
+		<iframe id="pop-up-iframe" src="about:blank" frameborder="0"></iframe>
+		<img onclick="closePopUp()" src="resource/html/html_popup_return.png">
+	</div>
+	<style>
+		#pc-pop-up {
+			background-color:rgba(0, 0, 0, 0.6);
+			display:none;
+			-webkit-align-items:center;
+			align-items:center;
+			-webkit-justify-content:center;
+			justify-content:center;
+			position:absolute;
+			border:none;
+			left:0;
+			top:0;
+			width:100%;
+			height:100%;
+		}
+		#pc-pop-up-container {
+			display: block;
+			position:relative;
+			margin: auto;
+			background-color: #282828;
+			width:200px;
+			height:100px;
+			border: none;
+		}
+		#pc-pop-up-iframe {
+			position:absolute;
+			z-index: 10;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		#pc-pop-up-bg {
+			z-index: 0;
+			position:absolute;
+			display: block;
+			right: -0.5%;
+			top: -2%;
+			width: 101%;
+			height: 104%;
+		}
+		#pc-pop-up-btn {
+			z-index: 100;
+			position:absolute;
+			display: block;
+			right: 1%;
+			top: 1%;
+			width: 4%;
+			height: auto;
+		}
+	</style>
+	<div id="pc-pop-up">
+		<div id="pc-pop-up-container">
+			<img id="pc-pop-up-bg" src="resource/html/html_popup_bg_pc.png">
+			<iframe id="pc-pop-up-iframe" src="about:blank" frameborder="0"></iframe>
+			<img id="pc-pop-up-btn" onclick="closePopUpPC()" src="resource/html/html_popup_return_pc.png">
+		</div>
+	</div>
+    <script src="resource/js/clipboard.min.js"></script>
+    <script>
+		//定义复制模块
+		var clipboard;
+		function copyTxt(txt)
+		{
+			if(clipboard) clipboard=null;
+
+			clipboard = new Clipboard('.copyBtn', {
+				text: function() {
+					return txt;
+				}
+			});
+			document.getElementById("copyBtn").click();
+		}
+
+		let egretPlayer = document.getElementsByClassName("egret-player")[0];
+		var isMobile=!(/Android|mobile|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent));
+        if (!isMobile) {
+			egretPlayer.setAttribute("data-content-width", "1080");
+			egretPlayer.setAttribute("data-content-height", "1920");
+		}
+		var urlParams = getAllParams();
+		/**预先取出所有url参数*/
+		function getAllParams(){
+			console.log("href:"+location.href);
+			var url = location.href;
+			var position = url.indexOf("?");
+			var parameterStr = url.substr(position + 1);
+			var arr = parameterStr.split("&");
+			var obj = {};
+			for(var i=0; i<arr.length; i++){
+				var data = arr[i].split("=");
+				obj[data[0]] = data[1];
+			}
+			return obj;
+		}
+		/**获取url参数*/
+		function getParameterValue(key) {
+			if(key && urlParams && urlParams[key]){
+				return urlParams[key];
+			}
+			return "";
+		}
+		/**禁用右键*/
+		document.oncontextmenu = function () {
+			return false;
+		}
+		/**用于启动游戏的全局配置*/
+		window.gameUrlParam = {
+			username: getParameterValue("username"),
+			accessToken: getParameterValue("accessToken"),
+			mode: getParameterValue("mode"),
+			c_params: getParameterValue("c"),
+			invitation_code: getParameterValue("invitation_code"),
+			lang: "zh_cn",
+			channelId: -1,
+			login_title_icon: "",
+			poweredby_icon: "",
+			poweredby_icon_url:""
+		}
+
+		console.log("window.gameUrlParam ",window.gameUrlParam);
+		//请求渠道配置
+		if (window.gameUrlParam.c_params) {
+			var xmlhttp = new XMLHttpRequest();
+			var localUrl = document.location.href;
+			var staticIndex = localUrl.indexOf("static");
+			var host = localUrl.slice(0, staticIndex);
+			console.log("host:" + host);
+			xmlhttp.open("GET", host + "goral/api/channels/detail?c=" + window.gameUrlParam.c_params, false);
+			xmlhttp.send(null);
+
+			var b = xmlhttp.responseText;
+			if (b) {
+				var cdnAddrs = JSON.parse(b);
+				console.log("请求渠道返回:",cdnAddrs);
+				window.gameUrlParam.channelId = cdnAddrs.id;
+				var lang = cdnAddrs.languages.split(",");
+				window.gameUrlParam.lang = lang[0];
+				window.gameUrlParam.login_title_icon = cdnAddrs.login_title_icon;
+				window.gameUrlParam.poweredby_icon = cdnAddrs.poweredby_icon;
+				window.gameUrlParam.poweredby_icon_url = cdnAddrs.poweredby_icon_url;
+				window.gameUrlParam.android_download = cdnAddrs.android_download;
+				window.gameUrlParam.applink_url = cdnAddrs.applink_url;
+				window.gameUrlParam.ios_download = cdnAddrs.ios_download;
+			}
+		}
+
+		var urlLang = getParameterValue("urlLang");
+		if(urlLang)
+		{
+			window.gameUrlParam.lang = urlLang;
+		}
+		urlParams = null;
+
+		var loadSingleScript = function (src, callback) {
+			var s = document.createElement('script');
+			s.async = false;
+			s.src = src;
+			s.addEventListener('load', function () {
+				s.parentNode.removeChild(s);
+				s.removeEventListener('load', arguments.callee, false);
+				callback();
+			}, false);
+			document.body.appendChild(s);
+		};
+
+		var runEgretPro = function()
+		{
+			/**
+             * {
+             * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+             * "audioType": 0 //使用的音频类型，0:默认，2:web audio，3:audio
+             * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+             * "retina": //是否基于devicePixelRatio缩放画布
+             * }
+             **/
+            egret.runEgret({ renderMode: "webgl", audioType: 0 });
+			/**
+			 * {
+			 * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+			 * "audioType": 0 //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+			 * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+			 * "retina": //是否基于devicePixelRatio缩放画布
+			 * }
+			 **/
+			// console.log("启动egret");
+			// egret.WebAssembly.init(function (){
+			// 	egret.runEgret({renderMode:"webgl", audioType:0});
+			// }, undefined, window.WebAssembly ? 1 : 2);
+		}
+
+		if (!window.Promise) {
+			console.log("window 找不到Promiose, 手动引入js");
+			loadSingleScript("./resource/js/promise.js",runEgretPro);
+		}
+		else{
+			runEgretPro();
+		}
+
+		//输入法会导致界面顶上去下不来，手动设置还原
+		window.setScrollTop = function () {
+		}
+
+		window.openPopUp = function(url) {
+			document.getElementById("pop-up").style.display = "block";
+            document.getElementById("pop-up-iframe").setAttribute("src",url);
+		}
+
+		window.openPopUpPC = function(url) {
+			window.popUpResize();
+			document.getElementById("pc-pop-up").style.display = "flex";
+            document.getElementById("pc-pop-up-iframe").setAttribute("src",url);
+		}
+
+		function closePopUpPC(){
+			document.getElementById("pc-pop-up").style.display = "none";
+            document.getElementById("pc-pop-up-iframe").setAttribute("src","about:blank");
+		}
+
+		function closePopUp(){
+			document.getElementById("pop-up").style.display = "none";
+            document.getElementById("pop-up-iframe").setAttribute("src","about:blank");
+		}
+
+		window.popUpResize = function () {
+			let div = document.getElementById("pc-pop-up-container");
+			if (document.body.clientWidth / document.body.clientHeight > 1920 / 1080) {
+				div.style.height = document.body.clientHeight * 785 / 1080 + "px";
+				div.style.width = (document.body.clientHeight * 785 / 1080) * 1920 / 1080 + "px";
+			} else {
+				div.style.width = document.body.clientWidth * 1300 / 1920 + "px";
+				div.style.height = (document.body.clientWidth * 1300 / 1920) * 1080 / 1920 + "px";
+			}
+		}
+		window.jumpAPPorDownload = function (schema,invitation_code,andrDownloadPath, iosDownloadPath) {
+	        var u = navigator.userAgent;
+	        var android=u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; // android终端或者uc浏览器
+	        var url= schema+'://?i=' + invitation_code;
+	        if(android){
+	            var hasApp = true;
+	            var t1 = Date.now();
+	            var ifr = document.createElement('iframe');
+	            ifr.src =url;
+	            ifr.style.display = 'none';
+	            document.body.appendChild(ifr);
+	            window.setTimeout(function() {
+	                document.body.removeChild(ifr);
+	                var t2 = Date.now();
+	                if (!t1 || t2 - t1 < 500) {
+	                    hasApp = false;
+	                }
+	            }, 480);
+	            window.setTimeout(function() {
+	                if (!hasApp)
+	                    window.location = andrDownloadPath;
+	            }, 1000);
+	        }
+	        else {
+				window.location = url;
+	            var clickedAt = new Date;
+	            setTimeout(function(){
+	                !window.document.webkitHidden && setTimeout(function(){
+	                    if(new Date - clickedAt < 2000){
+	                        window.location = iosDownloadPath;
+	                    }
+	                }, 500);
+	            }, 500);
+	        }
+    	}
+    </script>
+</body>
+</html>
